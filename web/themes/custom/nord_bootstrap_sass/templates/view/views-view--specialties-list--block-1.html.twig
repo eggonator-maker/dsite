@@ -1,0 +1,86 @@
+{# templates/views-view--specialties-list--block-1.html.twig #}
+<section class="specialties-section">
+  
+  <div class="container">
+    <header class="specialties-section__header">
+      <h2 class="specialties-section__title">Specialități</h2>
+    </header>
+  </div>
+  
+  <div class="specialties-section__nav-container">
+    <div class="specialties-section__scroll-indicator specialties-section__scroll-indicator--left">
+      <span class="icon icon-chevron-left icon--md"></span>
+    </div>
+
+    <div class="nav nav-pills specialties-section__nav" id="specialty-tab" role="tablist">
+      {% set active_tid = 7 %}
+      {% for result in view.result %}
+        {% set term_entity = result._entity %}
+        {% set tid = term_entity.id() %}
+        {% set name = term_entity.label() %}
+        {% set is_active = (active_tid is defined and active_tid == tid) or (active_tid is not defined and loop.first) %}
+        <button class="nav-link {{ is_active ? 'active' }}" id="tab-{{ tid }}" data-bs-toggle="pill" data-bs-target="#specialty-pane-{{ tid }}" type="button" role="tab" aria-controls="specialty-pane-{{ tid }}" aria-selected="{{ is_active ? 'true' : 'false' }}">
+          <span>{{ name }}</span>
+        </button>
+      {% endfor %}
+    </div>
+
+    <div class="specialties-section__scroll-indicator specialties-section__scroll-indicator--right">
+      <span class="icon icon-chevron-right icon--md"></span>
+    </div>
+  </div>
+
+  {# THE FIX: Replaced .container with our custom full-width wrapper #}
+  <div class="specialties-section__content">
+    <div class="tab-content" id="specialty-tabContent">
+      {% for result in view.result %}
+        {% set t_entity = result._entity %}    
+        {% set tid = t_entity.id() %}
+        {% set is_active = (active_tid is defined and active_tid == tid) or (active_tid is not defined and loop.first) %}
+        
+        <div class="tab-pane fade {{ is_active ? 'show active' }}" id="specialty-pane-{{ tid }}" role="tabpanel" aria-labelledby="tab-{{ tid }}" tabindex="0">
+          {{ drupal_view('services_by_specialty', 'block_1', tid) }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="centers-section__footer">
+      <a href="/specialitati" class="btn btn-outline-danger">
+        {{ 'Vezi toate specialitatile'|t }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{# JavaScript for Scroll Indicators (No changes needed here) #}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.querySelector('.specialties-section__nav-container');
+  if (!container) return;
+
+  const scroller = container.querySelector('.specialties-section__nav');
+  const leftIndicator = container.querySelector('.specialties-section__scroll-indicator--left');
+  const rightIndicator = container.querySelector('.specialties-section__scroll-indicator--right');
+  const scrollEndBuffer = 5;
+
+  const checkScroll = () => {
+    if (!scroller) return;
+    const scrollLeft = scroller.scrollLeft;
+    const scrollWidth = scroller.scrollWidth;
+    const clientWidth = scroller.clientWidth;
+    leftIndicator.classList.toggle('is-visible', scrollLeft > 0);
+    rightIndicator.classList.toggle('is-visible', scrollLeft < scrollWidth - clientWidth - scrollEndBuffer);
+  };
+
+  scroller.addEventListener('scroll', checkScroll, { passive: true });
+  window.addEventListener('resize', checkScroll);
+  leftIndicator.addEventListener('click', () => { scroller.scrollBy({ left: -250, behavior: 'smooth' }); });
+  rightIndicator.addEventListener('click', () => { scroller.scrollBy({ left: 250, behavior: 'smooth' }); });
+
+  const observer = new MutationObserver(checkScroll);
+  observer.observe(scroller, { childList: true, subtree: true });
+  checkScroll();
+});
+</script>

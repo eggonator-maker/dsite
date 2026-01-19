@@ -1,0 +1,19 @@
+uuid: 0fba7989-f887-4601-8e7b-9b7203f5753f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_description
+    - paragraphs.paragraphs_type.why_this_center_card
+id: paragraph.why_this_center_card.field_card_description
+field_name: field_card_description
+entity_type: paragraph
+bundle: why_this_center_card
+label: 'card description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,42 @@
+uuid: 74e360ae-d1c6-428e-b64d-5cf812e9213b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.doctor.field_image
+    - field.field.node.doctor.field_specialties
+    - image.style.wide
+    - node.type.doctor
+  module:
+    - image
+    - user
+id: node.doctor.default
+targetEntityType: node
+bundle: doctor
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_specialties:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

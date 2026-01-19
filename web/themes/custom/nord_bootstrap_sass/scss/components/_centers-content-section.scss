@@ -1,0 +1,665 @@
+/*--------------------------------------------------------------
+# Centers Page Layout
+--------------------------------------------------------------*/
+
+.cs-content-wrapper {
+  background-color: $color-bg-light;
+  padding: rem(64) rem(150);
+  // Base styles from body
+  font-family: $font-family-sans-serif;
+  color: $color-text-dark;
+
+  @include media-breakpoint-down(lg) {
+    padding: rem(48) rem(16);
+  }
+
+  .row {
+    align-items: flex-start;
+  }
+  
+}
+
+
+
+.centers-nav-block {
+  background-color: $white;
+  border-radius: rem(12);
+  border-style: hidden;
+  padding: rem(24) rem(16);
+  box-shadow: $shadow-card;
+
+  @media (max-width: 992px) {
+    margin-bottom: rem(24);
+  }
+}
+
+.specialities-nav-block {
+  // This is the outer white card
+  background-color: $white;
+  border-radius: rem(12);
+  border-style: hidden;
+  padding: rem(24) rem(16);
+  box-shadow: $shadow-card;
+
+  // 1. Set the card as a flex container with a max-height
+  display: flex;
+  flex-direction: column;
+  max-height: rem(400);
+  
+  @media (max-width: 992px) {
+    margin-top: rem(-48);
+    margin-right: rem(-16);
+    margin-left: rem(-16);
+    margin-bottom: rem(24);
+    max-height: none;
+    padding: 0; // Remove all padding on mobile
+    border-radius: 0; // Remove border radius on mobile
+    box-shadow: none; // Remove shadow on mobile
+  }
+
+  // 2. Target the *direct child* Drupal wrapper
+  // This makes it fill the card and also be a flex container
+  > .block {
+    display: flex;
+    flex-direction: column;
+    flex: 1; // Make it grow/shrink to fill the parent
+    min-height: 0; // Prevent it from overflowing
+  }
+  
+  // 3. Target the .content wrapper inside
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1; // Make it fill the .block
+    min-height: 0; // Prevent it from overflowing
+  }
+
+  // 4. Target your <nav> element
+  // This also needs to be a flex container for the search/list
+  #speciality-navigation-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1; // Make it fill the .content
+    min-height: 0; // Prevent it from overflowing
+    @media (max-width: 992px) {
+      padding: rem(16) rem(16) rem(8);
+    }
+  }
+
+  // 5. Your search box
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: rem(12) rem(16);
+    border-radius: rem(4);
+    flex-shrink: 0;
+    margin-bottom: rem(4);
+
+    @media (max-width: 992px) {
+      padding: rem(8) rem(16);
+      margin-bottom: rem(16);
+    }
+
+    .icon-search {
+      color: #6c757d;
+      font-size: rem(20);
+      @media (max-width: 992px) {
+        margin-right: rem(8);
+      }
+    }
+
+    &__input {
+      border: none;
+      background: transparent;
+      outline: none;
+      padding-left: rem(12);
+      font-size: rem(14);
+      width: 100%;
+
+      @media (max-width: 992px) {
+        font-size: rem(16);
+        padding-left: 0px;
+      }
+
+      &::placeholder {
+        color: #6c757d;
+      }
+    }
+  }
+
+  // 6. Your list wrapper
+  .speciality-nav__list-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+
+    // Custom Scrollbar Styles
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+
+    &::-webkit-scrollbar {
+      width: rem(6);
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: rem(6);
+    }
+    @media (max-width: 992px) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 rem(-16); // Negative margin to extend to edges
+      padding: 0 rem(16); // Padding for content
+      
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
+    }
+  }
+  
+  // 7. Your list/links
+  .speciality-nav {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: row;
+      gap: rem(12);
+      padding: rem(16) 0;
+    }
+
+    .nav-item {
+      margin-bottom: rem(4);
+
+      @media (max-width: 992px) {
+        flex-shrink: 0;
+        margin-bottom: 0px;
+      }
+    }
+    
+    // --- UPDATED ---
+    .nav-link {
+      height: rem(48);
+      padding: 0 rem(16);
+      display: flex;         // 👈 1. This is now the flex container
+      align-items: center;   // 👈 2. This vertically centers the <span>
+      
+      // Base styles
+      font-size: rem(16);
+      font-weight: $font-weight-normal;
+      color: $color-text-dark;
+      text-decoration: none;
+      border-radius: rem(6);
+      transition: background-color 0.2s ease, color 0.2s ease;
+      overflow: hidden; // Hide anything weird that might overflow
+
+      &:hover {
+        background-color: $color-bg-light;
+      }
+
+      &.is-active {
+        color: $color-primary-red;
+        font-weight: $font-weight-normal;
+        background-color: transparent;
+      }
+
+      // --- ADDED ---
+      // This is the new <span> from the Twig file
+      &__text {
+        display: -webkit-box;         // 👈 3. This handles truncation
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;        // 👈 4. Limit to 2 lines
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.5;             // 👈 5. (1.5 * 16px) * 2 lines = 48px
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------
+# Main Layout Blocks
+--------------------------------------------------------------*/
+.card-block {
+  background: $color-white;
+  box-shadow: $shadow-card;
+  border-radius: $border-radius-lg;
+  display: flex;
+  flex-direction: column;
+
+  gap: rem(16);
+  padding: rem(40);
+  margin-bottom: rem(32);
+
+  @media (max-width: 768px) {
+    padding: rem(24);
+  }
+
+  .section-title {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold; // Updated from 600
+    font-size: rem(28); // Added
+    line-height: 1.5; // Added
+    color: $color-text-dark;
+    margin-bottom: 0 !important;
+  
+    @include media-breakpoint-up(md) {
+      font-size: rem(32);
+    }
+  }
+  .section-subtitle {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold; // Updated from 600
+    font-size: rem(19); // Added
+    line-height: 1.5; // Added
+    color: $color-text-dark;
+    margin-bottom: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Independent Title Sections
+--------------------------------------------------------------*/
+
+.independent-title {
+  margin-bottom: rem(32);
+  h1 {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold; // Updated from 600
+    font-size: rem(32); // Added
+    line-height: 1.5; // Added
+    color: $color-text-dark;
+    margin-bottom: 0 !important;
+  }
+  h2 {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-normal;
+    font-size: rem(18);
+    line-height: 1.5;
+    color: $color-text-dark;
+    margin-bottom: 0 !important;
+
+    @include media-breakpoint-up(md) {
+      font-weight: $font-weight-bold;
+    }
+  }
+ 
+}
+/*--------------------------------------------------------------
+# Content Block: Main Article & Article Detail
+--------------------------------------------------------------*/
+.article-content {
+
+  h2, h3 {
+    font-family: $font-family-heading;
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 1.5;
+    color: $color-text-dark;
+    margin-bottom: 0 !important;
+  }
+  p {
+    font-family: $font-family-heading;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: $color-text-dark;
+    margin-bottom: 0 !important;
+  }
+}
+
+.article-detail {
+  h1 {
+    font-family: $font-family-heading;
+    font-weight: 700;
+    font-size: rem(36);
+    margin-bottom: rem(24);
+  }
+  h2, h3 {
+    font-family: $font-family-heading;
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 1.5;
+    color: $color-text-dark;
+    margin-top: rem(24);
+    margin-bottom: rem(16);
+  }
+  p, li {
+    font-family: $font-family-sans-serif;
+    font-size: rem(16);
+    line-height: 1.6;
+    color: $color-text-dark;
+  }
+  ul {
+    padding-left: rem(20);
+    li {
+      margin-bottom: rem(8);
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Cards Layout Grid
+--------------------------------------------------------------*/
+.content-cards-grid {
+  @extend .row;
+  @extend .row-cols-1;
+  @extend .row-cols-md-2;
+  @extend .row-cols-xxl-3;
+  margin-bottom: rem(32);
+
+  --bs-gutter-x: #{rem(16)};
+  --bs-gutter-y: #{rem(24)};
+  
+  @include media-breakpoint-up(md) {
+    --bs-gutter-y: #{rem(32)};
+  }
+}
+
+/*--------------------------------------------------------------
+# Info & Testimonial Cards
+--------------------------------------------------------------*/
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  padding: rem(40) rem(32);
+  background: $color-white;
+  border-radius: $border-radius-sm; // <-- This will now work on all corners
+  height: 100%;
+
+  box-shadow: $shadow-card, 0 rem(8) 0 0 $color-border-accent;
+
+  @include media-breakpoint-up(md) {
+    padding: rem(40) rem(24);
+  }
+
+  &__icon {
+    --icon-size: #{rem(48)};
+    color: $color-primary-blue;
+  }
+  &__title {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: rem(20);
+    color: $color-text-dark;
+
+    /* --- ADDED: 1. Limit card title to a single line --- */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__text {
+    font-family: $font-family-sans-serif;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: $color-text-dark;
+
+    /* --- ADDED: 2. Limit card text to 4 lines AND fix its height --- */
+    
+    // Define local variables based on this class's properties
+    --line-height-local: 1.5;
+    --font-size-local: #{rem(16)}; // Get the SASS value
+    --lines-to-show: 4;
+    
+    // This fixes the height to 4 lines (4 * 1.5 * 1rem = 6rem)
+    height: calc(var(--lines-to-show) * var(--line-height-local) * var(--font-size-local));
+    
+    // These properties add the '...' truncation
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: var(--lines-to-show);
+    overflow: hidden;
+    /* --------------------------------------------------------------- */
+
+    &--testimonial {
+      font-style: italic;
+    }
+  }
+  // For Testimonials
+  .card-info__author {
+    align-self: flex-end;
+    font-style: normal;
+  }
+}
+
+/*--------------------------------------------------------------
+# Service Cards
+--------------------------------------------------------------*/
+.card-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: rem(24);
+  padding: rem(40) rem(32);
+  background: $color-white;
+  box-shadow: $shadow-card;
+  border-radius: $border-radius-sm;
+  border: rem(2) solid $color-primary-red;
+  height: 100%;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+  @include media-breakpoint-up(md) {
+    padding: rem(40) rem(24);
+  }
+
+  &:hover {
+    transform: translateY(rem(-5));
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.05);
+  }
+  &__title {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: rem(20);
+    color: $color-text-dark;
+
+    /* --- ADDED: 1. Limit card title to a single line --- */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__text {
+    font-family: $font-family-sans-serif;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: $color-text-dark;
+
+    /* --- ADDED: 2. Limit card text to 4 lines AND fix its height --- */
+    
+    // Define local variables based on this class's properties
+    --line-height-local: 1.5;
+    --font-size-local: #{rem(16)}; // Get the SASS value
+    --lines-to-show: 4;
+    
+    // This fixes the height to 4 lines (4 * 1.5 * 1rem = 6rem)
+    height: calc(var(--lines-to-show) * var(--line-height-local) * var(--font-size-local));
+    
+    // These properties add the '...' truncation
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: var(--lines-to-show);
+    overflow: hidden;
+    /* --------------------------------------------------------------- */
+
+    &--testimonial {
+      font-style: italic;
+    }
+  }
+  &__link {
+    font-family: $font-family-heading;
+    font-weight: 600;
+    font-size: rem(16);
+    color: $color-primary-red;
+    text-decoration: none;
+
+    display: inline-flex;    // Treat the span as an inline flex container
+    align-items: center;    // Vertically center all children (text and icon)
+    gap: rem(4);
+    .icon {
+      --icon-size: #{rem(10)};
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# CTA Blocks
+--------------------------------------------------------------*/
+.cta-block--red {
+  background-color: $color-primary-red;
+  color: $color-white;
+  border-radius: $border-radius-sm;
+  padding: rem(16) rem(32);
+  
+
+  h3 {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: rem(20);
+  }
+  p {
+    font-size: rem(16);
+    opacity: 0.95;
+    margin-bottom: 0;
+    color: $color-white;
+  }
+  .btn-light {
+    font-weight: 700;
+    color: $color-primary-navy;
+    background-color: $color-white;
+    border-radius: $border-radius-sm;
+    padding: rem(12) rem(18);
+  }
+}
+
+/*--------------------------------------------------------------
+# Accordion (FAQ)
+--------------------------------------------------------------*/
+.accordion {
+  gap: rem(16);
+  display: grid;
+  .accordion-item {
+    border: none;
+    border-bottom: rem(1) solid $color-border-light;
+    
+  }
+  .accordion-button {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    font-size: rem(18);
+    color: $color-text-dark;
+    padding: rem(20) rem(16);
+
+    &:not(.collapsed) {
+      background-color: transparent;
+      box-shadow: none;
+      color: $color-primary-red;
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: transparent;
+    }
+    &::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E22A1F'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+  }
+  .accordion-body {
+    padding: rem(16);
+    font-size: rem(16);
+    color: $color-text-body;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Contact Cards
+--------------------------------------------------------------*/
+.card-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: rem(24);
+  padding: rem(40) rem(24);
+  background: $color-white;
+  box-shadow: $shadow-card;
+  border-radius: $border-radius-sm;
+  height: 100%;
+
+  &__icon {
+    --icon-size: #{rem(48)};
+    color: $color-primary-blue;
+  }
+  &__title {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: rem(20);
+    color: $color-text-dark;
+    height: calc(#{rem(20)} * 1.2);
+    overflow: hidden;
+  }
+
+  .btn-primary {
+    background-color: $color-primary-blue;
+    border-color: $color-primary-blue;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: rem(14);
+    padding: rem(12) rem(18);
+    border-radius: $border-radius-sm;
+  }
+}
+
+.centers__btn-primary {
+  align-self: flex-start;
+  display: inline-block;
+  background-color: $color-primary-blue;
+  border-color: $color-primary-blue;
+  font-family: $font-family-sans-serif;
+  color: $color-white;
+  font-weight: 700;
+  font-size: rem(14);
+  padding: rem(12) rem(18);
+  border-radius: $border-radius-sm;
+}
+
+/*--------------------------------------------------------------
+# NEW: Detail Cards (for Imagistica)
+--------------------------------------------------------------*/
+.card-detail {
+  background: $color-white;
+  box-shadow: $shadow-card;
+  border-radius: $border-radius-lg;
+  padding: rem(24);
+  height: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    margin-bottom: rem(16);
+  }
+  &__icon {
+    font-size: rem(24);
+    color: $color-primary-blue;
+    flex-shrink: 0;
+  }
+  &__title {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: rem(18);
+    color: $color-text-dark;
+    margin: 0;
+  }
+  &__text {
+    font-family: $font-family-sans-serif;
+    font-size: rem(15);
+    line-height: 1.6;
+    color: $color-text-dark;
+  }
+
+}

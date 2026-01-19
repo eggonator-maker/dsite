@@ -1,0 +1,23 @@
+uuid: 63476ce1-df9f-4b35-b2cf-508839b6216e
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - nord_bootstrap_sass
+id: nord_bootstrap_sass_sitebranding
+theme: nord_bootstrap_sass
+region: header_utility
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

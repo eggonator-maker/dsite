@@ -1,0 +1,19 @@
+uuid: b538ee08-ec1f-4ff6-9d13-4e9d22c0a411
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specialties
+    - node.type.doctor
+id: node.doctor.field_specialties
+field_name: field_specialties
+entity_type: node
+bundle: doctor
+label: specialties
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

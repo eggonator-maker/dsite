@@ -1,0 +1,29 @@
+@use "units" as *;
+
+/* Usage:
+   @include fluid-locked(font-size, 28px, 40px, 2560px);
+   @include fluid-locked(--gutter-x, 16px, 24px, 2560px);
+*/
+@mixin fluid-locked(
+  $prop,
+  $px375,
+  $px1440,
+  $cap-vw: 2560px,
+  $pxCap: null,
+  $vw-min: 375px,
+  $vw-ref: 1440px
+) {
+  $p375:  strip-unit($px375);
+  $p1440: strip-unit($px1440);
+  $vwMin: strip-unit($vw-min);
+  $vwRef: strip-unit($vw-ref);
+  $vwCap: strip-unit($cap-vw);
+
+  $m: calc(($p1440 - $p375) / ($vwRef - $vwMin));
+  $b: $p375 - $m * $vwMin;
+
+  @if $pxCap == null { $pxCap: $p1440 + $m * ($vwCap - $vwRef); }
+  @else { $pxCap: strip-unit($pxCap); }
+
+  #{$prop}: clamp(#{rem($p375)}, calc(#{$m * 100}vw + #{rem($b)}), #{rem($pxCap)});
+}

@@ -1,0 +1,25 @@
+uuid: 61c589ba-fd26-42c5-af0b-76d39877d3f7
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.utility-menu
+  module:
+    - system
+  theme:
+    - nord_bootstrap_sass
+id: nord_bootstrap_sass_utilitymenu
+theme: nord_bootstrap_sass
+region: header_utility
+weight: 0
+provider: null
+plugin: 'system_menu_block:utility-menu'
+settings:
+  id: 'system_menu_block:utility-menu'
+  label: 'Utility menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

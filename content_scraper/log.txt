@@ -1,0 +1,78 @@
+.venv) ivansukhletsov@192 content_scraper % python scrape.py
+Starting scraper on: https://nord.ro/medici/?specialitate=&nume=&locatie=Pite%C8%99ti
+Found 71 doctor profiles.
+Scraping profile: https://nord.ro/medici/dr-anghel-tiberiu/
+Scraping profile: https://nord.ro/medici/dr-petria-alina/
+Scraping profile: https://nord.ro/medici/prof-dr-marmandiu-razvan/
+Scraping profile: https://nord.ro/medici/dr-bajan-flavius/
+Scraping profile: https://nord.ro/medici/dr-ionescu-gabriela/
+Scraping profile: https://nord.ro/medici/dr-marcu-doina/
+Scraping profile: https://nord.ro/medici/dr-mirzacu-ramona/
+  Unmapped accordion found: 'section'
+Scraping profile: https://nord.ro/medici/dr-florea-silvia/
+Scraping profile: https://nord.ro/medici/dr-ogrean-carmen-alina/
+Scraping profile: https://nord.ro/medici/dr-diaconescu-georgiana/
+Scraping profile: https://nord.ro/medici/dr-gatita-codrut-emilian/
+Scraping profile: https://nord.ro/medici/dr-neacsu-petre-alin/
+Scraping profile: https://nord.ro/medici/dr-chirita-maria-magdalena/
+Scraping profile: https://nord.ro/medici/dr-azamfire-bogdan/
+Scraping profile: https://nord.ro/medici/dr-gaitan-andrei/
+Scraping profile: https://nord.ro/medici/dr-mihai-marian-alexandru/
+Scraping profile: https://nord.ro/medici/dr-dragnea-camelia/
+Scraping profile: https://nord.ro/medici/dr-petrescu-bogdan/
+Scraping profile: https://nord.ro/medici/dr-pahontu-marius/
+Scraping profile: https://nord.ro/medici/dr-nedelcu-luminita/
+Scraping profile: https://nord.ro/medici/dr-matei-simona/
+Scraping profile: https://nord.ro/medici/dr-popescu-radu/
+Scraping profile: https://nord.ro/medici/dr-matei-alexandra-2/
+Scraping profile: https://nord.ro/medici/dr-nedelea-cristina/
+Scraping profile: https://nord.ro/medici/dr-stoica-paula/
+Scraping profile: https://nord.ro/medici/dr-poenita-monica/
+Scraping profile: https://nord.ro/medici/dr-barabancia-romete-simona/
+Scraping profile: https://nord.ro/medici/dr-ursescu-diana/
+Scraping profile: https://nord.ro/medici/dr-dolofan-oana-claudia/
+Scraping profile: https://nord.ro/medici/dr-stancu-ana-maria/
+Scraping profile: https://nord.ro/medici/dr-mihaila-adrian/
+Scraping profile: https://nord.ro/medici/dr-guita-alexandru-gigel/
+Scraping profile: https://nord.ro/medici/psih-dragan-codruta/
+Scraping profile: https://nord.ro/medici/dr-tase-adrian/
+Scraping profile: https://nord.ro/medici/dr-constantin-andreea-poliana/
+Scraping profile: https://nord.ro/medici/dr-gliga-silvia/
+Scraping profile: https://nord.ro/medici/dr-babalac-dumitrache-robert/
+Scraping profile: https://nord.ro/medici/dr-cirlan-alexandru-constantin/
+Scraping profile: https://nord.ro/medici/dr-tudorovic-petar/
+Scraping profile: https://nord.ro/medici/dr-todorovic-teodora-adela/
+Scraping profile: https://nord.ro/medici/dr-florea-marius-daniel/
+Scraping profile: https://nord.ro/medici/dr-ionescu-loredana/
+Scraping profile: https://nord.ro/medici/dr-diaconu-bogdan/
+Scraping profile: https://nord.ro/medici/dr-stanica-gabriel/
+Scraping profile: https://nord.ro/medici/dr-popa-theodor/
+Scraping profile: https://nord.ro/medici/dr-paun-cazia/
+Scraping profile: https://nord.ro/medici/dr-iordache-madalina/
+Scraping profile: https://nord.ro/medici/dr-nurciu-mihai/
+Scraping profile: https://nord.ro/medici/dr-crasneanu-mugurel-alexandru/
+Scraping profile: https://nord.ro/medici/dr-simon-elena/
+Scraping profile: https://nord.ro/medici/dr-nitulescu-alexandru/
+  Unmapped accordion found: 'domenii de interes dr. nițulescu alexandru'
+Scraping profile: https://nord.ro/medici/dr-spiridon-lavinia/
+Scraping profile: https://nord.ro/medici/dr-neacsu-gabriela/
+Scraping profile: https://nord.ro/medici/dr-umar-shamin/
+Scraping profile: https://nord.ro/medici/dr-odukoya-cristiana/
+Scraping profile: https://nord.ro/medici/dr-mirancea-ana-iulia/
+Scraping profile: https://nord.ro/medici/dr-margaritescu-alexandru-cristian/
+Scraping profile: https://nord.ro/medici/dr-pavelescu-alexandra/
+Scraping profile: https://nord.ro/medici/dr-ogrean-marius/
+Scraping profile: https://nord.ro/medici/psih-gheorghe-cristina/
+Scraping profile: https://nord.ro/medici/dr-pavelescu-cristian/
+  Unmapped accordion found: 'lucrări publicate'
+Scraping profile: https://nord.ro/medici/dr-sandu-magdalena/
+Scraping profile: https://nord.ro/medici/prof-dr-barbu-cornelia/
+Scraping profile: https://nord.ro/medici/dr-dinca-eugenia/
+Scraping profile: https://nord.ro/medici/dr-bunea-ancuta-maria/
+Scraping profile: https://nord.ro/medici/dr-onila-alexandru-marius/
+Scraping profile: https://nord.ro/medici/dr-popov-viola/
+Scraping profile: https://nord.ro/medici/dr-ciopleasi-moise/
+Scraping profile: https://nord.ro/medici/dr-dulugeac-irina-alexandra/
+Scraping profile: https://nord.ro/medici/dr-constantin-marina-adina/
+Scraping profile: https://nord.ro/medici/dr-petrica-florin/
+Done! Scraped 71 doctors.

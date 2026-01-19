@@ -1,0 +1,135 @@
+/* scss/components/_hero-carousel.scss */
+@import "../helpers/units";
+@import "../helpers/fluid";
+
+.hero-carousel {
+  // This variable now correctly controls the DOWNWARD offset.
+  $hero-vertical-offset: rem(64);
+  
+  position: relative;
+
+  .carousel-item { position: relative; }
+
+  .hc__media { position: relative; }
+  .hc__img {
+    width: 100%; height: auto; display: block;
+    @include fluid-locked(min-height, 280px, 480px, 2560px);
+    object-fit: cover;
+  }
+
+  .hc__text {
+    position: static;
+    z-index: 1;
+    color: #0b1220;
+    background: transparent;
+    text-align: left;
+    @include fluid-locked(padding-top,    16px, 32px, 2560px);
+    @include fluid-locked(padding-bottom, 12px, 24px, 2560px);
+    @include fluid-locked(padding-left,   16px, 64px, 2560px);
+    @include fluid-locked(padding-right,  16px, 64px, 2560px);
+  }
+
+  .hc__title {
+    font-family: $font-montserrat;
+    font-weight: 800;
+    font-size: rem(48);
+    line-height: 1.2;
+    margin: 0 0 rem(16);
+  }
+
+  .hc__lead  {
+    font-size: rem(18);
+    line-height: 1.5;
+    margin: 0 0 rem(16);
+  }
+
+  /* Indicators */
+  .carousel-indicators {
+    position: absolute;
+    left: 50%;
+    // THE FIX: Remove vertical transform and adjust bottom position for mobile
+    transform: translateX(-50%);
+    bottom: rem(10);
+    margin: 0;
+    z-index: 4;
+
+    button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid #A9A9A9;
+      opacity: 1;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+
+  /* Controls */
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(48);
+    height: rem(48);
+    opacity: .9;
+    background: none;
+    z-index: 6;
+
+    .icon {
+        color: #2D2D2D;
+        filter: drop-shadow(0 0 rem(8) rgba(0,0,0,.4));
+    }
+  }
+  
+  .carousel-control-prev { left: rem(12); }
+  .carousel-control-next { right: rem(12); }
+
+
+  /* Desktop overlay styles */
+  @media (min-width: 992px) {
+    .hc__text {
+      position: absolute;
+      top: 50%;
+      left: rem(120);
+      transform: translateY(calc(-50% - #{$hero-vertical-offset}));
+      display: block;
+      box-sizing: border-box;
+      width: 617px;
+      height: 200px;
+      z-index: 5;
+      padding: 0 rem(64) 0 0;
+    }
+
+    .hc__title .text-secondary {
+      white-space: nowrap;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transform: translateY(calc(-50% - #{$hero-vertical-offset}));
+    }
+
+    // THE FIX: Restore the upward transform and original bottom position for desktop
+    .carousel-indicators {
+        transform: translateX(-50%) translateY(-#{$hero-vertical-offset});
+        bottom: rem(20);
+    }
+    
+    .carousel-item::before {
+      content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background: linear-gradient(90deg,
+      rgba(255,255,255, 1) 0%,
+        rgba(255,255,255, 1) 30%,
+        rgba(255,255,255,0) 75%,
+        rgba(255,255,255,0) 100%,
+        );
+
+    }
+  }
+}

@@ -1,0 +1,166 @@
+/* scss/components/_specialties-section.scss */
+
+.specialties-section {
+  background: $white;
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40);
+  overflow-x: clip;
+
+  &__header {
+    padding: 0 1rem;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: rem(40);
+    line-height: 1.2;
+    color: $primary;
+    margin: 0;
+  }
+
+  &__paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem(16);
+    text-align: left;
+    line-height: 1.5;
+    color: #2E333C;
+  }
+
+  &__nav-container {
+    position: relative;
+    width: 100%;
+    @media (min-width: 992px) {
+      max-width: 880px;
+    }
+  }
+
+  &__scroll-indicator {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 5;
+    color: $dark;
+    background: transparent;
+    
+    @media (min-width: 992px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    
+    &.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+    .icon { --icon-size: 14px; }
+
+    &--left {
+      left: rem(-40);
+    }
+
+    &--right {
+      right: rem(-40);
+    }
+  }
+  
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar { display: none; }
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    scroll-padding-left: 1rem;
+    scroll-padding-right: 1rem;
+
+    @media (min-width: 992px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .nav-link {
+      flex-shrink: 0;
+      border: none;
+      border-radius: 8px;
+      background: transparent;
+      color: #2E333C;
+      transition: all 0.2s ease;
+      font-family: 'Open Sans', sans-serif;
+      font-size: rem(16);
+      line-height: rem(24);
+      padding: rem(12) rem(16);
+      
+      &.active,
+      &:hover {
+        color: $white;
+        background: $secondary;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    margin-top: rem(32);
+  }
+  
+  .centers-section__footer {
+      text-align: center;
+      margin-top: 0;
+  }
+}
+
+// --- THE FIX: Consolidated and corrected styles ---
+.cards-scroller-padding {
+  // Base scroller properties
+  display: flex;
+  overflow-x: auto;
+  gap: rem(24);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  // Add padding to the right side so the last card isn't cut off
+  padding-right: rem(16);
+
+  // --- THE FIX ---
+  // Target the direct child of the scroller that is the first of its type
+  > :first-child {
+    // Mobile: 16px margin on the left
+    margin-left: rem(16);
+  }
+
+  @media (min-width: 992px) {
+    padding-right: rem(150);
+  
+    > :first-child {
+      // Desktop: 150px margin on the left
+      margin-left: rem(150);
+    }
+  }
+}

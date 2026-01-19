@@ -1,0 +1,28 @@
+uuid: f2a5a346-7cc1-415c-8b7b-2207e675058b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_carousel
+    - field.field.node.centers_service.field_center
+    - field.field.node.centers_service.field_menu_order
+    - field.field.node.centers_service.field_menu_title
+    - field.field.node.centers_service.field_service_category
+    - node.type.centers_service
+  module:
+    - user
+id: node.centers_service.card_carousel
+targetEntityType: node
+bundle: centers_service
+mode: card_carousel
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_center: true
+  field_menu_order: true
+  field_menu_title: true
+  field_service_category: true

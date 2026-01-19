@@ -1,0 +1,28 @@
+{% set classes = [
+  'card-item',
+  'card-item--cas',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if content.field_icon %}
+    <div class="card-item__icon">
+      {{ content.field_icon }}
+    </div>
+  {% endif %}
+  
+  <div class="card-item__content">
+    {% if content.field_title %}
+      <h3 class="card-item__title">{{ content.field_title|render|striptags }}</h3>
+    {% endif %}
+    
+    {% if content.field_description %}
+      <p class="card-item__text">{{ content.field_description|render|striptags }}</p>
+    {% endif %}
+  </div>
+  
+  {% if content.field_link %}
+    <a href="{{ content.field_link }}" class="card-item__link">
+      {{ content.field_button_text }}
+    </a>
+  {% endif %}
+</div>

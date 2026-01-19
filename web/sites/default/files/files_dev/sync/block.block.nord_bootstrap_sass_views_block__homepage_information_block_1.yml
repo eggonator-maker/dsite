@@ -1,0 +1,29 @@
+uuid: 1ef46613-de01-4760-8d0a-36c248eef994
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_information_block
+  module:
+    - system
+    - views
+  theme:
+    - nord_bootstrap_sass
+id: nord_bootstrap_sass_views_block__homepage_information_block_1
+theme: nord_bootstrap_sass
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:homepage_information_block-block_1'
+settings:
+  id: 'views_block:homepage_information_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

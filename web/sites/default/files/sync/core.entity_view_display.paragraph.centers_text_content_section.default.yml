@@ -1,0 +1,21 @@
+uuid: 31f93433-b70c-4f8f-80f0-68c5a3f7d6fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.centers_text_content_section.field_heading
+    - paragraphs.paragraphs_type.centers_text_content_section
+id: paragraph.centers_text_content_section.default
+targetEntityType: paragraph
+bundle: centers_text_content_section
+mode: default
+content:
+  field_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

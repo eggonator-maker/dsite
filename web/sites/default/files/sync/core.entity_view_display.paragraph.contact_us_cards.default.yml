@@ -1,0 +1,21 @@
+uuid: f0f39305-f081-4a37-8003-a28c66d46ad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_us_cards.field_block_ref
+    - paragraphs.paragraphs_type.contact_us_cards
+id: paragraph.contact_us_cards.default
+targetEntityType: paragraph
+bundle: contact_us_cards
+mode: default
+content:
+  field_block_ref:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

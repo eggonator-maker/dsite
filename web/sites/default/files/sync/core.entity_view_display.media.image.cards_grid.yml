@@ -1,0 +1,39 @@
+uuid: 398e2b6a-58fd-44ec-bc62-19cba67248e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.cards_grid
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.cards_grid
+targetEntityType: media
+bundle: image
+mode: cards_grid
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

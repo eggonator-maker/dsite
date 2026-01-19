@@ -1,0 +1,112 @@
+{# templates/partials/header.html.twig #}
+
+<header class="site-header">
+  
+  {# ============================================= #}
+  {# Desktop Header (Visible on 992px and up)      #}
+  {# ============================================= #}
+  <div class="d-none d-lg-block">
+    
+     {# Tier 1: Utility Bar #}
+    <div class="header-utility">
+      {# THE FIX: Added the 'header__container' class to this div #}
+      <div class="header__container container d-flex justify-content-between align-items-center">
+        
+        {# Logo is now the first item, so it will be on the left #}
+        <a href="/" class="header-logo">
+          <img src="/{{ directory }}/images/logo_nord.svg" alt="{{ site_name }} logo">
+        </a>
+
+        {# This div groups the right-aligned links #}
+        <div class="d-flex align-items-center gap-4">
+          <a href="#" class="header-link">Contact</a>
+          <a href="tel:0248948" class="header-link d-inline-flex align-items-center gap-2">
+  
+           <span class="icon icon-phone icon--md text-danger"></span>
+            <span class="fw-bold text-danger">0248 948</span>
+          </a>
+          <a href="#" class="header-link d-inline-flex align-items-center gap-2">
+            <span class="icon icon-lab icon--md"></span>
+            <span>Rezultate analize</span>
+          </a>
+        
+           <a href="/user" class="header-link d-inline-flex align-items-center gap-2">
+            <span class="icon icon-profile icon--md"></span>
+            <span>Intră în cont</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    {# Tier 2: Main Navigation (sticky-top class removed) #}
+    <nav id="header-top" class="header-main bg-white">
+      {# Added 'header__container' class for custom padding #}
+      <div class="header__container container d-flex justify-content-between align-items-center">
+        <ul class="main-nav d-flex align-items-center gap-4">
+          <li><a class="nav-link" href="/" data-nav-item="home">Spitalul Muntenia</a></li>
+          <li><a class="nav-link" href="/specialities" data-nav-item="specialities">Specialitati</a></li>
+          <li><a class="nav-link" href="/doctors" data-nav-item="doctors">Medici</a></li>
+          <li><a class="nav-link" href="/centers" data-nav-item="centers">Centre medicale</a></li>
+          <li><a class="nav-link" href="#" data-nav-item="packages">Pachete si preturi</a></li>
+        </ul>
+  
+               <div class="d-flex align-items-center gap-3">
+          <form class="search-box">
+            <span class="icon icon-search"></span>
+            <input type="search" class="search-box__input" placeholder="Caută">
+          </form>
+          <a href="#" class="btn btn-danger">Programează-te acum</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  {# ============================================= #}
+  {# Mobile Header (Visible below 992px)           #}
+  {# ============================================= #}
+  <div class="mobile-header d-lg-none">
+    <a href="/" class="navbar-brand">
+      <img src="/{{ directory }}/images/logo_nord.svg" alt="{{ site_name }} logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+</header>
+
+{# ============================================= #}
+{# Mobile Offcanvas Menu                         #}
+{# ============================================= #}
+<div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <a href="/" class="navbar-brand">
+      <img src="/{{ directory }}/images/logo_nord.svg" alt="{{ site_name }} logo">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-utility-nav">
+      <li><a href="tel:0248948"><span class="icon icon-phone icon--md text-danger"></span> 0248 948</a></li>
+      <li><a href="#"><span class="icon icon-lab icon--md"></span> Rezultate</a></li>
+      <li><a href="/user"><span class="icon icon-profile icon--md"></span> Cont</a></li>
+    </ul>
+
+    <form class="search-box">
+      
+ <span class="icon icon-search"></span>
+      <input type="search" class="search-box__input" placeholder="Caută">
+    </form>
+
+    {# Simple list for static mobile nav.
+ Replace with accordion for dropdowns. #}
+    <ul class="mobile-main-nav">
+      <li><a href="#">Spitalul Muntenia</a></li>
+      <li><a href="/specialities">Specialitati</a></li>
+      <li><a href="/doctors">Specialitati</a></li>
+
+      {# ... add other links here ... #}
+    </ul>
+  </div>
+</div>

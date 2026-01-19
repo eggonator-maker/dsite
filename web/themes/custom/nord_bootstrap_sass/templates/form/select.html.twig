@@ -1,0 +1,5 @@
+<select{{ attributes.addClass('form-control', 'custom-select') }}>
+  {% for option in options %}
+    <option value="{{ option.value }}"{{ option.selected ? ' selected' }}>{{ option.label }}</option>
+  {% endfor %}
+</select>

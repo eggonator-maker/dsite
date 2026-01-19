@@ -1,0 +1,9 @@
+{% set overlap = paragraph.field_overlap.value ?? false %}
+{% set section_classes = [
+  'variable-cards-section',
+  overlap ? 'variable-cards-section--overlap' : ''
+] %}
+
+<div class="{{ section_classes|join(' ')|trim }}">
+  {{ content.field_simple_cards }}
+</div>

@@ -1,0 +1,10 @@
+uuid: 9ed5406f-bab8-4e92-8ccb-ade8ecc613de
+langcode: en
+status: true
+dependencies: {  }
+id: centers_description_image
+label: 'Centers Description Image'
+icon_uuid: null
+icon_default: null
+description: 'Image that is present in Centers description blocks (including about the center, service pages and centers doctors page).'
+behavior_plugins: {  }

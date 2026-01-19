@@ -1,0 +1,22 @@
+<section class="{{ paragraph.field_banner_style.0.value == 'tall' ? 'hero-simple--tall' : '' }} hero-simple">
+    {{ content.field_mobile_background| add_class("hero-simple__bg-mobile") }}
+    {{ content.field_desktop_background| add_class("hero-simple__bg-desktop") }}
+    
+    <div class="hero-simple__content-parent {{ paragraph.field_action_buttons_layout.0.value == 'vertical' ? 'hero-simple__content-parent--vertical' : '' }}">
+        <div class="hero-simple__content">
+            {% if content.field_formatted_title %}
+                {{ content.field_formatted_title| add_class("hero-simple__title")}}
+            {% endif %}
+            
+            {% if content.field_formatted_subtitle %}
+                {{ content.field_formatted_subtitle| add_class("hero-simple__lead")}}
+            {% endif %}
+        </div>
+
+        {% if content.field_action_buttons %}
+            <div class="hero-simple__actions {{ paragraph.field_action_buttons_layout.0.value == 'vertical' ? 'hero-simple__actions--vertical' : '' }}">
+                {{ content.field_action_buttons }}
+            </div>
+        {% endif %}
+    </div>
+</section>

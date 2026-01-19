@@ -1,0 +1,10 @@
+uuid: 0bd79396-7cd5-44e8-b571-bac3a948e8ee
+langcode: en
+status: true
+dependencies: {  }
+id: cs_card_paragraph
+label: 'CS Card Paragraph'
+icon_uuid: null
+icon_default: null
+description: 'Paragraph to be added within the cards'
+behavior_plugins: {  }

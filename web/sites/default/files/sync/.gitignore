@@ -1,0 +1,101 @@
+# Ignore paths that contain user-generated content, for both Drupal and Wordpress.
+/sites/*/files
+/sites/*/private
+/files/*
+/cache
+/wp-content/uploads
+/wp-content/updraft/
+/wp-content/updraftplus/
+/wp-content/backup-db/
+/wp-content/managewp/backups/
+/wp-content/backupwordpress-*/
+/wp-content/wpvividbackups
+/wp-content/ai1wm-backups
+/wp-content/backups-dup-pro
+/wp-content/plugins/all-in-one-wp-migration
+/wp-snapshots
+/web/sites/*/files
+/web/sites/*/private
+/web/files/*
+/web/cache
+/web/wp-content/uploads
+/web/wp-content/updraft/
+/web/wp-content/backup-db/
+/web/wp-content/managewp/backups/
+/web/wp-content/backupwordpress-*/
+/web/wp-snapshots
+/web/wp-content/ai1wm-backups
+/web/wp-content/backups-dup-pro
+.xcloner-*
+
+# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
+/sites/default/**/files
+/sites/default/**/private
+/web/sites/default/**/files
+/web/sites/default/**/private
+
+# Packing #
+############
+*.7z
+*.jar
+*.rar
+*.tar
+*.zip
+*.gz
+*.bzip
+*.bz2
+*.xz
+*.lzma
+*.dmg
+*.iso
+*.tgz
+*.gem
+*.egg
+*.deb
+*.rpm
+
+# SVN #
+#######
+*.svn-base
+.svn
+
+# Bazaar #
+##########
+*.bzr
+
+# Mecurial #
+############
+/.hg/*
+*/.hg/*
+.hgignore
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.mysql
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+thumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+.*.sw[a-z]
+
+# SASS #
+##########
+.sass-cache
+
+# CVS #
+#######
+/CVS/*
+*/CVS/*
+.cvsignore
+*/.cvsignore

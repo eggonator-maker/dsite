@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme override for the image formatter used in cs-card view mode.
+ *
+ * Fixed height responsive image with center cropping.
+ *
+ * Available variables:
+ * - image: The image item.
+ * - image_style: The image style.
+ * - url: The URL for the image link.
+ */
+#}
+{% if url %}
+  <a href="{{ url }}">
+{% endif %}
+
+{% if image_style %}
+  {{ image_style }}
+{% else %}
+  <img src="{{ image.uri }}" class="img-fluid rounded cs-card-image" alt="{{ image.alt }}" loading="lazy">
+{% endif %}
+
+{% if url %}
+  </a>
+{% endif %}

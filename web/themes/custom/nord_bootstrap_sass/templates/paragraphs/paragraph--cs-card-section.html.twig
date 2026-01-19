@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Theme override for a cs-card-section paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+
+  {# Main Content Section #}
+  {% if content.field_title or content.field_subtitle or content.field_card_image or content.field_card_sections %}
+    <div class="card-block article-content">
+      <div>
+      {# Title #}
+      {% if content.field_title %}
+        <h1 class="section-title">{{ content.field_title }}</h1>
+      {% endif %}
+
+      {% if content.field_subtitle %}
+        <h2 class="section-subtitle">{{ content.field_subtitle }}</h2>
+      {% endif %}
+      </div>
+      {# Image #}
+      {% if content.field_card_image %}
+        <div class="card-image">
+          {{ content.field_card_image }}
+        </div>
+      {% endif %}
+      
+      {# Subtitle #}
+      
+      {# Card Sections (nested paragraphs with text content) #}
+      {% if content.field_card_sections %}
+        {{ content.field_card_sections }}
+      {% endif %}
+        
+      </div>
+    {% endif %}
+    
+

@@ -1,0 +1,140 @@
+uuid: ee513223-5aaa-423a-a96c-44914abb6303
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.para_block
+    - core.entity_view_display.taxonomy_term.specialities.default
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.specialities
+  module:
+    - block_content
+    - contextual
+    - file
+    - filter
+    - layout_builder
+    - media
+    - node
+    - paragraphs_type_permissions
+    - path
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access block library'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'change own username'
+  - 'configure all specialities taxonomy_term layout overrides'
+  - 'configure editable specialities taxonomy_term layout overrides'
+  - 'create and edit custom blocks'
+  - 'create article content'
+  - 'create audio media'
+  - 'create basic block content'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create page content'
+  - 'create para_block block content'
+  - 'create paragraph content cs_card_paragraph'
+  - 'create paragraph content cs_card_section'
+  - 'create paragraph content cs_faq'
+  - 'create paragraph content question_and_answer'
+  - 'create remote_video media'
+  - 'create terms in specialities'
+  - 'create url aliases'
+  - 'create video media'
+  - 'delete any audio media'
+  - 'delete any audio media revisions'
+  - 'delete any document media'
+  - 'delete any document media revisions'
+  - 'delete any image media'
+  - 'delete any image media revisions'
+  - 'delete any media'
+  - 'delete any para_block block content'
+  - 'delete any para_block block content revisions'
+  - 'delete any remote_video media'
+  - 'delete any remote_video media revisions'
+  - 'delete any video media'
+  - 'delete any video media revisions'
+  - 'delete article revisions'
+  - 'delete media'
+  - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'delete page revisions'
+  - 'delete paragraph content cs_card_paragraph'
+  - 'delete paragraph content cs_card_section'
+  - 'delete paragraph content cs_faq'
+  - 'delete paragraph content question_and_answer'
+  - 'delete term revisions in specialities'
+  - 'delete terms in specialities'
+  - 'edit any audio media'
+  - 'edit any basic block content'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any para_block block content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'edit terms in specialities'
+  - 'revert all revisions'
+  - 'revert term revisions in specialities'
+  - 'update any media'
+  - 'update media'
+  - 'update paragraph content cs_card_paragraph'
+  - 'update paragraph content cs_card_section'
+  - 'update paragraph content cs_faq'
+  - 'update paragraph content question_and_answer'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view any audio media revisions'
+  - 'view any basic block content history'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any para_block block content history'
+  - 'view any remote_video media revisions'
+  - 'view any video media revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view paragraph content cs_card_paragraph'
+  - 'view paragraph content cs_card_section'
+  - 'view paragraph content cs_faq'
+  - 'view paragraph content question_and_answer'
+  - 'view term revisions in specialities'
+  - 'view the administration theme'

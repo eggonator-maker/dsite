@@ -1,0 +1,11 @@
+uuid: 8455d45e-464a-462f-bb16-8ee5c8ed2bb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.cards_grid
+label: 'Cards Grid'
+description: 'Doctors Cards Grid'
+targetEntityType: node
+cache: true

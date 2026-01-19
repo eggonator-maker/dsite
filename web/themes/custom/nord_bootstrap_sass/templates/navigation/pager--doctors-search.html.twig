@@ -1,0 +1,75 @@
+{# pager--doctors-search.html.twig #}
+{# Custom pager template for Doctors Search - Figma Design #}
+
+{% if items %}
+  <nav class="doctors-pager" role="navigation" aria-label="{{ 'Pagination'|t }}">
+    <ul class="doctors-pager__list">
+
+      {# Previous page link #}
+      {% if items.previous %}
+        <li class="doctors-pager__item doctors-pager__item--prev">
+          <a href="{{ items.previous.href }}" title="{{ 'Go to previous page'|t }}" rel="prev" class="doctors-pager__link">
+            <span aria-hidden="true">&lt;</span>
+            <span class="visually-hidden">{{ 'Previous page'|t }}</span>
+          </a>
+        </li>
+      {% else %}
+        <li class="doctors-pager__item doctors-pager__item--prev doctors-pager__item--disabled">
+          <span class="doctors-pager__link">
+            <span aria-hidden="true">&lt;</span>
+          </span>
+        </li>
+      {% endif %}
+
+      {# Ellipsis before if needed #}
+      {% if ellipses.previous %}
+        <li class="doctors-pager__item doctors-pager__item--ellipsis">
+          <span class="doctors-pager__link">…</span>
+        </li>
+      {% endif %}
+
+      {# Page number links #}
+      {% for key, item in items.pages %}
+        {% if current == key %}
+          <li class="doctors-pager__item doctors-pager__item--active">
+            <span class="doctors-pager__link doctors-pager__link--current">
+              {{ key }}
+              <span class="visually-hidden">{{ 'Current page'|t }}</span>
+            </span>
+          </li>
+        {% else %}
+          <li class="doctors-pager__item">
+            <a href="{{ item.href }}" title="{{ 'Go to page @key'|t({'@key': key}) }}" class="doctors-pager__link">
+              {{ key }}
+              <span class="visually-hidden">{{ 'Page'|t }}</span>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+
+      {# Ellipsis after if needed #}
+      {% if ellipses.next %}
+        <li class="doctors-pager__item doctors-pager__item--ellipsis">
+          <span class="doctors-pager__link">…</span>
+        </li>
+      {% endif %}
+
+      {# Next page link #}
+      {% if items.next %}
+        <li class="doctors-pager__item doctors-pager__item--next">
+          <a href="{{ items.next.href }}" title="{{ 'Go to next page'|t }}" rel="next" class="doctors-pager__link">
+            <span aria-hidden="true">&gt;</span>
+            <span class="visually-hidden">{{ 'Next page'|t }}</span>
+          </a>
+        </li>
+      {% else %}
+        <li class="doctors-pager__item doctors-pager__item--next doctors-pager__item--disabled">
+          <span class="doctors-pager__link">
+            <span aria-hidden="true">&gt;</span>
+          </span>
+        </li>
+      {% endif %}
+
+    </ul>
+  </nav>
+{% endif %}

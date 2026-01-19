@@ -1,0 +1,19 @@
+uuid: b1947eb5-8a8e-48fa-937f-846ce010446a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.cs_card_section
+id: paragraph.cs_card_section.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: cs_card_section
+label: Subtitle
+description: 'This is the subtitle for the main CS card section, (Spitalul NORD Muntenia Pitești) within the example'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

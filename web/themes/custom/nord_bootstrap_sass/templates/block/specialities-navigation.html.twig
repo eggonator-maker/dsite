@@ -1,0 +1,47 @@
+{#
+  @file
+  Navigation for the Speciality section.
+#}
+{% macro render_menu_items(items, menu_id) %}
+  {% import _self as self %}
+  <ul class="speciality-nav">
+    {% for item in items %}
+      {%
+        set li_classes = ['nav-item']
+      %}
+      {% if item.in_active_trail %}
+        {% set li_classes = li_classes|merge(['in-active-trail']) %}
+      {% endif %}
+      {% if item.is_active %}
+         {% set li_classes = li_classes|merge(['is-active']) %}
+      {% endif %}
+      
+      <li class="{{ li_classes|join(' ') }}">
+        <a 
+          href="{{ item.url }}" 
+          class="nav-link {{ item.is_active ? 'is-active' }}" 
+          data-ajax-link
+        >
+          {# --- THIS IS THE CRUCIAL CHANGE --- #}
+          <span class="nav-link__text">{{ item.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% import _self as self %}
+
+<nav classs="speciality-navigation" id="speciality-navigation-block" aria-label="Speciality services">
+  
+  <form class="search-box">
+    <span class="icon icon-search"></span>
+    <input type="search" class="search-box__input" placeholder="Caută specialități">
+  </form>
+  
+  <div class="speciality-nav__list-wrapper">
+    {% if items is not empty %}
+      {{ self.render_menu_items(items, 'main') }}
+    {% endif %}
+  </div>
+</nav>

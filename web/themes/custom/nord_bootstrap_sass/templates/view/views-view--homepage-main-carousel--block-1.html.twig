@@ -1,0 +1,132 @@
+{# templates/views-view--homepage-main-carousel--block-1.html.twig #}
+<div id="heroCarousel" class="d-flex flex-nowrap overflow-auto carousel slide hero-carousel" data-bs-ride="false" aria-label="Featured" role="region">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="hc__text">
+        <h1 class="hc__title">
+         <span class="text-primary">Grijă.
+ Respect.</span>
+         {# THE FIX: Removed the 'text-nowrap' class #}
+         <span class="text-secondary">Excelență medicală.</span></h1>
+        <p class="hc__lead">
+        La Spitalul Nord Muntenia, sănătatea dvs.
+ este prioritatea noastră. 
+        Cu o echipă dedicată de medici, asistente și specialiști, 
+        oferim îngrijire medicală la cele mai înalte standarde, într-un mediu sigur, modern și empatic.
+ </p>
+      </div>
+
+      <div class="hc__media">
+        <picture>
+          <source media="(min-width: 992px)"
+                  srcset="{{ directory }}/images/homepage_main_carousel_1.png 1440w"
+                  sizes="100vw">
+          <img src="{{ directory }}/images/homepage_main_carousel_1.png" 
+ class="hc__img" 
+ alt="Describe the slide">
+        </picture>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous">
+          <span class="icon icon-chevron-left icon--sm" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next">
+          
+          <span class="icon icon-chevron-right icon--sm" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="hc__text">
+        <h2 class="hc__title text-nowrap">Your big headline 2</h2>
+        <p class="hc__lead">Short supporting line that stays readable.
+ 2</p>
+        </div>
+
+      <div class="hc__media">
+        <picture>
+          <source media="(min-width: 992px)"
+                  srcset="{{ directory }}/images/homepage_main_carousel_1.png 1440w"
+                  sizes="100vw">
+          <img src="{{ 
+ directory }}/images/homepage_main_carousel_1.png" 
+ class="hc__img" alt="Describe the slide">
+        </picture>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous">
+          <span class="icon icon-chevron-left icon--sm" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next">
+          <span class="icon icon-chevron-right icon--sm" aria-hidden="true"></span>
+   <span class="visually-hidden">Next</span>
+        </button>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{# ... carousel HTML ... #}
+
+{# Info cards section is now part of this template #}
+<section class="info-cards-section container">
+  {# Card 1 #}
+  <article class="info-card">
+    <div class="info-card__icon">
+      <span class="icon icon-document icon--xxl text-secondary"></span>
+    </div>
+    <div class="info-card__text-block">
+      <h3 class="info-card__title">Spitalizare de zi</h3>
+      <p class="info-card__paragraph">
+        Pentru mici intervenţii, maxim 4 ore,(endoscopii, colonoscopie, eliminare mici formaţiuni)
+      </p>
+ 
+    </div>
+    <div class="info-card__action">
+      <a href="#">Afla mai multe</a>
+    </div>
+  </article>
+
+  {# Card 2 #}
+  <article class="info-card">
+    <div class="info-card__icon">
+      <span class="icon icon-document icon--xxl text-secondary"></span>
+    </div>
+    <div class="info-card__text-block">
+      <h3 class="info-card__title">Spitalizare de noapte</h3>
+      <p class="info-card__paragraph">
+        Implică minim o noapte cazare, depinde de intervenţie
+      </p>
+    </div>
+    
+ <div class="info-card__action">
+      <a href="#">Afla mai multe</a>
+    </div>
+  </article>
+
+  {# Card 3 #}
+  <article class="info-card">
+    <div class="info-card__icon">
+      <span class="icon icon-document icon--xxl text-secondary"></span>
+    </div>
+    <div class="info-card__text-block">
+      <h3 class="info-card__title">Programe naționale - CAS</h3>
+      <p class="info-card__paragraph">
+        Toate serviciile oferite sunt <br>decontate.
+ </p>
+    </div>
+    <div class="info-card__action">
+      <a href="#">Afla mai multe</a>
+    </div>
+  </article>
+</section>

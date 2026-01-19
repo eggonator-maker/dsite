@@ -1,0 +1,39 @@
+uuid: 9e91ba8c-4fa8-4e27-bdff-f5cc71c74918
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.doctors_profile
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.doctors_profile
+targetEntityType: media
+bundle: image
+mode: doctors_profile
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

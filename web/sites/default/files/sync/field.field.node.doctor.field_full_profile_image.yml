@@ -1,0 +1,29 @@
+uuid: 1483d434-db5d-41d3-b310-85d63dc2e6b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_profile_image
+    - media.type.image
+    - node.type.doctor
+id: node.doctor.field_full_profile_image
+field_name: field_full_profile_image
+entity_type: node
+bundle: doctor
+label: 'Full Profile Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

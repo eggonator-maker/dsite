@@ -1,0 +1,184 @@
+uuid: ede17983-9401-4fb6-ba87-43966bff0442
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.doctor.title
+    - field.field.node.doctor.field_about_doctor
+    - field.field.node.doctor.field_awards_distinctions
+    - field.field.node.doctor.field_card_image
+    - field.field.node.doctor.field_competencies
+    - field.field.node.doctor.field_conferences_seminars
+    - field.field.node.doctor.field_education_training
+    - field.field.node.doctor.field_external_id
+    - field.field.node.doctor.field_full_profile_image
+    - field.field.node.doctor.field_primary_speciality
+    - field.field.node.doctor.field_professional_experience
+    - node.type.doctor
+  module:
+    - node
+label: 'Doctors Import csv'
+id: doctors_import_csv
+description: ''
+help: ''
+import_period: -1
+import_period_per_feed: false
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: doctor
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_primary_speciality:
+    value: field_primary_speciality
+    label: field_primary_speciality
+    machine_name: field_primary_speciality
+    type: csv
+  field_competencies:
+    value: field_competencies
+    label: field_competencies
+    machine_name: field_competencies
+    type: csv
+  field_about_doctor:
+    value: field_about_doctor
+    label: field_about_doctor
+    machine_name: field_about_doctor
+    type: csv
+  field_image:
+    value: field_image
+    label: field_image
+    machine_name: field_image
+    type: csv
+  field_professional_experience:
+    value: field_professional_experience
+    label: field_professional_experience
+    machine_name: field_professional_experience
+    type: csv
+  field_education_training:
+    value: field_education_training
+    label: field_education_training
+    machine_name: field_education_training
+    type: csv
+  field_conferences_seminars:
+    value: field_conferences_seminars
+    label: field_conferences_seminars
+    machine_name: field_conferences_seminars
+    type: csv
+  field_awards_distinctions:
+    value: field_awards_distinctions
+    label: field_awards_distinctions
+    machine_name: field_awards_distinctions
+    type: csv
+  field_original_url:
+    value: field_original_url
+    label: field_original_url
+    machine_name: field_original_url
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: field_primary_speciality
+    map:
+      value: field_primary_speciality
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_competencies
+    map:
+      value: field_competencies
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_about_doctor
+    map:
+      value: field_about_doctor
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_card_image
+    map:
+      target_id: field_image
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      autocreate_bundle: image
+  -
+    target: field_full_profile_image
+    map:
+      target_id: field_image
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      autocreate_bundle: image
+  -
+    target: field_professional_experience
+    map:
+      value: field_professional_experience
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_education_training
+    map:
+      value: field_education_training
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_conferences_seminars
+    map:
+      value: field_conferences_seminars
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_awards_distinctions
+    map:
+      value: field_awards_distinctions
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_external_id
+    map:
+      value: field_original_url
+    settings:
+      language: null
+    unique: {  }

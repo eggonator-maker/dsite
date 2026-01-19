@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Theme override for Views - Doctors Search Page.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A CSS-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the view content.
+ * - attachment_after: An optional attachment view to be displayed after the view content.
+ * - dom_id: Unique id for every view being printed to give unique class for JavaScript.
+ *
+ * @see template_preprocess_views_view()
+ */
+#}
+
+{# 
+  IMPORTANT: The outer wrapper MUST have the js-view-dom-id-{{ dom_id }} class
+  for AJAX to work properly. This class is used by Drupal to identify which 
+  part of the DOM to replace after an AJAX request.
+#}
+<div{{ attributes.addClass('js-view-dom-id-' ~ dom_id) }}>
+  <div class="doctors-search-page">
+    <div class="doctors-search-container">
+
+      {# Search Filters - Exposed Form #}
+      {% if exposed %}
+        <div class="doctors-search-filters">
+          {{ exposed }}
+        </div>
+      {% endif %}
+
+      {# "Toti medicii" Heading #}
+      <h2 class="doctors-search-title">Toti medicii</h2>
+
+      {# Doctor Cards Results #}
+      <div class="doctors-search-results">
+        {% if rows %}
+          {{ rows }}
+        {% elseif empty %}
+          <div class="doctors-search-empty">
+            {{ empty }}
+          </div>
+        {% endif %}
+      </div>
+
+      {# Pagination #}
+      {% if pager %}
+        <div class="doctors-search-pager">
+          {{ pager }}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div>

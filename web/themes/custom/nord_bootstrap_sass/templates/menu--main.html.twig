@@ -1,0 +1,19 @@
+{# Renders the "Main navigation" menu with Bootstrap classes #}
+{% set nav_classes = ['navbar-nav','gap-lg-3'] %}
+<ul{{ attributes.addClass(nav_classes) }}>
+  {% for item in items %}
+    {% set item_classes = ['nav-item', item.in_active_trail ? 'active'] %}
+    <li{{ item.attributes.addClass(item_classes) }}>
+      <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+      {% if item.below %}
+        <ul class="dropdown-menu">
+          {% for sub in item.below %}
+            <li class="dropdown-item">
+              <a href="{{ sub.url }}">{{ sub.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

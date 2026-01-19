@@ -1,0 +1,22 @@
+uuid: a7e6f0f9-deac-4da3-bdfe-4c30aec84dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cs_card_paragraph.field_paragraph_body
+    - paragraphs.paragraphs_type.cs_card_paragraph
+  module:
+    - text
+id: paragraph.cs_card_paragraph.default
+targetEntityType: paragraph
+bundle: cs_card_paragraph
+mode: default
+content:
+  field_paragraph_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

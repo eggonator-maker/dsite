@@ -1,0 +1,48 @@
+uuid: a039cdf9-ff45-45d3-8021-555466e5a4d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.center
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6a890c71-310a-4b37-b4e2-d1aef422ace9:
+            uuid: 6a890c71-310a-4b37-b4e2-d1aef422ace9
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:center:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.center.default
+targetEntityType: taxonomy_term
+bundle: center
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

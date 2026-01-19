@@ -1,0 +1,11 @@
+uuid: bbdcd1bc-2b08-4134-b3fc-7c3f51920b11
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.cs_card
+label: 'CS Card'
+description: 'View mode for images within the Centers/specialities sections.'
+targetEntityType: media
+cache: true

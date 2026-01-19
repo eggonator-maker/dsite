@@ -1,0 +1,73 @@
+{# 
+   FILE: webform-submission-form--doctors-form.html.twig 
+   
+   NOTE: 
+   1. I removed <div class="appointment-form__container"> and <h2> 
+      because they are already in your outer 'webform--doctors-form.html.twig'.
+   2. I noticed in your debug output 'prenume' is a textarea. 
+      You should change that to a Textfield in the Webform UI structure.
+#}
+<form{{ attributes }} method="post" action="{{ url('<current>') }}">
+
+{# Row 1: Nume and Prenume #}
+<div class="form-row">
+    {{ form.elements.name }}
+  
+    {{ form.elements.prenume }}
+</div>
+
+{# Row 2: Email and Phone #}
+<div class="form-row">
+    {{ form.elements.e_mail }}
+  
+    {{ form.elements.telefon }}
+</div>
+
+{# Row 3: County and Location #}
+<div class="form-row">
+    {{ form.elements.judet }}
+  
+    {{ form.elements.locatie_programare }}
+</div>
+
+{# Row 4: Specialization and Doctor #}
+<div class="form-row">
+    {{ form.elements.specialitate }}
+  
+    {{ form.elements.medic }}
+</div>
+
+{# Details textarea #}
+  {{ form.elements.detalii_solicitare }}
+
+{# Checkboxes #}
+  {{ form.elements.termenii_si_conditiile }}
+
+  {{ form.elements.gdpr }}
+
+   <div class="form-actions-wrapper">
+    {# FIX: Use form.elements.actions instead of form.actions #}
+    {{ form.elements.actions }}
+  </div>
+
+  {# 
+     CRITICAL: 
+     Explicitly render the hidden identifiers. 
+     Without these, the form submission will silently fail.
+  #}
+  {{ form.form_build_id }}
+  {{ form.form_token }}
+  {{ form.form_id }}
+
+  {# 
+     Render anything else leftover (honeypots, CAPTCHA, etc.)
+     We exclude 'elements' (which contains the actions) and the hidden IDs we just printed.
+  #}
+  {{ form|without(
+      'elements', 
+      'form_build_id', 
+      'form_token', 
+      'form_id'
+    ) 
+  }}
+  </form>

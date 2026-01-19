@@ -1,0 +1,19 @@
+uuid: f4d0709f-4e33-461a-a45d-f648e9daba12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.centers_description_title
+id: paragraph.centers_description_title.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: centers_description_title
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

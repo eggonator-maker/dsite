@@ -1,0 +1,9 @@
+{% set style = paragraph.field_style.0.value ?? 'default' %}
+{% set paraclass = 'paragraph-button__' ~ style %}
+
+<a href="{{ content.field_link }}" class="{{ paraclass }}">
+    {% if paragraph.field_icon is not empty %}
+        {{ content.field_icon | add_class("paragraph-button__icon")}}
+    {% endif %}
+    <span>{{ content.field_button_text }}</span>
+</a>

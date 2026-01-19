@@ -1,0 +1,20 @@
+uuid: bde7e470-eb7a-4bf3-bfd4-e3c6aa32495b
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_menu_order
+field_name: field_menu_order
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

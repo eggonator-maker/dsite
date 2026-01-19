@@ -1,0 +1,76 @@
+{#
+/**
+ * @file
+ * Theme override for the Doctors Search exposed form.
+ * - Labels removed
+ * - Placeholder "Caută specialitate" for dropdown
+ * - Auto-submit on change (JS attached via .theme file)
+ *
+ * NOTE: This template is rendered INSIDE a <form> tag from form.html.twig
+ * Do NOT add another <form> tag here!
+ */
+#}
+
+<div class="doctors-search-form" data-drupal-selector="doctors-search-form">
+  <div class="doctors-search-form__wrapper">
+
+    {# Doctor Name Search Field - NO LABEL #}
+    <div class="doctors-search-form__field doctors-search-form__field--doctor-name">
+      <input
+        type="text"
+        id="edit-title"
+        name="{{ form.title['#name']|default('title') }}"
+        value="{{ form.title['#value']|default('') }}"
+        placeholder="Caută doctor"
+        class="doctors-search-form__input"
+        autocomplete="off"
+      />
+    </div>
+
+    {# Speciality Dropdown Field - NO LABEL, with placeholder #}
+    <div class="doctors-search-form__field doctors-search-form__field--speciality">
+      <select
+        id="edit-speciality"
+        name="{{ form.field_specialities_target_id['#name']|default('field_specialities_target_id') }}"
+        class="doctors-search-form__select"
+      >
+        {# Placeholder option - replaces "- Any -" #}
+        <option value="All" class="placeholder-option"{% if form.field_specialities_target_id['#value'] is empty or form.field_specialities_target_id['#value'] == 'All' %} selected{% endif %}>
+          Caută specialitate
+        </option>
+
+        {# Actual options from the form #}
+        {% if form.field_specialities_target_id['#options'] is defined %}
+          {% for key, option in form.field_specialities_target_id['#options'] %}
+            {# Skip the "All" or empty option since we replaced it above #}
+            {% if key != 'All' and key != '' and key != '_none' %}
+              {% if option is iterable and option.option is defined %}
+                {# Handle optgroup structure #}
+                {% for opt_key, opt_label in option.option %}
+                  <option value="{{ opt_key }}"{% if form.field_specialities_target_id['#value'] == opt_key %} selected{% endif %}>
+                    {{ opt_label }}
+                  </option>
+                {% endfor %}
+              {% else %}
+                {# Handle simple option #}
+                <option value="{{ key }}"{% if form.field_specialities_target_id['#value'] == key %} selected{% endif %}>
+                  {{ option }}
+                </option>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </select>
+    </div>
+
+    {# Hidden submit button - Required for AJAX to work #}
+    <div class="doctors-search-form__actions" style="position:absolute;left:-9999px;">
+      {{ form.actions }}
+    </div>
+
+  </div>
+
+  {# Render remaining hidden form elements (form_build_id, form_id, etc.) #}
+  {{ form|without('title', 'field_specialities_target_id', 'actions') }}
+
+</div>

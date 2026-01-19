@@ -1,0 +1,25 @@
+uuid: b5afefb4-77b6-44a2-a640-d3db21905bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_slide.field_slide_body_text
+    - paragraphs.paragraphs_type.hero_slide
+  module:
+    - text
+id: paragraph.hero_slide.default
+targetEntityType: paragraph
+bundle: hero_slide
+mode: default
+content:
+  field_slide_body_text:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

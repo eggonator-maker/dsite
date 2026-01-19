@@ -1,0 +1,42 @@
+uuid: 67e87bfd-09dc-428f-8c14-c386dc88830a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_carousel
+    - field.field.node.doctor.field_image
+    - field.field.node.doctor.field_specialties
+    - node.type.doctor
+  module:
+    - image
+    - user
+id: node.doctor.card_carousel
+targetEntityType: node
+bundle: doctor
+mode: card_carousel
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_specialties:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

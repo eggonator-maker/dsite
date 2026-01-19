@@ -1,0 +1,226 @@
+/*--------------------------------------------------------------
+# Taxonomy Filter Block - Doctor Cards
+--------------------------------------------------------------*/
+
+.taxonomy-filter-block {
+  // Inherits card-block styles from _centers-content-section.scss
+  
+
+  &__description {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: #2E333C;
+  }
+
+  // Horizontal Scroller Container
+  &__scroller {
+    display: flex;
+    overflow-x: auto;
+    gap: rem(16);
+    scroll-snap-type: x mandatory;
+
+    // Top/bottom padding to prevent clipping when cards move up on hover
+    padding: rem(8) 0;
+    margin: rem(-8) rem(-40);
+
+    // Smooth scrolling
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    // Hide scrollbar but keep functionality
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      // Mobile: match card-block's smaller padding
+      margin-left: rem(-24);
+      margin-right: rem(-24);
+    }
+  }
+
+  &__item {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+
+    // Add left padding to first item (scrollable)
+    &:first-child {
+      padding-left: rem(40);
+
+      @media (max-width: 768px) {
+        padding-left: rem(24);
+      }
+    }
+
+    // Add right padding to last item (scrollable)
+    &:last-child {
+      padding-right: rem(40);
+
+      @media (max-width: 768px) {
+        padding-right: rem(24);
+      }
+    }
+  }
+
+  &__empty {
+    padding: rem(32);
+    text-align: center;
+    color: #595959;
+    font-size: rem(16);
+  }
+}
+
+/*--------------------------------------------------------------
+# Doctor Card Component (Smaller cards for specialities)
+--------------------------------------------------------------*/
+
+.taxonomy-filter-block {
+  .doctor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: rem(16);
+    background: $color-white;
+    border-radius: 0 0 rem(12) rem(12);
+    width: rem(277.333);
+    height: rem(379); // Fixed height from Figma
+    flex-shrink: 0;
+    text-decoration: none;
+    position: relative;
+    overflow: visible; // Changed from hidden to allow shadow to show
+
+    // Base shadow (subtle)
+    box-shadow:
+      0px 12.522px 10.017px rgba(0, 124, 247, 0.04),
+      0px 6.65px 5.32px rgba(0, 124, 247, 0.03),
+      0px 2.767px 2.214px rgba(0, 124, 247, 0.02);
+
+    // Bottom border (initially subtle)
+    border-bottom: 4px solid #D3E9FF;
+
+    // Smooth transition for transform and border
+    transition: transform 0.3s ease, border-bottom-color 0.3s ease;
+
+    // CRITICAL: Prevent parent overflow clipping
+    // This ensures the shadow isn't cut off when the card moves up
+    transform: translateZ(0); // Force GPU acceleration
+    will-change: transform; // Optimize for animation
+
+    &:hover {
+      // Move card up smoothly
+      transform: translateY(rem(-8));
+
+      // Change bottom border to blue on hover
+      border-bottom-color: #007CF7;
+    }
+
+    // Image Container
+    &__image {
+      position: relative;
+      width: 100%;
+      height: rem(268);
+      border-radius: rem(12) rem(12) 0 0;
+      overflow: hidden;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+    }
+
+    // Content Container
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: rem(16);
+      padding: 0 rem(16) rem(16); // Top: 0, Sides: 16px, Bottom: 16px from Figma
+      width: 100%;
+    }
+
+    // Title Container
+    &__title-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: rem(4);
+    }
+
+    // Doctor Name
+    &__name {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: rem(20);
+      line-height: 1.2;
+      color: #262626; // neutrals-10
+      margin: 0;
+
+      // Handle long names gracefully
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    // Specialty/Position
+    &__specialty {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: rem(16);
+      line-height: 1.6875; // 27px / 16px
+      color: #595959; // neutrals-8
+      margin: 0;
+    }
+
+    // Additional info section (if needed)
+    &__info {
+      font-family: 'Open Sans', sans-serif;
+      font-size: rem(14);
+      line-height: 1.5;
+      color: #595959;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Responsive Adjustments
+--------------------------------------------------------------*/
+
+@media (max-width: 576px) {
+  .taxonomy-filter-block {
+    .doctor-card {
+      width: rem(261); // Mobile width from Figma
+      height: rem(384); // Fixed height for mobile from Figma
+    }
+
+    .doctor-card__image {
+      height: rem(269); // Mobile image height from Figma
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Accessibility & Focus States
+--------------------------------------------------------------*/
+
+.taxonomy-filter-block {
+  .doctor-card {
+    &:focus {
+      outline: 2px solid $color-primary-blue;
+      outline-offset: 2px;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-primary-blue;
+      outline-offset: 2px;
+    }
+  }
+}

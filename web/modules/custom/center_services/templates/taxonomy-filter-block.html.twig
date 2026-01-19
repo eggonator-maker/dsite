@@ -1,0 +1,25 @@
+<div class="taxonomy-filter-block card-block">
+  {% if block_title %}
+    <h1 class="section-title">{{ block_title }}</h1>
+  {% endif %}
+  
+  {% if description %}
+    <div class="section-subtitle">
+      {{ description|raw }}
+    </div>
+  {% endif %}
+
+  {% if nodes %}
+    <div class="taxonomy-filter-block__scroller">
+      {% for node in nodes %}
+        <div class="taxonomy-filter-block__item">
+          {{ node }}
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="taxonomy-filter-block__empty">
+      <p>{{ 'No content found matching the selected criteria.'|t }}</p>
+    </div>
+  {% endif %}
+</div>

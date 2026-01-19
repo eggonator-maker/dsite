@@ -1,0 +1,23 @@
+uuid: 2cb6065e-23b5-4d87-be46-13ce643e83d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_type
+    - node.type.centers_sub_page
+  module:
+    - options
+id: node.centers_sub_page.field_page_type
+field_name: field_page_type
+entity_type: node
+bundle: centers_sub_page
+label: 'page type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

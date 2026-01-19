@@ -1,0 +1,11 @@
+uuid: a576e7dd-e986-432b-a2df-89b02cf2b17f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.doctors_profile
+label: 'doctors profile'
+description: 407x264
+targetEntityType: media
+cache: true

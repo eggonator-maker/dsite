@@ -1,0 +1,284 @@
+/* scss/components/_hero-simple.scss */
+@import "../helpers/units";
+
+.hero-simple {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #DEDEDE;
+  overflow: hidden;
+
+  &--tall {
+    height: 480px;
+  
+    @media (min-width: 768px) {
+      height: 646px !important;
+    }
+  
+    @media (min-width: 992px) {
+      height: 646px !important;
+    }
+  }
+
+  // Mobile gradient overlay - from bottom-left
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+      linear-gradient(219.72deg, rgba(255, 255, 255, 0) 31.07%, #FFFFFF 57.87%),
+      linear-gradient(190.57deg, rgba(255, 255, 255, 0) 36.84%, rgba(255, 255, 255, 0.85) 53.52%, #FFFFFF 83.36%);
+    z-index: 1;
+  }
+
+  // ======================
+  // Content Parent
+  // ======================
+  &__content-parent {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: rem(16);
+    bottom: rem(40);
+    gap: rem(30); // Default horizontal mode gap
+  
+    // Vertical layout variant
+    &--vertical {
+      gap: rem(28); // Mobile gap for vertical
+      
+      @media (min-width: 768px) {
+        gap: rem(89); // Desktop gap for vertical
+      }
+    }
+  
+    @media (min-width: 768px) {
+      left: rem(60);
+      bottom: auto;
+      top: 158px;
+    }
+  
+    @media (min-width: 992px) {
+      left: rem(81);
+    }
+  }
+
+
+  // ======================
+  // CONTENT
+  // ======================
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: rem(16);
+    width: 343px;
+  
+    @media (min-width: 768px) {
+      gap: rem(24);
+      width: 500px;
+    }
+  
+    @media (min-width: 992px) {
+      width: 617px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    font-family: $font-montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: rem(28);
+    line-height: rem(34);
+    color: #2E333C;
+    margin: 0;
+
+    .text-blue {
+      color: #027FF7;
+    }
+    .text-dark-blue {
+      color: #0E296B;
+    }
+  }
+
+  &__lead {
+    width: 295px;
+    font-family: $font-open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: #2E333C;
+    margin: 0;
+  }
+
+
+  // ======================
+  // ACTIONS
+  // ======================
+
+  &__actions {
+    display: flex;
+    flex-direction: row; // Horizontal default
+    align-items: center;
+    padding: 0;
+    gap: rem(12);
+  
+    // Vertical variant stacks buttons
+    &--vertical {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    @media (min-width: 768px) {
+      flex-direction: row; // Always row on desktop
+      gap: rem(16);
+    }
+  }
+ 
+
+  // ======================
+  // TABLET STYLES (768px+)
+  // ======================
+
+  @media (min-width: 768px) {
+    height: 490px;
+
+    // Desktop gradient overlay - from LEFT side
+    &::before {
+      background:  linear-gradient(270.11deg, rgba(255, 255, 255, 0) 30.95%, rgba(255, 255, 255, 0.85) 47.09%, #FFFFFF 72.05%);
+    }
+
+    &__content {
+      gap: rem(24);
+      width: 500px;
+      left: rem(60);
+      bottom: auto;
+      top: 158px;
+      transform: none;
+    }
+
+    &__title {
+      font-size: rem(40);
+      line-height: rem(48);
+    }
+
+    &__lead {
+      width: 100%;
+      font-size: rem(18);
+      line-height: rem(24);
+    }
+
+  }
+
+  // ======================
+  // DESKTOP STYLES (992px+)
+  // ======================
+
+  @media (min-width: 992px) {
+    width: 100%;
+    max-width: 1440px;
+    height: 490px;
+    margin: 0 auto;
+
+    // Desktop gradient overlay - from LEFT
+    &::before {
+      background:  linear-gradient(270.11deg, rgba(255, 255, 255, 0) 30.95%, rgba(255, 255, 255, 0.85) 47.09%, #FFFFFF 72.05%);
+    }
+
+    &__content {
+      gap: rem(24);
+      width: 617px;
+      left: rem(81);
+      top: 158px;
+      transform: none;
+    }
+
+    &__title {
+      width: 617px;
+      font-size: rem(48);
+      line-height: rem(57);
+    }
+
+    &__lead {
+      width: 542px;
+      font-size: rem(18);
+      line-height: rem(24);
+    }
+
+  }
+
+  // ======================
+  // VARIANT: NO ACTIONS
+  // ======================
+
+  &--no-actions {
+    .hero-simple__actions {
+      display: none;
+    }
+
+    .hero-simple__content {
+      bottom: rem(80);
+    }
+
+    @media (min-width: 768px) {
+      .hero-simple__content {
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .hero-simple__content {
+        top: 50%;
+        left: rem(81);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+&__bg-mobile,
+&__bg-desktop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  
+  // Force all wrapper divs to fill
+  > * {
+    height: 100%;
+    width: 100%;
+  }
+  
+  // Target img no matter how deep
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+    &__bg-desktop {
+    display: none;
+    }
+
+    @media (min-width: 768px) {
+    &__bg-mobile {
+        display: none;
+    }
+    
+    &__bg-desktop {
+        display: block;
+    }
+    }
+}

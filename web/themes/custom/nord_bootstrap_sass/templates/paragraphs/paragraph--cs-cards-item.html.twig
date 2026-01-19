@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Paragraph template: Card Item
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ *   - content.field_icon: Icon field (media or text/SVG)
+ *   - content.field_title: Title text
+ *   - content.field_text: Description text (optional)
+ *   - content.field_link: Link field (optional)
+ *
+ * Parent (card_grid) controls truncation via CSS custom properties:
+ *   --card-title-lines, --card-text-lines
+ *
+ * @see template_preprocess_paragraph()
+ */
+#}
+
+{% set classes = [
+  'card-item',
+] %}
+
+{% set link_url = content.field_link %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if content.field_icon  %}
+    <div class="card-item__icon">
+      {{ content.field_icon }}
+    </div>
+  {% endif %}
+  
+  <div class="card-item__content">
+    {% if content.field_title %}
+     {{ content.field_title | add_class("card-item__title") }}
+    {% endif %}
+    
+    {% if content.field_text  %}
+      {{ content.field_text | add_class("card-item__text")}}
+    {% endif %}
+  </div>
+  
+  {% if link_url %}
+    <a href="{{ link_url }}" class="card-item__link">Află detalii</a>
+  {% endif %}
+</div>

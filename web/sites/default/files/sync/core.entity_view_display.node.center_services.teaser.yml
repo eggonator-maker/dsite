@@ -1,0 +1,36 @@
+uuid: c298fbfe-93a8-45be-8d0d-189cc4b507fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.center_services.field_description
+    - field.field.node.center_services.field_image
+    - image.style.medium
+    - node.type.center_services
+  module:
+    - image
+    - user
+id: node.center_services.teaser
+targetEntityType: node
+bundle: center_services
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true

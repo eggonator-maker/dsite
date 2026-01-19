@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains center_services.module.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\Core\Form\FormStateInterface;
+/**
+ * Implements hook_theme().
+ */
+function center_services_theme($existing, $type, $theme, $path) {
+  return [
+    'center_navigation' => [
+      'variables' => ['items' => []],
+    ],
+    // ADD THIS NEW HOOK:
+    'specialities_navigation' => [
+      'variables' => ['items' => []],
+    ],
+    'taxonomy_filter_block' => [
+      'variables' => [
+        'block_title' => NULL,
+        'description' => NULL,
+        'nodes' => [],
+      ],
+    ],
+  ];
+}
+
+function center_services_webform_element_alter(array &$element, FormStateInterface $form_state, array $context) {
+  if ($element['#webform_key'] === 'medic') {
+    $route_match = \Drupal::routeMatch();
+    $node = $route_match->getParameter('node');
+    
+    if ($node && $node->bundle() === 'doctor') {
+      // Entity reference needs string
+      $element['#default_value'] = (string) $node->id();
+      $element['#disabled'] = TRUE;
+    }
+  }
+}

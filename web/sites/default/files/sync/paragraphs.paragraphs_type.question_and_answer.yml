@@ -1,0 +1,10 @@
+uuid: 94aeb9a2-6fc8-4cd7-af63-43ee34dcff5c
+langcode: en
+status: true
+dependencies: {  }
+id: question_and_answer
+label: 'Question and Answer'
+icon_uuid: null
+icon_default: null
+description: 'Question and Answer pair for FAQ accordian'
+behavior_plugins: {  }

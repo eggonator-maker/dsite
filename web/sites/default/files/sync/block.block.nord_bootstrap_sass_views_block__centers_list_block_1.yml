@@ -1,0 +1,29 @@
+uuid: 22400076-078e-4795-a17c-e01bf4c3df64
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.centers_list
+  module:
+    - system
+    - views
+  theme:
+    - nord_bootstrap_sass
+id: nord_bootstrap_sass_views_block__centers_list_block_1
+theme: nord_bootstrap_sass
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:centers_list-block_1'
+settings:
+  id: 'views_block:centers_list-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

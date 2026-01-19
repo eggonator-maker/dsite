@@ -1,0 +1,19 @@
+uuid: bec57798-79d3-408a-ba41-1aaf90528bfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cs_card_block
+    - field.storage.block_content.field_title
+id: block_content.cs_card_block.field_title
+field_name: field_title
+entity_type: block_content
+bundle: cs_card_block
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

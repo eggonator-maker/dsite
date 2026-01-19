@@ -1,0 +1,25 @@
+uuid: 9f9b0b08-01e0-4785-83aa-1655c160c379
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e633d7c4-e467-4946-9b6e-96866f9eff12'
+  module:
+    - block_content
+  theme:
+    - nord_bootstrap_sass
+id: nord_bootstrap_sass_contactcards
+theme: nord_bootstrap_sass
+region: none
+weight: 0
+provider: null
+plugin: 'block_content:e633d7c4-e467-4946-9b6e-96866f9eff12'
+settings:
+  id: 'block_content:e633d7c4-e467-4946-9b6e-96866f9eff12'
+  label: 'Contact Cards'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

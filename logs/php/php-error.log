@@ -1,0 +1,101 @@
+[28-Nov-2025 18:55:11 Europe/Moscow] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\ServiceUnavailableHttpException: "Image generation in progress. Try again shortly." at /code/web/core/modules/image/src/Controller/ImageStyleDownloadController.php line 218
+[28-Nov-2025 18:55:11 Europe/Moscow] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\ServiceUnavailableHttpException: "Image generation in progress. Try again shortly." at /code/web/core/modules/image/src/Controller/ImageStyleDownloadController.php line 218
+[29-Nov-2025 01:28:10 UTC] RuntimeException: Failed to start the session because headers have already been sent by "/code/vendor/symfony/http-foundation/Response.php" at line 404. in /code/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php on line 116 #0 /code/web/core/lib/Drupal/Core/Session/SessionManager.php(129): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#1 /code/web/core/lib/Drupal/Core/Session/SessionManager.php(94): Drupal\Core\Session\SessionManager->startNow()
+#2 /code/vendor/symfony/http-foundation/Session/Session.php(59): Drupal\Core\Session\SessionManager->start()
+#3 /code/web/core/lib/Drupal/Core/StackMiddleware/Session.php(81): Symfony\Component\HttpFoundation\Session\Session->start()
+#4 /code/web/core/lib/Drupal/Core/StackMiddleware/Session.php(50): Drupal\Core\StackMiddleware\Session->initializePersistentSession()
+#5 /code/web/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php(48): Drupal\Core\StackMiddleware\Session->handle()
+#6 /code/web/core/lib/Drupal/Core/StackMiddleware/ContentLength.php(28): Drupal\Core\StackMiddleware\KernelPreHandle->handle()
+#7 /code/web/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php(48): Drupal\Core\StackMiddleware\ContentLength->handle()
+#8 /code/web/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php(51): Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle()
+#9 /code/web/core/lib/Drupal/Core/StackMiddleware/AjaxPageState.php(53): Drupal\Core\StackMiddleware\NegotiationMiddleware->handle()
+#10 /code/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(51): Drupal\Core\StackMiddleware\AjaxPageState->handle()
+#11 /code/web/core/lib/Drupal/Core/DrupalKernel.php(715): Drupal\Core\StackMiddleware\StackedHttpKernel->handle()
+#12 /code/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#13 {main}
+[29-Nov-2025 20:28:00 Europe/Isle_of_Man] Uncaught PHP Exception TypeError: "count(): Argument #1 ($value) must be of type Countable|array, null given" at /code/web/core/modules/media_library/src/Form/FileUploadForm.php line 212
+[30-Nov-2025 13:31:22 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/vendor/drush/drush/drush.php(124): include('...')
+#2 /code/vendor/bin/drush.php(119): include('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:34:04 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/vendor/drush/drush/drush.php(124): include('...')
+#2 /code/vendor/bin/drush.php(119): include('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:34:06 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/vendor/drush/drush/drush.php(124): include('...')
+#2 /code/vendor/bin/drush.php(119): include('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:34:07 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/vendor/drush/drush/drush.php(124): include('...')
+#2 /code/vendor/bin/drush.php(119): include('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:34:10 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/vendor/drush/drush/drush.php(124): include('...')
+#2 /code/vendor/bin/drush.php(119): include('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:39:59 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/vendor/drush/drush/drush.php(124): include('...')
+#2 /code/vendor/bin/drush.php(119): include('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:45:55 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/web/autoload.php(15): require('...')
+#2 /code/web/index.php(14): require_once('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:45:56 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/web/autoload.php(15): require('...')
+#2 /code/web/index.php(14): require_once('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:45:57 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/web/autoload.php(15): require('...')
+#2 /code/web/index.php(14): require_once('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:45:58 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/web/autoload.php(15): require('...')
+#2 /code/web/index.php(14): require_once('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:45:58 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/web/autoload.php(15): require('...')
+#2 /code/web/index.php(14): require_once('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36
+[30-Nov-2025 13:46:16 UTC] PHP Fatal error:  Uncaught Error: Class "Composer\Autoload\ComposerStaticInit11a2fff5fd9d63e27486e9b0fbff1bdc" not found in /code/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /code/vendor/autoload.php(22): ComposerAutoloaderInit11a2fff5fd9d63e27486e9b0fbff1bdc::getLoader()
+#1 /code/web/autoload.php(15): require('...')
+#2 /code/web/index.php(14): require_once('...')
+#3 {main}
+  thrown in /code/vendor/composer/autoload_real.php on line 36

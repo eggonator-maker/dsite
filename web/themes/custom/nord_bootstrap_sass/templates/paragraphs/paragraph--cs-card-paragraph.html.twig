@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme override for a cs-card-paragraph paragraph.
+ *
+ * This paragraph type contains the body text content for cs-card-section.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  
+  {# Body Content #}
+  {% if content.field_paragraph_body %}
+    {{ content.field_paragraph_body }}
+  {% endif %}
+  
+</div>

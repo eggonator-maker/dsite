@@ -1,0 +1,11 @@
+uuid: c34bb096-1918-42bb-9ee4-1b283b340b4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.cards_grid
+label: 'Cards Grid'
+description: 'Cards grid (doctors, articles).'
+targetEntityType: media
+cache: true

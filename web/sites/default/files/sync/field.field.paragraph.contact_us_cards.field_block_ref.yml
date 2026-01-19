@@ -1,0 +1,23 @@
+uuid: 235e7a85-28f6-49d9-be6f-0cec2765d228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_ref
+    - paragraphs.paragraphs_type.contact_us_cards
+id: paragraph.contact_us_cards.field_block_ref
+field_name: field_block_ref
+entity_type: paragraph
+bundle: contact_us_cards
+label: 'block ref'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

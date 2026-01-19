@@ -1,0 +1,167 @@
+{# node--doctor.html.twig #}
+{% set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'clearfix',
+  'doctor-profile-page'
+] %}
+
+<article{{ attributes.addClass(classes) }}>
+
+  {# --- TOP HERO CARD SECTION --- #}
+  {# "doctor-hero" is the main Flex container now #}
+  <div class="doctor-hero">
+      
+      {# Left: Image #}
+      <div class="doctor-hero__image-wrapper">
+         {{ content.field_full_profile_image }} 
+      </div>
+
+      {# Right: Info & Actions #}
+      <div class="doctor-hero__content">
+        
+        <div class="doctor-hero__info">
+          {# Name #}
+          <h1 class="doctor-hero__name">{{ label }}</h1>
+          
+          {# Job Title / Primary Specialty #}
+          {% if content.field_primary_speciality %}
+            <div class="doctor-hero__title">
+              <span class="icon icon-healthicons-doctor-outline icon--md"></span>
+              {{ content.field_primary_speciality|render|striptags|trim }}
+            </div>
+          {% endif %}
+
+          {# Secondary Specialties List #}
+          {% if content.field_doctors_specialities %}
+            <div class="doctor-hero__specialties">
+              {{ content.field_doctors_specialities }}
+            </div>
+          {% endif %}
+        </div>
+
+        {# Action Buttons #}
+        <div class="doctor-hero__actions">
+          <a href="tel:0248948" class="btn btn-primary">
+              <span class="icon icon-ion-call icon--xsm"></span>
+              0248 948
+          </a>
+          <a href="{{ url }}" class="btn btn-outline-primary">
+              <span class="icon icon-outline-email icon--xsm"></span>
+              Programează-te
+          </a>
+        </div>
+
+      </div>
+  </div>
+  {# --- BOTTOM ACCORDION SECTION --- #}
+  {# We manually create accordion items for each field, checking if they have content #}
+  
+  <div class="accordion card-block" id="doctorProfileAccordion">
+
+    {# 1. Despre Medic (About) #}
+    {% if content.field_about_doctor|render|trim is not empty %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAbout">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="true" aria-controls="collapseAbout">
+            Despre medic
+          </button>
+        </h2>
+        <div id="collapseAbout" class="accordion-collapse collapse show" aria-labelledby="headingAbout" data-bs-parent="#doctorProfileAccordion">
+          <div class="accordion-body">
+            {{ content.field_about_doctor }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {# 2. Competente (Competencies) #}
+    {% if content.field_competencies|render|trim is not empty %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCompetencies">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompetencies" aria-expanded="false" aria-controls="collapseCompetencies">
+            Competente
+          </button>
+        </h2>
+        <div id="collapseCompetencies" class="accordion-collapse collapse" aria-labelledby="headingCompetencies" data-bs-parent="#doctorProfileAccordion">
+          <div class="accordion-body">
+            {{ content.field_competencies }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {# 3. Experienta profesionala (Professional Experience) #}
+    {% if content.field_professional_experience|render|trim is not empty %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingExperience">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience" aria-expanded="false" aria-controls="collapseExperience">
+            Experienta profesionala
+          </button>
+        </h2>
+        <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="headingExperience" data-bs-parent="#doctorProfileAccordion">
+          <div class="accordion-body">
+            {{ content.field_professional_experience }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {# 4. Educatie si formare (Education) #}
+    {% if content.field_education_training|render|trim is not empty %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEducation">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation">
+            Educatie si formare
+          </button>
+        </h2>
+        <div id="collapseEducation" class="accordion-collapse collapse" aria-labelledby="headingEducation" data-bs-parent="#doctorProfileAccordion">
+          <div class="accordion-body">
+            {{ content.field_education_training }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {# 5. Congrese si seminarii (Conferences) #}
+    {% if content.field_conferences_seminars|render|trim is not empty %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingConferences">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConferences" aria-expanded="false" aria-controls="collapseConferences">
+            Congrese si seminarii
+          </button>
+        </h2>
+        <div id="collapseConferences" class="accordion-collapse collapse" aria-labelledby="headingConferences" data-bs-parent="#doctorProfileAccordion">
+          <div class="accordion-body">
+            {{ content.field_conferences_seminars }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {# 6. Distinctii si premii (Awards) #}
+    {% if content.field_awards_distinctions|render|trim is not empty %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAwards">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAwards" aria-expanded="false" aria-controls="collapseAwards">
+            Distinctii si premii
+          </button>
+        </h2>
+        <div id="collapseAwards" class="accordion-collapse collapse" aria-labelledby="headingAwards" data-bs-parent="#doctorProfileAccordion">
+          <div class="accordion-body">
+            {{ content.field_awards_distinctions }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+
+</article>
+
+{{ drupal_entity('webform', 'doctors_form') }}
+

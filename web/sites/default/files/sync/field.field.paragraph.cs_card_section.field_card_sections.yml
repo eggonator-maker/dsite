@@ -1,0 +1,52 @@
+uuid: f2ed465a-3c03-4d69-a6d8-b1050e95e74c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_sections
+    - paragraphs.paragraphs_type.cs_card_paragraph
+    - paragraphs.paragraphs_type.cs_card_section
+  module:
+    - entity_reference_revisions
+id: paragraph.cs_card_section.field_card_sections
+field_name: field_card_sections
+entity_type: paragraph
+bundle: cs_card_section
+label: 'card sections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cs_card_paragraph: cs_card_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      centers_description_image:
+        weight: 10
+        enabled: false
+      centers_description_title:
+        weight: 11
+        enabled: false
+      centers_text_content_section:
+        weight: 12
+        enabled: false
+      cs_card_paragraph:
+        weight: 9
+        enabled: true
+      cs_card_section:
+        weight: 13
+        enabled: false
+      hero_slide:
+        weight: 14
+        enabled: false
+      hero_slider:
+        weight: 15
+        enabled: false
+      why_this_center_card:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

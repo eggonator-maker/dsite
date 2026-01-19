@@ -1,0 +1,65 @@
+{# templates/block/block--contact-form.html.twig #}
+
+<section class="consultation-form-section">
+  <div class="consultation-form__container">
+    <h2 class="consultation-form__title">Programează-te pentru o consultaţie</h2>
+
+    <form class="consultation-form">
+      
+      <div class="form-floating-group">
+        <input type="text" class="form-control" id="fullName" placeholder=" ">
+        <label for="fullName" class="form-label">Nume complet</label>
+      </div>
+      
+      <div class="form-floating-group">
+        <input type="email" class="form-control" id="email" placeholder=" ">
+        <label for="email" class="form-label">E-mail</label>
+      </div>
+      
+      <div class="form-floating-group">
+        <input type="tel" class="form-control" id="phone" placeholder=" ">
+        <label for="phone" class="form-label">Telefon</label>
+      </div>
+      
+      <div class="form-floating-group">
+        <input type="text" class="form-control" id="hospital" placeholder=" ">
+        <label for="hospital" class="form-label">Spital</label>
+      </div>
+      
+      <div class="form-floating-group custom-select-wrapper">
+        <select class="form-control custom-select" id="specialization">
+          <option selected>Urologie</option>
+          <option value="Cardiologie">Cardiologie</option>
+        </select>
+        <label for="specialization" class="form-label">Specializare</label>
+        <span class="icon icon-chevron-down custom-select-icon icon--sm"></span>
+      </div>
+      
+      <div class="form-floating-group custom-select-wrapper">
+        <select class="form-control custom-select" id="doctor">
+          <option selected>Dr. Albean Marius</option>
+          <option value="Dr. Popescu Ion">Dr. Popescu Ion</option>
+        </select>
+        <label for="doctor" class="form-label">Doctor</label>
+        <span class="icon icon-chevron-down custom-select-icon icon--sm"></span>
+      </div>
+      
+      {# Checkboxes remain the same #}
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="termsAndConditions">
+        <label class="form-check-label" for="termsAndConditions">
+          Am citit şi sunt de acord cu <a href="#">Termenii si Conditiile</a> şi <a href="#">Politica de confidentialitate</a> a Nord Muntenia Hospital
+        </label>
+      </div>
+      
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="marketingConsent">
+        <label class="form-check-label" for="marketingConsent">
+          Am citit şi sunt de acord cu utilizarea datelor in scopuri de marketing conform politicii GDPR.
+        </label>
+      </div>
+      
+      <button type="submit" class="btn btn-danger btn-submit">Trimite</button>
+    </form>
+  </div>
+</section>

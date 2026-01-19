@@ -1,0 +1,11 @@
+uuid: 4761182a-a4d7-4d6e-bb27-068d3f76e3c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_carousel
+label: 'Card Carousel'
+description: null
+targetEntityType: node
+cache: true

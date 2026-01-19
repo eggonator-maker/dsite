@@ -1,0 +1,10 @@
+uuid: 4c52dc05-a2fb-47f0-9dcb-9c01abb762ea
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us_cards
+label: 'contact us cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

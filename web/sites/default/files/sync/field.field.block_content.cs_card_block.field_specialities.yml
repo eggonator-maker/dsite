@@ -1,0 +1,29 @@
+uuid: b121f811-b62d-4f60-9d85-e90c0d692760
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cs_card_block
+    - field.storage.block_content.field_specialities
+    - taxonomy.vocabulary.specialities
+id: block_content.cs_card_block.field_specialities
+field_name: field_specialities
+entity_type: block_content
+bundle: cs_card_block
+label: Specialities
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      specialities: specialities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

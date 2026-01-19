@@ -1,0 +1,19 @@
+uuid: 7915fabf-4fab-4820-adfe-e60e3965a500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_id
+    - node.type.doctor
+id: node.doctor.field_external_id
+field_name: field_external_id
+entity_type: node
+bundle: doctor
+label: 'external id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

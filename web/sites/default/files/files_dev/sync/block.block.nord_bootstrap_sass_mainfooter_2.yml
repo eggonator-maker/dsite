@@ -1,0 +1,25 @@
+uuid: 40fbc802-5f55-4524-8caf-c27a5e499a34
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c6fd8ddb-1bf3-4684-80ec-b39711c17324'
+  module:
+    - block_content
+  theme:
+    - nord_bootstrap_sass
+id: nord_bootstrap_sass_mainfooter_2
+theme: nord_bootstrap_sass
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:c6fd8ddb-1bf3-4684-80ec-b39711c17324'
+settings:
+  id: 'block_content:c6fd8ddb-1bf3-4684-80ec-b39711c17324'
+  label: 'Main footer'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

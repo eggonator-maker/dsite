@@ -1,0 +1,20 @@
+{% set classes = [
+  'block',
+  'block--cas',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  
+  {% block content %}
+    {% if content.field_title %}
+    <section class="independent-title">
+				<h1> {{ content.field_title }}</h1>
+		</section>  
+    {% endif %}
+    <div class="paragraph--card-grid paragraph--card-grid--cols-3 paragraph--card-grid--title-1-line paragraph--card-grid--text-2-lines">
+      {{ content.field_cas_cards }}
+    </div>
+  {% endblock %}
+</div>

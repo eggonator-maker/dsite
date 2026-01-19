@@ -1,0 +1,25 @@
+uuid: 631a0e79-2173-4241-89cc-841a4b787217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_us_cards.field_block_ref
+    - paragraphs.paragraphs_type.contact_us_cards
+id: paragraph.contact_us_cards.default
+targetEntityType: paragraph
+bundle: contact_us_cards
+mode: default
+content:
+  field_block_ref:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

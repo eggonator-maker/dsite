@@ -1,0 +1,31 @@
+uuid: 3bf97160-faac-4398-ac58-155bdf155477
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.question_and_answer.field_answer
+    - field.field.paragraph.question_and_answer.field_question
+    - paragraphs.paragraphs_type.question_and_answer
+  module:
+    - text
+id: paragraph.question_and_answer.default
+targetEntityType: paragraph
+bundle: question_and_answer
+mode: default
+content:
+  field_answer:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_question:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

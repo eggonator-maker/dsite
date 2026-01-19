@@ -1,0 +1,19 @@
+uuid: f215aea3-1819-4970-b933-c5d2e1878a8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.center_services
+id: node.center_services.field_description
+field_name: field_description
+entity_type: node
+bundle: center_services
+label: description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

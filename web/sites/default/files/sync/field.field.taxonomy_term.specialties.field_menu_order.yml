@@ -1,0 +1,25 @@
+uuid: 48642b1f-941d-4c8a-99a8-1f2eb0a90f20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_menu_order
+    - taxonomy.vocabulary.specialties
+id: taxonomy_term.specialties.field_menu_order
+field_name: field_menu_order
+entity_type: taxonomy_term
+bundle: specialties
+label: menu_order
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

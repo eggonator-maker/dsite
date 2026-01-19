@@ -1,0 +1,24 @@
+uuid: 77329c96-5737-4d4b-96d3-eef0acc6e161
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.centers_description_image.field_description_image
+    - paragraphs.paragraphs_type.centers_description_image
+  module:
+    - media_library
+id: paragraph.centers_description_image.default
+targetEntityType: paragraph
+bundle: centers_description_image
+mode: default
+content:
+  field_description_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

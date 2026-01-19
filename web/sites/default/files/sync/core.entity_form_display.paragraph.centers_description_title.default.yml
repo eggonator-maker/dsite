@@ -1,0 +1,23 @@
+uuid: a82dd7b2-5e57-4991-b4cb-31a31b2118c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.centers_description_title.field_title
+    - paragraphs.paragraphs_type.centers_description_title
+id: paragraph.centers_description_title.default
+targetEntityType: paragraph
+bundle: centers_description_title
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

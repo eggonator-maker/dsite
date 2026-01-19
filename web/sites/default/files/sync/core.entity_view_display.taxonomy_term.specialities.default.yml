@@ -1,0 +1,120 @@
+uuid: 8b480ebb-85c5-4cc5-8ea3-c75b4c8d0ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.para_block
+    - field.field.taxonomy_term.specialities.field_cs_sections
+    - field.field.taxonomy_term.specialities.field_menu_title
+    - field.field.taxonomy_term.specialities.layout_builder__layout
+    - taxonomy.vocabulary.specialities
+  content:
+    - 'block_content:basic:e633d7c4-e467-4946-9b6e-96866f9eff12'
+  module:
+    - block_content
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Main Content'
+          context_mapping: {  }
+        components:
+          2b862fbe-8341-4b8f-9dab-da77fdd41bad:
+            uuid: 2b862fbe-8341-4b8f-9dab-da77fdd41bad
+            region: content
+            configuration:
+              id: 'inline_block:para_block'
+              label: 'Main Card'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping: {  }
+              view_mode: full
+              block_id: 9
+              block_revision_id: 13
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          b0dc7cb8-f0ad-4328-b347-e485cceecf88:
+            uuid: b0dc7cb8-f0ad-4328-b347-e485cceecf88
+            region: content
+            configuration:
+              id: 'inline_block:para_block'
+              label: 'Secondary Section'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping: {  }
+              view_mode: full
+              block_id: 10
+              block_revision_id: 14
+              block_serialized: null
+            weight: 1
+            additional: {  }
+          d789a246-8d15-4927-91df-1c55cd1b439a:
+            uuid: d789a246-8d15-4927-91df-1c55cd1b439a
+            region: content
+            configuration:
+              id: 'inline_block:para_block'
+              label: 'FAQ Block'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping: {  }
+              view_mode: full
+              block_id: 11
+              block_revision_id: 15
+              block_serialized: null
+            weight: 2
+            additional: {  }
+          84a8f5bd-cd02-4344-8b03-60151086c7a5:
+            uuid: 84a8f5bd-cd02-4344-8b03-60151086c7a5
+            region: content
+            configuration:
+              id: 'block_content:e633d7c4-e467-4946-9b6e-96866f9eff12'
+              label: 'Contact Cards'
+              label_display: '0'
+              provider: block_content
+              context_mapping: {  }
+              status: true
+              info: ''
+              view_mode: full
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.specialities.default
+targetEntityType: taxonomy_term
+bundle: specialities
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cs_sections:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_menu_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  layout_builder__layout: true

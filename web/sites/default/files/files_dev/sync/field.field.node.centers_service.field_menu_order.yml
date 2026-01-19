@@ -1,0 +1,25 @@
+uuid: 85e85a0c-724a-4a1a-b813-f86d2e2945f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_order
+    - node.type.centers_service
+id: node.centers_service.field_menu_order
+field_name: field_menu_order
+entity_type: node
+bundle: centers_service
+label: menu_order
+description: 'Helps to order the elements within the menu'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

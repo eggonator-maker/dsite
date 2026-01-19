@@ -1,0 +1,88 @@
+/* VARIABLES */
+
+// colors
+$primary-shade: rgb(255, 78, 46);
+$primary-light: tint-color($primary-shade, 37%);
+$primary-dark: shade-color($primary-shade, 12%);
+$accent-shade: #0079C0;
+$accent-light: tint-color($accent-shade, 37%);
+$accent-dark: shade-color($accent-shade, 12%);
+$light-blue: #EFF7FF;
+// Reassign color vars to semantic color scheme
+$red: #E22A1F;
+$yellow: #ffc107;
+$green: #28a745;
+$cyan: #17a2b8;
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-800: #343a40;
+// scss-docs-start theme-color-variables
+$primary:        #0E296B;
+$secondary:     #027FF7;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$brand-primary: $accent-shade;
+$light:         $gray-100;
+$dark:          #2E333C;
+
+
+$text: #2E333C;
+//$brand-success: $green;
+//$brand-info: $teal;
+//$brand-warning: $orange;
+//$brand-danger: $red;
+$brand-inverse: $primary-shade;
+
+$color-text-dark: #2E333C;
+$color-text-body: #5B5B5B;
+$color-primary-blue: #027FF7;
+$color-primary-navy: #001E60;
+$color-primary-red: #E22A1F;
+$color-white: #FFFFFF;
+$color-bg-light: #F1F2F5;
+$color-bg-subtle: #F5F5F5;
+$color-border-light: #EAEAEA;
+$color-border-accent: #D3E9FF;
+$shadow-card: 0px 12.5px 10px rgba(0, 0, 0, 0.035), 0px 2.7px 2.2px rgba(0, 0, 0, 0.02);
+$border-radius-lg: 12px;
+$border-radius-md: 10px;
+
+$border-radius-sm: 8px;
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: $white;
+$body-color: $gray-800;
+$inverse-bg: $primary-shade;
+$inverse-color: $white;
+// Links
+//
+// Style anchor elements.
+//$link-color: $accent-shade;
+$link-decoration: none;
+//$link-hover-color: $accent-dark;
+//$link-hover-decoration: underline;
+// Comments
+$comment-spacer-x: 1.25em;
+$comment-spacer-y: 1.25em;
+// Responsive font sizes
+$enable-responsive-font-sizes: true;
+$enable-shadows: false;
+$enable-gradients: false;
+// Breadcrumbs (Works only on Bootstrap 5+)
+// $breadcrumb-divider: quote(">");
+$enable-caret: true;
+
+:root {
+    // 16px at 375 → 24px at 1440 → scales further (cap ~2560)
+    @include fluid-locked(--gutter-x, 16px, 24px, 2560px);
+    @include fluid-locked(--gutter-y, 12px, 20px, 2560px);
+  }
+  .row {
+    --bs-gutter-x: var(--gutter-x);
+    --bs-gutter-y: var(--gutter-y);
+  }
+
+

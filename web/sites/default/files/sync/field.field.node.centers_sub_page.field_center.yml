@@ -1,0 +1,29 @@
+uuid: a55493b4-9a49-40c3-83af-0a3e86e4f012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_center
+    - node.type.centers
+    - node.type.centers_sub_page
+id: node.centers_sub_page.field_center
+field_name: field_center
+entity_type: node
+bundle: centers_sub_page
+label: center
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      centers: centers
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

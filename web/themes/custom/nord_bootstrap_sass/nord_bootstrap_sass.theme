@@ -1,0 +1,124 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+
+use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\Core\Form\FormStateInterface;
+
+
+function nord_bootstrap_sass_preprocess_views_view(&$variables) {
+  $view = $variables['view'];
+  if ($view->id() === 'doctors_search') {
+    $variables['#attached']['library'][] = 'nord_bootstrap_sass/doctors-search-autosubmit';
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function nord_bootstrap_sass_preprocess_page(array &$vars) {
+  // Build main menu if not already placed as a block.
+  if (empty($vars['page']['primary_menu'])) {
+    $menu_name = 'main';
+    $menu_tree = \Drupal::menuTree();
+
+    $parameters = (new MenuTreeParameters())
+      ->setMaxDepth(2)
+      ->onlyEnabledLinks();
+
+    $tree = $menu_tree->load($menu_name, $parameters);
+
+    $manipulators = [
+      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+      ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+    ];
+    $tree = $menu_tree->transform($tree, $manipulators);
+
+    $vars['primary_menu'] = $menu_tree->build($tree);
+    // Check if we are on a center-related page and attach the AJAX library.
+    
+}
+  $current_path = \Drupal::request()->getPathInfo();
+
+  // Handle Centers
+  if (str_starts_with($current_path, '/centers')) {
+    $vars['#attached']['library'][] = 'nord_bootstrap_sass/ajax-navigation';
+    
+    $center_context = \Drupal::service('center_services.context');
+    if ($center_node = $center_context->getCurrentCenter()) {
+      $vars['center_node'] = $center_node;
+      $vars['#cache']['tags'][] = 'node:' . $center_node->id();
+      $vars['#cache']['contexts'][] = 'url.path';
+    }
+  }
+
+    // Check if we are on a speciality page.
+  if (str_starts_with($current_path, '/specialities')) {
+    // Attach the AJAX navigation library to the page.
+    $vars['#attached']['library'][] = 'nord_bootstrap_sass/ajax-navigation';
+  }
+
+  
+  $vars['#attached']['library'][] = 'nord_bootstrap_sass/global-scripts';
+  
+
+}
+
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ */
+function nord_bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  );
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ *
+ * Adds a 'page__centers_section' template suggestion for all routes
+ * beginning with /centers/.
+ */
+function nord_bootstrap_sass_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Get the current path from the request.
+  $current_path = \Drupal::request()->getPathInfo();
+
+  // Check if the path starts with '/centers/'.
+  if (str_starts_with($current_path, '/centers')) {
+    // This will look for a template named page--centers-section.html.twig.
+    $suggestions[] = 'page__node__centers';
+  }
+  if (str_starts_with($current_path, '/specialities')) {
+    // This will look for a template named page--centers-section.html.twig.
+    $suggestions[] = 'page__specialities_section';
+  }
+
+}
+
+function nord_bootstrap_sass_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Replace 'doctors_form' with your actual webform machine name
+  // The ID is usually: webform_submission_YOUR_WEBFORM_ID_add_form
+  if (strpos($form_id, 'webform_submission_doctors_form') !== FALSE) {
+    $form['#attributes']['class'][] = 'appointment-form';
+  }
+}

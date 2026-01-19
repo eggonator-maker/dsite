@@ -1,0 +1,86 @@
+/* scss/components/_hero-info-cards.scss */
+
+.info-cards-section {
+  display: flex;
+  justify-content: center;
+  gap: rem(24);
+  margin-top: rem(-60); // Creates the 60px overlap
+  position: relative;
+  z-index: 10; // Ensures cards are on top of the carousel
+
+  // On smaller screens, stack the cards
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: rem(32); // Remove overlap on mobile
+  }
+}
+
+.info-card {
+  // --- Layout & Sizing ---
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(40) rem(24);
+  width: rem(333);
+  height: rem(315);
+  flex-shrink: 0;
+
+  // --- Styling ---
+  background: #FFFFFF;
+  border-bottom: 8px solid #EBEBEB;
+  box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  // --- Content ---
+  &__icon {
+    width: rem(64);
+    height: rem(64);
+    flex-shrink: 0;
+    margin-bottom: rem(20); // Creates fixed space below icon
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(18);
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $font-open-sans;
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 1.2;
+    color: $primary;
+    margin: 0;
+  }
+
+  &__paragraph {
+    font-family: $font-open-sans;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: #2E333C;
+    margin: 0;
+    // THE FIX: Reserve space for 3 lines of text to keep height consistent
+    min-height: calc(#{rem(16)} * 1.5 * 3);
+  }
+
+  &__action {
+    // THE FIX: This pushes the link to the bottom of the card
+    margin-top: auto;
+    
+    a {
+      font-size: rem(14);
+      text-decoration: underline;
+      color: $secondary;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{# my_theme/templates/layout/page--node--center.html.twig #}
+
+
+<div id="page-wrapper">
+	{% include '@nord_bootstrap_sass/partials/header.html.twig' %}
+
+	{% if page.specialities_top %}
+		{{ page.specialities_top }}
+	{% endif %}
+	
+	<div class="container-fluid cs-content-wrapper">
+	<div class="row g-2 g-lg-4">
+		{# Added g-4/g-lg-5 gutter classes from mockup #}
+
+		{# Sidebar Column - Updated to col-lg-3 #}
+			<aside class="col-lg-3"> 
+			<div class="specialities-nav-block">
+				{# This wrapper class is styled by your SCSS #}
+				{{ drupal_block('specialities_navigation_block') }}
+			</div>
+		</aside>
+
+		{# Main Content Column - Updated to col-lg-9 and removed bg-white #}
+		<main id="main" class="col-lg-9">
+		<div class="d-flex flex-column">
+
+		{{ page.content }}
+		</div>
+		</main>
+	</div>
+	</div>
+
+	<footer class="site-footer-custom">
+	{% include '@nord_bootstrap_sass/partials/footer.html.twig' %}
+
+	</footer>
+</div>

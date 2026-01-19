@@ -1,0 +1,10 @@
+uuid: 444403ed-3291-4df5-9c5d-ac802d389886
+langcode: en
+status: true
+dependencies: {  }
+id: centers_description_title
+label: 'Centers Description Title'
+icon_uuid: null
+icon_default: null
+description: 'Centers description title that goes above the image'
+behavior_plugins: {  }

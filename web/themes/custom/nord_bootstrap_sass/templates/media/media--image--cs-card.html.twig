@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Theme override for media entities in cs-card view mode.
+ *
+ * This ensures the image is displayed as img-fluid rounded for responsive display.
+ *
+ * Available variables:
+ * - media: The media entity.
+ * - content: All the content fields.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+<div{{ attributes.addClass('media', 'media--type-' ~ media.bundle()|clean_class, 'media--view-mode-' ~ view_mode|clean_class) }}>
+  {% if content.field_media_image %}
+    {{ content.field_media_image }}
+  {% endif %}
+</div>

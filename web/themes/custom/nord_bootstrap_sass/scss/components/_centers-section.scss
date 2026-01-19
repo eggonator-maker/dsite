@@ -1,0 +1,266 @@
+/* scss/components/_centers-section.scss */
+
+// --- Main Section Wrapper ---
+.centers-section-wrapper {
+    background: #F1F2F5;
+    padding: rem(64) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(40);
+  }
+  
+  // --- Header Content ---
+  .centers-section__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(24);
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem; // Padding for smaller screens
+  }
+  
+  .centers-section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: rem(40);
+    line-height: 1.2;
+    color: $primary;
+    margin: 0;
+  }
+  
+  .centers-section__paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem(16);
+    text-align: left;
+    line-height: 1.5;
+    color: #2E333C;
+  }
+
+
+  
+// --- Main Content Row ---
+.centers-section-content {
+  width: 100%;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    --bs-gutter-x: #{rem(64)}; // Set the desired gap between columns
+  }
+}
+
+// --- Navigation Column Alignment ---
+.centers-section__nav-col {
+  // On large screens (1200px+), add 150px padding to the left of the tabs column
+  @media (min-width: 1200px) {
+    padding-left: 150px;
+    
+  }
+}
+  
+  
+  // --- Vertical/Horizontal Navigation ---
+  .centers-section-nav {
+    // --- Mobile First: Horizontal Scroller Styles ---
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem; // Align with mobile container padding
+    padding-right: 1rem;
+    gap: rem(8) !important;
+  
+    // Hide the scrollbar
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .nav-link {
+      display: flex;
+      align-items: center;
+      padding: rem(16);
+      gap: rem(31);
+      border-radius: 8px;
+      border-bottom-color: transparent;
+      background: transparent;
+      color: #2E333C;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: rem(16);
+      transition: all 0.2s ease;
+      flex-shrink: 0; // Prevent tabs from shrinking
+        
+      .icon {
+        color: #2E333C;
+      }
+  
+      // Mobile Active & Hover State
+      &.active,
+      &:hover {
+        border-bottom-color: $secondary;
+        //border-bottom-width: 2px;
+        color: $white;
+        background: $secondary;
+        
+  
+        .icon {
+          color: $white;
+        }
+      }
+    }
+  
+    // --- Desktop: Vertical Layout ---
+    @media (min-width: 992px) {
+      overflow-x: visible;
+      max-width: 311px;
+      padding-left: 0;
+      padding-right: 0;
+      gap: rem(8) !important;
+  
+      .nav-link {
+        border-bottom: 1px solid #DBDBDB;
+  
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        // Desktop Active & Hover State
+        &.active,
+        &:hover {
+          background: $secondary;
+          color: $white;
+          border-radius: 8px;
+          border-bottom-color: transparent;
+  
+          .icon {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  
+  // --- Service Card Scroller ---
+  .cards-scroller {
+    display: flex;
+    overflow-x: auto;
+    gap: rem(24);
+    scroll-snap-type: x mandatory;
+    
+    // Mobile padding
+    --_scroll-padding: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+    padding-left: var(--_scroll-padding);
+  
+    // On ALL desktop screens, remove the scroller's own padding.
+    @media (min-width: 992px) {
+      padding-left: 0;
+    }
+    
+    // The last item needs a right margin so it doesn't get cut off at the screen edge.
+    > :last-child {
+      margin-right: var(--_scroll-padding);
+  
+      // On extra-large screens, this margin must match the special 150px container padding
+      @media (min-width: 1200px) {
+        margin-right: 150px;
+      }
+    }
+  }
+  
+  // --- Service Card ---
+  .service-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 4px solid #EBEBEB;
+    box-shadow: 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+    border-radius: 12px;
+    width: 320px;
+    height: 438px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    position: relative; // Needed for the absolute positioned arrow
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    &__media {
+      height: 260px;
+      flex-shrink: 0;
+      border-radius: 12px 12px 0 0;
+      overflow: hidden;
+    
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    &__body {
+      display: flex;
+      flex-direction: column;
+      padding: rem(16);
+      gap: rem(16);
+      flex-grow: 1;
+    }
+    
+    &__text-content {
+      display: flex;
+      flex-direction: column;
+      gap: rem(4);
+      flex-grow: 1;
+    }
+  
+    &__title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: rem(24);
+      line-height: 1.2;
+      color: $secondary;
+    }
+  
+    &__description {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 1.6;
+      color: #595959;
+    }
+  
+    &__arrow {
+      position: absolute;
+      bottom: rem(16);
+      right: rem(16);
+      color: $secondary;
+    }
+  }
+  
+  // --- Footer / Button ---
+  .centers-section__footer {
+    text-align: center;
+    
+    .btn {
+        border-width: 1px;
+        border-radius: rem(8);
+        padding: rem(12) rem(18);
+        font-family: 'Noto Sans Display', sans-serif;
+        font-weight: 600;
+        font-size: rem(14);
+        background-color: $white;
+        &:hover {
+          background-color: $red;
+          color: $white;
+        }
+      }
+  }

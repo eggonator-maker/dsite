@@ -1,0 +1,158 @@
+/* scss/components/_header.scss */
+
+.site-header {
+  position: sticky;
+  z-index: 1020; /* Bootstrap's standard sticky z-index */
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  /* On mobile, the entire header sticks to the very top */
+  top: 0;
+
+  /* On desktop, apply a negative offset to hide the utility bar on scroll */
+  @media (min-width: 992px) {
+    top: -80px; /* This must be the exact height of your .header-utility */
+  }
+}
+
+// --- Desktop Styles (160px total height) ---
+@media (min-width: 1200px) {
+  
+  // Target our custom class to apply styles ONLY inside the header.
+  .header__container {
+    // We take full control of the padding.
+    padding-left: 150px;
+    padding-right: 150px;
+    
+    // Ensure the container spans the full width of the viewport.
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+// Tier 1: Utility Bar
+.header-utility {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+// Tier 2: Main Navigation
+.header-main {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+// Logo Styling
+.header-logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    max-height: 80px;
+    width: auto;
+  }
+}
+
+
+// --- Shared Desktop Styles ---
+.header-link {
+  font-family: $font-open-sans;
+  font-size: rem(16);
+  color: $dark;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: rem(8);
+
+  &:hover {
+    color: $danger;
+  }
+}
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .nav-link {
+    font-family: $font-open-sans;
+    font-size: rem(16);
+    color: $dark;
+    text-decoration: none;
+    padding: rem(12) 0;
+    border-bottom: 2px solid transparent;
+
+    &.active, &:hover {
+      color: $danger;
+      border-bottom-color: $danger;
+    }
+  }
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: rem(8) rem(12);
+  border-radius: 4px;
+
+  &__input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-left: rem(8);
+    font-size: rem(16);
+
+    &::placeholder {
+      color: #6c757d;
+    }
+  }
+}
+
+// --- Mobile Header & Offcanvas ---
+.mobile-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 rem(16);
+}
+
+.navbar-toggler {
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  padding: rem(16);
+}
+
+.mobile-utility-nav, .mobile-main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+
+  a {
+    font-size: rem(18);
+    font-weight: 600;
+    color: $dark;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: rem(12);
+  }
+}
+.site-header .btn {
+  font-size: rem(14);
+  padding: rem(12) rem(18);
+}

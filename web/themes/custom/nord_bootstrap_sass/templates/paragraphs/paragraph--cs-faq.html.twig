@@ -1,0 +1,12 @@
+<section class="card-block">
+
+    {% if content.field_title %}
+    <h2 class="section-title text-start">{{ content.field_title }}</h2>
+    {% endif %}
+
+    <div class="accordion" id="faqAccordion">
+        {% if content.field_question_answer	%}
+            {{ content.field_question_answer }}
+        {% endif %}
+    </div>
+</section>

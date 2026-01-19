@@ -1,0 +1,205 @@
+@import "../helpers/units";
+
+
+
+.variable-cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: rem(32);
+  width: 100%;
+  max-width: rem(304);
+  margin-right: auto;
+  margin-top: rem(16);
+  margin-bottom: rem(48);
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    max-width: rem(976);
+    padding: rem(60) 0;
+  }
+
+  // When cards are info-card style
+  &:has(.info-card) {
+    gap: rem(24);
+    max-width: 100%;
+    justify-content: center;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+    
+  }
+}
+
+// Overlap modifier for section
+.variable-cards-section--overlap {
+  margin-top: rem(-111);
+  padding-top: 0px;
+  position: relative;
+  z-index: 10;
+
+  @media (max-width: 991.98px) {
+    margin-top: rem(32);
+  }
+}
+
+// Info card styles
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(40) rem(24);
+  width: 100%;
+  max-width: rem(333);
+  min-height: rem(315);
+  background: #FFFFFF;
+  border-bottom: 8px solid #EBEBEB;
+  box-shadow: 
+    0px 0px rem(17.869) rgba(0, 0, 0, 0.0417275),
+    0px rem(12.5216) rem(10.0172) rgba(0, 124, 247, 0.035),
+    0px rem(6.6501) rem(5.32008) rgba(0, 124, 247, 0.0282725),
+    0px rem(2.76726) rem(2.21381) rgba(0, 124, 247, 0.0196802);
+  border-radius: rem(8);
+  transition: transform 0.2s ease;
+
+  @media (min-width: 768px) {
+    width: rem(333);
+    flex: none;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__icon {
+    width: rem(64);
+    height: rem(64);
+    flex-shrink: 0;
+    margin-bottom: rem(20);
+    
+    svg, img {
+      width: rem(64) !important;
+      height: rem(64) !important;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(18);
+    text-align: center;
+    flex: 1;
+  }
+
+  &__title {
+    font-family: $font-open-sans;
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 1.2;
+    color: $primary;
+    margin: 0;
+  }
+
+  &__paragraph {
+    font-family: $font-open-sans;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: #2E333C;
+    margin: 0;
+    min-height: calc(#{rem(16)} * 1.5 * 3);
+  }
+
+  &__action {
+    margin-top: auto;
+  }
+}
+
+// Existing variable-card-item styles
+.variable-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: rem(40) rem(24);
+  gap: rem(24);
+  width: 100%;
+  background: #FFFFFF;
+  border-bottom: 4px solid #EBEBEB;
+  box-shadow: 
+    0px rem(12.5216) rem(10.0172) rgba(0, 0, 0, 0.035),
+    0px rem(6.6501) rem(5.32008) rgba(0, 0, 0, 0.0282725),
+    0px rem(2.76726) rem(2.21381) rgba(0, 0, 0, 0.0196802);
+  border-radius: rem(8);
+
+  @media (min-width: 768px) {
+    width: rem(304);
+    flex: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+  }
+
+  &__icon {
+    width: rem(54);
+    height: rem(54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+
+    svg {
+      width: rem(54) !important;
+      height: rem(54) !important;
+      fill: #FFFFFF !important;
+      color: #E22A1F !important;
+      stroke: #E22A1F !important;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    font-family: $font-montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(19);
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2E333C;
+    margin: 0;
+  }
+
+  &__description {
+    width: 100%;
+    font-family: $font-open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2E333C;
+    margin: 0;
+
+    p {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

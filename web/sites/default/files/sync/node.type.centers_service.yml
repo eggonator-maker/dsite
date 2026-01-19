@@ -1,0 +1,17 @@
+uuid: 14105bf3-963a-45d1-b274-cec04bc707a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Centers Service'
+type: centers_service
+description: 'Services offered by a specific center, also contains optional reference to centers service category.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

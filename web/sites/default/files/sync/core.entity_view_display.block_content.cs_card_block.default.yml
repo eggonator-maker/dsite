@@ -1,0 +1,46 @@
+uuid: 2d93d473-c036-4b5b-8d6a-c1f0d0ff4d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cs_card_block
+    - field.field.block_content.cs_card_block.field_description
+    - field.field.block_content.cs_card_block.field_specialities
+    - field.field.block_content.cs_card_block.field_title
+  module:
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.cs_card_block.default
+targetEntityType: block_content
+bundle: cs_card_block
+mode: default
+content:
+  field_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_specialities:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

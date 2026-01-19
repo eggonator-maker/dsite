@@ -1,0 +1,307 @@
+[19-Nov-2025 12:14:47] NOTICE: fpm is running, pid 1
+[19-Nov-2025 12:14:47] NOTICE: ready to handle connections
+[19-Nov-2025 12:14:47] NOTICE: systemd monitor disabled
+[19-Nov-2025 12:31:35] NOTICE: Finishing ...
+[19-Nov-2025 12:31:35] NOTICE: exiting, bye-bye!
+[19-Nov-2025 12:31:41] NOTICE: fpm is running, pid 1
+[19-Nov-2025 12:31:41] NOTICE: ready to handle connections
+[19-Nov-2025 12:31:41] NOTICE: systemd monitor disabled
+[19-Nov-2025 12:34:44] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[19-Nov-2025 12:42:18] WARNING: [pool www] child 176, script '/code/web//index.php' (request: "POST /index.php") executing too slow (6.113481 sec), logging
+[19-Nov-2025 12:42:18] NOTICE: child 176 stopped for tracing
+[19-Nov-2025 12:42:18] NOTICE: about to trace 176
+[19-Nov-2025 12:42:18] NOTICE: finished trace of 176
+[19-Nov-2025 12:55:22] NOTICE: Finishing ...
+[19-Nov-2025 12:55:22] NOTICE: exiting, bye-bye!
+[19-Nov-2025 12:55:29] NOTICE: fpm is running, pid 1
+[19-Nov-2025 12:55:29] NOTICE: ready to handle connections
+[19-Nov-2025 12:55:29] NOTICE: systemd monitor disabled
+[19-Nov-2025 12:57:33] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[19-Nov-2025 13:06:28] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[19-Nov-2025 13:18:33] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[19-Nov-2025 13:52:02] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[19-Nov-2025 14:15:00] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[19-Nov-2025 17:46:22] NOTICE: Finishing ...
+[19-Nov-2025 17:46:22] NOTICE: exiting, bye-bye!
+[20-Nov-2025 07:18:14] NOTICE: fpm is running, pid 1
+[20-Nov-2025 07:18:14] NOTICE: ready to handle connections
+[20-Nov-2025 07:18:14] NOTICE: systemd monitor disabled
+[20-Nov-2025 07:18:20] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.506351 sec), logging
+[20-Nov-2025 07:18:20] NOTICE: child 7 stopped for tracing
+[20-Nov-2025 07:18:20] NOTICE: about to trace 7
+[20-Nov-2025 07:18:20] NOTICE: finished trace of 7
+[20-Nov-2025 07:18:22] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (5.953521 sec), logging
+[20-Nov-2025 07:18:22] NOTICE: child 8 stopped for tracing
+[20-Nov-2025 07:18:22] NOTICE: about to trace 8
+[20-Nov-2025 07:18:22] NOTICE: finished trace of 8
+[20-Nov-2025 07:21:22] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[20-Nov-2025 08:26:49] NOTICE: Finishing ...
+[20-Nov-2025 08:26:49] NOTICE: exiting, bye-bye!
+[21-Nov-2025 07:32:12] NOTICE: fpm is running, pid 1
+[21-Nov-2025 07:32:12] NOTICE: ready to handle connections
+[21-Nov-2025 07:32:12] NOTICE: systemd monitor disabled
+[21-Nov-2025 07:32:18] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.495827 sec), logging
+[21-Nov-2025 07:32:18] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.498861 sec), logging
+[21-Nov-2025 07:32:18] NOTICE: child 7 stopped for tracing
+[21-Nov-2025 07:32:18] NOTICE: about to trace 7
+[21-Nov-2025 07:32:18] NOTICE: finished trace of 7
+[21-Nov-2025 07:32:18] NOTICE: child 8 stopped for tracing
+[21-Nov-2025 07:32:18] NOTICE: about to trace 8
+[21-Nov-2025 07:32:18] NOTICE: finished trace of 8
+[21-Nov-2025 08:45:15] NOTICE: Finishing ...
+[21-Nov-2025 08:45:15] NOTICE: exiting, bye-bye!
+[21-Nov-2025 10:46:09] NOTICE: fpm is running, pid 1
+[21-Nov-2025 10:46:09] NOTICE: ready to handle connections
+[21-Nov-2025 10:46:09] NOTICE: systemd monitor disabled
+[21-Nov-2025 10:46:16] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.505288 sec), logging
+[21-Nov-2025 10:46:16] NOTICE: child 8 stopped for tracing
+[21-Nov-2025 10:46:16] NOTICE: about to trace 8
+[21-Nov-2025 10:46:16] NOTICE: finished trace of 8
+[21-Nov-2025 11:44:23] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[21-Nov-2025 13:44:32] NOTICE: Finishing ...
+[21-Nov-2025 13:44:32] NOTICE: exiting, bye-bye!
+[21-Nov-2025 16:31:52] NOTICE: fpm is running, pid 1
+[21-Nov-2025 16:31:52] NOTICE: ready to handle connections
+[21-Nov-2025 16:31:52] NOTICE: systemd monitor disabled
+[21-Nov-2025 16:31:59] WARNING: [pool www] child 9, script '/code/web//index.php' (request: "GET /index.php") executing too slow (5.722603 sec), logging
+[21-Nov-2025 16:31:59] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.496978 sec), logging
+[21-Nov-2025 16:31:59] NOTICE: child 8 stopped for tracing
+[21-Nov-2025 16:31:59] NOTICE: about to trace 8
+[21-Nov-2025 16:31:59] NOTICE: finished trace of 8
+[21-Nov-2025 16:31:59] NOTICE: child 9 stopped for tracing
+[21-Nov-2025 16:31:59] NOTICE: about to trace 9
+[21-Nov-2025 16:31:59] NOTICE: finished trace of 9
+[21-Nov-2025 17:19:39] NOTICE: Finishing ...
+[21-Nov-2025 17:19:39] NOTICE: exiting, bye-bye!
+[21-Nov-2025 17:19:47] NOTICE: fpm is running, pid 1
+[21-Nov-2025 17:19:47] NOTICE: ready to handle connections
+[21-Nov-2025 17:19:47] NOTICE: systemd monitor disabled
+[21-Nov-2025 18:22:46] NOTICE: Finishing ...
+[21-Nov-2025 18:22:46] NOTICE: exiting, bye-bye!
+[23-Nov-2025 15:48:17] NOTICE: fpm is running, pid 1
+[23-Nov-2025 15:48:17] NOTICE: ready to handle connections
+[23-Nov-2025 15:48:17] NOTICE: systemd monitor disabled
+[23-Nov-2025 15:48:23] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (5.398966 sec), logging
+[23-Nov-2025 15:48:23] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.488009 sec), logging
+[23-Nov-2025 15:48:23] NOTICE: child 7 stopped for tracing
+[23-Nov-2025 15:48:23] NOTICE: about to trace 7
+[23-Nov-2025 15:48:23] NOTICE: finished trace of 7
+[23-Nov-2025 15:48:23] NOTICE: child 8 stopped for tracing
+[23-Nov-2025 15:48:23] NOTICE: about to trace 8
+[23-Nov-2025 15:48:23] NOTICE: finished trace of 8
+[23-Nov-2025 17:39:20] NOTICE: Finishing ...
+[23-Nov-2025 17:39:20] NOTICE: exiting, bye-bye!
+[24-Nov-2025 13:11:29] NOTICE: fpm is running, pid 1
+[24-Nov-2025 13:11:29] NOTICE: ready to handle connections
+[24-Nov-2025 13:11:29] NOTICE: systemd monitor disabled
+[24-Nov-2025 13:11:36] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.465288 sec), logging
+[24-Nov-2025 13:11:36] NOTICE: child 7 stopped for tracing
+[24-Nov-2025 13:11:36] NOTICE: about to trace 7
+[24-Nov-2025 13:11:36] NOTICE: finished trace of 7
+[24-Nov-2025 13:11:38] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (5.719041 sec), logging
+[24-Nov-2025 13:11:38] NOTICE: child 8 stopped for tracing
+[24-Nov-2025 13:11:38] NOTICE: about to trace 8
+[24-Nov-2025 13:11:38] NOTICE: finished trace of 8
+[24-Nov-2025 14:28:31] NOTICE: Finishing ...
+[24-Nov-2025 14:28:31] NOTICE: exiting, bye-bye!
+[24-Nov-2025 14:37:01] NOTICE: fpm is running, pid 1
+[24-Nov-2025 14:37:01] NOTICE: ready to handle connections
+[24-Nov-2025 14:37:01] NOTICE: systemd monitor disabled
+[24-Nov-2025 16:02:09] NOTICE: Finishing ...
+[24-Nov-2025 16:02:09] NOTICE: exiting, bye-bye!
+[24-Nov-2025 18:32:06] NOTICE: fpm is running, pid 1
+[24-Nov-2025 18:32:06] NOTICE: ready to handle connections
+[24-Nov-2025 18:32:06] NOTICE: systemd monitor disabled
+[24-Nov-2025 18:32:12] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.497862 sec), logging
+[24-Nov-2025 18:32:12] NOTICE: child 7 stopped for tracing
+[24-Nov-2025 18:32:12] NOTICE: about to trace 7
+[24-Nov-2025 18:32:12] NOTICE: finished trace of 7
+[24-Nov-2025 18:32:14] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.390505 sec), logging
+[24-Nov-2025 18:32:14] NOTICE: child 8 stopped for tracing
+[24-Nov-2025 18:32:14] NOTICE: about to trace 8
+[24-Nov-2025 18:32:14] NOTICE: finished trace of 8
+[24-Nov-2025 20:52:46] NOTICE: Finishing ...
+[24-Nov-2025 20:52:46] NOTICE: exiting, bye-bye!
+[25-Nov-2025 13:26:48] NOTICE: fpm is running, pid 1
+[25-Nov-2025 13:26:48] NOTICE: ready to handle connections
+[25-Nov-2025 13:26:48] NOTICE: systemd monitor disabled
+[25-Nov-2025 13:26:55] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.505880 sec), logging
+[25-Nov-2025 13:26:55] NOTICE: child 7 stopped for tracing
+[25-Nov-2025 13:26:55] NOTICE: about to trace 7
+[25-Nov-2025 13:26:55] NOTICE: finished trace of 7
+[25-Nov-2025 13:26:57] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (5.882738 sec), logging
+[25-Nov-2025 13:26:57] NOTICE: child 8 stopped for tracing
+[25-Nov-2025 13:26:57] NOTICE: about to trace 8
+[25-Nov-2025 13:26:57] NOTICE: finished trace of 8
+[25-Nov-2025 13:27:00] WARNING: [pool www] child 9, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.343141 sec), logging
+[25-Nov-2025 13:27:00] NOTICE: child 9 stopped for tracing
+[25-Nov-2025 13:27:00] NOTICE: about to trace 9
+[25-Nov-2025 13:27:00] NOTICE: finished trace of 9
+[25-Nov-2025 13:27:01] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[25-Nov-2025 13:38:29] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[25-Nov-2025 13:46:10] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[25-Nov-2025 15:35:48] NOTICE: Finishing ...
+[25-Nov-2025 15:35:48] NOTICE: exiting, bye-bye!
+[25-Nov-2025 15:40:07] NOTICE: fpm is running, pid 1
+[25-Nov-2025 15:40:07] NOTICE: ready to handle connections
+[25-Nov-2025 15:40:07] NOTICE: systemd monitor disabled
+[25-Nov-2025 15:40:09] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[25-Nov-2025 17:08:56] NOTICE: Finishing ...
+[25-Nov-2025 17:08:56] NOTICE: exiting, bye-bye!
+[25-Nov-2025 18:09:35] NOTICE: fpm is running, pid 1
+[25-Nov-2025 18:09:35] NOTICE: ready to handle connections
+[25-Nov-2025 18:09:35] NOTICE: systemd monitor disabled
+[25-Nov-2025 18:09:41] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.495394 sec), logging
+[25-Nov-2025 18:09:41] NOTICE: child 8 stopped for tracing
+[25-Nov-2025 18:09:41] NOTICE: about to trace 8
+[25-Nov-2025 18:09:41] NOTICE: finished trace of 8
+[25-Nov-2025 18:16:11] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[25-Nov-2025 20:03:38] NOTICE: Finishing ...
+[25-Nov-2025 20:03:38] NOTICE: exiting, bye-bye!
+[25-Nov-2025 20:19:40] NOTICE: fpm is running, pid 1
+[25-Nov-2025 20:19:40] NOTICE: ready to handle connections
+[25-Nov-2025 20:19:40] NOTICE: systemd monitor disabled
+[25-Nov-2025 21:46:53] NOTICE: Finishing ...
+[25-Nov-2025 21:46:53] NOTICE: exiting, bye-bye!
+[25-Nov-2025 22:52:34] NOTICE: fpm is running, pid 1
+[25-Nov-2025 22:52:34] NOTICE: ready to handle connections
+[25-Nov-2025 22:52:34] NOTICE: systemd monitor disabled
+[25-Nov-2025 22:52:40] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php?destination=/admin/structure/taxonomy/manage/center/overview") executing too slow (6.510358 sec), logging
+[25-Nov-2025 22:52:40] NOTICE: child 7 stopped for tracing
+[25-Nov-2025 22:52:40] NOTICE: about to trace 7
+[25-Nov-2025 22:52:40] NOTICE: finished trace of 7
+[25-Nov-2025 23:59:56] NOTICE: Finishing ...
+[25-Nov-2025 23:59:56] NOTICE: exiting, bye-bye!
+[27-Nov-2025 12:05:07] NOTICE: fpm is running, pid 1
+[27-Nov-2025 12:05:07] NOTICE: ready to handle connections
+[27-Nov-2025 12:05:07] NOTICE: systemd monitor disabled
+[27-Nov-2025 12:05:14] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.452592 sec), logging
+[27-Nov-2025 12:05:14] NOTICE: child 7 stopped for tracing
+[27-Nov-2025 12:05:14] NOTICE: about to trace 7
+[27-Nov-2025 12:05:14] NOTICE: finished trace of 7
+[27-Nov-2025 12:14:21] NOTICE: Finishing ...
+[27-Nov-2025 12:14:21] NOTICE: exiting, bye-bye!
+[27-Nov-2025 15:30:02] NOTICE: fpm is running, pid 1
+[27-Nov-2025 15:30:02] NOTICE: ready to handle connections
+[27-Nov-2025 15:30:02] NOTICE: systemd monitor disabled
+[27-Nov-2025 15:30:09] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.480346 sec), logging
+[27-Nov-2025 15:30:09] NOTICE: child 7 stopped for tracing
+[27-Nov-2025 15:30:09] NOTICE: about to trace 7
+[27-Nov-2025 15:30:09] NOTICE: finished trace of 7
+[27-Nov-2025 15:30:12] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.201474 sec), logging
+[27-Nov-2025 15:30:12] NOTICE: child 8 stopped for tracing
+[27-Nov-2025 15:30:12] NOTICE: about to trace 8
+[27-Nov-2025 15:30:12] NOTICE: finished trace of 8
+[27-Nov-2025 19:57:52] NOTICE: Finishing ...
+[27-Nov-2025 19:57:52] NOTICE: exiting, bye-bye!
+[28-Nov-2025 13:49:59] NOTICE: fpm is running, pid 1
+[28-Nov-2025 13:49:59] NOTICE: ready to handle connections
+[28-Nov-2025 13:49:59] NOTICE: systemd monitor disabled
+[28-Nov-2025 13:50:06] WARNING: [pool www] child 7, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.358598 sec), logging
+[28-Nov-2025 13:50:06] NOTICE: child 7 stopped for tracing
+[28-Nov-2025 13:50:06] NOTICE: about to trace 7
+[28-Nov-2025 13:50:06] NOTICE: finished trace of 7
+[28-Nov-2025 15:47:25] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[28-Nov-2025 15:47:29] WARNING: [pool www] child 268 exited on signal 9 (SIGKILL) after 3.304144 seconds from start
+[28-Nov-2025 15:47:29] NOTICE: [pool www] child 271 started
+[28-Nov-2025 15:47:30] WARNING: [pool www] child 267 exited on signal 9 (SIGKILL) after 17.050105 seconds from start
+[28-Nov-2025 15:47:30] NOTICE: [pool www] child 272 started
+[28-Nov-2025 15:47:31] WARNING: [pool www] child 270 exited on signal 9 (SIGKILL) after 5.136256 seconds from start
+[28-Nov-2025 15:47:31] NOTICE: [pool www] child 273 started
+[28-Nov-2025 15:55:03] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[28-Nov-2025 15:55:03] WARNING: [pool www] child 284 exited on signal 9 (SIGKILL) after 9.055389 seconds from start
+[28-Nov-2025 15:55:03] NOTICE: [pool www] child 288 started
+[28-Nov-2025 15:55:04] WARNING: [pool www] child 286 exited on signal 9 (SIGKILL) after 1.335526 seconds from start
+[28-Nov-2025 15:55:04] NOTICE: [pool www] child 289 started
+[28-Nov-2025 17:42:25] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[28-Nov-2025 18:52:54] NOTICE: Finishing ...
+[28-Nov-2025 18:52:54] NOTICE: exiting, bye-bye!
+[28-Nov-2025 21:55:11] NOTICE: fpm is running, pid 1
+[28-Nov-2025 21:55:11] NOTICE: ready to handle connections
+[28-Nov-2025 21:55:11] NOTICE: systemd monitor disabled
+[28-Nov-2025 23:14:17] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[28-Nov-2025 23:15:46] NOTICE: Finishing ...
+[28-Nov-2025 23:15:46] NOTICE: exiting, bye-bye!
+[28-Nov-2025 23:15:52] NOTICE: fpm is running, pid 1
+[28-Nov-2025 23:15:52] NOTICE: ready to handle connections
+[28-Nov-2025 23:15:52] NOTICE: systemd monitor disabled
+[28-Nov-2025 23:22:50] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[28-Nov-2025 23:23:34] NOTICE: Finishing ...
+[28-Nov-2025 23:23:34] NOTICE: exiting, bye-bye!
+[28-Nov-2025 23:23:41] NOTICE: fpm is running, pid 1
+[28-Nov-2025 23:23:41] NOTICE: ready to handle connections
+[28-Nov-2025 23:23:41] NOTICE: systemd monitor disabled
+[28-Nov-2025 23:33:00] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[28-Nov-2025 23:35:01] NOTICE: Finishing ...
+[28-Nov-2025 23:35:01] NOTICE: exiting, bye-bye!
+[28-Nov-2025 23:35:08] NOTICE: fpm is running, pid 1
+[28-Nov-2025 23:35:08] NOTICE: ready to handle connections
+[28-Nov-2025 23:35:08] NOTICE: systemd monitor disabled
+[28-Nov-2025 23:48:25] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 00:53:16] NOTICE: Finishing ...
+[29-Nov-2025 00:53:16] NOTICE: exiting, bye-bye!
+[29-Nov-2025 00:53:23] NOTICE: fpm is running, pid 1
+[29-Nov-2025 00:53:23] NOTICE: ready to handle connections
+[29-Nov-2025 00:53:23] NOTICE: systemd monitor disabled
+[29-Nov-2025 01:00:20] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 01:03:57] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 01:31:30] NOTICE: Finishing ...
+[29-Nov-2025 01:31:30] NOTICE: exiting, bye-bye!
+[29-Nov-2025 01:31:53] NOTICE: fpm is running, pid 1
+[29-Nov-2025 01:31:53] NOTICE: ready to handle connections
+[29-Nov-2025 01:31:53] NOTICE: systemd monitor disabled
+[29-Nov-2025 01:32:07] NOTICE: Finishing ...
+[29-Nov-2025 01:32:07] NOTICE: exiting, bye-bye!
+[29-Nov-2025 01:32:14] NOTICE: fpm is running, pid 1
+[29-Nov-2025 01:32:14] NOTICE: ready to handle connections
+[29-Nov-2025 01:32:14] NOTICE: systemd monitor disabled
+[29-Nov-2025 01:32:44] NOTICE: Finishing ...
+[29-Nov-2025 01:32:44] NOTICE: exiting, bye-bye!
+[29-Nov-2025 01:32:50] NOTICE: fpm is running, pid 1
+[29-Nov-2025 01:32:50] NOTICE: ready to handle connections
+[29-Nov-2025 01:32:50] NOTICE: systemd monitor disabled
+[29-Nov-2025 01:33:52] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 02:53:57] NOTICE: Finishing ...
+[29-Nov-2025 02:53:57] NOTICE: exiting, bye-bye!
+[29-Nov-2025 19:57:20] NOTICE: fpm is running, pid 1
+[29-Nov-2025 19:57:20] NOTICE: ready to handle connections
+[29-Nov-2025 19:57:20] NOTICE: systemd monitor disabled
+[29-Nov-2025 19:57:27] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.490453 sec), logging
+[29-Nov-2025 19:57:27] NOTICE: child 8 stopped for tracing
+[29-Nov-2025 19:57:27] NOTICE: about to trace 8
+[29-Nov-2025 19:57:27] NOTICE: finished trace of 8
+[29-Nov-2025 19:57:34] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 19:58:52] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 20:01:09] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 20:30:08] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[29-Nov-2025 21:49:58] NOTICE: Finishing ...
+[29-Nov-2025 21:49:58] NOTICE: exiting, bye-bye!
+[30-Nov-2025 12:33:35] NOTICE: fpm is running, pid 1
+[30-Nov-2025 12:33:35] NOTICE: ready to handle connections
+[30-Nov-2025 12:33:35] NOTICE: systemd monitor disabled
+[30-Nov-2025 12:33:42] WARNING: [pool www] child 8, script '/code/web//index.php' (request: "GET /index.php") executing too slow (6.508865 sec), logging
+[30-Nov-2025 12:33:42] NOTICE: child 8 stopped for tracing
+[30-Nov-2025 12:33:42] NOTICE: about to trace 8
+[30-Nov-2025 12:33:42] NOTICE: finished trace of 8
+[30-Nov-2025 12:33:50] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[30-Nov-2025 12:50:50] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[30-Nov-2025 12:50:52] WARNING: [pool www] child 52 exited on signal 9 (SIGKILL) after 53.689480 seconds from start
+[30-Nov-2025 12:50:52] NOTICE: [pool www] child 55 started
+[30-Nov-2025 12:50:53] WARNING: [pool www] child 54 exited on signal 9 (SIGKILL) after 2.351535 seconds from start
+[30-Nov-2025 12:50:53] NOTICE: [pool www] child 56 started
+[30-Nov-2025 12:58:06] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[30-Nov-2025 13:00:48] NOTICE: Finishing ...
+[30-Nov-2025 13:00:48] NOTICE: exiting, bye-bye!
+[30-Nov-2025 13:00:55] NOTICE: fpm is running, pid 1
+[30-Nov-2025 13:00:55] NOTICE: ready to handle connections
+[30-Nov-2025 13:00:55] NOTICE: systemd monitor disabled
+[30-Nov-2025 13:13:56] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[30-Nov-2025 13:51:11] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[30-Nov-2025 14:02:26] NOTICE: Finishing ...
+[30-Nov-2025 14:02:26] NOTICE: exiting, bye-bye!
+[30-Nov-2025 14:02:33] NOTICE: fpm is running, pid 1
+[30-Nov-2025 14:02:33] NOTICE: ready to handle connections
+[30-Nov-2025 14:02:33] NOTICE: systemd monitor disabled
+[30-Nov-2025 14:02:36] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[30-Nov-2025 14:10:16] WARNING: [pool www] server reached max_children setting (4), consider raising it
+[30-Nov-2025 14:11:05] WARNING: [pool www] server reached max_children setting (4), consider raising it

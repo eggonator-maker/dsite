@@ -1,0 +1,24 @@
+uuid: 6d09df35-0c3a-4161-b4eb-2143ac881795
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_education_training
+    - filter.format.basic_html
+    - node.type.doctor
+  module:
+    - text
+id: node.doctor.field_education_training
+field_name: field_education_training
+entity_type: node
+bundle: doctor
+label: 'Education  Training'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

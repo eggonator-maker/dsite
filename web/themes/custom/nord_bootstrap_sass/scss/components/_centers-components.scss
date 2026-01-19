@@ -1,0 +1,182 @@
+/*--------------------------------------------------------------
+# Sidebar Navigation (Center Navigation Block)
+--------------------------------------------------------------*/
+
+.center-navigation {
+    width: 100%;
+  
+    .centers-nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      .nav-item {
+        list-style: none;
+        margin: 0 0 rem(8);
+  
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+  
+      /* Collapsible parent item */
+      .nav-collapsible {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* NEW: Add radius and transition to the parent container */
+        border-radius: $border-radius-sm;
+        transition: background-color 0.2s ease;
+  
+        /* NEW: Hover state for the whole container */
+        &:hover {
+          background-color: $color-bg-subtle;
+        }
+      }
+  
+      /* Default links */
+      .nav-link {
+        display: block;
+        /* Make link fill most of the space */
+        flex-grow: 1; 
+        padding: rem(8) rem(12);
+        font-family: $font-family-heading;
+        font-weight: 400;
+        font-size: rem(16);
+        color: $color-text-dark;
+        text-decoration: none;
+        /* CHANGED: Apply radius by default (for non-collapsible links) */
+        border-radius: 0;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
+        /* NEW: Remove radius and bg if it's inside a collapsible group */
+        .nav-collapsible & {
+          border-radius: 0;
+          background-color: transparent !important; /* Always transparent */
+        }
+  
+        &:hover {
+          /* This now only applies to non-collapsible links */
+          background-color: $color-bg-subtle;
+        }
+
+        /* REMOVED: All active/trail logic is moved to a dedicated section below */
+      }
+  
+      /* Collapsible toggle (arrow) */
+      .nav-toggle {
+        background: none;
+        border: none;
+        border-radius: 0; 
+        padding: rem(8) rem(10); 
+        cursor: pointer;
+        /* CHANGED: Removed transition, color is on icon */
+        flex-shrink: 0; /* Prevent button from shrinking */
+  
+        &:hover {
+          /* CHANGED: Target the icon on hover */
+          .icon {
+            color: $color-primary-blue; /* CHANGED: Use color, not background-color */
+          }
+        }
+        
+        /* Target the icon for styling */
+        .icon {
+          /* CHANGED: Set color directly */
+          color: $color-text-dark; 
+          --icon-size: 12px; /* CHANGED: Use px as requested */
+          display: inline-block;
+          /* CHANGED: Add color to the transition */
+          transition: transform 0.2s ease, color 0.2s ease;
+        }
+  
+        /* Rotate the icon when expanded */
+        &[aria-expanded='true'] .icon {
+          transform: rotate(180deg);
+          color: $color-primary-red;
+        }
+      }
+
+      /* --- NEW: Active Trail & Current Page Logic --- */
+    
+      /* 1. ALL items in active trail get RED TEXT */
+      /* CHANGED: Use (>) to target ONLY the direct children:
+        - .nav-item > .nav-link (for non-collapsible)
+        - .nav-item > .nav-collapsible > .nav-link (for collapsible)
+      */
+      .nav-item.in-active-trail > .nav-link,
+      .nav-item.in-active-trail > .nav-collapsible > .nav-link {
+        color: $color-primary-red;
+        font-weight: 600;
+      }
+      
+      /* 2. ALL icons in active trail get RED CHEVRON */
+      /* CHANGED: Use (>) to target ONLY the direct toggle:
+        - .nav-item > .nav-collapsible > .nav-toggle
+      */
+      .nav-item.in-active-trail > .nav-collapsible > .nav-toggle .icon {
+        color: $color-primary-red;
+      }
+  
+      /* 3. ONLY TOP-LEVEL items in trail get GREY BACKGROUND */
+      /* This selector was already correct */
+      > .nav-item.in-active-trail > .nav-link {
+        background-color: $color-bg-subtle;
+      }
+      /* This selector was already correct */
+      > .nav-item.in-active-trail > .nav-collapsible {
+        background-color: $color-bg-subtle;
+      }
+  
+      /* Sub-navigation (nested ul) */
+      /* CHANGED: Added .collapsing to apply styles during animation */
+      .collapse, .collapsing {
+        /* CHANGED: Swapped margin-top for padding-top to fix animation jump */
+        margin-top: 0; 
+        padding-top: 0; 
+        padding-left: rem(16);
+        /* NEW: Added padding-bottom to contain all spacing */
+        padding-bottom: 0; 
+        border-left: none;
+  
+        ul.centers-nav {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+  
+          /* NEW: Apply collapsible item logic to nested items */
+          .nav-collapsible {
+            &:hover {
+              background-color: $color-bg-subtle;
+            }
+          }
+          
+          /* 4. EXCEPTION: Remove grey background from NESTED items */
+          /* These selectors were already correct */
+          > .nav-item.in-active-trail > .nav-link {
+            background-color: transparent;
+          }
+          > .nav-item.in-active-trail > .nav-collapsible {
+            background-color: transparent;
+          }
+  
+          /* This is a fallback for the active page itself, just in case */
+          .nav-link.is-active {
+            background-color: transparent;
+          }
+          
+          /* Nested .nav-link.in-active-trail already has red text from rule #1 */
+
+          .nav-item {
+            margin-bottom: rem(6);
+            
+            /* NEW: Remove margin from last item to prevent jump */
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }

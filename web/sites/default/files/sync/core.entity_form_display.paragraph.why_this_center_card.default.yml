@@ -1,0 +1,32 @@
+uuid: 9b25dfdc-773e-49e7-9147-17efea7004e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_this_center_card.field_card_description
+    - field.field.paragraph.why_this_center_card.field_card_title
+    - paragraphs.paragraphs_type.why_this_center_card
+id: paragraph.why_this_center_card.default
+targetEntityType: paragraph
+bundle: why_this_center_card
+mode: default
+content:
+  field_card_description:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_card_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

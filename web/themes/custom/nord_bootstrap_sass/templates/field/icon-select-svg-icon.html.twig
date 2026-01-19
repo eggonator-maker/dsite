@@ -1,0 +1,8 @@
+{% set classes = [
+  'icon-select',
+  'icon-select--' ~ symbol_id
+] %}
+
+<svg{{ attributes.addClass(classes).removeClass('icon').removeClass('icon--' ~ symbol_id) }}>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{ symbol_id }}"></use>
+</svg>

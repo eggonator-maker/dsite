@@ -1,0 +1,30 @@
+uuid: d275dd7e-7cd0-4025-a776-d1714af166e5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2da49483-15d1-470b-b383-e363533aad84'
+  module:
+    - block_content
+    - system
+  theme:
+    - nord_bootstrap_sass
+id: nord_bootstrap_sass_homepagecontactform
+theme: nord_bootstrap_sass
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:2da49483-15d1-470b-b383-e363533aad84'
+settings:
+  id: 'block_content:2da49483-15d1-470b-b383-e363533aad84'
+  label: 'Homepage Contact form'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

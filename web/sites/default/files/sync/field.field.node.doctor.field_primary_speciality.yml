@@ -1,0 +1,19 @@
+uuid: 55fe58e0-c2a0-4838-963f-7b0da03b15d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_primary_speciality
+    - node.type.doctor
+id: node.doctor.field_primary_speciality
+field_name: field_primary_speciality
+entity_type: node
+bundle: doctor
+label: 'Primary Speciality'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

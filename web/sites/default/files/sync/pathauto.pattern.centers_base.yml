@@ -1,0 +1,22 @@
+uuid: 61c5e8cf-66e5-4a5c-a726-51075c20506a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: centers_base
+label: 'centers base'
+type: 'canonical_entities:node'
+pattern: '/centers/[node:title]'
+selection_criteria:
+  d9285c17-2ef4-43aa-a5e9-dd508bc1f91f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d9285c17-2ef4-43aa-a5e9-dd508bc1f91f
+    context_mapping:
+      node: node
+    bundles:
+      centers: centers
+selection_logic: and
+weight: -6
+relationships: {  }

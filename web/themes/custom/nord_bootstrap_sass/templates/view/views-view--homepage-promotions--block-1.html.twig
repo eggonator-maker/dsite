@@ -1,0 +1,79 @@
+{# templates/block/block--robotic-surgery-carousel.html.twig #}
+
+<section id="roboticSurgeryCarousel" class="carousel slide robotic-carousel" data-bs-ride="carousel">
+
+  {# THE FIX: Added carousel indicators #}
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#roboticSurgeryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#roboticSurgeryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  {# Carousel Inner Content #}
+  <div class="carousel-inner">
+
+    {# --- SLIDE 1 --- #}
+    <div class="carousel-item active">
+      <div class="robotic-carousel__slide-container">
+        
+        <div class="robotic-carousel__media" style="background-image: url('{{ directory }}/images/robot-surgery.png');">
+        </div>
+
+        <div class="robotic-carousel__content">
+          <h2 class="robotic-carousel__title">Facem chirurgia robotică accesibilă și eficientă</h2>
+          
+          <p class="robotic-carousel__text">
+            Misiunea noastră este să facem chirurgia robotică accesibilă și eficientă pentru cât mai mulți pacienți care își doresc acces la tratamente moderne.
+          </p>
+
+          <ul class="robotic-carousel__features">
+            <li class="robotic-carousel__feature-item">
+              <span class="icon icon-document icon--md text-secondary" aria-hidden="true"></span>
+              <span><span class="text-secondary"><strong>10 locuri</strong></span> cu acces prioritar la intervenții chirurgicale de top</span>
+            </li>
+            <li class="robotic-carousel__feature-item">
+              <span class="icon icon-document icon--md text-secondary" aria-hidden="true"></span>
+              <span><span class="text-secondary"><strong>40% reducere</strong></span> pentru intervențiile robotice realizate cu sistemul DaVinciXI™.</span>
+            </li>
+          </ul>
+          
+          <a href="#" class="btn btn-danger">{{ "Află mai multe"|t }}</a>
+        </div>
+
+       </div>
+    </div>
+
+    {# --- SLIDE 2 (Example) --- #}
+    <div class="carousel-item">
+       <div class="robotic-carousel__slide-container">
+        <div class="robotic-carousel__media" style="background-image: url('{{ directory }}/images/robot-surgery.png');"></div>
+        <div class="robotic-carousel__content">
+          <h2 class="robotic-carousel__title">Precizie de neegalat în intervenții complexe</h2>
+          <p class="robotic-carousel__text">Sistemul DaVinciXI™ permite chirurgilor noștri să efectueze proceduri minim invazive cu o acuratețe și un control excepțional.</p>
+            <ul class="robotic-carousel__features">
+            <li class="robotic-carousel__feature-item">
+              <span class="icon icon-document icon--md text-secondary" aria-hidden="true"></span>
+              <span>Recuperare mai rapidă pentru pacienți</span>
+            </li>
+            <li class="robotic-carousel__feature-item">
+              <span class="icon icon-document icon--md text-secondary" aria-hidden="true"></span>
+              <span>Risc redus de complicații postoperatorii</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-danger">{{ "Vezi detalii"|t }}</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  {# Carousel Controls (Next/Previous Buttons) #}
+  <button class="carousel-control-prev" type="button" data-bs-target="#roboticSurgeryCarousel" data-bs-slide="prev">
+    <span class="icon icon-chevron-left icon--sm" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#roboticSurgeryCarousel" data-bs-slide="next">
+    <span class="icon icon-chevron-right icon--sm" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</section>

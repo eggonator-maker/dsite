@@ -1,0 +1,149 @@
+{% set carousel_type = paragraph.field_carousel_type.0.value|default('hero_banner') %}
+{% set carousel_height = paragraph.field_carousel_height.0.value|default('tall') %}
+{% set nav_position = paragraph.field_navigation_positioning.0.value|default('default') %}
+{% set carousel_id = 'carousel-' ~ paragraph.id() %}
+
+{% set carousel_classes = [
+  'carousel-component',
+  'carousel',
+  'slide',
+  'carousel-component--' ~ carousel_type|replace({'_': '-'}),
+  'carousel-component--' ~ carousel_height,
+  'carousel-component--nav-' ~ nav_position,
+] %}
+
+{% if carousel_type == 'solid_bg' %}
+  <section id="{{ carousel_id }}" class="{{ carousel_classes|join(' ') }}" data-bs-ride="carousel">
+    <div class="carousel__wrapper">
+      <div class="carousel__main-content">
+        
+        {% if paragraph.field_slides|length > 1 %}
+          <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
+            <span class="icon icon-chevron-left icon--md" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        {% endif %}
+        
+        <div class="carousel-inner">
+          {% for key, slide in paragraph.field_slides %}
+            <div class="carousel-item {{ key == 0 ? 'active' : '' }}">
+              <div class="carousel__slide-container">
+                
+                <div class="carousel__content">
+                  {% if slide.entity.field_formatted_title %}
+                    {{ slide.entity.field_formatted_title|add_class('carousel__title') }}
+                  {% endif %}
+                  
+                  {% if slide.entity.field_formatted_subtitle %}
+                    {{ slide.entity.field_formatted_subtitle|add_class('carousel__lead') }}
+                  {% endif %}
+                  
+                  {% if slide.entity.field_features %}
+                    <div class="carousel__features row">
+                      {{ slide.entity.field_features }}
+                    </div>
+                  {% endif %}
+                </div>
+                
+                {% if slide.entity.field_media_image %}
+                  <div class="carousel__media">
+                    {{ slide.entity.field_media_image|view }}
+                  </div>
+                {% endif %}
+                
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        
+        {% if paragraph.field_slides|length > 1 %}
+          <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
+            <span class="icon icon-chevron-right icon--md" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        {% endif %}
+        
+      </div>
+      
+      {% if paragraph.field_slides|length > 1 %}
+        <div class="carousel-indicators">
+          {% for key, slide in paragraph.field_slides %}
+            <button type="button" 
+                    data-bs-target="#{{ carousel_id }}" 
+                    data-bs-slide-to="{{ key }}" 
+                    class="{{ key == 0 ? 'active' : '' }}"
+                    aria-current="{{ key == 0 ? 'true' : 'false' }}"
+                    aria-label="Slide {{ key + 1 }}"></button>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+    </div>
+  </section>
+
+{% elseif carousel_type == 'split_screen' %}
+  <section id="{{ carousel_id }}" class="{{ carousel_classes|join(' ') }}" data-bs-ride="carousel">
+    
+    {% if paragraph.field_slides|length > 1 %}
+      <div class="carousel-indicators">
+        {% for key, slide in paragraph.field_slides %}
+          <button type="button" 
+                  data-bs-target="#{{ carousel_id }}" 
+                  data-bs-slide-to="{{ key }}" 
+                  class="{{ key == 0 ? 'active' : '' }}"
+                  aria-current="{{ key == 0 ? 'true' : 'false' }}"
+                  aria-label="Slide {{ key + 1 }}"></button>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    <div class="carousel-inner">
+      {{ content.field_slides }}
+    </div>
+    
+    {% if paragraph.field_slides|length > 1 %}
+      <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
+        <span class="icon icon-chevron-left icon--sm" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
+        <span class="icon icon-chevron-right icon--sm" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    {% endif %}
+    
+  </section>
+
+{% else %} {# hero_banner #}
+  <section id="{{ carousel_id }}" class="{{ carousel_classes|join(' ') }}" data-bs-ride="carousel">
+    
+    {% if paragraph.field_slides|length > 1 %}
+      <div class="carousel-indicators">
+        {% for key, slide in paragraph.field_slides %}
+          <button type="button" 
+                  data-bs-target="#{{ carousel_id }}" 
+                  data-bs-slide-to="{{ key }}" 
+                  class="{{ key == 0 ? 'active' : '' }}"
+                  aria-current="{{ key == 0 ? 'true' : 'false' }}"
+                  aria-label="Slide {{ key + 1 }}"></button>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    <div class="carousel-inner">
+        {{ content.field_slides }}
+    </div>
+    
+    {% if paragraph.field_slides|length > 1 %}
+      <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
+        <span class="icon icon-chevron-left icon--sm" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
+        <span class="icon icon-chevron-right icon--sm" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    {% endif %}
+    
+  </section>
+{% endif %}

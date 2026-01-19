@@ -1,0 +1,62 @@
+uuid: 6d4b101a-89d4-44f1-92db-ade0a133de39
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.doctor.feeds_item
+    - field.field.node.doctor.field_about_doctor
+    - field.field.node.doctor.field_awards_distinctions
+    - field.field.node.doctor.field_card_image
+    - field.field.node.doctor.field_centers
+    - field.field.node.doctor.field_competencies
+    - field.field.node.doctor.field_conferences_seminars
+    - field.field.node.doctor.field_education_training
+    - field.field.node.doctor.field_external_id
+    - field.field.node.doctor.field_full_profile_image
+    - field.field.node.doctor.field_image
+    - field.field.node.doctor.field_primary_speciality
+    - field.field.node.doctor.field_professional_experience
+    - field.field.node.doctor.field_specialities
+    - field.field.node.doctor.field_specialties
+    - image.style.medium
+    - node.type.doctor
+  module:
+    - image
+    - user
+id: node.doctor.teaser
+targetEntityType: node
+bundle: doctor
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_about_doctor: true
+  field_awards_distinctions: true
+  field_card_image: true
+  field_centers: true
+  field_competencies: true
+  field_conferences_seminars: true
+  field_education_training: true
+  field_external_id: true
+  field_full_profile_image: true
+  field_primary_speciality: true
+  field_professional_experience: true
+  field_specialities: true
+  field_specialties: true

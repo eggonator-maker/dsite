@@ -1,0 +1,8 @@
+{# templates/views-view-unformatted--services-by-center--block-1.html.twig #}
+{# This now uses our custom horizontal scroller instead of a Bootstrap grid #}
+<div class="cards-scroller hide-scrollbar">
+  {% for row in rows %}
+    {# We no longer need the column class #}
+    {{ row.content }}
+  {% endfor %}
+</div>

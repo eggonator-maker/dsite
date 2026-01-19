@@ -1,0 +1,93 @@
+{# templates/views-view--homepage-information-block--block-1.html.twig #}
+
+<section id="newsSlider" class="carousel slide news-slider-section" data-bs-ride="carousel">
+  <div class="container-fluid news-slider-section__wrapper">
+
+    {# Main content row (holds chevrons, content, and slides) #}
+    <div class="row align-items-center news-slider-section__main-content">
+
+      {# Left Chevron (Desktop Only) #}
+      <div class="col-auto d-none d-lg-block">
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsSlider" data-bs-slide="prev">
+          <span class="icon icon-chevron-left icon--md" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+      </div>
+
+      {# Carousel Inner Content #}
+      <div class="col">
+        <div class="carousel-inner">
+
+          {# --- SLIDE 1 --- #}
+          <div class="carousel-item active">
+            <div class="news-slider__slide-container">
+              <div class="news-slider__content">
+                <h2 class="news-slider__title">Punct de colectare medicamente neutilizate sau expirate</h2>
+                <p class="news-slider__text">
+                  La punctul nostru special amenajat poți aduce medicamentele expirate sau neutilizate, contribuind la protejarea sănătății și a mediului. Nu arunca medicamentele la gunoi – predă-le în siguranță!
+                </p>
+                <div class="news-slider__features row">
+                  <div class="col-12 col-md-6">
+                    <div class="feature-item">
+                      <span class="icon icon-document icon--md"></span>
+                      <span>Citotoxice/Citostatice</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="icon icon-document icon--md"></span>
+                      <span>Medicamente uzuale</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="feature-item">
+                      <span class="icon icon-document icon--md"></span>
+                      <span>Recipiente sticlă și fiole</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="icon icon-document icon--md"></span>
+                      <span>Recipiente sub presiune</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-slider__media">
+                <img src="{{ directory }}/images/pharma.png" alt="Medicamente expirate colectate in siguranta">
+              </div>
+            </div>
+          </div>
+
+          {# --- SLIDE 2 (Example) --- 
+          <div class="carousel-item">
+            <div class="news-slider__slide-container">
+              <div class="news-slider__content">
+                <h2 class="news-slider__title">Another News Story</h2>
+                <p class="news-slider__text">The content for the second slide goes here.</p>
+              </div>
+              <div class="news-slider__media">
+                <img src="{{ directory }}/images/pharma.png" alt="Placeholder">
+              </div>
+            </div>
+          </div>
+          #}
+        </div>
+      </div>
+
+      {# Right Chevron (Desktop Only) #}
+      <div class="col-auto d-none d-lg-block">
+        <button class="carousel-control-next" type="button" data-bs-target="#newsSlider" data-bs-slide="next">
+          <span class="icon icon-chevron-right icon--md" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    {# Indicators Row #}
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#newsSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#newsSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

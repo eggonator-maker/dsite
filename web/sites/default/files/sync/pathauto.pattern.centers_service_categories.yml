@@ -1,0 +1,22 @@
+uuid: bc5d19d8-631b-49f3-88c6-8b58c0570f58
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: centers_service_categories
+label: 'centers service categories'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/centers/[term:field_center]/[term:name]'
+selection_criteria:
+  b72b729e-d71f-414a-988d-2e66520bfdc8:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: b72b729e-d71f-414a-988d-2e66520bfdc8
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      service_category: service_category
+selection_logic: and
+weight: -10
+relationships: {  }

@@ -1,0 +1,24 @@
+uuid: 748464a1-16dd-4418-bc6a-ad205ea77049
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.para_block
+    - field.field.block_content.para_block.field_paragraphs
+  module:
+    - entity_reference_revisions
+id: block_content.para_block.default
+targetEntityType: block_content
+bundle: para_block
+mode: default
+content:
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

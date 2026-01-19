@@ -1,0 +1,19 @@
+uuid: 1e6b29f4-251c-41a3-bc94-cae4138f6e87
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_about_doctor
+field_name: field_about_doctor
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

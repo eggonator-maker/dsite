@@ -1,0 +1,10 @@
+uuid: f1f222e1-87ac-45aa-a989-5d3f795d1918
+langcode: en
+status: true
+dependencies: {  }
+id: test_type_paragraph_test_type
+label: 'Test Type (paragraph test type)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

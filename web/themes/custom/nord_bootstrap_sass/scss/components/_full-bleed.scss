@@ -1,0 +1,3 @@
+/* Front page: remove horizontal gutters where container padding is 0 */
+.path-frontpage #main { --bs-gutter-x: 0; }
+

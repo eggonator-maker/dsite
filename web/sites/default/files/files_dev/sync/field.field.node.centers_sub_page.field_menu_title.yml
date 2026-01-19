@@ -1,0 +1,19 @@
+uuid: 57a7c608-bc2f-4b36-8846-bf8c25a624ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_title
+    - node.type.centers_sub_page
+id: node.centers_sub_page.field_menu_title
+field_name: field_menu_title
+entity_type: node
+bundle: centers_sub_page
+label: 'Menu Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

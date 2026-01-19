@@ -1,0 +1,174 @@
+/*--------------------------------------------------------------
+# Doctor Profile Card (Search Page)
+--------------------------------------------------------------*/
+
+.doctor-profile {
+  /* 1. Fixed Dimensions from Figma */
+  width: rem(288);
+  height: rem(424);
+  
+  /* 2. Card Shell Styling */
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-bottom: 4px solid #D3E9FF;
+  border-radius: 0 0 rem(12) rem(12);
+  
+  /* Shadow from Figma */
+  box-shadow:
+    0px 12.5px 10px rgba(0, 124, 247, 0.04),
+    0px 6.6px 5.3px rgba(0, 124, 247, 0.03),
+    0px 2.8px 2.2px rgba(0, 124, 247, 0.02);
+
+  /* Animation */
+  transition: transform 0.3s ease, border-bottom-color 0.3s ease;
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(rem(-8));
+    border-bottom-color: #007CF7;
+  }
+
+  /*--------------------------------------------------------------
+  # Image Container
+  --------------------------------------------------------------*/
+  &__image {
+    /* Fixed height from Figma is vital for consistent alignment */
+    height: rem(219); 
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: rem(12) rem(12) 0 0;
+    flex-shrink: 0; /* Prevents image from squishing if text is huge */
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      margin-bottom: 0 !important;
+      width: 100%;
+      height: 100%;
+      /* This handles the cropping */
+      object-fit: cover; 
+      /* Anchors image to top-center, cropping the bottom */
+      object-position: center top; 
+      display: block;
+    }
+    .field--type-image {
+      margin: 0 0 0 0 !important;
+    }
+  }
+
+  /*--------------------------------------------------------------
+  # Content Area
+  --------------------------------------------------------------*/
+  &__content {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    padding: rem(16);
+    width: 100%;
+    
+    /* This makes the content area fill the remaining height of the card */
+    flex: 1; 
+    min-height: 0; /* Firefox flex fix */
+  }
+
+  /* Wrapper for Title and Specialty */
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(4);
+    margin-bottom: rem(16);
+  }
+
+  /* Doctor Name */
+  &__title {
+    margin: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 700; /* Figma says Bold (700) */
+    font-size: rem(20);
+    line-height: 1.2;
+    color: #262626;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover { color: #007CF7; }
+    }
+  }
+
+  /* Specialty */
+  &__speciality {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  /*--------------------------------------------------------------
+  # Actions (Buttons)
+  --------------------------------------------------------------*/
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(12.8); /* Figma gap */
+    width: 100%;
+    
+    /* THE GLUE: This pushes the buttons to the very bottom */
+    margin-top: auto; 
+
+    .btn {
+      flex: none; /* Prevent buttons from stretching unexpectedly */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: rem(6.4);
+      font-family: 'Open Sans', sans-serif;
+      font-size: rem(11.2);
+      
+      /* Primary Button (Call) */
+      &-primary {
+        background: #027FF7;
+        color: #F8FAFC;
+        border: none;
+        padding: rem(9.6) rem(14.4);
+        font-weight: 700;
+        
+        &:hover { background: #0066CC; }
+      }
+
+      /* Outline Button (Schedule) */
+      &-outline-primary {
+        flex-grow: 1; /* Makes this button fill remaining width */
+        background: #FFFFFF;
+        border: rem(1.6) solid #027FF7;
+        color: #027FF7;
+        padding: rem(8) rem(14.4); /* Adjusted padding to match height */
+        font-weight: 600;
+
+        &:hover {
+          background: #F0F8FF;
+          border-color: #0066CC;
+          color: #0066CC;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Responsive 
+--------------------------------------------------------------*/
+@media (max-width: 576px) {
+  .doctor-profile {
+    /* Allow card to shrink slightly on very small screens if needed */
+    width: 100%; 
+    max-width: rem(288);
+  }
+}

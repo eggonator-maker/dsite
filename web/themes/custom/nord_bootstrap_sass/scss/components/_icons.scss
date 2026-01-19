@@ -1,0 +1,58 @@
+$icon-path: '../images/icons';
+
+// declare all the icon names once here:
+$icons: (
+  phone,
+  lab,
+  profile,
+  search,
+  chevron-left, 
+  chevron-right,
+  x-ray-box,
+  document,
+  right-arrow,
+  chevron-down,
+  doc-modern,
+  ion-call,
+  email-newsletter,
+  solar-calendar-bold,
+  outline-email,
+  healthicons-doctor-outline
+  // add more names here (file must be <name>.svg)
+);
+
+// Base: color comes from `color`, size from CSS var
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: var(--icon-size, 24px);
+  height: var(--icon-size, 24px);
+  background-color: currentColor; // <-- set color via `color:` or Bootstrap text utilities
+
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center;  mask-position: center;
+  -webkit-mask-size: contain;     mask-size: contain;
+}
+
+// Sizes (use as needed)
+.icon--xxsm { --icon-size: 13.5px;}
+.icon--xsm { --icon-size: 14.4px;}
+.icon--sm { --icon-size: 16px; }
+.icon--md { --icon-size: 24px; }
+.icon--lg { --icon-size: 32px; }
+.icon--xl { --icon-size: 40px; }
+.icon--xxl { --icon-size: 64px; }
+
+// Auto-generate .icon-<name> classes from the map
+@each $name in $icons {
+  .icon-#{$name} {
+    -webkit-mask-image: url('#{$icon-path}/#{$name}.svg');
+            mask-image: url('#{$icon-path}/#{$name}.svg');
+  }
+}
+
+// Optional: a one-off mixin if you ever need a custom class without touching the map
+@mixin icon-use($name) {
+  -webkit-mask-image: url('#{$icon-path}/#{$name}.svg');
+          mask-image: url('#{$icon-path}/#{$name}.svg');
+}

@@ -1,0 +1,152 @@
+/* scss/components/_news-slider.scss */
+
+.news-slider-section {
+  background-color: $light-blue;
+  position: relative;
+  // THE FIX: We need to prevent horizontal scrolling caused by negative margins
+  overflow-x: clip; 
+  
+  &__wrapper {
+    padding: rem(32) rem(16);
+
+    @media (min-width: 992px) {
+      padding: rem(60);
+    }
+  }
+
+  &__main-content {
+    @media (min-width: 992px) {
+      --bs-gutter-x: #{rem(88)};
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: static;
+    transform: none;
+    width: auto;
+    opacity: 1;
+
+    .icon {
+      color: $dark;
+    }
+  }
+
+  .carousel-indicators {
+    position: static;
+    margin: 0;
+    margin-top: rem(24);
+
+    @media (min-width: 992px) {
+      margin-top: rem(72);
+    }
+    
+    button {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #D1D1D1;
+      border: none;
+      opacity: 1;
+      margin: 0 4px;
+
+      &.active {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.news-slider {
+    &__slide-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem(24);
+      background-color: transparent;
+      box-shadow: none;
+  
+      @media (min-width: 992px) {
+        flex-direction: row;
+        gap: rem(64);
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      
+      @media (min-width: 992px) {
+        flex: 1;
+      }
+    }
+  
+    &__media {
+      // --- MOBILE: Full-bleed image ---
+      height: rem(250);
+      overflow: hidden;
+      // THE FIX: Calculate width to be 100% + the padding on both sides
+      width: calc(100% + #{rem(32)}); 
+      // THE FIX: Use negative margin to pull the image to the edges
+      margin-left: rem(-16);
+      margin-right: rem(-16);
+      
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // This crops the image sides
+        object-position: center; // This keeps the image centered
+      }
+
+      // --- DESKTOP: Revert to normal contained image ---
+      @media (min-width: 992px) {
+        flex: 0 0 50%;
+        max-width: 580px;
+        height: auto;
+        // THE FIX: Reset width and margins for desktop
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: rem(12); // Re-apply border radius
+      }
+    }
+  
+    &__title {
+      font-family: $font-montserrat;
+      font-weight: 800;
+      font-size: rem(32);
+      line-height: 1.2;
+      color: $primary;
+      margin-bottom: rem(16);
+    }
+  
+    &__text {
+      font-family: $font-open-sans;
+      font-size: rem(16);
+      line-height: 1.6;
+      color: $text;
+      margin-bottom: rem(32);
+    }
+
+    &__features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: rem(12);
+        font-size: rem(16);
+        color: $text;
+        margin-bottom: rem(16);
+
+        .icon {
+          color: $secondary;
+        }
+      }
+    }
+}

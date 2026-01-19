@@ -1,0 +1,24 @@
+<a href="{{ fields.view_node.content|striptags|trim }}">
+
+<article class="doctor-profile">
+  <div class="doctor-profile__image" style="height: 18rem;">
+  {% if fields.field_card_image.content|render|striptags|trim %}
+    {{ fields.field_card_image.content }}
+  {% else %}
+    <img src="{{ '/' ~ directory ~ '/images/default_doctor_card.jpg' }}" alt="Doctor profile placeholder">
+  {% endif %}
+</div>
+
+  <div class="doctor-profile__content">
+  <div class="doctor-profile__info">
+    <h3 class="doctor-profile__title">
+    {{ fields.title.content|striptags }}
+    </h3>
+
+    <div class="doctor-profile__speciality">
+      {{fields.field_primary_speciality.content|striptags}}
+    </div>
+  </div>
+  </div>
+</article>
+</a>

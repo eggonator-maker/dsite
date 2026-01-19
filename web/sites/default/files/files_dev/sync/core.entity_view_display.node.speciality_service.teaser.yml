@@ -1,0 +1,38 @@
+uuid: f2159eed-435e-4b64-93ab-4857cb0902d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.speciality_service.field_description
+    - field.field.node.speciality_service.field_image
+    - field.field.node.speciality_service.field_speciality
+    - image.style.medium
+    - node.type.speciality_service
+  module:
+    - image
+    - user
+id: node.speciality_service.teaser
+targetEntityType: node
+bundle: speciality_service
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_speciality: true

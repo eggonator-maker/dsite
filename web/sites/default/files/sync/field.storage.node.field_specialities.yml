@@ -1,0 +1,20 @@
+uuid: 9513f9b3-9b2c-4aa3-86a6-4ae1fa43bba3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_specialities
+field_name: field_specialities
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

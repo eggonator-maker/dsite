@@ -1,0 +1,61 @@
+{#
+  @file
+  Navigation for the Speciality section.
+  This can be styled completely differently from the center navigation.
+#}
+
+{% macro render_menu_items(items, menu_id) %}
+  {% import _self as self %}
+  {# Add whatever classes you want for your new design #}
+  <ul class="specialities-nav">
+    {% for item in items %}
+      {%
+        set li_classes = ['nav-item']
+      %}
+      {% if item.is_collapsible %}
+        {% set li_classes = li_classes|merge(['nav-item--collapsible']) %}
+      {% endif %}
+      {% if item.in_active_trail %}
+        {% set li_classes = li_classes|merge(['in-active-trail']) %}
+      {% endif %}
+      {% if item.is_active %}
+         {% set li_classes = li_classes|merge(['is-active']) %}
+      {% endif %}
+      
+      <li class="{{ li_classes|join(' ') }}">
+        {% if item.is_collapsible %}
+          {# ... Add collapsible logic if you need it ... #}
+          <a 
+            href="{{ item.url }}" 
+            class="nav-link {{ item.is_active ? 'is-active' }}" 
+            data-ajax-link {# <-- IMPORTANT FOR AJAX #}
+          >
+            {{ item.title }}
+          </a>
+          {# ... button ... #}
+          {% if item.children is not empty %}
+            {# ... recursive call ... #}
+          {% endif %}
+        {% else %}
+          {# Simple link #}
+          <a 
+            href="{{ item.url }}" 
+            class="nav-link {{ item.is_active ? 'is-active' }}" 
+            data-ajax-link {# <-- IMPORTANT FOR AJAX #}
+          >
+            {{ item.title }}
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% import _self as self %}
+
+{# Give this wrapper a unique ID for the JavaScript to find #}
+<nav class="specialities-navigation" id="specialities-navigation-block" aria-label="Specialities services">
+  {% if items is not empty %}
+    {{ self.render_menu_items(items, 'main') }}
+  {% endif %}
+</nav>

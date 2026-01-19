@@ -1,0 +1,5 @@
+vendor/
+web/modules/contrib/
+web/themes/custom/nord_bootstrap_sass/node_modules/
+content_scraper/.venv/
+content_scraper/scraped_data/images/

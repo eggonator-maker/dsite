@@ -1,0 +1,72 @@
+/* scss/components/_doctor-card.scss */
+
+/* Requires the rem() function to be available */
+
+.doctor-card {
+    /* --- Card Shell --- */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-bottom: rem(4) solid #EBEBEB;
+    box-shadow:
+      0 12.5px 0 rgba(0,124,247,.035),
+      0  6.6px  5.3px rgba(0,124,247,.028),
+      0  2.7px  2.2px rgba(0,124,247,.02);
+    border-radius: 0 0 rem(12) rem(12);
+  
+    /* --- SIZING (THE FIX) --- */
+    /* Enforce the exact dimensions from your Figma design */
+    width: rem(296);
+    height: rem(436);
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    gap: rem(16);
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    /* --- Image Block (THE FIX) --- */
+    &__media {
+      position: relative;
+      height: rem(290); /* Exact image container height */
+      flex-shrink: 0;
+      border-radius: rem(12) rem(12) 0 0;
+      overflow: hidden;
+  
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    /* --- Text Body --- */
+    &__body {
+      display: flex;
+      flex-direction: column;
+      gap: rem(4);
+      padding: 0 rem(16) rem(16);
+    }
+  
+    /* --- Title (THE FIX) --- */
+    &__name {
+      margin: 0;
+      font-family: 'Open Sans', system-ui, sans-serif; /* Using Open Sans from previous spec */
+      font-weight: 700; /* Bold font weight */
+      font-size: rem(20); /* 28px font size */
+      line-height: 1.2;
+      color: $primary; /* Use the primary color variable */
+    }
+  
+    /* --- Subtitle (THE FIX) --- */
+    &__subtitle {
+      margin: 0;
+      font-family: 'Open Sans', system-ui, sans-serif;
+      font-weight: 600; /* Semi-bold font weight */
+      font-size: rem(16); /* 18px font size */
+      line-height: 1.5;
+      color: #595959;
+    }
+  }

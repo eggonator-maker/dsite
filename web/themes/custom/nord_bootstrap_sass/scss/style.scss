@@ -1,0 +1,92 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+@import "components/icons";
+@import "helpers/anti-bleed";
+@import "components/header";
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+    font-family: $font-open-sans; 
+    background: $white;
+}
+
+.node__content {
+    margin-top: 0px;
+}
+
+.text-blue {
+    color: #027FF7;
+  }
+  
+.text-dark-blue {
+color: #0E296B;
+}
+
+  
+.layout-main-wrapper {
+overflow-x: clip;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+p {
+    color: $text;
+    margin-bottom: 0;
+}
+
+.field--type-entity-reference {
+    margin-bottom: 0;
+}
+/* COLORS 
+--------------------------------------------------*/
+
+a {
+    color: $accent-shade;
+}
+
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: $accent-shade !important;
+}
+
+.menu--main li a {
+    color: $primary-shade;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
+

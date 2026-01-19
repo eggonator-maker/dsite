@@ -1,0 +1,26 @@
+{# This template renders individual hero banner slides #}
+{% if content.field_mobile_background %}
+  {{ content.field_mobile_background|add_class('carousel__bg-mobile') }}
+{% endif %}
+
+{% if content.field_desktop_background %}
+  {{ content.field_desktop_background|add_class('carousel__bg-desktop') }}
+{% endif %}
+
+<div class="carousel__content-wrapper">
+  <div class="carousel__content">
+    {% if content.field_formatted_title %}
+      {{ content.field_formatted_title|add_class('carousel__title') }}
+    {% endif %}
+    
+    {% if content.field_formatted_subtitle %}
+      {{ content.field_formatted_subtitle|add_class('carousel__lead') }}
+    {% endif %}
+  </div>
+  
+  {% if content.field_action_buttons %}
+    <div class="carousel__actions">
+      {{ content.field_action_buttons }}
+    </div>
+  {% endif %}
+</div>

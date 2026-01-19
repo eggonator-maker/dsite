@@ -1,0 +1,24 @@
+{# templates/views-view-fields--services-by-center--block-1.html.twig #}
+<a href="{{ fields.view_node.content|striptags|trim }}" class="service-card">
+  {% if fields.field_image.content %}
+    <div class="service-card__media">
+      {{ fields.field_image.content }}
+    </div>
+  {% endif %}
+
+  <div class="service-card__body">
+    <div class="service-card__text-content">
+      <h3 class="service-card__title">
+        {{ fields.title.content }}
+      </h3>
+      {% if fields.field_description.content %}
+        <p class="service-card__description">
+          {{ fields.field_description.content }}
+        </p>
+      {% endif %}
+    </div>
+    <div class="service-card__arrow">
+      <span class="icon icon-right-arrow icon--xsm"></span>
+    </div>
+  </div>
+</a>

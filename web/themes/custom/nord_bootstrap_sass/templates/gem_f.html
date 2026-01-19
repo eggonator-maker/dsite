@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centru de Sân - Spitalul Nord Muntenia</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans+Display:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /*--------------------------------------------------------------
+        # Custom Properties & Base Styles
+        --------------------------------------------------------------*/
+        :root {
+            --color-text-dark: #2E333C;
+            --color-text-body: #5B5B5B;
+            --color-primary-blue: #027FF7;
+            --color-primary-navy: #001E60;
+            --color-primary-red: #E22A1F;
+            --color-white: #FFFFFF;
+            --color-bg-light: #F1F2F5;
+            --color-bg-subtle: #F5F5F5;
+            --color-border-light: #EAEAEA;
+            --color-border-accent: #D3E9FF;
+            --font-family-sans: 'Open Sans', sans-serif;
+            --font-family-heading: 'Noto Sans Display', sans-serif;
+            --font-family-display: 'Montserrat', sans-serif;
+            --shadow-card: 0px 12.5px 10px rgba(0, 0, 0, 0.035), 0px 2.7px 2.2px rgba(0, 0, 0, 0.02);
+            --border-radius-lg: 12px;
+            --border-radius-sm: 8px;
+        }
+
+        body {
+            background-color: var(--color-bg-light);
+            font-family: var(--font-family-sans);
+            color: var(--color-text-dark);
+        }
+
+        /*--------------------------------------------------------------
+        # Main Layout
+        --------------------------------------------------------------*/
+        .section-title {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.5;
+            color: var(--color-text-dark);
+        }
+
+        .card-block {
+            background: var(--color-white);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--border-radius-lg);
+            padding: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .card-block {
+                padding: 24px;
+            }
+        }
+
+        /*--------------------------------------------------------------
+        # Sidebar Navigation
+        --------------------------------------------------------------*/
+        .sidebar-nav--center {
+            background: var(--color-white);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--border-radius-lg);
+            padding: 40px 24px;
+        }
+
+        .sidebar-nav--center .nav-link {
+            padding: 8px;
+            font-family: var(--font-family-heading);
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--color-text-dark);
+            border-radius: var(--border-radius-sm);
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .sidebar-nav--center .nav-link:hover {
+            background-color: var(--color-bg-subtle);
+        }
+
+        .sidebar-nav--center .nav-link.active {
+            background-color: var(--color-bg-subtle);
+            color: var(--color-primary-red);
+            font-weight: 600;
+        }
+        
+        /*--------------------------------------------------------------
+        # Content Block: Main Article & Article Detail
+        --------------------------------------------------------------*/
+        .article-content h2, .article-content h3 {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.5;
+            color: var(--color-text-dark);
+        }
+        .article-content p {
+            font-family: var(--font-family-heading);
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--color-text-dark);
+        }
+
+        .article-detail h1 {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+        .article-detail h2, .article-detail h3 {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.5;
+            color: var(--color-text-dark);
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        .article-detail p, .article-detail li {
+            font-family: var(--font-family-sans);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--color-text-dark);
+        }
+        .article-detail ul {
+            padding-left: 20px;
+        }
+        .article-detail ul li {
+            margin-bottom: 8px;
+        }
+
+
+        /*--------------------------------------------------------------
+        # Info & Testimonial Cards
+        --------------------------------------------------------------*/
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 40px 24px;
+            background: var(--color-white);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--border-radius-sm);
+            border-bottom: 8px solid var(--color-border-accent);
+            height: 100%;
+        }
+        .card-info__icon {
+            font-size: 48px;
+            color: var(--color-primary-blue);
+        }
+        .card-info__title {
+            font-family: var(--font-family-sans);
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--color-text-dark);
+        }
+        .card-info__text {
+            font-family: var(--font-family-sans);
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--color-text-dark);
+        }
+        .card-info__text--testimonial {
+            font-style: italic;
+        }
+
+        /*--------------------------------------------------------------
+        # Service Cards
+        --------------------------------------------------------------*/
+         .card-service {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 40px 24px;
+            background: var(--color-white);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--border-radius-sm);
+            border: 2px solid var(--color-primary-red);
+            height: 100%;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        .card-service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.05);
+        }
+        .card-service__title {
+            font-family: var(--font-family-sans);
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--color-text-dark);
+        }
+        .card-service__text {
+            font-family: var(--font-family-sans);
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--color-text-dark);
+        }
+        .card-service__link {
+            font-family: var(--font-family-heading);
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--color-primary-red);
+            text-decoration: none;
+        }
+
+        /*--------------------------------------------------------------
+        # CTA Blocks
+        --------------------------------------------------------------*/
+        .cta-block--red {
+            background-color: var(--color-primary-red);
+            color: var(--color-white);
+            border-radius: var(--border-radius-sm);
+        }
+        .cta-block--red h3 {
+            font-family: var(--font-family-sans);
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .cta-block--red p {
+            font-size: 16px;
+            opacity: 0.95;
+            margin-bottom: 0;
+        }
+        .cta-block--red .btn-light {
+            font-weight: 700;
+            color: var(--color-primary-red);
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-sm);
+        }
+
+        /*--------------------------------------------------------------
+        # Accordion (FAQ)
+        --------------------------------------------------------------*/
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+        .accordion-button {
+            font-family: var(--font-family-sans);
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--color-text-dark);
+            padding: 20px 16px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none;
+            color: var(--color-primary-red);
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: transparent;
+        }
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E22A1F'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        .accordion-body {
+            padding: 1rem;
+            font-size: 16px;
+            color: var(--color-text-body);
+        }
+
+        /*--------------------------------------------------------------
+        # Contact Cards
+        --------------------------------------------------------------*/
+        .card-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 24px;
+            padding: 40px 24px;
+            background: var(--color-white);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--border-radius-sm);
+            height: 100%;
+        }
+        .card-contact__icon {
+            font-size: 48px;
+            color: var(--color-primary-blue);
+        }
+        .card-contact__title {
+            font-family: var(--font-family-sans);
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--color-text-dark);
+        }
+        .card-contact .btn-primary {
+            background-color: var(--color-primary-blue);
+            border-color: var(--color-primary-blue);
+            font-family: var(--font-family-sans);
+            font-weight: 700;
+            font-size: 14px;
+            padding: 12px 18px;
+            border-radius: var(--border-radius-sm);
+        }
+
+        /*--------------------------------------------------------------
+        # NEW: Detail Cards (for Imagistica)
+        --------------------------------------------------------------*/
+        .card-detail {
+            background: var(--color-white);
+            box-shadow: var(--shadow-card);
+            border-radius: var(--border-radius-lg);
+            padding: 24px;
+            height: 100%;
+        }
+        .card-detail__header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .card-detail__icon {
+            font-size: 24px; /* Smaller icon */
+            color: var(--color-primary-blue);
+            flex-shrink: 0;
+        }
+        .card-detail__title {
+            font-family: var(--font-family-sans);
+            font-weight: 700;
+            font-size: 18px; /* Slightly smaller title */
+            color: var(--color-text-dark);
+            margin: 0;
+        }
+        .card-detail__text {
+            font-family: var(--font-family-sans);
+            font-size: 15px; /* Slightly smaller text */
+            line-height: 1.6;
+            color: var(--color-text-dark);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container py-5">
+        <div class="row g-4 g-lg-5">
+            <!-- Sidebar Column -->
+            <aside class="col-lg-3">
+                <div class="sidebar-nav--center">
+                    <h3 class="px-2 mb-3" style="font-family: var(--font-family-heading); font-weight: 600;">Servicii</h3>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="#">Centru de san</a>
+                        <a class="nav-link" href="#">Servicii</a>
+                        <a class="nav-link" href="#">Tehnici chirurgicale</a>
+                        <a class="nav-link" href="#">Resurse utile</a>
+                        <a class="nav-link" href="#">Echipa medicală</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Main Content Column -->
+            <main class="col-lg-9">
+                <div class="d-flex flex-column gap-5">
+                    
+                    <!-- Component: Main Content Article -->
+                    <section class="card-block article-content">
+                        <h1 class="section-title mb-4">Centru de san</h1>
+                        <img src="https://placehold.co/944x400/E22A1F/white?text=Imagine+Reprezentativ%C4%83" class="img-fluid rounded mb-4" alt="Imagine reprezentativa centru de san">
+                        <h2 class="mb-3">Un nou standard in ingrijirea sanului</h2>
+                        <p class="mb-4">Spitalul Nord Muntenia oferă un cadru medical bazat pe siguranță şi încredere, susținut de o echipă bine pregătită, empatică și orientată spre pacient, alături de tehnologie modernă și un sistem personalizat de gestionare a datelor. Pacienții beneficiază de servicii integrate de la investigații și analize, până la tratamente și intervenții, într-un singur loc, rapid și eficient.</p>
+                        <h3>Abordarea noastra multidisciplinara</h3>
+                        <p>Spitalul pune accent pe confort, comunicare deschisă și accesibilitate, oferind spații primitoare, bine organizate și ușor de navigat, alături de o echipă atentă la nevoile fiecărui pacient.</p>
+                    </section>
+
+                    <!-- Component: "De ce sa alegi" Grid -->
+                    <section>
+                        <h2 class="section-title mb-4">De ce sa alegi Centrul de San - Spitalul Nord Muntenia</h2>
+                        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-hand-holding-medical"></i><h3 class="card-info__title">Abordare multidisciplinară</h3><p class="card-info__text">Echipă medicală completă, formată din medici specializați în imagistică, chirurgie, oncologie, radioterapie și anatomie patologică.</p></div></div>
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-kit-medical"></i><h3 class="card-info__title">Servicii integrate</h3><p class="card-info__text">Oferim un management complet al afecțiunilor mamare, de la diagnostic, la tratament și monitorizare, totul într-un singur loc.</p></div></div>
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-microscope"></i><h3 class="card-info__title">Tehnologie modernă</h3><p class="card-info__text">Aparatură de ultimă generație pentru un diagnostic precis și rapid, incluzând mamografie digitală cu tomosinteză și RMN 3T.</p></div></div>
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-file-medical"></i><h3 class="card-info__title">Diagnostic rapid</h3><p class="card-info__text">Circuit rapid de diagnostic, de la primul consult la rezultatul anatomopatologic în doar câteva zile.</p></div></div>
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-tags"></i><h3 class="card-info__title">Accesibilitate</h3><p class="card-info__text">Servicii medicale decontate prin CAS și contracte cu principalele societăți de asigurări de sănătate din România.</p></div></div>
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-users"></i><h3 class="card-info__title">Suport pentru paciente</h3><p class="card-info__text">Consiliere psihologică și grupuri de suport pentru a oferi sprijin emoțional pe tot parcursul tratamentului.</p></div></div>
+                        </div>
+                    </section>
+
+                    <!-- Component: Services Grid -->
+                    <section>
+                        <h2 class="section-title mb-4">Servicii</h2>
+                        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            <div class="col"><a href="#" class="card-service"><h3 class="card-service__title">Consultație senologică</h3><p class="card-service__text">Evaluare clinică completă a sânilor de către un medic supraspecializat.</p><span class="card-service__link">Afla detalii <i class="fa-solid fa-arrow-right-long"></i></span></a></div>
+                            <div class="col"><a href="#" class="card-service"><h3 class="card-service__title">Imagistică mamară</h3><p class="card-service__text">Mamografie, ecografie și RMN pentru un diagnostic de înaltă precizie.</p><span class="card-service__link">Afla detalii <i class="fa-solid fa-arrow-right-long"></i></span></a></div>
+                            <div class="col"><a href="#" class="card-service"><h3 class="card-service__title">Intervenții chirurgicale</h3><p class="card-service__text">De la tumorectomie la mastectomie și reconstrucție mamară.</p><span class="card-service__link">Afla detalii <i class="fa-solid fa-arrow-right-long"></i></span></a></div>
+                        </div>
+                    </section>
+
+                    <!-- Component: Red CTA Block -->
+                    <section class="cta-block--red p-4 p-md-5">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                            <div class="text-center text-md-start mb-4 mb-md-0">
+                                <h3>Programează o consultație</h3>
+                                <p>Suntem aici pentru a-ți oferi suportul de care ai nevoie.</p>
+                            </div>
+                            <a href="#" class="btn btn-light px-4 py-2">Programează-te</a>
+                        </div>
+                    </section>
+                    
+                     <!-- Component: Testimonials -->
+                    <section>
+                        <h2 class="section-title mb-4">Testimoniale pacienti Centrul de San</h2>
+                        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-quote-left"></i><p class="card-info__text card-info__text--testimonial">O echipă de profesioniști, empatici și dedicați. M-am simțit în siguranță pe tot parcursul tratamentului.</p><cite class="card-info__author align-self-end">- Ana M.</cite></div></div>
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-quote-left"></i><p class="card-info__text card-info__text--testimonial">Medici de excepție și condiții foarte bune. Recomand cu încredere Centrul de Sân.</p><cite class="card-info__author align-self-end">- Elena P.</cite></div></div>
+                            <div class="col"><div class="card-info"><i class="card-info__icon fa-solid fa-quote-left"></i><p class="card-info__text card-info__text--testimonial">Am primit tot sprijinul necesar, atât medical, cât și psihologic. Vă mulțumesc!</p><cite class="card-info__author align-self-end">- Maria I.</cite></div></div>
+                        </div>
+                    </section>
+
+                    <!-- Component: FAQ Accordion -->
+                    <section class="card-block">
+                        <h2 class="section-title mb-4 text-start">Intrebari frecvente</h2>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Ce este mamografia digitala cu tomosinteza?</button></h2><div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Este cea mai avansată metodă imagistică de depistare precoce a cancerului mamar, permițând o vizualizare 3D a sânului și detectarea leziunilor de mici dimensiuni.</div></div></div>
+                            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Cand este recomandat un RMN mamar?</button></h2><div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">RMN-ul mamar este recomandat în situații specifice, cum ar fi pentru pacientele cu risc genetic înalt, pentru evaluarea extensiei bolii sau pentru monitorizarea răspunsului la tratament.</div></div></div>
+                            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Ce presupune biopsia ghidata imagistic?</button></h2><div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Este o procedură minim-invazivă prin care se prelevează o mostră de țesut dintr-o leziune suspectă, sub ghidaj ecografic sau mamografic, pentru un diagnostic de certitudine.</div></div></div>
+                        </div>
+                    </section>
+
+                    <!-- Component: Contact Cards -->
+                    <section>
+                        <h2 class="section-title mb-4">Accesează serviciile centrului medical</h2>
+                         <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            <div class="col">
+                                <div class="card-contact">
+                                    <i class="card-contact__icon fa-solid fa-phone-volume"></i>
+                                    <h3 class="card-contact__title">Programare telefonica</h3>
+                                    <a href="tel:0248948" class="btn btn-primary">0248 948</a>
+                                </div>
+                            </div>
+                             <div class="col">
+                                <div class="card-contact">
+                                    <i class="card-contact__icon fa-solid fa-calendar-days"></i>
+                                    <h3 class="card-contact__title">Programare online</h3>
+                                    <a href="#" class="btn btn-primary">Programează-te</a>
+                                </div>
+                            </div>
+                             <div class="col">
+                                <div class="card-contact">
+                                    <i class="card-contact__icon fa-solid fa-envelope-open-text"></i>
+                                    <h3 class="card-contact__title">Vreau sa fiu informat</h3>
+                                    <a href="#" class="btn btn-primary">Abonează-te</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Component: Detailed Service Article (from Mastectomie page) -->
+                    <section class="card-block article-detail">
+                        <h1>Mastectomie</h1>
+                        <img src="https://placehold.co/864x300/CCCCCC/FFFFFF?text=Imagine+Mastectomie" class="img-fluid rounded mb-4" alt="Imagine reprezentativa Mastectomie">
+                        
+                        <h2>Despre interventie:</h2>
+                        <p>Mastectomia este o operație chirurgicală de îndepărtare a întregului sân, de obicei, inclusiv mamelonul și areola, și este o procedură comună în tratamentul cancerului de sân. Se practică extirparea în totalitate a sanului impreuna cu o anumiti ganglioni din axila (santinelă) sau cu toti ganglionii din axila.</p>
+                        
+                        <h3>Mai multe detalii despre mastectomie:</h3>
+                        <ul>
+                            <li><strong>Tipuri de mastectomie:</strong> Mastectomie simpla (totală); îndepărtarea completă a sânului, inclusiv glanda mamară, mamelonul, areola și pielea, cu păstrarea ganglionilor axilari și a mușchiului pectoral.</li>
+                            <li><strong>Mastectomie preventivă:</strong> Poate fi luată în considerare pentru pacienții cu risc genetic ridicat de cancer mamar, cum ar fi cele cu mutații ale genelor BRCA1 sau BRCA2.</li>
+                            <li><strong>Mastectomie radicală modificată:</strong> Este un tip de mastectomie care presupune îndepărtarea întregului sân, a mamelonului, areolei, precum și a ganglionilor limfatici axilari.</li>
+                        </ul>
+
+                        <h3>Beneficiile mastectomiei:</h3>
+                        <ul>
+                            <li>Reducerea riscului de recidivă locală a cancerului de sân.</li>
+                            <li>Reducerea riscului de a dezvolta cancer de sân în cazul mastectomiei preventive.</li>
+                            <li>Reconstrucția mamară poate restabili aspectul sânului după mastectomie.</li>
+                        </ul>
+
+                        <!-- Inner Red CTA Block -->
+                        <div class="cta-block--red p-4 mt-5">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                                <div class="text-center text-md-start mb-3 mb-md-0">
+                                    <h3>Programează o consultație</h3>
+                                    <p>Suntem aici pentru a-ți oferi suportul de care ai nevoie.</p>
+                                </div>
+                                <a href="#" class="btn btn-light px-4 py-2 flex-shrink-0">Programează-te</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- NEW SECTION: IMAGISTICA -->
+                    <section class="d-flex flex-column gap-4">
+                        <!-- Imagistica Hero Block -->
+                        <div class="card-block article-content">
+                             <h1 class="section-title mb-4">Imagistică</h1>
+                             <img src="https://placehold.co/944x300/027FF7/white?text=Imagistic%C4%83+Avansat%C4%83" class="img-fluid rounded mb-4" alt="Echipament de imagistica medicala">
+                             <h2 class="mb-3">Mamografie, ecografie și RMN – toate într-un singur loc</h2>
+                             <p>Diagnosticul corect al afecțiunilor mamare începe cu investigații imagistice de înaltă acuratețe. În cadrul centrului nostru, pacienții beneficiază de tehnologii moderne precum mamografia digitală cu tomosinteză, ecografia mamară și rezonanța magnetică (RMN) a sânului. Aceste metode permit identificarea leziunilor în stadii incipiente, chiar și în cazurile cu țesut mamar dens.</p>
+                        </div>
+                        
+                        <!-- Imagistica Detail Cards Grid -->
+                        <div class="row g-4 row-cols-1 row-cols-md-2">
+                            <div class="col">
+                                <div class="card-detail">
+                                    <div class="card-detail__header">
+                                        <i class="card-detail__icon fa-solid fa-wave-square"></i>
+                                        <h3 class="card-detail__title">Ecografia mamară</h3>
+                                    </div>
+                                    <p class="card-detail__text">Este o metodă imagistică ce folosește ultrasunete, ce poate diferenția structurile lichidiene de cele solide, evaluarea dimensiunilor tumorii și obținerea unor descriptori ai leziunilor.</p>
+                                </div>
+                            </div>
+                             <div class="col">
+                                <div class="card-detail">
+                                    <div class="card-detail__header">
+                                        <i class="card-detail__icon fa-solid fa-arrows-to-circle"></i>
+                                        <h3 class="card-detail__title">Elastografie mamară</h3>
+                                    </div>
+                                    <p class="card-detail__text">Oferă informații despre suplețea țesuturilor; este o tehnică imagistică ecografică bazată pe diferențele de elasticitate dintre țesuturile normale și cele patologice.</p>
+                                </div>
+                            </div>
+                             <div class="col">
+                                <div class="card-detail">
+                                    <div class="card-detail__header">
+                                        <i class="card-detail__icon fa-solid fa-x-ray"></i>
+                                        <h3 class="card-detail__title">Mamografie</h3>
+                                    </div>
+                                    <p class="card-detail__text">Este cea mai avansată metodă imagistică de depistare precoce și diagnosticare a afecțiunilor mamare și este investigația gold-standard de screening al cancerului mamar.</p>
+                                </div>
+                            </div>
+                             <div class="col">
+                                <div class="card-detail">
+                                    <div class="card-detail__header">
+                                        <i class="card-detail__icon fa-solid fa-magnet"></i>
+                                        <h3 class="card-detail__title">RMN mamar</h3>
+                                    </div>
+                                    <p class="card-detail__text">Este o investigație modernă de mare precizie care permite evaluarea stării de sănătate a sânului, confirmarea sau infirmarea unei suspiciuni de diagnostic și obținerea de informații.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+name: 'Center Services'
+type: module
+description: 'Provides the  navigation and content blocks for the centers page.'
+core_version_requirement: ^10 || ^11
+package: 'Custom'

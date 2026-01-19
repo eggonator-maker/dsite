@@ -1,0 +1,70 @@
+uuid: 177e8eb5-b36c-4372-bda4-260245f63ca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.para_block
+    - field.storage.block_content.field_paragraphs
+    - paragraphs.paragraphs_type.cs_card_paragraph
+    - paragraphs.paragraphs_type.cs_card_section
+    - paragraphs.paragraphs_type.cs_faq
+    - paragraphs.paragraphs_type.question_and_answer
+  module:
+    - entity_reference_revisions
+id: block_content.para_block.field_paragraphs
+field_name: field_paragraphs
+entity_type: block_content
+bundle: para_block
+label: paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cs_card_paragraph: cs_card_paragraph
+      cs_card_section: cs_card_section
+      cs_faq: cs_faq
+      question_and_answer: question_and_answer
+    negate: 0
+    target_bundles_drag_drop:
+      block_reference:
+        weight: 13
+        enabled: false
+      centers_description_image:
+        weight: 14
+        enabled: false
+      centers_description_title:
+        weight: 15
+        enabled: false
+      centers_text_content_section:
+        weight: 16
+        enabled: false
+      contact_us_cards:
+        weight: 17
+        enabled: false
+      cs_card_paragraph:
+        weight: 18
+        enabled: true
+      cs_card_section:
+        weight: 19
+        enabled: true
+      cs_faq:
+        weight: 20
+        enabled: true
+      hero_slide:
+        weight: 21
+        enabled: false
+      hero_slider:
+        weight: 22
+        enabled: false
+      question_and_answer:
+        weight: 23
+        enabled: true
+      why_this_center_card:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,430 @@
+/*--------------------------------------------------------------
+# Doctors Search Page - Figma Design Implementation
+--------------------------------------------------------------*/
+
+.doctors-search-page {
+  background: #F1F2F5;
+  padding: rem(64) rem(80);
+  min-height: 100vh;
+
+  /* Container - 1280px max width */
+  .doctors-search-container {
+    max-width: rem(1280);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(32);
+    
+    /* White card background */
+    background: #FFFFFF;
+    border-radius: rem(16);
+    padding: rem(40);
+    box-shadow: 0 rem(1) rem(3) rgba(0, 0, 0, 0.05);
+  }
+
+  /* Filters section - full width within container */
+  .doctors-search-filters {
+    width: 100%;
+  }
+
+  /* "Toti medicii" Title */
+  .doctors-search-title {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 700;
+    font-size: rem(32);
+    line-height: 1.5;
+    color: #2E333C;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Results Grid Container */
+  .doctors-search-results {
+    width: 100%;
+    
+    .row {
+      row-gap: rem(16);
+    }
+  }
+
+  /* No Results Block */
+  .doctors-search-no-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: rem(60) rem(20);
+    background: #F8FAFC;
+    border-radius: rem(12);
+    min-height: rem(300);
+
+    &__icon {
+      margin-bottom: rem(24);
+      
+      svg {
+        width: rem(64);
+        height: rem(64);
+      }
+    }
+
+    &__title {
+      font-family: 'Noto Sans Display', sans-serif;
+      font-weight: 600;
+      font-size: rem(24);
+      line-height: 1.4;
+      color: #2E333C;
+      margin: 0 0 rem(12) 0;
+    }
+
+    &__text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 1.6;
+      color: #64748B;
+      margin: 0;
+      max-width: rem(480);
+    }
+  }
+
+  /* Pagination */
+  .doctors-search-pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Doctors Search Form - Exposed Filter Styling
+--------------------------------------------------------------*/
+
+.doctors-search-form {
+  width: 100%;
+
+  /* Reset Drupal's default form styling */
+  .form-item {
+    margin-bottom: 0;
+  }
+
+  /* Hide the submit button but keep it functional for AJAX */
+  &__actions {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Main wrapper - horizontal layout */
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: rem(8) 0;
+    gap: rem(48);
+  }
+
+  /* Individual field containers */
+  &__field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0; // Prevent flex items from overflowing
+    position: relative;
+  }
+
+  /* Common input styling for text and select */
+  &__input,
+  &__select {
+    width: 100%;
+    height: rem(24);
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-bottom: rem(1) solid #94A3B8;
+    background: transparent;
+    border-radius: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: #0F172A;
+    box-shadow: none;
+    transition: border-color 0.2s ease;
+
+    &::placeholder {
+      color: #94A3B8;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom-color: #027FF7;
+      box-shadow: none;
+    }
+  }
+
+  /* Select dropdown specific styling */
+  &__select {
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url('../images/icons/chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 0 center;
+    background-size: rem(12);
+    padding-right: rem(24);
+
+    // Remove default browser styling
+    &::-ms-expand {
+      display: none;
+    }
+
+    // Placeholder state - when "All" or default is selected, show gray text
+    &.is-placeholder,
+    &:has(option[value="All"]:checked),
+    &:has(option.placeholder-option:checked) {
+      color: #94A3B8;
+    }
+
+    // When a real option is selected, show dark text
+    &:not(.is-placeholder) {
+      color: #0F172A;
+    }
+
+    // Style placeholder option itself
+    option.placeholder-option {
+      color: #94A3B8;
+    }
+
+    // Regular options
+    option:not(.placeholder-option) {
+      color: #0F172A;
+    }
+  }
+
+  /* Doctor name field - with search icon */
+  &__field--doctor-name {
+    // Search icon positioned at left
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: rem(24);
+      height: rem(24);
+      background-image: url('../images/icons/search.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      color: $color-primary-blue;
+      z-index: 1;
+    }
+
+    .doctors-search-form__input {
+      padding-left: rem(32);
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Pagination Styling
+--------------------------------------------------------------*/
+
+.doctors-pager {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #FFFFFF;
+    border-radius: rem(5);
+    height: rem(38);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: rem(38);
+    margin: 0;
+
+    /* Previous arrow */
+    &--prev {
+      .doctors-pager__link {
+        border-radius: rem(4) 0 0 rem(4);
+        padding: rem(11) rem(13);
+        width: rem(42);
+      }
+    }
+
+    /* Next arrow */
+    &--next {
+      .doctors-pager__link {
+        border-radius: 0 rem(4) rem(4) 0;
+        padding: rem(11) rem(13);
+        width: rem(42);
+      }
+    }
+
+    /* Active page - Blue circle */
+    &--active {
+      .doctors-pager__link {
+        background: #027FF7;
+        border-radius: rem(100);
+        color: #FFFFFF;
+        font-weight: 600;
+        width: rem(41);
+        height: rem(38);
+        padding: rem(9) rem(17);
+
+        &:hover {
+          background: #0066CC;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    /* Ellipsis */
+    &--ellipsis {
+      .doctors-pager__link {
+        pointer-events: none;
+        padding: rem(9) rem(14);
+        width: rem(41);
+      }
+    }
+
+    /* Disabled state */
+    &--disabled {
+      .doctors-pager__link {
+        opacity: 0.5;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: rem(9) rem(16);
+    min-width: rem(41);
+    height: rem(38);
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(17);
+    text-align: center;
+    color: #595959;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: #F0F8FF;
+      color: #027FF7;
+      border-radius: rem(4);
+    }
+
+    /* Current page link */
+    &--current {
+      background: #027FF7;
+      border-radius: rem(100);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Responsive Adjustments
+--------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+  .doctors-search-page {
+    padding: rem(48) rem(40);
+
+    .doctors-search-container {
+      max-width: 100%;
+      padding: rem(32);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .doctors-search-page {
+    padding: rem(32) rem(24);
+
+    .doctors-search-container {
+      gap: rem(24);
+      padding: rem(24);
+      border-radius: rem(12);
+    }
+
+    .doctors-search-title {
+      font-size: rem(28);
+    }
+  }
+
+  .doctors-search-form {
+    &__wrapper {
+      flex-direction: column;
+      gap: rem(24);
+      align-items: stretch;
+    }
+
+    &__field {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .doctors-search-page {
+    padding: rem(16);
+
+    .doctors-search-container {
+      gap: rem(20);
+      padding: rem(16);
+      border-radius: rem(8);
+    }
+
+    .doctors-search-title {
+      font-size: rem(24);
+    }
+
+    .doctors-search-results {
+      .row {
+        row-gap: rem(16);
+      }
+    }
+
+    .doctors-search-no-results {
+      padding: rem(40) rem(16);
+      min-height: rem(250);
+
+      &__title {
+        font-size: rem(20);
+      }
+
+      &__text {
+        font-size: rem(14);
+      }
+    }
+  }
+}

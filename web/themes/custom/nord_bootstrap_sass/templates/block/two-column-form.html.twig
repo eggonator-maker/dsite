@@ -1,0 +1,107 @@
+{# templates/block/block--appointment-form.html.twig #}
+
+<section class="appointment-form-section">
+  <div class="appointment-form__container">
+    <h2 class="appointment-form__title">Solicită o programare</h2>
+
+    <form class="appointment-form">
+      
+      {# Name fields row #}
+      <div class="form-row">
+        <div class="form-floating-group">
+          <input type="text" class="form-control" id="lastName" placeholder=" " required>
+          <label for="lastName" class="form-label">Nume <span class="required">*</span></label>
+        </div>
+        
+        <div class="form-floating-group">
+          <input type="text" class="form-control" id="firstName" placeholder=" " required>
+          <label for="firstName" class="form-label">Prenume <span class="required">*</span></label>
+        </div>
+      </div>
+      
+      {# Email and Phone row #}
+      <div class="form-row">
+        <div class="form-floating-group">
+          <input type="email" class="form-control" id="email" placeholder=" " required>
+          <label for="email" class="form-label">E-mail <span class="required">*</span></label>
+        </div>
+        
+        <div class="form-floating-group">
+          <input type="tel" class="form-control" id="phone" placeholder=" " required>
+          <label for="phone" class="form-label">Telefon <span class="required">*</span></label>
+        </div>
+      </div>
+      
+      {# County and Location row #}
+      <div class="form-row">
+        <div class="form-floating-group custom-select-wrapper">
+          <select class="form-control custom-select" id="county" required>
+            <option value="" disabled selected>ex. Pitești</option>
+            <option value="Pitești">Pitești</option>
+            <option value="București">București</option>
+            <option value="Cluj">Cluj</option>
+          </select>
+          <label for="county" class="form-label">Județ <span class="required">*</span></label>
+          <span class="icon icon-chevron-down custom-select-icon icon--sm"></span>
+        </div>
+        
+        <div class="form-floating-group custom-select-wrapper">
+          <select class="form-control custom-select" id="location" required>
+            <option value="" disabled selected>ex. Spitalul Nord Muntenia</option>
+            <option value="Spitalul Nord Muntenia">Spitalul Nord Muntenia</option>
+            <option value="Clinica Nord">Clinica Nord</option>
+          </select>
+          <label for="location" class="form-label">Locație programare <span class="required">*</span></label>
+          <span class="icon icon-chevron-down custom-select-icon icon--sm"></span>
+        </div>
+      </div>
+      
+      {# Specialization and Doctor row #}
+      <div class="form-row">
+        <div class="form-floating-group custom-select-wrapper">
+          <select class="form-control custom-select" id="specialization">
+            <option value="" disabled selected>Selectează specialitatea</option>
+            <option value="Urologie">Urologie</option>
+            <option value="Cardiologie">Cardiologie</option>
+            <option value="Chirurgie">Chirurgie</option>
+          </select>
+          <label for="specialization" class="form-label">Specialitate</label>
+          <span class="icon icon-chevron-down custom-select-icon icon--sm"></span>
+        </div>
+        
+        <div class="form-floating-group custom-select-wrapper">
+          <select class="form-control custom-select" id="doctor">
+            <option value="" disabled selected>Dr. Albean Marius</option>
+            <option value="Dr. Albean Marius">Dr. Albean Marius</option>
+            <option value="Dr. Popescu Ion">Dr. Popescu Ion</option>
+          </select>
+          <label for="doctor" class="form-label">Medic</label>
+          <span class="icon icon-chevron-down custom-select-icon icon--sm"></span>
+        </div>
+      </div>
+      
+      {# Details textarea #}
+      <div class="form-floating-group form-floating-group--textarea">
+        <textarea class="form-control form-control--textarea" id="details" rows="5" placeholder=" "></textarea>
+        <label for="details" class="form-label">Detalii solicitare</label>
+      </div>
+      
+      {# Checkboxes #}
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="termsAndConditions" required>
+        <label class="form-check-label" for="termsAndConditions">
+          Am citit şi sunt de acord cu <a href="#">Termenii si Conditiile</a> şi <a href="#">Politica de confidentialitate</a> a Spitalului Nord Muntenia. <span class="required">*</span>
+        </label>
+      </div>
+      
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="marketingConsent" required>
+        <label class="form-check-label" for="marketingConsent">
+          Am citit şi sunt de acord cu utilizarea datelor in scopuri de marketing conform politicii GDPR. <span class="required">*</span>
+        </label>
+      </div>
+      
+      <button type="submit" class="btn btn-danger btn-submit">Trimite</button>
+    </form>
+  </div>
+</section>

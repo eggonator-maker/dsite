@@ -1,0 +1,8 @@
+uuid: dee62e86-7e1f-40bd-8f7e-824b63fe3c17
+langcode: en
+status: true
+dependencies: {  }
+id: cs_card_block
+label: 'CS Card Block'
+revision: false
+description: null

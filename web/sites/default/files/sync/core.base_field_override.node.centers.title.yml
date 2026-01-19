@@ -1,0 +1,18 @@
+uuid: 3a33a881-9224-4cac-8ac6-5067d7b5577f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.centers
+id: node.centers.title
+field_name: title
+entity_type: node
+bundle: centers
+label: 'Center Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

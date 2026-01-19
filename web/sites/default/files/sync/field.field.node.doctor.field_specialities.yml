@@ -1,0 +1,29 @@
+uuid: 0a059a0f-f3f8-4cac-9be0-32e7364ce51c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specialities
+    - node.type.doctor
+    - taxonomy.vocabulary.specialities
+id: node.doctor.field_specialities
+field_name: field_specialities
+entity_type: node
+bundle: doctor
+label: Specialities
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      specialities: specialities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

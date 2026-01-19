@@ -1,0 +1,10 @@
+uuid: 6b1fa1ae-8abb-4282-8406-edc254e28ec7
+langcode: en
+status: true
+dependencies: {  }
+id: centers_text_content_section
+label: 'Centers text content section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

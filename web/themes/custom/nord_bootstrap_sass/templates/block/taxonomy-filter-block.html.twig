@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Taxonomy Filter Block Template
+ * Displays filtered content in a horizontally scrollable card layout
+ */
+#}
+
+<div class="taxonomy-filter-block card-block">
+  {% if block_title %}
+    <h2 class="section-title">{{ block_title }}</h2>
+  {% endif %}
+  
+  {% if description %}
+    <div class="taxonomy-filter-block__description">
+      {{ description|raw }}
+    </div>
+  {% endif %}
+
+  {% if nodes %}
+    <div class="taxonomy-filter-block__scroller">
+      {% for node in nodes %}
+        <div class="taxonomy-filter-block__item">
+          {{ node }}
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="taxonomy-filter-block__empty">
+      <p>{{ 'No content found matching the selected criteria.'|t }}</p>
+    </div>
+  {% endif %}
+</div>

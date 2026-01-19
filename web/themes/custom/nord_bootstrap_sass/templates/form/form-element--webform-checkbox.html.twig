@@ -1,0 +1,29 @@
+{# themes/your_theme/templates/form/form-element--webform-checkbox.html.twig #}
+
+<div class="form-check">
+  {# 1. The Input (Checkbox) #}
+  {{ children }}
+
+  {# 2. The Label 
+  QUICK FIX, need to fix labels
+  {{ label }}
+  #}
+  {# 3. The Description #}
+  {% if description.content %}
+    <div class="form-text description text-muted">
+      {{ description.content }}
+    </div>
+  {% elseif description %}
+    {# Fallback if description is not an array #}
+    <div class="form-text description text-muted">
+      {{ description }}
+    </div>
+  {% endif %}
+  
+  {# 4. Errors (if any) #}
+  {% if errors %}
+    <div class="form-element-errors">
+      {{ errors }}
+    </div>
+  {% endif %}
+</div>

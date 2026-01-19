@@ -1,0 +1,22 @@
+uuid: 380b981c-b1a2-47af-8f09-393eb63d5e46
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: center_services_no_category
+label: 'Center services no category'
+type: 'canonical_entities:node'
+pattern: '/centers/[node:field_center]/[node:field_menu_title]'
+selection_criteria:
+  91d6cc44-6215-494d-bfd9-7b613370c5a3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 91d6cc44-6215-494d-bfd9-7b613370c5a3
+    context_mapping:
+      node: node
+    bundles:
+      centers_service: centers_service
+selection_logic: and
+weight: -7
+relationships: {  }

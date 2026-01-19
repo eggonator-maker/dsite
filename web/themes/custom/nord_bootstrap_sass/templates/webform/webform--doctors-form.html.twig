@@ -1,0 +1,12 @@
+{# 
+  This template wraps the entire webform entity.
+  It handles the section and the title.
+#}
+<section class="appointment-form-section">
+  <div class="appointment-form__container">
+    <h2 class="appointment-form__title">Solicită o programare</h2>
+    
+    {# 'children' contains the actual <form> tag and its contents #}
+    {{ children }}
+  </div>
+</section>

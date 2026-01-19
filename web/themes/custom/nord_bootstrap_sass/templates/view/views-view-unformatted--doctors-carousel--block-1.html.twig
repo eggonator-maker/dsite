@@ -1,0 +1,27 @@
+{# templates/block--views-block--doctors-carousel-block-1.html.twig #}
+{# Unique, cache-safe ID (uses view properties that are stable across renders) #}
+<section class="doctors-section">
+  
+  {# The title is now a static H2 element. #}
+  <h2 class="doctors-section__title">Echipa medicală NORD <br> Spitalul Muntenia</h2>
+
+  <div class="doctors-section__content">
+<div class="h-scroll d-flex flex-nowrap overflow-x-auto gap-4 py-2 hide-scrollbar" role="region" aria-label="Doctors">
+  {% for row in rows %}
+    {#
+      - `flex-shrink-0`: Prevents cards from shrinking to fit the container.
+      - We remove the inline style and will control the width via SASS for better maintenance.
+    #}
+    <div class="h-scroll__item flex-shrink-0">
+      {{ row.content }}
+    </div>
+  {% endfor %}
+</div>
+ </div>
+
+  <div class="doctors-section__footer">
+    <a href="/medici" class="btn btn-outline-danger">
+      {{ 'Vezi toti medicii'|t }}
+    </a>
+  </div>
+</section>

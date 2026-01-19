@@ -1,0 +1,81 @@
+
+DRUPAL 11 IMPORT GUIDE
+======================
+
+The scraper generates a CSV file with the following columns:
+- name
+- specialty
+- location
+- image_url
+- experience
+- education
+- description
+- phone
+- email
+- source_url
+
+METHOD 1: Using Feeds Module
+-----------------------------
+1. Install Feeds module: composer require drupal/feeds
+2. Enable the module: drush en feeds
+3. Create a new Feed Type at /admin/structure/feeds
+4. Configure:
+   - Content type: Your doctor content type
+   - Parser: CSV
+   - Mapping: Map CSV columns to your fields
+5. Import at /import
+
+METHOD 2: Using Migrate Module
+-------------------------------
+1. Create a custom migration configuration
+2. Use migrate_source_csv as the source plugin
+3. Map fields in the migration YAML
+4. Run: drush migrate:import your_migration_name
+
+METHOD 3: Custom Import Script
+-------------------------------
+Use the JSON output and create a custom Drush command or PHP script
+to programmatically create nodes.
+
+EXAMPLE MIGRATION YAML:
+-----------------------
+id: nord_doctors
+label: Import Nord Doctors
+migration_group: nord_content
+
+source:
+  plugin: csv
+  path: /path/to/doctors_drupal_import.csv
+  header_row_count: 1
+  keys:
+    - name
+
+process:
+  title: name
+  field_specialty: specialty
+  field_location: location
+  field_experience: experience
+  field_education: education
+  body: description
+  field_phone: phone
+  field_email: email
+  field_source_url: source_url
+  
+  # For image, you'll need to download it first
+  field_image:
+    plugin: image_import
+    source: image_url
+
+destination:
+  plugin: entity:node
+  default_bundle: doctor
+
+DOWNLOADING IMAGES:
+------------------
+The image_url column contains URLs. You'll need to:
+1. Download each image
+2. Save to Drupal's files directory
+3. Create file entities
+4. Associate with the doctor nodes
+
+You can use a custom process plugin or download images separately.

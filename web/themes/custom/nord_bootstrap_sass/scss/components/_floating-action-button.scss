@@ -1,0 +1,39 @@
+/* scss/components/_floating-action-button.scss */
+
+.floating-action-btn {
+    // Positioning
+    position: fixed;
+    bottom: rem(20);
+    right: rem(20);
+    z-index: 1000;
+  
+    // THE FIX: New appearance and dimensions
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(6); // Space between icon and text
+    width: rem(103);
+    height: rem(32);
+    background-color: $danger; // Use the red variable
+    color: $white;
+    border-radius: rem(100); // Creates the pill shape
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    text-decoration: none;
+    font-size: rem(14); // Font size for the phone number
+    font-weight: 600;
+    
+    // Visibility
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    // THE FIX: Style the icon inside the button
+    .icon {
+      --icon-size: 14px; // Set the specific icon size
+      opacity: 0.8;
+    }
+    &:hover {
+        transform: translateY(-3px);
+      }
+    
+  }

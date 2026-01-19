@@ -1,0 +1,17 @@
+<div class="thank-you-wrapper">
+	<div class="thank-you-card">
+		{% if content.field_icon %}
+				{{ content.field_icon | add_class("thank-you-card__icon")}}
+		{% endif %}
+		{% if content.field_heading %}
+			<h2>{{ content.field_heading | add_class("thank-you-card__heading")}}</h2>
+		{% endif %}
+
+		{% if content.field_subtitle %}
+
+			<h3>
+				{{ content.field_subtitle | add_class("thank-you-card__subtitle")}}
+			</h3>
+		{% endif %}
+	</div>
+</div>

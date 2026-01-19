@@ -1,0 +1,10 @@
+uuid: 6749a552-b2ca-436e-ba67-69a8eeb563c9
+langcode: en
+status: true
+dependencies: {  }
+id: cs_faq
+label: 'CS FAQ'
+icon_uuid: null
+icon_default: null
+description: 'Frequently asked questions accordion. '
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: 1323309e-092f-487c-909c-1a97bec3ad3d
+langcode: en
+status: true
+dependencies: {  }
+id: cs_card_section
+label: 'CS Card Section'
+icon_uuid: null
+icon_default: null
+description: 'Main Card Section for the Centers and Specialities pages.'
+behavior_plugins: {  }

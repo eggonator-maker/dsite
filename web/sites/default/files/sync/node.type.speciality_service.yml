@@ -1,0 +1,17 @@
+uuid: 34afff76-58ba-4bb0-a746-d2f33d1b1143
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'speciality service'
+type: speciality_service
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

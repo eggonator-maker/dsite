@@ -1,0 +1,192 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
++------------+--------------------------------------------------------------+-----------+
+| Collection | Config                                                       | Operation |
++------------+--------------------------------------------------------------+-----------+
+|            | block_content.type.cs_card_block                             | Create    |
+|            | core.entity_view_mode.feeds_feed.full                        | Create    |
+|            | feeds.settings                                               | Create    |
+|            | field.storage.block_content.field_description                | Create    |
+|            | field.field.block_content.cs_card_block.field_description    | Create    |
+|            | field.storage.block_content.field_title                      | Create    |
+|            | field.field.block_content.cs_card_block.field_title          | Create    |
+|            | core.entity_view_mode.media.doctors_profile                  | Create    |
+|            | core.entity_view_mode.media.cards_grid                       | Create    |
+|            | core.entity_view_display.media.image.doctors_profile         | Create    |
+|            | core.entity_view_display.media.image.cards_grid              | Create    |
+|            | field.storage.node.field_primary_speciality                  | Create    |
+|            | field.storage.node.field_full_profile_image                  | Create    |
+|            | field.storage.node.field_external_id                         | Create    |
+|            | field.storage.node.field_centers                             | Create    |
+|            | field.storage.node.field_card_image                          | Create    |
+|            | field.storage.node.feeds_item                                | Create    |
+|            | core.entity_view_mode.node.cards_grid                        | Create    |
+|            | field.field.node.doctor.field_primary_speciality             | Create    |
+|            | field.field.node.doctor.field_full_profile_image             | Create    |
+|            | field.field.node.doctor.field_external_id                    | Create    |
+|            | field.field.node.doctor.field_centers                        | Create    |
+|            | field.field.node.doctor.field_card_image                     | Create    |
+|            | field.field.node.doctor.feeds_item                           | Create    |
+|            | system.action.feeds_feed_clear_action                        | Create    |
+|            | system.action.feeds_feed_delete_action                       | Create    |
+|            | system.action.feeds_feed_import_action                       | Create    |
+|            | field.storage.node.field_specialities                        | Create    |
+|            | field.storage.block_content.field_specialities               | Create    |
+|            | field.field.node.doctor.field_specialities                   | Create    |
+|            | field.field.block_content.cs_card_block.field_specialities   | Create    |
+|            | core.entity_view_display.block_content.cs_card_block.default | Create    |
+|            | core.entity_form_display.block_content.cs_card_block.default | Create    |
+|            | field.storage.node.field_professional_experience             | Create    |
+|            | field.storage.node.field_education_training                  | Create    |
+|            | field.storage.node.field_conferences_seminars                | Create    |
+|            | field.storage.node.field_competencies                        | Create    |
+|            | field.storage.node.field_awards_distinctions                 | Create    |
+|            | field.storage.node.field_about_doctor                        | Create    |
+|            | field.field.node.doctor.field_professional_experience        | Create    |
+|            | field.field.node.doctor.field_education_training             | Create    |
+|            | field.field.node.doctor.field_conferences_seminars           | Create    |
+|            | field.field.node.doctor.field_competencies                   | Create    |
+|            | field.field.node.doctor.field_awards_distinctions            | Create    |
+|            | field.field.node.doctor.field_about_doctor                   | Create    |
+|            | feeds.feed_type.doctors_import_csv                           | Create    |
+|            | core.entity_view_display.node.doctor.cards_grid              | Create    |
+|            | views.view.doctors_search                                    | Create    |
+|            | views.view.feeds_feed                                        | Create    |
+|            | metatag.metatag_defaults.403                                 | Create    |
+|            | metatag.metatag_defaults.404                                 | Create    |
+|            | metatag.metatag_defaults.front                               | Create    |
+|            | metatag.metatag_defaults.global                              | Create    |
+|            | metatag.metatag_defaults.node                                | Create    |
+|            | metatag.metatag_defaults.taxonomy_term                       | Create    |
+|            | metatag.metatag_defaults.user                                | Create    |
+|            | metatag.settings                                             | Create    |
+|            | metatag_custom_tags.metatag_custom_tag.sitename              | Create    |
+|            | core.extension                                               | Update    |
+|            | field.field.node.doctor.field_specialties                    | Update    |
+|            | system.performance                                           | Update    |
+|            | system.site                                                  | Update    |
+|            | core.entity_form_display.node.doctor.default                 | Update    |
+|            | core.entity_view_display.node.doctor.teaser                  | Update    |
+|            | core.entity_view_display.node.doctor.default                 | Update    |
+|            | core.entity_view_display.node.doctor.card_carousel           | Update    |
+|            | views.view.taxonomy_term                                     | Delete    |
++------------+--------------------------------------------------------------+-----------+
+
+ // Import the listed configuration changes?: yes.                              
+
+
+In ConfigImportCommands.php line 291:
+                                                                               
+  The import failed due to the following reasons:                              
+  Unable to install the <em class="placeholder">feeds</em> module since it do  
+  es not exist.                                                                
+  Unable to install the <em class="placeholder">media_library_bulk_upload</em  
+  > module since it does not exist.                                            
+                                                                               
+
+In ConfigImporter.php line 847:
+                                                                               
+  There were errors validating the config synchronization.                     
+  Unable to install the <em class="placeholder">feeds</em> module since it do  
+  es not exist.                                                                
+  Unable to install the <em class="placeholder">media_library_bulk_upload</em  
+  > module since it does not exist.                                            
+                                                                               
+
+ [notice] Command: nord-staging.dev -- drush config:import [Exit: 1] (Attempt 1/1)
+ [error]  Command: nord-staging.dev -- drush config:import [Exit: 1] (All attempts failed) 
+ [error]  +------------+--------------------------------------------------------------+-----------+
+| Collection | Config                                                       | Operation |
++------------+--------------------------------------------------------------+-----------+
+|            | block_content.type.cs_card_block                             | Create    |
+|            | core.entity_view_mode.feeds_feed.full                        | Create    |
+|            | feeds.settings                                               | Create    |
+|            | field.storage.block_content.field_description                | Create    |
+|            | field.field.block_content.cs_card_block.field_description    | Create    |
+|            | field.storage.block_content.field_title                      | Create    |
+|            | field.field.block_content.cs_card_block.field_title          | Create    |
+|            | core.entity_view_mode.media.doctors_profile                  | Create    |
+|            | core.entity_view_mode.media.cards_grid                       | Create    |
+|            | core.entity_view_display.media.image.doctors_profile         | Create    |
+|            | core.entity_view_display.media.image.cards_grid              | Create    |
+|            | field.storage.node.field_primary_speciality                  | Create    |
+|            | field.storage.node.field_full_profile_image                  | Create    |
+|            | field.storage.node.field_external_id                         | Create    |
+|            | field.storage.node.field_centers                             | Create    |
+|            | field.storage.node.field_card_image                          | Create    |
+|            | field.storage.node.feeds_item                                | Create    |
+|            | core.entity_view_mode.node.cards_grid                        | Create    |
+|            | field.field.node.doctor.field_primary_speciality             | Create    |
+|            | field.field.node.doctor.field_full_profile_image             | Create    |
+|            | field.field.node.doctor.field_external_id                    | Create    |
+|            | field.field.node.doctor.field_centers                        | Create    |
+|            | field.field.node.doctor.field_card_image                     | Create    |
+|            | field.field.node.doctor.feeds_item                           | Create    |
+|            | system.action.feeds_feed_clear_action                        | Create    |
+|            | system.action.feeds_feed_delete_action                       | Create    |
+|            | system.action.feeds_feed_import_action                       | Create    |
+|            | field.storage.node.field_specialities                        | Create    |
+|            | field.storage.block_content.field_specialities               | Create    |
+|            | field.field.node.doctor.field_specialities                   | Create    |
+|            | field.field.block_content.cs_card_block.field_specialities   | Create    |
+|            | core.entity_view_display.block_content.cs_card_block.default | Create    |
+|            | core.entity_form_display.block_content.cs_card_block.default | Create    |
+|            | field.storage.node.field_professional_experience             | Create    |
+|            | field.storage.node.field_education_training                  | Create    |
+|            | field.storage.node.field_conferences_seminars                | Create    |
+|            | field.storage.node.field_competencies                        | Create    |
+|            | field.storage.node.field_awards_distinctions                 | Create    |
+|            | field.storage.node.field_about_doctor                        | Create    |
+|            | field.field.node.doctor.field_professional_experience        | Create    |
+|            | field.field.node.doctor.field_education_training             | Create    |
+|            | field.field.node.doctor.field_conferences_seminars           | Create    |
+|            | field.field.node.doctor.field_competencies                   | Create    |
+|            | field.field.node.doctor.field_awards_distinctions            | Create    |
+|            | field.field.node.doctor.field_about_doctor                   | Create    |
+|            | feeds.feed_type.doctors_import_csv                           | Create    |
+|            | core.entity_view_display.node.doctor.cards_grid              | Create    |
+|            | views.view.doctors_search                                    | Create    |
+|            | views.view.feeds_feed                                        | Create    |
+|            | metatag.metatag_defaults.403                                 | Create    |
+|            | metatag.metatag_defaults.404                                 | Create    |
+|            | metatag.metatag_defaults.front                               | Create    |
+|            | metatag.metatag_defaults.global                              | Create    |
+|            | metatag.metatag_defaults.node                                | Create    |
+|            | metatag.metatag_defaults.taxonomy_term                       | Create    |
+|            | metatag.metatag_defaults.user                                | Create    |
+|            | metatag.settings                                             | Create    |
+|            | metatag_custom_tags.metatag_custom_tag.sitename              | Create    |
+|            | core.extension                                               | Update    |
+|            | field.field.node.doctor.field_specialties                    | Update    |
+|            | system.performance                                           | Update    |
+|            | system.site                                                  | Update    |
+|            | core.entity_form_display.node.doctor.default                 | Update    |
+|            | core.entity_view_display.node.doctor.teaser                  | Update    |
+|            | core.entity_view_display.node.doctor.default                 | Update    |
+|            | core.entity_view_display.node.doctor.card_carousel           | Update    |
+|            | views.view.taxonomy_term                                     | Delete    |
++------------+--------------------------------------------------------------+-----------+
+
+ // Import the listed configuration changes?: yes.                              
+
+
+In ConfigImportCommands.php line 291:
+                                                                               
+  The import failed due to the following reasons:                              
+  Unable to install the <em class="placeholder">feeds</em> module since it do  
+  es not exist.                                                                
+  Unable to install the <em class="placeholder">media_library_bulk_upload</em  
+  > module since it does not exist.                                            
+                                                                               
+
+In ConfigImporter.php line 847:
+                                                                               
+  There were errors validating the config synchronization.                     
+  Unable to install the <em class="placeholder">feeds</em> module since it do  
+  es not exist.                                                                
+  Unable to install the <em class="placeholder">media_library_bulk_upload</em  
+  > module since it does not exist.                                            
+                                                                               
+
+ 

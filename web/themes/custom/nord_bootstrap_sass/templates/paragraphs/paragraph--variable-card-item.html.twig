@@ -1,0 +1,30 @@
+{% set card_style = paragraph.field_card_style.0.value ?? 'default' %}
+{% set card_classes = [
+  card_style == 'info' ? 'info-card' : 'variable-card-item'
+] %}
+
+<div class="{{ card_classes|join(' ') }}">
+  {% if card_style == 'info' %}
+    <div class="info-card__icon">
+      {{ content.field_icon }}
+    </div>
+    <div class="info-card__text-block">
+      {{ content.field_title|add_class('info-card__title') }}
+      {{ content.field_formatted_short_desc|add_class('info-card__paragraph') }}
+    </div>
+    {% if content.field_button %}
+    <div class="info-card__action">
+        {{ content.field_button }}
+    </div>
+    {% endif %}
+  {% else %}
+    {{ content.field_icon|add_class('variable-card-item__icon') }}
+    <div class="variable-card-item__content">
+      {{ content.field_title|add_class('variable-card-item__title') }}
+      {{ content.field_formatted_short_desc|add_class('variable-card-item__description') }}
+    </div>
+    {% if content.field_button %}
+      {{ content.field_button }}
+    {% endif %}
+  {% endif %}
+</div>

@@ -1,0 +1,23 @@
+uuid: f544a589-5ef9-4a7a-8ae4-f5d07ab715fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.centers_text_content_section.field_heading
+    - paragraphs.paragraphs_type.centers_text_content_section
+id: paragraph.centers_text_content_section.default
+targetEntityType: paragraph
+bundle: centers_text_content_section
+mode: default
+content:
+  field_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

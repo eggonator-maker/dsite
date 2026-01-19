@@ -1,0 +1,52 @@
+uuid: 72f5c4c8-9512-47d5-8510-ddf38df57b8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cs_card_section.field_card_image
+    - field.field.paragraph.cs_card_section.field_card_sections
+    - field.field.paragraph.cs_card_section.field_subtitle
+    - field.field.paragraph.cs_card_section.field_title
+    - paragraphs.paragraphs_type.cs_card_section
+  module:
+    - entity_reference_revisions
+id: paragraph.cs_card_section.default
+targetEntityType: paragraph
+bundle: cs_card_section
+mode: default
+content:
+  field_card_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: cs_card
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_card_sections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 9cf376f1-f141-4775-88f0-7822fb996e09
+langcode: en
+status: true
+dependencies: {  }
+name: Specialities
+vid: specialities
+description: 'Specialities such as cardiology, ATI, etc...'
+weight: -10
+new_revision: false

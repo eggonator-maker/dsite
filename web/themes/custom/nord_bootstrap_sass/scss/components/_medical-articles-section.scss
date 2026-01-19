@@ -1,0 +1,63 @@
+/* scss/components/_medical-articles-section.scss */
+
+.medical-articles-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40);
+  padding: rem(64) rem(150) !important;
+
+  @media (max-width: 1199.98px) {
+    padding: rem(32) 0 !important;
+    gap: rem(24);
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: rem(28);
+    line-height: 1.2;
+    text-align: center;
+    color: #0E296B;
+    margin: 0;
+
+    @media (min-width: 992px) {
+      font-size: rem(40);
+    }
+  }
+
+  &__content {
+    // --- MOBILE-FIRST: HORIZONTAL SCROLLER ---
+    display: flex;
+    flex-wrap: nowrap;
+    gap: rem(24);
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 rem(24);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // --- DESKTOP OVERRIDE: WRAPPING GRID ---
+    @media (min-width: 992px) {
+      flex-wrap: wrap;
+      overflow-x: visible;
+      padding: 0;
+      justify-content: center;
+    }
+  }
+
+  &__footer {
+    .btn {
+      border-width: 1px;
+      border-radius: rem(8);
+      padding: rem(12) rem(18);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: rem(14);
+    }
+  }
+}

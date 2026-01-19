@@ -1,0 +1,5 @@
+{% if attributes.type == 'checkbox' %}
+  <input{{ attributes.addClass('form-check-input') }} />
+{% else %}
+  <input{{ attributes.addClass('form-control') }} />
+{% endif %}

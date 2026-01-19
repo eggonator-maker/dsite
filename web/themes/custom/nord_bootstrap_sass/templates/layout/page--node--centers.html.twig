@@ -1,0 +1,38 @@
+{# nord_bootstrap_sass/templates/layout/page--node--center.html.twig #}
+
+<div id="page-wrapper">
+  {% include '@nord_bootstrap_sass/partials/header.html.twig' %}
+
+  {# Hero/Paragraphs section - persistent across AJAX navigation #}
+  {% if center_node and center_node.field_hero_paragraphs is not empty %}
+    <div class="center-hero-section">
+		{% for paragraph in center_node.field_hero_paragraphs %}
+      {{ paragraph.entity|view }}
+    {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="container-fluid cs-content-wrapper">
+    <div class="row g-2 g-lg-4">
+      
+      {# Sidebar Column #}
+      <aside class="col-lg-3">
+        <div class="centers-nav-block">
+          {{ drupal_block('center_navigation_block') }}
+        </div>
+      </aside>
+
+      {# Main Content Column - This is what gets replaced via AJAX #}
+      <main id="main" class="col-lg-9">
+        <div class="d-flex flex-column">
+          {{ page.content }}
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <footer class="site-footer-custom">
+    {% include '@nord_bootstrap_sass/partials/footer.html.twig' %}
+  </footer>
+</div>

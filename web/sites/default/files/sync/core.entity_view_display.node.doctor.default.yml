@@ -1,0 +1,149 @@
+uuid: 74e360ae-d1c6-428e-b64d-5cf812e9213b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.doctor.feeds_item
+    - field.field.node.doctor.field_about_doctor
+    - field.field.node.doctor.field_awards_distinctions
+    - field.field.node.doctor.field_card_image
+    - field.field.node.doctor.field_centers
+    - field.field.node.doctor.field_competencies
+    - field.field.node.doctor.field_conferences_seminars
+    - field.field.node.doctor.field_education_training
+    - field.field.node.doctor.field_external_id
+    - field.field.node.doctor.field_full_profile_image
+    - field.field.node.doctor.field_image
+    - field.field.node.doctor.field_primary_speciality
+    - field.field.node.doctor.field_professional_experience
+    - field.field.node.doctor.field_specialities
+    - field.field.node.doctor.field_specialties
+    - image.style.wide
+    - node.type.doctor
+  module:
+    - image
+    - text
+    - user
+id: node.doctor.default
+targetEntityType: node
+bundle: doctor
+mode: default
+content:
+  field_about_doctor:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_awards_distinctions:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_card_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_centers:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_competencies:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_conferences_seminars:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_education_training:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_external_id:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_full_profile_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: doctors_profile
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_primary_speciality:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_professional_experience:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_specialities:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_specialties:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true

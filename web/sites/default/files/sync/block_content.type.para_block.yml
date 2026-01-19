@@ -1,0 +1,8 @@
+uuid: 28d4915f-5834-4179-812d-8c1a0cee3c57
+langcode: en
+status: true
+dependencies: {  }
+id: para_block
+label: 'para block'
+revision: false
+description: null

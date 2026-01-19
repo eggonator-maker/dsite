@@ -1,0 +1,17 @@
+uuid: 0a49609b-d7dc-4bb6-b4a0-21094dc4d6d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Centers sub-page'
+type: centers_sub_page
+description: 'Sub-pages for the center, including about, team etc...'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

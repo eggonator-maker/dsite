@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Paragraph template: Card Grid (Parent container)
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ *   - content.field_columns: Select (2 or 3)
+ *   - content.field_title_lines: Select (1, 2, or 3)
+ *   - content.field_text_lines: Select (2, 3, 4, 5, or 6)
+ *   - content.field_cards: Entity reference revisions (nested card paragraphs)
+ *
+ * @see template_preprocess_paragraph()
+ */
+#}
+
+{# Get field values with defaults #}
+{% set cols = paragraph.field_columns.value ?? '2' %}
+{% set title_lines = paragraph.field_title_lines.value ?? '2' %}
+{% set text_lines = paragraph.field_text_lines.value ?? '4' %}
+
+{# Build class list #}
+{% set classes = [
+  'paragraph--card-grid',
+  cols == '3' ? 'paragraph--card-grid--cols-3' : null,
+  'paragraph--card-grid--title-' ~ title_lines ~ '-line' ~ (title_lines != '1' ? 's' : ''),
+  'paragraph--card-grid--text-' ~ text_lines ~ '-lines',
+]|filter(v => v is not null) %}
+
+<div{{ attributes.addClass(classes) }}>
+    {{ content.field_card_items }}
+</div>

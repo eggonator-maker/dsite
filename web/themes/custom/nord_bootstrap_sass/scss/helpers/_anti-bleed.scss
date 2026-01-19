@@ -1,0 +1,19 @@
+/* Opt-in full-bleed wrapper: removes side padding and gutters safely */
+.u-fullbleed {
+    /* kill the container padding */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  
+    /* tell Bootstrap rows/cols to have no horizontal gutters here */
+    --bs-gutter-x: 0;
+  
+    /* guard against scroll if any component still uses negative margins */
+    overflow-x: clip;
+  }
+  
+  /* If Drupal blocks/Views inject their own .container/.block padding, neutralize it only here */
+  .u-fullbleed .container,
+  .u-fullbleed .block {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }

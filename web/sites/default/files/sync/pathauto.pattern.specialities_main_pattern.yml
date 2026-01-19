@@ -1,0 +1,22 @@
+uuid: f2f91e50-4d63-43d9-b1d8-e1caa95a9428
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: specialities_main_pattern
+label: 'Specialities main pattern'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/specialities/[term:name]'
+selection_criteria:
+  bfae7072-5b9e-4a6e-bad3-cc8fb7d2824d:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: bfae7072-5b9e-4a6e-bad3-cc8fb7d2824d
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      specialities: specialities
+selection_logic: and
+weight: -5
+relationships: {  }

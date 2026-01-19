@@ -1,0 +1,142 @@
+/* scss/components/_footer.scss */
+.site-footer-container {
+  // Mobile padding by default
+  padding: rem(32) rem(16);
+
+  // Desktop padding override
+  @media (min-width: 992px) {
+      padding: rem(64) rem(150);
+  }
+}
+
+.site-footer-custom {
+  font-family: $font-open-sans;
+  font-size: rem(14);
+  color: #2E333C;
+
+  &__top {
+    padding-bottom: rem(48);
+  }
+
+  &__bottom {
+    border-top: 1px solid #E0E0E0;
+    padding: rem(24) 0;
+
+    .container {
+      padding-left: rem(16);
+      padding-right: rem(16);
+      @media (min-width: 992px) {
+          padding-left: rem(150);
+          padding-right: rem(150);
+      }
+    }
+  }
+
+  // --- Column Specific Styles ---
+  .footer-col {
+    margin-bottom: rem(32);
+    
+    &--brand {
+      .phone-number {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(40);
+        line-height: 1.2;
+        color: $danger;
+        text-decoration: none;
+        display: block;
+        margin: rem(24) 0;
+      }
+      .cert-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(16);
+        align-items: center;
+        max-width: 200px; // Constrain width to force wrapping
+      }
+    }
+  }
+
+  // --- General Element Styles ---
+  &__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: 1.5;
+    margin-bottom: rem(16);
+    color: $text;
+  }
+
+  // Target the parent <ul> elements to remove padding
+  &__nav-list,
+  &__contact-list,
+  &__legal-nav {
+    list-style: none !important;
+    padding-left: 0px !important;
+    margin: 0;
+  }
+
+  // A more specific selector to target the <li> elements directly
+  .footer-col ul {
+    padding-left: 0px !important;
+    li {
+      list-style-type: none !important; // Use !important to override other styles
+      padding-left: 0px !important;
+      margin-bottom: rem(8);
+  }}
+
+
+  &__nav-list a, &__nav-list span,
+  &__contact-list a, &__contact-list span,
+  &__legal-nav a, &__legal-nav span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 1.5;
+    text-decoration: none;
+    color: $text;
+  }
+
+  &__nav-list a:hover,
+  &__contact-list a:hover,
+  &__legal-nav a:hover {
+    color: $secondary;
+  }
+
+  &__contact-list {
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: rem(8);
+    }
+    .icon {
+      color: $dark;
+      margin-top: rem(3);
+      flex-shrink: 0;
+    }
+  }
+
+  &__legal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(16);
+    ul > li {
+      list-style-type: none !important; // Use !important to override other styles
+      padding-left: 0px !important;
+    }
+    
+
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.copyright {
+    font-size: rem(14);
+    text-align: center;
+}

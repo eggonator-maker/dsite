@@ -1,0 +1,12 @@
+# In center_services/center_services.services.yml
+
+services:
+  center_services.ajax_content_subscriber:
+    class: Drupal\center_services\EventSubscriber\AjaxContentSubscriber
+    # Use the main 'renderer' service instead of 'main_content_renderer.html'
+    arguments: ['@renderer']
+    tags:
+      - { name: event_subscriber }
+  center_services.context:
+    class: Drupal\center_services\Service\CenterContextService
+    arguments: ['@current_route_match', '@entity_type.manager']

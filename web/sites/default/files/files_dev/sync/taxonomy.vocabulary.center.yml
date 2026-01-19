@@ -1,0 +1,9 @@
+uuid: b5f733fa-8030-49be-b1ed-d93455356d0d
+langcode: en
+status: true
+dependencies: {  }
+name: center
+vid: center
+description: null
+weight: 0
+new_revision: false

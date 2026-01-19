@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Node template for Doctor content type displayed in taxonomy filter block
+ * 
+ * Available variables:
+ * - node: The node entity
+ * - content: All rendered fields
+ * - url: The node URL
+ */
+#}
+
+{# 
+  This is an example of how your doctor node should be structured 
+  when rendered inside the taxonomy filter block.
+  
+  Adjust field names according to your actual Drupal content type.
+#}
+
+<a href="{{ url }}" class="doctor-card">
+  
+  {# Doctor Image #}
+  <div class="doctor-card__image">
+    {% if content.field_card_image %}
+      {{ content.field_card_image }}
+    {% else %}
+      {# Placeholder if no image #}
+      <img src="/themes/custom/your_theme/images/placeholder-doctor.jpg" alt="{{ node.label }}" />
+    {% endif %}
+  </div>
+
+  {# Doctor Content #}
+  <div class="doctor-card__content">
+    <div class="doctor-card__title-wrapper">
+      
+      {# Doctor Name #}
+      <h3 class="doctor-card__name">
+        {{ node.label }}
+      </h3>
+
+      {# Doctor Specialty/Position #}
+      {% if content.field_primary_speciality %}
+        <div class="doctor-card__specialty">
+          {{ content.field_primary_speciality }}
+        </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</a>

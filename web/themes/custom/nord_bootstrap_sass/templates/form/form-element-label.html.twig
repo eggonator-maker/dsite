@@ -1,0 +1,8 @@
+{% if title is not empty or required %}
+  <label{{ attributes.addClass(attributes.type == 'checkbox' ? 'form-check-label' : 'form-label') }}>
+    {{ title }}
+    {% if required %}
+      <span class="required">*</span>
+    {% endif %}
+  </label>
+{% endif %}

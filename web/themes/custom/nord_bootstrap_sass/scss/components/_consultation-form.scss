@@ -1,0 +1,158 @@
+/* scss/components/_consultation-form.scss */
+
+// --- Section Styling ---
+.consultation-form-section {
+    position: relative; // Needed for the backdrop pseudo-element
+    padding: rem(32) 0; // 32px padding above and below
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    // This creates the background image and the dark overlay
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // Set the background image here
+      background-image: url('../images/contact_background.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+    // This is the 45% black overlay
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.45;
+      z-index: 2; // Sits on top of the image but below the form
+    }
+  }
+  
+  // --- Form Container ---
+  .consultation-form__container {
+    position: relative;
+    z-index: 3; // Ensures the form is on top of the background and overlay
+    background-color: $white; // THE FIX: White background for the form
+    border-radius: rem(12);
+    padding: rem(32);
+    max-width: rem(540);
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 rem(15) rem(30) rgba(0, 0, 0, 0.1);
+  }
+  
+  // --- Title & Subtitle ---
+  .consultation-form__title {
+    font-family: $font-montserrat;
+    font-weight: 700;
+    font-size: rem(28);
+    line-height: 1.2;
+    color: $primary; // THE FIX: Title color is primary
+    margin-bottom: rem(16);
+    text-align: left;
+  }
+ 
+  // --- Main Form ---
+  .consultation-form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+  }
+  
+  // --- FLOATING/NOTCHED LABEL GROUP ---
+  .form-floating-group {
+    position: relative;
+  
+    .form-label {
+      position: absolute;
+      top: 50%;
+      left: rem(16);
+      transform: translateY(-50%);
+      color: #6c757d; // Standard placeholder color
+      background-color: $white; // THE FIX: Notch background is white
+      padding: 0 rem(4);
+      transition: all 0.2s ease-in-out;
+      pointer-events: none;
+    }
+  
+    .form-control {
+      height: rem(56);
+      background-color: transparent;
+      border: 1px solid #ced4da; // THE FIX: Thin gray border
+      color: $dark; // THE FIX: Text color is dark
+  
+      // Move the label up when the input is focused or has content
+      &:focus + .form-label,
+      &:not(:placeholder-shown) + .form-label {
+        top: 0;
+        font-size: rem(12);
+        color: $primary; // Label color becomes primary on focus
+      }
+      
+      &:focus {
+        border-color: $primary; // Border color becomes primary on focus
+        box-shadow: none;
+      }
+    }
+  }
+  
+  // --- Custom Select Styles ---
+  .custom-select-wrapper {
+    .form-label {
+      top: 0;
+      font-size: rem(12);
+      color: $primary;
+    }
+    .custom-select-icon {
+        position: absolute;   // Position the icon relative to the wrapper.
+        z-index: 3;           // Place it above the form field.
+        
+        // Vertical Centering:
+        top: 50%;
+        transform: translateY(-50%);
+    
+        // Horizontal Positioning:
+        right: rem(16);       // 16px from the right edge of the wrapper.
+    
+        color: $dark;
+        pointer-events: none; // Allows the user to click "through" the icon to open the select.
+      }
+  }
+  
+  // --- Checkbox Styles ---
+  .form-check {
+    .form-check-label {
+      font-size: rem(14);
+      color: $dark; // Checkbox text is dark
+      a {
+        color: $dark;
+        text-decoration: underline;
+      }
+    }
+    .form-check-input {
+      border-color: #ced4da; // Gray border for checkbox
+      &:checked {
+        background-color: $secondary;
+        border-color: $secondary;
+      }
+    }
+  }
+  
+  // --- Submit Button ---
+  .btn-submit {
+    font-weight: 500;
+    font-size: rem(14);
+    padding: rem(12) rem(18);
+  }
+
+
+  

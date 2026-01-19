@@ -1,0 +1,53 @@
+global-styling:
+  version: VERSION
+  js: 
+    js/popper.min.js: { weight: -49 }
+    js/bootstrap.min.js: { weight: -48 }
+    js/barrio.js: {}
+    js/custom.js: {}
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - bootstrap_barrio/global-styling  
+# nord_bootstrap_sass.libraries.yml
+global-scripts:
+  js:
+    js/utm-tracking.js: {}
+
+google-fonts:
+  css:
+    theme:
+      # Preconnect links for performance
+      "https://fonts.googleapis.com": { type: external, attributes: { rel: 'preconnect' } }
+      "https://fonts.gstatic.com": { type: external, attributes: { rel: 'preconnect', crossorigin: 'anonymous' } }
+      # The main font stylesheet for Open Sans and Montserrat
+      "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap": { type: external, attributes: { rel: 'stylesheet' } }
+  
+ajax-navigation:
+  version: 1.0
+  js:
+    js/specialityFilter.js: {}
+    js/ajax-navigation.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery # Or use vanilla JS
+    - core/drupal.ajax
+    - core/once
+
+doctors-search-autosubmit:
+  version: 1.x
+  js:
+    js/doctors-search-autosubmit.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - core/drupal.ajax
+
+icon-select-mask:
+  css:
+    theme:
+      css/icon-select-mask.css: {}

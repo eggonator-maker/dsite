@@ -1,0 +1,29 @@
+uuid: 3e6dc1b6-7f8e-486c-8fb8-2b953a3a440b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_centers
+    - node.type.centers
+    - node.type.doctor
+id: node.doctor.field_centers
+field_name: field_centers
+entity_type: node
+bundle: doctor
+label: Centers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      centers: centers
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

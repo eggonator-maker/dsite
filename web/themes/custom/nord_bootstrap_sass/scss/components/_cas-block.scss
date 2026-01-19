@@ -1,0 +1,15 @@
+.block--cas {
+    margin-bottom: rem(32);
+
+    .cas-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(16);
+      
+      @include media-breakpoint-up(lg) {
+        > * {
+          flex: 1 1 calc(33.333% - rem(11));
+        }
+      }
+    }
+  }

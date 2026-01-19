@@ -1,0 +1,45 @@
+{# views-view-fields--doctors-search--page-1.html.twig #}
+<article class="doctor-profile">
+  
+  {# Card Image - Link applied here #}
+  {% if fields.field_card_image.content %}
+    <div class="doctor-profile__image">
+      <a href="{{ fields.view_node.content|striptags|trim }}" tabindex="-1" aria-hidden="true">
+        {{ fields.field_card_image.content }}
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="doctor-profile__content">
+    
+    {# Info Wrapper (Title + Specialty) #}
+    <div class="doctor-profile__info">
+      {# Doctor Title / Name - Link applied here #}
+      <h3 class="doctor-profile__title">
+        <a href="{{ fields.view_node.content|striptags|trim }}">
+          {{ fields.title.content|striptags }}
+        </a>
+      </h3>
+
+      {# Speciality #}
+      {% if fields.field_primary_speciality.content %}
+        <div class="doctor-profile__speciality">
+          {{ fields.field_primary_speciality.content|striptags }}
+        </div>
+      {% endif %}
+    </div>
+
+    {# Action Buttons #}
+    <div class="doctor-profile__actions">
+      <a href="tel:0248948" class="btn btn-primary">
+        <span class="icon icon-ion-call icon--xsm"></span>
+        0248 948
+      </a>
+      <a href="{{ url }}" class="btn btn-outline-primary">
+        <span class="icon icon-outline-email icon--xsm"> </span>
+        Programează-te
+      </a>
+    </div>
+    
+  </div>
+</article>

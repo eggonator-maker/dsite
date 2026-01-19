@@ -1,0 +1,69 @@
+{#
+  @file
+  Clean, bullet-free navigation for center section.
+  Adds active trail classes to <li> elements for proper styling.
+#}
+
+{% macro render_menu_items(items, menu_id) %}
+  {% import _self as self %}
+  <ul class="centers-nav">
+    {% for item in items %}
+      {#
+        NEW: Dynamically add classes to the LI element.
+        This is the key fix.
+      #}
+      {%
+        set li_classes = ['nav-item']
+      %}
+      {% if item.is_collapsible %}
+        {% set li_classes = li_classes|merge(['nav-item--collapsible']) %}
+      {% endif %}
+      {% if item.in_active_trail %}
+        {% set li_classes = li_classes|merge(['in-active-trail']) %}
+      {% endif %}
+      {% if item.is_active %}
+        {% set li_classes = li_classes|merge(['is-active']) %}
+      {% endif %}
+      
+      <li class="{{ li_classes|join(' ') }}">
+        {% if item.is_collapsible %}
+          <div class="nav-collapsible">
+            {# The .is-active class on the link is useful for AJAX/JS, but our styling relies on the LI's classes #}
+            <a href="{{ item.url }}" class="nav-link {{ item.is_active ? 'is-active' }}" data-ajax-link>
+              {{ item.title }}
+            </a>
+            <button
+              class="nav-toggle"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-{{ menu_id }}-{{ loop.index }}"
+              aria-expanded="{{ item.in_active_trail ? 'true' : 'false' }}"
+              aria-label="Toggle submenu"
+            >
+              {# Use the icon class for the chevron #}
+              <span class="icon icon-chevron-down"></span>
+            </button>
+          </div>
+          {% if item.children is not empty %}
+            {# Add the 'show' class if we are in the active trail #}
+            <div class="collapse {{ item.in_active_trail ? 'show' }}" id="collapse-{{ menu_id }}-{{ loop.index }}">
+              {{ self.render_menu_items(item.children, menu_id ~ '-' ~ loop.index) }}
+            </div>
+          {% endif %}
+        {% else %}
+          <a href="{{ item.url }}" class="nav-link {{ item.is_active ? 'is-active' }}" data-ajax-link>
+            {{ item.title }}
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% import _self as self %}
+
+<nav class="center-navigation" id="center-navigation-block" aria-label="Center services">
+  {% if items is not empty %}
+    {{ self.render_menu_items(items, 'main') }}
+  {% endif %}
+</nav>

@@ -1,0 +1,70 @@
+uuid: 4b4394b9-f1df-4cf1-b230-07a3460586ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cs_sections
+    - paragraphs.paragraphs_type.block_reference
+    - paragraphs.paragraphs_type.cs_card_paragraph
+    - paragraphs.paragraphs_type.cs_card_section
+    - paragraphs.paragraphs_type.cs_faq
+    - taxonomy.vocabulary.specialities
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.specialities.field_cs_sections
+field_name: field_cs_sections
+entity_type: taxonomy_term
+bundle: specialities
+label: 'CS sections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cs_card_paragraph: cs_card_paragraph
+      block_reference: block_reference
+      cs_card_section: cs_card_section
+      cs_faq: cs_faq
+    negate: 0
+    target_bundles_drag_drop:
+      block_reference:
+        weight: 13
+        enabled: true
+      centers_description_image:
+        weight: 9
+        enabled: false
+      centers_description_title:
+        weight: 10
+        enabled: false
+      centers_text_content_section:
+        weight: 11
+        enabled: false
+      contact_us_cards:
+        weight: 12
+        enabled: false
+      cs_card_paragraph:
+        weight: 12
+        enabled: true
+      cs_card_section:
+        weight: 13
+        enabled: true
+      cs_faq:
+        weight: 17
+        enabled: true
+      hero_slide:
+        weight: 14
+        enabled: false
+      hero_slider:
+        weight: 15
+        enabled: false
+      question_and_answer:
+        weight: 11
+        enabled: false
+      why_this_center_card:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

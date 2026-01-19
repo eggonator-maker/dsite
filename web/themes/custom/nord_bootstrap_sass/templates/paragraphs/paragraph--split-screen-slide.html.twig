@@ -1,0 +1,34 @@
+
+<div class="carousel__slide-container">
+
+    {% if content.field_mobile_background %}
+        {{ content.field_mobile_background|add_class('carousel__media-mobile carousel__media') }}
+    {% endif %}
+
+    {% if content.field_desktop_background %}
+        {{ content.field_desktop_background|add_class('carousel__media-desktop carousel__media') }}
+    {% endif %}
+ 
+    <div class="carousel__content">
+        {% if content.field_formatted_title %}
+            {{ content.field_formatted_title|add_class('carousel__title') }}
+        {% endif %}
+    
+        {% if content.field_formatted_subtitle %}
+            {{ content.field_formatted_subtitle|add_class('carousel__lead') }}
+        {% endif %}
+        
+        {% if slide.entity.field_features %}
+        <ul class="carousel__features">
+            {{ slide.entity.field_features }}
+        </ul>
+        {% endif %}
+        
+    {% if content.field_action_buttons %}
+        <div class="carousel__actions">
+        {{ content.field_action_buttons }}
+        </div>
+    {% endif %}
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Theme override for the Doctors Carousel block.
+ * Wraps the view with a static title and "View All" button.
+ */
+#}
+
+{# The classes are now hard-coded directly onto the section element. #}
+<section class="doctors-section">
+  
+  {# The title is now a static H2 element. #}
+  <h2 class="doctors-section__title">Echipa medicală NORD <br> Spitalul Muntenia</h2>
+
+  <div class="doctors-section__content">
+    {# This renders your scrolling doctors carousel view. #}
+    {{ content }}
+  </div>
+
+  <div class="doctors-section__footer">
+    <a href="/medici" class="btn btn-outline-danger">
+      {{ 'Vezi toti medicii'|t }}
+    </a>
+  </div>
+</section>

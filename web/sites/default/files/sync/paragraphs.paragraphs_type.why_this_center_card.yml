@@ -1,0 +1,10 @@
+uuid: fefe44f4-6719-4238-8acd-ca9aea5c51c3
+langcode: en
+status: true
+dependencies: {  }
+id: why_this_center_card
+label: 'why this center card'
+icon_uuid: null
+icon_default: null
+description: 'Used within the main content of the about us center pages.'
+behavior_plugins: {  }
