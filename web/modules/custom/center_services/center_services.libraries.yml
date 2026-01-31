@@ -1,0 +1,7 @@
+article-display:
+  version: 1.x
+  js:
+    js/article-toc.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

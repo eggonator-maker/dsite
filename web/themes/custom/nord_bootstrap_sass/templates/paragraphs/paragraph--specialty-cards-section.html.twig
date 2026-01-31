@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Template for Specialty Cards Section paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {% if content.field_title %}
+    <div class="specialty-cards-section__header">
+      <h2 class="specialty-cards-section__title">
+        {{ content.field_title }}
+      </h2>
+    </div>
+  {% endif %}
+
+  {% if content.field_specialty_cards %}
+    <div class="specialty-cards-section__grid">
+      {# Group cards into rows of 2 #}
+      {% for i in range(0, content.field_specialty_cards|length - 1, 2) %}
+        <div class="specialty-cards-section__row">
+          {% for j in range(i, min(i + 1, content.field_specialty_cards|length - 1)) %}
+            {{ content.field_specialty_cards[j] }}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>

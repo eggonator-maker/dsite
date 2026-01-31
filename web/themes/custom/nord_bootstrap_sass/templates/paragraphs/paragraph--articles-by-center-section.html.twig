@@ -1,0 +1,72 @@
+{# templates/paragraphs/paragraph--articles-by-center-section.html.twig #}
+
+{% set first_center_id = null %}
+{% for key, item in content.field_centers %}
+  {% if key matches '/^\\d+$/' and first_center_id is null %}
+    {% set first_center_id = item['#paragraph'].id() %}
+  {% endif %}
+{% endfor %}
+
+<section class="centers-section-wrapper">
+  
+  <div class="container">
+    <header class="centers-section__header">
+      <h2 class="centers-section__title">Centre medicale</h2>
+      <p class="centers-section__paragraph">
+        NORD Muntenia Hospital oferă un cadru medical bazat pe siguranță şi încredere, susținut de o echipă bine pregătită, empatică și orientată spre pacient, alături de tehnologie modernă și un sistem personalizat de gestionare a datelor. Pacienții beneficiază de servicii integrate de la investigații și analize, până la tratamente și intervenții, într-un singur loc, rapid și eficient.
+      </p>
+    </header>
+  </div>
+
+  <div class="centers-section-content">
+    <div class="row g-5">
+      <div class="col-12 col-lg-4 d-flex justify-content-center centers-section__nav-col">
+        <div class="nav flex-lg-column nav-pills gap-0 centers-section-nav" id="centers-tab" role="tablist" aria-orientation="vertical">
+          {% for key, item in content.field_centers %}
+            {% if key matches '/^\\d+$/' %}
+              {% set center = item['#paragraph'] %}
+              {% set is_active = (center.id() == first_center_id) %}
+              <button class="nav-link {{ is_active ? 'active' }}" 
+                      id="tab-{{ center.id() }}" 
+                      data-bs-toggle="pill" 
+                      data-bs-target="#center-pane-{{ center.id() }}" 
+                      type="button" 
+                      role="tab" 
+                      aria-controls="center-pane-{{ center.id() }}" 
+                      aria-selected="{{ is_active ? 'true' : 'false' }}">
+                <span>{{ center.field_title.value }}</span>
+                <span class="icon icon-chevron-right icon--xsm ms-auto d-none d-lg-block"></span>
+              </button>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-8">
+        <div class="tab-content" id="centers-tabContent">
+          {% for key, item in content.field_centers %}
+            {% if key matches '/^\\d+$/' %}
+              {% set center = item['#paragraph'] %}
+              {% set is_active = (center.id() == first_center_id) %}
+              <div class="tab-pane fade {{ is_active ? 'show active' }}" 
+                   id="center-pane-{{ center.id() }}" 
+                   role="tabpanel" 
+                   aria-labelledby="tab-{{ center.id() }}" 
+                   tabindex="0">
+                {{ item }}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="centers-section__footer">
+      <a href="/centre" class="btn btn-outline-danger">
+        {{ 'Vezi toate centrele'|t }}
+      </a>
+    </div>
+  </div>
+</section>

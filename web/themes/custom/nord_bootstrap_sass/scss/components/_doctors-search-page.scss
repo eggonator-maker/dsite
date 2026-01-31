@@ -7,6 +7,12 @@
   padding: rem(64) rem(80);
   min-height: 100vh;
 
+  .doctor-profile {
+    @include media-breakpoint-down(sm) {
+    justify-self: center;
+    }
+  } 
+
   /* Container - 1280px max width */
   .doctors-search-container {
     max-width: rem(1280);
@@ -130,6 +136,7 @@
     align-items: flex-end;
     padding: rem(8) 0;
     gap: rem(48);
+    height: rem(52);
   }
 
   /* Individual field containers */
@@ -137,17 +144,60 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1;
-    min-width: 0; // Prevent flex items from overflowing
+    padding: 0;
+    gap: rem(12);
+    min-width: 0;
     position: relative;
+  }
+
+  /* Doctor name field - 614px width */
+  &__field--doctor-name {
+    width: rem(614);
+    height: rem(48);
+    flex: none;
+    
+    // Search icon positioned at left - BLUE color
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: rem(24);
+      height: rem(24);
+      background-image: url('../images/icons/search.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      z-index: 1;
+      // Override to blue - you may need to use an SVG with fill or filter
+      filter: brightness(0) saturate(100%) invert(36%) sepia(93%) saturate(2873%) hue-rotate(195deg) brightness(98%) contrast(101%);
+    }
+  }
+
+  /* Speciality field - 538px width, grows to fill */
+  &__field--speciality {
+    width: rem(538);
+    height: rem(48);
+    flex: 1 1 rem(538);
+  }
+
+  /* Text field wrapper */
+  &__field > * {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: rem(16);
+    align-self: stretch;
+    height: rem(24);
   }
 
   /* Common input styling for text and select */
   &__input,
   &__select {
     width: 100%;
-    height: rem(24);
-    padding: 0;
+    height: auto;
+    padding: 0 0 rem(12) 0; // Add 12px padding at bottom
     margin: 0;
     border: none;
     border-bottom: rem(1) solid #94A3B8;
@@ -160,6 +210,9 @@
     color: #0F172A;
     box-shadow: none;
     transition: border-color 0.2s ease;
+    flex: none;
+    order: 0;
+    align-self: stretch;
 
     &::placeholder {
       color: #94A3B8;
@@ -172,6 +225,15 @@
     }
   }
 
+  /* Text input specific */
+  &__input {
+    padding-left: rem(40); // 24px icon + 16px gap
+    padding-bottom: rem(12); // Maintain bottom padding
+
+    order: 1;
+    flex-grow: 0;
+  }
+
   /* Select dropdown specific styling */
   &__select {
     appearance: none;
@@ -180,27 +242,30 @@
     background-image: url('../images/icons/chevron-down.svg');
     background-repeat: no-repeat;
     background-position: right 0 center;
-    background-size: rem(12);
+    background-size: rem(8);
     padding-right: rem(24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     // Remove default browser styling
     &::-ms-expand {
       display: none;
     }
 
-    // Placeholder state - when "All" or default is selected, show gray text
+    // Placeholder state
     &.is-placeholder,
     &:has(option[value="All"]:checked),
     &:has(option.placeholder-option:checked) {
       color: #94A3B8;
     }
 
-    // When a real option is selected, show dark text
+    // When a real option is selected
     &:not(.is-placeholder) {
       color: #0F172A;
     }
 
-    // Style placeholder option itself
+    // Style placeholder option
     option.placeholder-option {
       color: #94A3B8;
     }
@@ -210,32 +275,63 @@
       color: #0F172A;
     }
   }
+}
 
-  /* Doctor name field - with search icon */
-  &__field--doctor-name {
-    // Search icon positioned at left
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: rem(24);
-      height: rem(24);
-      background-image: url('../images/icons/search.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      pointer-events: none;
-      color: $color-primary-blue;
-      z-index: 1;
+/*--------------------------------------------------------------
+# Responsive Adjustments
+--------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+  .doctors-search-form {
+    &__wrapper {
+      gap: rem(32);
     }
 
-    .doctors-search-form__input {
-      padding-left: rem(32);
+    &__field--doctor-name {
+      width: 50%;
+    }
+
+    &__field--speciality {
+      width: 45%;
     }
   }
 }
 
+@media (max-width: 768px) {
+  .doctors-search-form {
+    &__wrapper {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: rem(24) rem(16) rem(8);
+      gap: rem(48);
+      height: auto;
+    }
+
+    &__field {
+      width: 100% !important;
+      align-self: stretch;
+
+      &--doctor-name,
+      &--speciality {
+        width: 100%;
+        flex: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .doctors-search-form {
+    &__wrapper {
+      gap: rem(48);
+    }
+
+    &__field {
+      height: rem(36);
+    }
+  }
+}
 /*--------------------------------------------------------------
 # Pagination Styling
 --------------------------------------------------------------*/

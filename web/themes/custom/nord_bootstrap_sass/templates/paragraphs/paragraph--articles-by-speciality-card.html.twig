@@ -1,0 +1,28 @@
+{# templates/paragraphs/paragraph--articles-by-speciality-card.html.twig #}
+
+{% set card = paragraph %}
+{% set link_url = card.field_link.0.url %}
+
+<a href="{{ link_url }}" class="service-card">
+  {% if card.field_card_image.entity %}
+    <div class="service-card__media">
+      {{ content.field_card_image }}
+    </div>
+  {% endif %}
+
+  <div class="service-card__body">
+    <div class="service-card__text-content">
+      <h3 class="service-card__title">
+        {{ card.field_title.value }}
+      </h3>
+      {% if card.field_card_description.value %}
+        <p class="service-card__description">
+          {{ card.field_card_description.value }}
+        </p>
+      {% endif %}
+    </div>
+    <div class="service-card__arrow">
+      <span class="icon icon-right-arrow icon--xsm"></span>
+    </div>
+  </div>
+</a>

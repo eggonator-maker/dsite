@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme override for Views - Articles Search Block.
+ */
+#}
+
+<div{{ attributes.addClass('js-view-dom-id-' ~ dom_id) }}>
+  <div class="articles-search-block">
+    <div class="articles-search-container">
+
+      {# Search Filters - Exposed Form #}
+      {% if exposed %}
+        <div class="articles-search-filters">
+          {{ exposed }}
+        </div>
+      {% endif %}
+
+      {# Article Cards Results #}
+      <div class="articles-search-results">
+        {% if rows %}
+          {{ rows }}
+        {% elseif empty %}
+          <div class="articles-search-empty">
+            {{ empty }}
+          </div>
+        {% endif %}
+      </div>
+
+      {# Pagination #}
+      {% if pager %}
+        <div class="articles-search-pager">
+          {{ pager }}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div>

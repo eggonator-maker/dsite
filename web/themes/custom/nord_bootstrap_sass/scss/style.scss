@@ -10,6 +10,12 @@ Description: Bootstrap 4 with Sass
 @import "components/header";
 /* GENERAL STYLES
 -------------------------------------------------*/
+.field--name-field-media-image {
+    height: 100%
+}
+.field--type-image {
+    margin: 0;
+}
 
 body {
     font-family: $font-open-sans; 

@@ -1,0 +1,28 @@
+
+{# views-view-fields--articles-search--block-1.html.twig #}
+
+<article class="article-card">
+  
+  {# Card Image #}
+  <div class="article-card__media">
+    {{ fields.field_article_card_image.content }}
+  </div>
+
+  {# The main body with 16px padding #}
+  <div class="article-card__body">
+    
+    {# Top block: Text content #}
+    <div class="article-card__text-content">
+      <p class="article-card__date">{{ fields.created.content }}</p>
+      <h3 class="article-card__title">{{ fields.title.content }}</h3>
+    </div>
+
+    {# Bottom block: Arrow - aligned to bottom right #}
+    <div class="article-card__arrow">
+      <a href="{{ fields.view_node.content|striptags|trim }}" aria-label="Read {{ fields.title.content|striptags }}">
+        <span class="icon icon-right-arrow icon--md text-danger"></span>
+      </a>
+    </div>
+
+  </div>
+</article>

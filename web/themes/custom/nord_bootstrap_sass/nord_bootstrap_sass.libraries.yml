@@ -47,7 +47,27 @@ doctors-search-autosubmit:
     - core/once
     - core/drupal.ajax
 
+prices-page:
+  version: 1.0
+
+  js:
+    js/prices-page.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - core/drupalSettings
+
 icon-select-mask:
   css:
     theme:
       css/icon-select-mask.css: {}
+
+
+articles-search-form:
+  js:
+    js/articles-search-form.js: {}
+    js/articles-tags-filter.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

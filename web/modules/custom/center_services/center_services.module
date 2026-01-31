@@ -26,6 +26,22 @@ function center_services_theme($existing, $type, $theme, $path) {
         'nodes' => [],
       ],
     ],
+    'pre_footer_banner' => [
+      'variables' => [
+        'variant' => 'full-width',
+      ],
+      //'template' => 'pre-footer-banner',
+    ],
+    'block__inline_block__article_content' => [
+      'template' => 'block--inline-block--article-content',
+      'base hook' => 'block',
+     // 'path' => $path . '/templates',
+    ],
+    'paragraph__article_section' => [
+      'template' => 'paragraph--article-section',
+      'base hook' => 'paragraph',
+     // 'path' => $path . '/templates',
+    ],
   ];
 }
 
@@ -38,6 +54,71 @@ function center_services_webform_element_alter(array &$element, FormStateInterfa
       // Entity reference needs string
       $element['#default_value'] = (string) $node->id();
       $element['#disabled'] = TRUE;
+    }
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function center_services_preprocess_block(&$variables) {
+  // Check if this is our article content inline block.
+  if (isset($variables['elements']['#plugin_id']) && 
+      $variables['elements']['#plugin_id'] === 'inline_block:article_content') {
+    
+    // Attach our library.
+    $variables['#attached']['library'][] = 'center_services/article-display';
+    
+    // Get the block content entity.
+    if (isset($variables['elements']['content']['#block_content'])) {
+      $block_content = $variables['elements']['content']['#block_content'];
+      
+      // Build TOC items from article sections.
+      $toc_items = [];
+      if ($block_content->hasField('field_article_sections') && !$block_content->get('field_article_sections')->isEmpty()) {
+        foreach ($block_content->get('field_article_sections') as $delta => $item) {
+          $paragraph = $item->entity;
+          if ($paragraph && $paragraph->hasField('field_section_title')) {
+            $title = $paragraph->get('field_section_title')->value;
+            if (!empty($title)) {
+              $toc_items[] = [
+                'id' => 'section-' . $delta,
+                'title' => $title,
+              ];
+            }
+          }
+        }
+      }
+      $variables['toc_items'] = $toc_items;
+      
+      // Pass formatted date.
+      if ($block_content->hasField('field_article_date') && !$block_content->get('field_article_date')->isEmpty()) {
+        $date = $block_content->get('field_article_date')->date;
+        if ($date) {
+          $variables['formatted_date'] = $date->format('d M Y');
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function center_services_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  
+  if ($paragraph->bundle() === 'article_section') {
+    // Get the delta/index of this paragraph.
+    $parent = $paragraph->getParentEntity();
+    if ($parent && $parent->hasField('field_article_sections')) {
+      foreach ($parent->get('field_article_sections') as $delta => $item) {
+        if ($item->entity && $item->entity->id() === $paragraph->id()) {
+          $variables['section_id'] = 'section-' . $delta;
+          break;
+        }
+      }
     }
   }
 }

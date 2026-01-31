@@ -1,0 +1,32 @@
+
+<div class="carousel__slide-container">
+  
+  <div class="carousel__content">
+    {% if content.field_formatted_title %}
+      {{ content.field_formatted_title|add_class('carousel__title') }}
+    {% endif %}
+    
+    {% if content.field_formatted_subtitle %}
+      {{ content.field_formatted_subtitle|add_class('carousel__lead') }}
+    {% endif %}
+    
+    {% if content.field_features %}
+      <div class="carousel__features row">
+        {{ content.field_features }}
+      </div>
+
+    {% endif %}
+    {% if content.field_action_buttons %}
+       <div class="carousel__actions">
+        {{ content.field_action_buttons }}
+        </div>
+    {% endif %}
+  </div>
+  
+  {% if content.field_slide_image %}
+    <div class="carousel__media">
+      {{ content.field_slide_image}}
+    </div>
+  {% endif %}
+  
+</div>

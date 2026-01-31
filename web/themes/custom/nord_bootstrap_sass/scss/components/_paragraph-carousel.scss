@@ -208,9 +208,17 @@
       background-position: center;
       background-repeat: no-repeat;
       min-height: 250px;
+      flex-shrink: 0;
+      order: 1;
       
       @media (min-width: 992px) {
         width: 50%;
+        order: 0;
+        min-height: auto;
+        
+        img {
+          height: rem(528) !important;
+        }
       }
       
       img {
@@ -218,22 +226,24 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        margin-bottom: 0;
       }
+    }
 
-      .carousel__media-desktop {
-        display: none;
-      }
+    .carousel__media-desktop {
+      display: none;
       
       @media (min-width: 768px) {
-        .carousel__media-mobile {
-          display: none;
-        }
-        
-        .carousel__media-desktop {
-          display: block;
-        }
+        display: block;
       }
-
+    }
+    
+    .carousel__media-mobile {
+      display: block;
+      
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
     
     .carousel__content {
@@ -241,10 +251,13 @@
       flex-direction: column;
       justify-content: center;
       padding: rem(32) rem(24);
+      flex-shrink: 0;
+      order: 2;
       
       @media (min-width: 992px) {
         width: 50%;
         padding: rem(64);
+        order: 0;
       }
     }
     
@@ -290,9 +303,7 @@
     }
     
     .carousel__actions {
-      .btn {
-        align-self: flex-start;
-      }
+      align-self: flex-start;
     }
   }
 
@@ -300,7 +311,7 @@
   // TYPE: SOLID BACKGROUND
   // ======================
   
-  &--solid-bg {
+  &--solid-background {
     background-color: $light-blue;
     overflow-x: clip;
     
@@ -330,12 +341,14 @@
       @media (min-width: 992px) {
         flex-direction: row;
         gap: rem(64);
+        align-items: stretch;
       }
     }
     
     .carousel__content {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       
       @media (min-width: 992px) {
         flex: 1;
@@ -348,6 +361,7 @@
       width: calc(100% + #{rem(32)});
       margin-left: rem(-16);
       margin-right: rem(-16);
+      flex-shrink: 0;
       
       img {
         display: block;
@@ -427,13 +441,18 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: rem(48);
-    height: rem(48);
+    width: rem(16);
+    height: rem(16);
     background: none;
     border: none;
     z-index: 5;
     opacity: 0.9;
     cursor: pointer;
+
+    @include media-breakpoint-up(sm) {
+      width: rem(48);
+      height: rem(48);
+    }
     
     .icon {
       color: #2D2D2D;
@@ -482,7 +501,7 @@
   }
   
   // Solid BG variant controls
-  &--solid-bg {
+  &--solid-background {
     .carousel-control-prev,
     .carousel-control-next {
       display: none;
@@ -535,11 +554,12 @@
   // Navigation positioning variants
   &--nav-high {
     .carousel-indicators {
-      bottom: auto;
-      top: rem(20);
-      
+      bottom: rem(12);
+      top: auto;
+
       @media (min-width: 992px) {
-        top: rem(40);
+        bottom: rem(118);
+        top: auto;
       }
     }
   }
@@ -561,7 +581,7 @@
   }
   
   // Solid BG variant indicators
-  &--solid-bg {
+  &--solid-background {
     .carousel-indicators {
       position: static;
       transform: none;
@@ -569,7 +589,7 @@
       justify-content: center;
       
       @media (min-width: 992px) {
-        margin-top: rem(72);
+        margin-top: rem(32);
       }
       
       button {
@@ -587,5 +607,60 @@
   
   .text-secondary {
     color: $secondary;
+  }
+
+  &--split-screen {
+    &.carousel-component--short {
+      .carousel-inner,
+      .carousel-item {
+        min-height: 0;
+        height: auto;
+        
+        @media (min-width: 992px) {
+          height: rem(528);
+        }
+      }
+
+      .carousel__slide-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        @media (min-width: 992px) {
+          flex-direction: row;
+        }
+      }
+
+      .carousel__media,
+      .carousel__content {
+        @media (min-width: 992px) {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &--solid-background {
+    &.carousel-component--short {
+      .carousel-inner {
+        @media (min-width: 992px) {
+          min-height: auto;
+        }
+      }
+      
+      .carousel-item {
+        @media (min-width: 992px) {
+          min-height: auto;
+        }
+      }
+    }
+  }
+
+  .field--type-image {
+    margin: 0 !important;
+  }
+  
+  .field--type-entity-reference {
+    margin: 0 !important;
   }
 }

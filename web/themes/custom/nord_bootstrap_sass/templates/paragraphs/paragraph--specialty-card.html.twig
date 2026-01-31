@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Template for Specialty Card paragraph (child of Specialty Cards Section).
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{% set classes = [
+  'specialty-card',
+  paragraph.field_small_text.value ? 'specialty-card--small-text' : '',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if content.field_icon %}
+    <div class="specialty-card__icon">
+      {{ content.field_icon }}
+    </div>
+  {% endif %}
+  
+  <div class="specialty-card__content">
+    {% if content.field_title %}
+      <h3 class="specialty-card__title">{{ content.field_title }}</h3>
+    {% endif %}
+  </div>
+</div>

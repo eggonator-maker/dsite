@@ -1,0 +1,12 @@
+{# paragraph--faq-section.html.twig #}
+<section class="faq-section">
+  {% if content.field_title %}
+    <h2 class="faq-section__title">{{ content.field_title }}</h2>
+  {% endif %}
+
+  <div class="accordion faq-accordion" id="faqAccordion-{{ paragraph.id() }}">
+    {% if content.field_faq_items %}
+      {{ content.field_faq_items }}
+    {% endif %}
+  </div>
+</section>

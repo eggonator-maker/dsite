@@ -1,0 +1,232 @@
+// center_services/scss/prices-mock.scss
+
+.prices-page-wrapper {
+    background: #F1F2F5;
+    padding: rem(64) rem(80);
+    min-height: 100vh;
+  }
+  
+  .prices-sidebar {
+    background: #FFFFFF;
+    box-shadow: 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 
+                0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 
+                0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: rem(12);
+    padding: rem(40) rem(24);
+  
+    &__title {
+      font-family: $font-family-sans-serif;
+      font-weight: 700;
+      font-size: rem(24);
+      margin-bottom: rem(24);
+      color: $color-text-dark;
+    }
+  
+    &__search {
+      margin-bottom: rem(16);
+  
+      .form-control {
+        background: #F5F5F5;
+        border: none;
+        border-radius: rem(4);
+        padding: rem(8) rem(16);
+        font-family: $font-family-sans-serif;
+        font-size: rem(14);
+        color: $color-text-dark;
+        
+        &::placeholder {
+          color: #808080;
+        }
+        
+        &:focus {
+          background: #F5F5F5;
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
+  
+  // Sidebar accordion overrides
+  .prices-sidebar-accordion {
+    gap: 0;
+    
+    .accordion-item {
+      border: none;
+      border-bottom: none;
+    }
+    
+    .accordion-button {
+      padding: rem(8);
+      font-size: rem(16);
+      font-weight: 400;
+      color: $color-text-dark;
+      background: transparent;
+      
+      &:not(.collapsed) {
+        background-color: #027FF7;
+        color: #FFFFFF;
+        font-weight: 600;
+      }
+      
+      &::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232E333C'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      }
+      
+      &:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      }
+    }
+    
+    .accordion-body {
+      padding: 0;
+    }
+    
+    .sidebar-category__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .sidebar-category__link {
+      display: block;
+      padding: rem(8) rem(8) rem(8) rem(40);
+      font-family: $font-family-sans-serif;
+      font-size: rem(16);
+      line-height: 150%;
+      color: $color-text-dark;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        color: #027FF7;
+      }
+      
+      &.active {
+        color: #027FF7;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .prices-content {
+    background: #FFFFFF;
+    box-shadow: 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 
+                0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 
+                0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: rem(8);
+    padding: rem(24);
+  }
+  
+  .price-category-section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: rem(21);
+    line-height: 150%;
+    color: $color-text-dark;
+    padding: rem(8);
+    margin-bottom: rem(16);
+  }
+  
+  // Main content accordion (uses your existing styling)
+  .prices-accordion {
+    .accordion-item {
+      border-bottom: rem(1) solid $color-border-light;
+    }
+    
+    .accordion-button {
+      padding: rem(24) rem(8) rem(24) rem(16);
+      
+      // Keep chevron on the right for content accordions
+      &::after {
+        margin-left: auto;
+      }
+    }
+    
+    .accordion-body {
+      padding: 0 rem(8) 0 rem(48);
+    }
+  }
+  
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(8) 0;
+    border-bottom: rem(1) solid #F1F2F5;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: rem(4);
+    }
+    
+    &__doctor {
+      font-family: $font-family-sans-serif;
+      font-size: rem(16);
+      line-height: 150%;
+      color: $color-text-dark;
+      margin: 0;
+    }
+    
+    &__price {
+      font-family: $font-family-sans-serif;
+      font-weight: 700;
+      font-size: rem(16);
+      line-height: 150%;
+      color: #027FF7;
+      margin: 0;
+    }
+    
+    &__actions {
+      display: flex;
+      gap: rem(16);
+      align-items: center;
+      
+      .btn {
+        max-height: rem(34);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(6);
+        padding: rem(12) rem(18);
+        font-family: $font-family-sans-serif;
+        font-size: rem(14);
+        border-radius: rem(8);
+        white-space: nowrap;
+        transition: all 0.2s ease;
+        
+        &-primary {
+          background: #027FF7;
+          border: rem(1) solid #027FF7;
+          color: #F8FAFC;
+          font-weight: 700;
+          
+          &:hover {
+            background: darken(#027FF7, 10%);
+            border-color: darken(#027FF7, 10%);
+          }
+        }
+        
+        &-outline-primary {
+          border: rem(2) solid #027FF7;
+          color: #027FF7;
+          background: transparent;
+          font-weight: 600;
+          
+          &:hover {
+            background: #027FF7;
+            color: #FFFFFF;
+          }
+        }
+        
+        i {
+          opacity: 0.8;
+        }
+      }
+    }
+  }

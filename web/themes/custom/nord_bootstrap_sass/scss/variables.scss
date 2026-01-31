@@ -3,7 +3,7 @@
 // colors
 $primary-shade: rgb(255, 78, 46);
 $primary-light: tint-color($primary-shade, 37%);
-$primary-dark: shade-color($primary-shade, 12%);
+$primary-dark: #001E60;
 $accent-shade: #0079C0;
 $accent-light: tint-color($accent-shade, 37%);
 $accent-dark: shade-color($accent-shade, 12%);
@@ -14,8 +14,14 @@ $yellow: #ffc107;
 $green: #28a745;
 $cyan: #17a2b8;
 $white: #fff;
-$gray-100: #f8f9fa;
-$gray-800: #343a40;
+$gray-50: #F8FAFC;       // Lightest gray (button text)
+$gray-100: #F1F2F5;      // Very light gray (background, borders)
+$gray-200: #EAEAEA;      // Light gray (scrollbar, inactive elements)
+$gray-300: #E0E0E0;      // Medium-light gray
+$gray-600: #808080;      // Medium gray (placeholder text)
+$gray-700: #666666;      // Medium-dark gray
+$gray-800: #2E333C;      // Same as $dark
+
 // scss-docs-start theme-color-variables
 $primary:        #0E296B;
 $secondary:     #027FF7;
@@ -50,6 +56,11 @@ $border-radius-lg: 12px;
 $border-radius-md: 10px;
 
 $border-radius-sm: 8px;
+
+$background-light: #F1F2F5;
+$search-bg: #F5F5F5;
+$accent-red: $color-primary-red;    // Accordion arrow color
+$white: #FFFFFF;
 // Body
 //
 // Settings for the `<body>` element.

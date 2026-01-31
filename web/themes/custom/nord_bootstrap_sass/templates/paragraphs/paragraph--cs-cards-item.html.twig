@@ -41,7 +41,7 @@
     {% endif %}
   </div>
   
-  {% if link_url %}
+  {% if paragraph.field_link is not empty %}
     <a href="{{ link_url }}" class="card-item__link">Află detalii</a>
   {% endif %}
 </div>

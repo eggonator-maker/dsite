@@ -2,111 +2,178 @@
 
 <header class="site-header">
   
-  {# ============================================= #}
-  {# Desktop Header (Visible on 992px and up)      #}
-  {# ============================================= #}
-  <div class="d-none d-lg-block">
+  {# Desktop Header #}
+  <div class="site-header__desktop">
     
-     {# Tier 1: Utility Bar #}
-    <div class="header-utility">
-      {# THE FIX: Added the 'header__container' class to this div #}
-      <div class="header__container container d-flex justify-content-between align-items-center">
-        
-        {# Logo is now the first item, so it will be on the left #}
-        <a href="/" class="header-logo">
-          <img src="/{{ directory }}/images/logo_nord.svg" alt="{{ site_name }} logo">
+    {# Tier 1: Utility Bar #}
+    <div class="site-header__utility">
+      <div class="site-header__container">
+        <a href="/" class="site-header__logo-group">
+          <div class="site-header__logo">
+            <img src="/{{ directory }}/images/logo_nord_main.png" alt="{{ site_name }}">
+          </div>
+          <span class="site-header__divider"></span>
+          <span class="site-header__brand-name">
+            <img src="/{{ directory }}/images/muntenia.svg" alt="MUNTENIA">
+          </span>
         </a>
 
-        {# This div groups the right-aligned links #}
-        <div class="d-flex align-items-center gap-4">
-          <a href="#" class="header-link">Contact</a>
-          <a href="tel:0248948" class="header-link d-inline-flex align-items-center gap-2">
-  
-           <span class="icon icon-phone icon--md text-danger"></span>
-            <span class="fw-bold text-danger">0248 948</span>
+        <div class="site-header__utility-links">
+          <a href="/contact">Contact</a>
+          <a href="tel:0248948" class="site-header__phone-link">
+            <span class="icon icon-phone"></span>
+            <span class="site-header__phone-number">0248 948</span>
           </a>
-          <a href="#" class="header-link d-inline-flex align-items-center gap-2">
-            <span class="icon icon-lab icon--md"></span>
+          <a href="#">
+            <span class="icon icon-lab"></span>
             <span>Rezultate analize</span>
           </a>
-        
-           <a href="/user" class="header-link d-inline-flex align-items-center gap-2">
-            <span class="icon icon-profile icon--md"></span>
+          <a href="/user">
+            <span class="icon icon-profile"></span>
             <span>Intră în cont</span>
           </a>
         </div>
       </div>
     </div>
 
-
-    {# Tier 2: Main Navigation (sticky-top class removed) #}
-    <nav id="header-top" class="header-main bg-white">
-      {# Added 'header__container' class for custom padding #}
-      <div class="header__container container d-flex justify-content-between align-items-center">
-        <ul class="main-nav d-flex align-items-center gap-4">
-          <li><a class="nav-link" href="/" data-nav-item="home">Spitalul Muntenia</a></li>
-          <li><a class="nav-link" href="/specialities" data-nav-item="specialities">Specialitati</a></li>
-          <li><a class="nav-link" href="/doctors" data-nav-item="doctors">Medici</a></li>
-          <li><a class="nav-link" href="/centers" data-nav-item="centers">Centre medicale</a></li>
-          <li><a class="nav-link" href="#" data-nav-item="packages">Pachete si preturi</a></li>
+    {# Tier 2: Main Navigation #}
+    <nav class="site-header__main">
+      <div class="site-header__container">
+        <ul class="site-header__nav">
+          <li class="site-header__nav-item site-header__nav-item--dropdown">
+            <a href="/" data-nav-item="home">Spitalul Muntenia</a>
+            <div class="site-header__dropdown">
+              <a href="/despre-noi">Despre noi</a>
+              <a href="/acreditari">Acreditari</a>
+              <a href="/cariere">Cariere</a>
+            </div>
+          </li>
+          <li class="site-header__nav-item"><a href="/specialities" data-nav-item="specialities">Specialitati</a></li>
+          <li class="site-header__nav-item"><a href="/doctors" data-nav-item="doctors">Medici</a></li>
+          <li class="site-header__nav-item site-header__nav-item--dropdown">
+            <a data-nav-item="centers">Centre medicale</a>
+            <div class="site-header__dropdown">
+              <a href="/centers/san/despre-centru">centru san</a>
+              <a href="/centers/imagistica">centru imagistica</a>
+            </div>
+          </li>
+          <li class="site-header__nav-item site-header__nav-item--dropdown">
+            <a href="/pachete-preturi" data-nav-item="packages">Pachete si preturi</a>
+            <div class="site-header__dropdown">
+              <a href="/pachete">Pachete</a>
+              <a href="/preturi">Preturi</a>
+            </div>
+          </li>
         </ul>
   
-               <div class="d-flex align-items-center gap-3">
-          <form class="search-box">
+        <div class="site-header__actions">
+          <form class="site-header__search">
             <span class="icon icon-search"></span>
-            <input type="search" class="search-box__input" placeholder="Caută">
+            <input type="search" placeholder="Caută">
           </form>
-          <a href="#" class="btn btn-danger">Programează-te acum</a>
+          <a href="/programare-online" class="btn btn-danger">Programează-te acum</a>
         </div>
       </div>
     </nav>
   </div>
 
-  {# ============================================= #}
-  {# Mobile Header (Visible below 992px)           #}
-  {# ============================================= #}
-  <div class="mobile-header d-lg-none">
-    <a href="/" class="navbar-brand">
-      <img src="/{{ directory }}/images/logo_nord.svg" alt="{{ site_name }} logo">
+  {# Mobile/Tablet Header #}
+  <div class="site-header__mobile">
+    <a href="/" class="site-header__logo">
+      <img src="/{{ directory }}/images/logo_nord_main.png" alt="{{ site_name }}">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+    <span class="site-header__divider"></span>
+
+    <span class="site-header__brand-name">
+      <img src="/{{ directory }}/images/muntenia.svg" alt="MUNTENIA">
+    </span>
+    
+    <button class="site-header__menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
 
 </header>
 
-{# ============================================= #}
-{# Mobile Offcanvas Menu                         #}
-{# ============================================= #}
-<div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+{# Mobile Offcanvas Menu #}
+<div class="offcanvas offcanvas-start site-header__offcanvas" tabindex="-1" id="mobileMenu">
   <div class="offcanvas-header">
-    <a href="/" class="navbar-brand">
-      <img src="/{{ directory }}/images/logo_nord.svg" alt="{{ site_name }} logo">
-    </a>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="site-header__offcanvas-logo-group">
+      <a href="/" class="site-header__logo">
+        <img src="/{{ directory }}/images/logo_nord_main.png" alt="{{ site_name }}">
+      </a>
+      <span class="site-header__divider"></span>
+      <span class="site-header__brand-name">
+        <img src="/{{ directory }}/images/muntenia.svg" alt="MUNTENIA">
+      </span>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
+  
   <div class="offcanvas-body">
-    <ul class="mobile-utility-nav">
-      <li><a href="tel:0248948"><span class="icon icon-phone icon--md text-danger"></span> 0248 948</a></li>
-      <li><a href="#"><span class="icon icon-lab icon--md"></span> Rezultate</a></li>
-      <li><a href="/user"><span class="icon icon-profile icon--md"></span> Cont</a></li>
-    </ul>
+    <div class="site-header__mobile-utility">
+      <a href="tel:0248948" class="site-header__phone-link">
+        <span class="icon icon-phone"></span>
+        <span>0248 948</span>
+      </a>
+      <a href="#">
+        <span class="icon icon-lab"></span>
+        <span>Rezultate</span>
+      </a>
+      <a href="/user">
+        <span class="icon icon-profile"></span>
+        <span>Cont</span>
+      </a>
+    </div>
 
-    <form class="search-box">
-      
- <span class="icon icon-search"></span>
-      <input type="search" class="search-box__input" placeholder="Caută">
+    <form class="site-header__search">
+      <span class="icon icon-search"></span>
+      <input type="search" placeholder="Caută">
     </form>
 
-    {# Simple list for static mobile nav.
- Replace with accordion for dropdowns. #}
-    <ul class="mobile-main-nav">
-      <li><a href="#">Spitalul Muntenia</a></li>
-      <li><a href="/specialities">Specialitati</a></li>
-      <li><a href="/doctors">Specialitati</a></li>
-
-      {# ... add other links here ... #}
-    </ul>
+    <nav class="site-header__mobile-nav">
+      <div class="site-header__mobile-nav-item site-header__mobile-nav-item--expandable">
+        <div class="site-header__mobile-nav-row">
+          <a href="/" class="site-header__mobile-nav-link">Spitalul Muntenia</a>
+          <button type="button" class="site-header__mobile-nav-toggle" data-submenu-toggle>
+            <span class="icon icon-chevron-down icon--xsm"></span>
+          </button>
+        </div>
+        <div class="site-header__mobile-submenu">
+          <a href="/despre-noi">Despre noi</a>
+          <a href="/acreditari">Acreditari</a>
+          <a href="/cariere">Cariere</a>
+        </div>
+      </div>
+      
+      <div class="site-header__mobile-nav-item">
+        <a href="/specialities" class="site-header__mobile-nav-link">Specialitati</a>
+      </div>
+      
+      <div class="site-header__mobile-nav-item">
+        <a href="/doctors" class="site-header__mobile-nav-link">Medici</a>
+      </div>
+      
+      <div class="site-header__mobile-nav-item">
+        <a href="/centers" class="site-header__mobile-nav-link">Centre medicale</a>
+      </div>
+      
+      <div class="site-header__mobile-nav-item site-header__mobile-nav-item--expandable">
+        <div class="site-header__mobile-nav-row">
+          <a href="/pachete-preturi" class="site-header__mobile-nav-link">Pachete si preturi</a>
+          <button type="button" class="site-header__mobile-nav-toggle" data-submenu-toggle>
+            <span class="icon icon-chevron-down icon--xsm"></span>
+          </button>
+        </div>
+        <div class="site-header__mobile-submenu">
+          <a href="/pachete">Pachete</a>
+          <a href="/preturi">Preturi</a>
+        </div>
+      </div>
+      
+      <div class="site-header__mobile-nav-item">
+        <a href="/contact" class="site-header__mobile-nav-link">Contact</a>
+      </div>
+    </nav>
   </div>
 </div>

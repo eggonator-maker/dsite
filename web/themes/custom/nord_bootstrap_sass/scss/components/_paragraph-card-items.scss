@@ -154,11 +154,14 @@
         --card-title-lines: 1;
         --card-text-lines: 2;
         
+        padding: rem(40) rem(24);
+        
         .card-item__link {
-          padding: rem(12) rem(18);
+          padding: rem(9) rem(15);
           border: rem(3) solid $color-primary-blue;
           border-radius: $border-radius-md;
           justify-content: center;
+          align-self: start;
           
           &:hover {
             background: $color-primary-blue;

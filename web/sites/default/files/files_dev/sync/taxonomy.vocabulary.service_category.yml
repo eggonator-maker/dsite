@@ -1,9 +1,0 @@
-uuid: d8a34b72-7e0b-4daa-93a5-f954bc43b935
-langcode: en
-status: true
-dependencies: {  }
-name: 'Service category'
-vid: service_category
-description: 'categories of services offered by a center - surgical interventions within the breast clinic.'
-weight: 0
-new_revision: false

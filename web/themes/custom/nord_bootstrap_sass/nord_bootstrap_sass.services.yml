@@ -1,0 +1,5 @@
+services:
+  nord_bootstrap_sass.twig.prices_extension:
+    class: Drupal\nord_bootstrap_sass\TwigExtension\PricesTwigExtension
+    tags:
+      - { name: twig.extension }

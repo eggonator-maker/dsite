@@ -1,0 +1,29 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'split-screen-hero-banner',
+  ]
+%}
+
+<section{{ attributes.addClass(classes) }}>
+  <div class="split-screen-hero-banner__image">
+    {% if content.field_mobile_background %}
+      {{ content.field_mobile_background|add_class('split-screen-hero-banner__media-mobile split-screen-hero-banner__media') }}
+    {% endif %}
+
+    {% if content.field_desktop_background %}
+      {{ content.field_desktop_background|add_class('split-screen-hero-banner__media-desktop split-screen-hero-banner__media') }}
+    {% endif %}
+  </div>
+  
+  <div class="split-screen-hero-banner__content">
+    {% if paragraph.field_title is not empty %}
+      {{ content.field_title|add_class('split-screen-hero-banner__title') }}
+    {% endif %}
+    
+    {% if content.field_formatted_subtitle is not empty %}
+      {{ content.field_formatted_subtitle|add_class('split-screen-hero-banner__text') }}
+    {% endif %}
+  </div>
+</section>

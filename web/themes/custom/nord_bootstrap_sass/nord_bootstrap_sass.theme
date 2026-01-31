@@ -65,6 +65,16 @@ function nord_bootstrap_sass_preprocess_page(array &$vars) {
   
   $vars['#attached']['library'][] = 'nord_bootstrap_sass/global-scripts';
   
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  
+
+  if ($route_name === 'entity.node.canonical') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node && $node->id() == 313) { // Your articles page node ID
+      $vars['#attached']['library'][] = 'nord_bootstrap_sass/articles-search-form';
+    }
+  }
 
 }
 
@@ -122,3 +132,4 @@ function nord_bootstrap_sass_form_alter(&$form, \Drupal\Core\Form\FormStateInter
     $form['#attributes']['class'][] = 'appointment-form';
   }
 }
+

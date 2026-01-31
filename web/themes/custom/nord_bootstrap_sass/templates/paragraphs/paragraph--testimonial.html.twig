@@ -1,0 +1,40 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+
+<section{{ attributes.addClass(classes) }}>
+  <div class="testimonial">
+    <div class="testimonial__line"></div>
+    
+    {% if content.field_image|render %}
+      <div class="testimonial__image">
+        {{ content.field_image }}
+      </div>
+    {% endif %}
+    
+    <div class="testimonial__content">
+      <span class="testimonial__quote icon icon-red-quote icon--lg"></span>
+      
+      <div class="testimonial__text-wrapper">
+        {% if content.field_formatted_text|render %}
+            {{ content.field_formatted_text | add_class('testimonial__text') }}
+        {% endif %}
+        
+        <div class="testimonial__signature">
+          {% if content.field_name|render %}
+          
+            {{ content.field_name |add_class('testimonial__name') }}
+           
+          {% endif %}
+          
+          {% if content.field_title|render %}
+              {{ content.field_title | add_class('testimonial__title') }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -97,7 +97,7 @@ class SpecialitiesNavigationBlock extends BlockBase implements ContainerFactoryP
     $term_storage = $this->entityTypeManager->getStorage('taxonomy_term');
     $term_query = $term_storage->getQuery()
       ->condition('vid', 'specialities') // ASSUMPTION: Your vocabulary is named 'specialities'.
-      ->sort('field_menu_order', 'ASC') // As requested.
+      ->sort('name', 'ASC') // As requested.
       ->accessCheck(TRUE);
     
     $term_ids = $term_query->execute();

@@ -1,0 +1,28 @@
+/* scss/components/paragraphs/_text-banner.scss */
+
+  
+  .text-banner {
+    background: #027FF7;
+    padding: rem(32) rem(80);
+    margin: 0 0;
+    
+    font-weight: 700;
+    font-size: rem(21);
+    line-height: 1.5;
+    text-align: center;
+    color: $white;
+    
+    @media (max-width: 991px) {
+      font-size: rem(18);
+      padding: rem(24) rem(20);
+
+    }
+    
+    @media (max-width: 767px) {
+      font-size: rem(16);
+    }
+    
+    p {
+      margin: 0;
+    }
+  }

@@ -1,0 +1,80 @@
+{#
+/**
+ * @file
+ * Template for Prices Block (Custom Block) - NO LOCATIONS
+ *
+ * Available variables:
+ * - content: Block content with field_main_categories
+ * - elements: Block elements
+ */
+#}
+
+{{ attach_library('nord_bootstrap_sass/prices-page') }}
+
+<div class="prices-block-wrapper">
+  <div class="prices-block-inner">
+    
+    {# Sidebar Navigation #}
+    <aside class="prices-sidebar-wrapper">
+      <div class="prices-sidebar">
+        <h3 class="prices-sidebar__title">Preturi</h3>
+        
+        <div class="prices-sidebar__search">
+          <span class="icon icon-search"></span>
+          <input type="text" placeholder="Caută" id="prices-search">
+        </div>
+
+        <div class="prices-sidebar-accordion" id="pricesSidebarAccordion">
+          {% for category_delta, category_item in content.field_main_categories %}
+            {% if category_delta matches '/^\\d+$/' %}
+              {% set category = elements.content.field_main_categories['#items'].get(category_delta).entity %}
+              {% if category %}
+                {% set category_id = 'sidebar-' ~ category.field_category_name.value|clean_id %}
+                {% set is_expanded = category.field_is_expanded.value %}
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button {{ is_expanded ? '' : 'collapsed' }}" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#{{ category_id }}" 
+                            aria-expanded="{{ is_expanded ? 'true' : 'false' }}">
+                      {{ category.field_category_name.value }}
+                    </button>
+                  </h2>
+                  <div id="{{ category_id }}" 
+                       class="accordion-collapse collapse {{ is_expanded ? 'show' : '' }}" 
+                       data-bs-parent="#pricesSidebarAccordion">
+                    <div class="accordion-body">
+                      <ul class="sidebar-category__list">
+                        {% for subcategory in category.field_subcategories %}
+                          {% set sub = subcategory.entity %}
+                          {% if sub %}
+                            {% set anchor = sub.field_anchor_id.value ?: ('group-' ~ sub.field_subcategory_name.value|clean_id) %}
+                            <li>
+                              <a href="#{{ anchor }}" class="sidebar-category__link">
+                                {{ sub.field_subcategory_name.value }}
+                              </a>
+                            </li>
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </aside>
+
+    {# Main Content #}
+    <main class="prices-content-wrapper">
+      <div class="prices-content">
+        {{ content.field_main_categories }}
+      </div>
+    </main>
+
+  </div>
+</div>

@@ -1,22 +1,34 @@
-/* scss/components/_article-card.scss */
+/*--------------------------------------------------------------
+# Article Card - Clean Implementation
+--------------------------------------------------------------*/
 
 .article-card {
-  /* --- Card Shell --- */
+  /* Card Shell */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #FFFFFF;
   border-bottom: rem(4) solid #EBEBEB;
   box-shadow:
-    0 12.5px 0 rgba(0,124,247,.035),
-    0  6.6px  5.3px rgba(0,124,247,.028),
-    0  2.7px  2.2px rgba(0,124,247,.02);
+    0 rem(12.5) rem(10) rgba(0, 124, 247, 0.035),
+    0 rem(6.6) rem(5.3) rgba(0, 124, 247, 0.028),
+    0 rem(2.7) rem(2.2) rgba(0, 124, 247, 0.02);
   border-radius: rem(12);
 
-  /* --- SIZING --- */
+  /* Fixed Sizing */
   width: rem(364);
   height: rem(436);
   flex-shrink: 0;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(rem(-4));
+    box-shadow:
+      0 rem(12.5) rem(10) rgba(0, 124, 247, 0.08),
+      0 rem(6.6) rem(5.3) rgba(0, 124, 247, 0.06),
+      0 rem(2.7) rem(2.2) rgba(0, 124, 247, 0.04);
+  }
 
   /* --- Image Block --- */
   &__media {
@@ -30,56 +42,89 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      margin-bottom: 0 !important;
+    }
+
+    .field--type-image {
+      margin: 0 !important;
+      height: 100%;
     }
   }
 
-  /* --- NEW Card Body --- */
+  /* --- Card Body --- */
   &__body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; // Pushes text to top, arrow to bottom
-    flex-grow: 1;                   // Allows the body to fill the card's height
-    padding: rem(16);               // The 16px whitespace on all sides
+    flex-grow: 1;                   // Fills remaining card height
+    padding: rem(16);               // 16px whitespace on all sides
   }
   
-  /* --- NEW Text Content Block --- */
+  /* --- Text Content Block --- */
   &__text-content {
     display: flex;
     flex-direction: column;
-    gap: rem(8); // The 8px gap between the date and title
+    gap: rem(8); // 8px gap between date and title
   }
 
   /* --- Date Label --- */
-  &__date { // Renamed from subtitle for clarity
+  &__date {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: rem(14);   // 14px font size
-    line-height: 1.5;     // 150% line height
+    font-size: rem(14);
+    line-height: 1.5;     // 150%
     color: #595959;
   }
 
   /* --- Title --- */
-  &__title { // Renamed from name for clarity
+  &__title {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;     // Bold font weight
-    font-size: rem(21);   // 21px font size
-    line-height: 1.2;     // 120% line height
-    color: $primary;
+    font-weight: 700;
+    font-size: rem(21);
+    line-height: 1.2;     // 120%
+    color: #0E296B;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #E22A1F;
+      }
+    }
   }
 
-  /* --- NEW Arrow container --- */
+  /* --- Arrow Container - Bottom Right --- */
   &__arrow {
-    align-self: flex-end; // Aligns the arrow to the left within the body
+    align-self: flex-end; // Aligns to the right
     width: rem(24);
     height: rem(24);
-    
-    // Assuming you want to use the icon system
-    .icon {
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 100%;
-      color: $secondary; // Example color, change as needed
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateX(rem(4));
+      }
     }
+    
+    .icon {
+      width: rem(24);
+      height: rem(24);
+    }
+  }
+
+  /* Responsive */
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    max-width: rem(364);
   }
 }

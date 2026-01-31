@@ -1,0 +1,11 @@
+{{ attach_library('nord_bootstrap_sass/article-display') }}
+
+<article{{ attributes }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  
+  <div{{ content_attributes }}>
+    {# Hide node__meta by not rendering it #}
+    {{ content|without('uid', 'created') }}
+  </div>
+</article>

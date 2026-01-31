@@ -113,7 +113,7 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
       '#title' => $this->t('Taxonomy Field'),
       '#options' => $field_options,
       '#default_value' => $config['taxonomy_field'],
-      '#required' => TRUE,
+      '#required' => !empty($field_options) && count($field_options) > 1, // Only required if options exist
       '#description' => $this->t('Select the field on the content type that references the taxonomy vocabulary.'),
     ];
   
@@ -325,26 +325,31 @@ public function blockSubmit($form, FormStateInterface $form_state) {
 
   protected function getTaxonomyFieldOptions($content_type, $vocabulary) {
     if (empty($content_type)) return [];
-
+  
     $options = [];
     $fields = $this->entityFieldManager->getFieldDefinitions('node', $content_type);
-
+  
     foreach ($fields as $field_name => $field_definition) {
-      if (!$field_definition->getFieldStorageDefinition()->isBaseField()) {
-        if ($field_definition->getType() === 'entity_reference') {
-          $settings = $field_definition->getSettings();
-          if (isset($settings['target_type']) && $settings['target_type'] === 'taxonomy_term') {
-            $handler_settings = $settings['handler_settings'] ?? [];
-            $target_bundles = $handler_settings['target_bundles'] ?? [];
-            
-            if (empty($vocabulary) || empty($target_bundles) || in_array($vocabulary, $target_bundles)) {
-              $label = $field_definition->getLabel() . ' (' . $field_name . ')';
-              $options[$field_name] = $label;
-            }
+      if ($field_definition->getFieldStorageDefinition()->isBaseField()) {
+        continue;
+      }
+      
+      if ($field_definition->getType() === 'entity_reference') {
+        $settings = $field_definition->getSettings();
+        
+        if (isset($settings['target_type']) && $settings['target_type'] === 'taxonomy_term') {
+          $handler_settings = $settings['handler_settings'] ?? [];
+          $target_bundles = $handler_settings['target_bundles'] ?? [];
+          
+          // If no vocabulary selected OR field matches vocabulary, include it
+          if (empty($vocabulary) || empty($target_bundles) || isset($target_bundles[$vocabulary])) {
+            $label = $field_definition->getLabel() . ' (' . $field_name . ')';
+            $options[$field_name] = $label;
           }
         }
       }
     }
+  
     return $options;
   }
 

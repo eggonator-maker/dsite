@@ -90,9 +90,7 @@
   {% endblock %}
 </div>
 
-{% if is_front %}
-  {% include '@nord_bootstrap_sass/partials/pre-footer-banner.html.twig' %}
-{% endif %}
+
   {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
     <div class="featured-bottom">
       <aside class="{{ container }} clearfix" role="complementary">

@@ -1,0 +1,9 @@
+{# templates/paragraphs/paragraph--articles-by-speciality-speciality.html.twig #}
+
+<div class="cards-scroller-service hide-scrollbar cards-scroller-padding">
+  {% for key, item in content.field_article_cards %}
+    {% if key matches '/^\\d+$/' %}
+      {{ item }}
+    {% endif %}
+  {% endfor %}
+</div>

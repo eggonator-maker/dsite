@@ -1,0 +1,124 @@
+{#
+/**
+ * @file
+ * Theme override for Articles Search exposed form.
+ */
+#}
+
+<div class="articles-search-form" data-drupal-selector="articles-search-form">
+  
+  {# Search Fields Wrapper #}
+  <div class="articles-search-form__wrapper">
+
+    {# Article Title Search Field #}
+    <div class="articles-search-form__field articles-search-form__field--title">
+      <input
+        type="text"
+        id="edit-title"
+        name="{{ form.title['#name']|default('title') }}"
+        value="{{ form.title['#value']|default('') }}"
+        placeholder="Caută articol"
+        class="articles-search-form__input"
+        autocomplete="off"
+      />
+    </div>
+
+    {# Speciality Dropdown Field #}
+    <div class="articles-search-form__field articles-search-form__field--speciality">
+      <select
+        id="edit-field-specialities-target-id"
+        name="{{ form.field_specialities_target_id['#name']|default('field_specialities_target_id') }}"
+        class="articles-search-form__select"
+      >
+        <option value="All"{% if form.field_specialities_target_id['#value'] is empty or form.field_specialities_target_id['#value'] == 'All' %} selected{% endif %}>
+          Caută specialitate
+        </option>
+
+        {% if form.field_specialities_target_id['#options'] is defined %}
+          {% for key, option in form.field_specialities_target_id['#options'] %}
+            {% if key != 'All' and key != '' and key != '_none' %}
+              {% if option is iterable and option.option is defined %}
+                {% for opt_key, opt_label in option.option %}
+                  <option value="{{ opt_key }}"{% if form.field_specialities_target_id['#value'] == opt_key %} selected{% endif %}>
+                    {{ opt_label }}
+                  </option>
+                {% endfor %}
+              {% else %}
+                <option value="{{ key }}"{% if form.field_specialities_target_id['#value'] == key %} selected{% endif %}>
+                  {{ option }}
+                </option>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </select>
+    </div>
+
+    {# Hidden submit button #}
+    <div class="articles-search-form__actions" style="position:absolute;left:-9999px;">
+      {{ form.actions }}
+    </div>
+
+  </div>
+
+  {# Tags Filter - Scrollable Bar #}
+  {% if form.field_tags_target_id is defined %}
+    <div class="articles-tags-filter">
+      <div class="articles-tags-filter__scroll-indicator articles-tags-filter__scroll-indicator--left">
+        <span class="icon icon-chevron-left icon--sm"></span>
+      </div>
+
+      <div class="articles-tags-filter__scroller" id="articles-tags-scroller">
+        
+        {# "Toate" - Default/All button #}
+        <button 
+          type="button" 
+          class="articles-tags-filter__button{% if form.field_tags_target_id['#value'] is empty or form.field_tags_target_id['#value'] == 'All' %} articles-tags-filter__button--active{% endif %}"
+          data-tag-value="All"
+        >
+          Toate
+        </button>
+
+        {# Tag buttons from taxonomy #}
+        {% if form.field_tags_target_id['#options'] is defined %}
+          {% for key, option in form.field_tags_target_id['#options'] %}
+            {% if key != 'All' and key != '' and key != '_none' %}
+              {% if option is iterable and option.option is defined %}
+                {% for opt_key, opt_label in option.option %}
+                  <button 
+                    type="button" 
+                    class="articles-tags-filter__button{% if form.field_tags_target_id['#value'] == opt_key %} articles-tags-filter__button--active{% endif %}"
+                    data-tag-value="{{ opt_key }}"
+                  >
+                    {{ opt_label }}
+                  </button>
+                {% endfor %}
+              {% else %}
+                <button 
+                  type="button" 
+                  class="articles-tags-filter__button{% if form.field_tags_target_id['#value'] == key %} articles-tags-filter__button--active{% endif %}"
+                  data-tag-value="{{ key }}"
+                >
+                  {{ option }}
+                </button>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {# Hidden select field for form submission #}
+        <div style="position:absolute;left:-9999px;">
+          {{ form.field_tags_target_id }}
+        </div>
+      </div>
+
+      <div class="articles-tags-filter__scroll-indicator articles-tags-filter__scroll-indicator--right">
+        <span class="icon icon-chevron-right icon--sm"></span>
+      </div>
+    </div>
+  {% endif %}
+
+  {# Render remaining hidden form elements #}
+  {{ form|without('title', 'field_specialities_target_id', 'field_tags_target_id', 'actions') }}
+
+</div>

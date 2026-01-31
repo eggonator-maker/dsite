@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Template for Info Card paragraph (child of Info Cards Section).
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{% set classes = [
+  'information-card',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="information-card__content">
+    {% if content.field_icon %}
+        {{ content.field_icon |add_class("information-card__icon") }}
+    {% endif %}
+    
+    <div class="information-card__text-wrapper">
+      {% if content.field_heading %}
+      {{ content.field_heading|add_class("information-card__heading")}}
+      {% endif %}
+      
+      {# List variant
+      {% if paragraph.field_list_items is not empty %}
+        <ul class="information-card__list">
+          {% for item in content.field_list_items['#items'] %}
+            <li class="information-card__item">
+              <span class="information-card__bullet">•</span>
+              <span class="information-card__text">{{ item.value }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {# Text/paragraph variant #}
+      {% if content.field_paragraphs %}
+        {% for para in content.field_paragraphs['#items'] %}
+          <div class="information-card__paragraph">{{ para.value|raw }}</div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>

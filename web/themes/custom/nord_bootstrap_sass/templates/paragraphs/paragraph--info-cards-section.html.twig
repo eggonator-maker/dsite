@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Template for Info Cards Section paragraph.
+ * Supports both list-based and text-based cards.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  paragraph.field_dark_variant.value ? 'paragraph--type--info-cards-section--dark' : '',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  <div class="information-cards-section__container">
+    {% if content.field_title or content.field_subtitle %}
+      <div class="information-cards-section__header">
+        {% if content.field_title %}
+            {{ content.field_title | add_class("information-cards-section__title") }}
+        {% endif %}
+        {% if content.field_subtitle %}
+            {{ content.field_subtitle | add_class("information-cards-section__subtitle")}}
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if content.field_info_cards %}
+      <div class="information-cards-section__cards">
+        {{ content.field_info_cards }}
+      </div>
+    {% endif %}
+  </div>
+</section>

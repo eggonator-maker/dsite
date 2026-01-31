@@ -5,6 +5,8 @@
 
   // Desktop padding override
   @media (min-width: 992px) {
+      border-top: rem(1);
+      border-color: #DEDEDE;
       padding: rem(64) rem(150);
   }
 }

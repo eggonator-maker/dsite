@@ -246,8 +246,16 @@
     display: flex;
     align-items: flex-start;
     gap: rem(8);
+
+  
+    .required {
+      margin-left: 0.25rem;
+      color: $red;
+    }
+    
   
     .form-check-input {
+      align-self: center;
       flex-shrink: 0;
       width: rem(20);
       height: rem(20);
@@ -298,6 +306,11 @@
         color: #e22a1f;
       }
     }
+   .webform-element-description {
+      display: inline;
+      
+    }
+    
   }
   
   // --- Submit Button ---

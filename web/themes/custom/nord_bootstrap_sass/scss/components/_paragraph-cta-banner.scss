@@ -1,0 +1,67 @@
+.cta-banner {
+    background: #E22A1F;
+    border-radius: rem(12);
+    padding: rem(16) rem(32);
+    margin-bottom: rem(32);
+  
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: rem(32);
+  
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  
+    &__text {
+      flex: 1;
+      color: #FFFFFF;
+    }
+  
+    &__title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: rem(24);
+      line-height: 1.5;
+      margin: 0 0 rem(4);
+      color: #FFFFFF;
+    }
+  
+    &__description {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 1.4;
+      margin: 0;
+      color: #FFFFFF;
+    }
+  
+    &__button {
+      flex-shrink: 0;
+  
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: rem(12) 18px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #0E296B;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background-color 0.2s, color 0.2s;
+  
+        &:hover {
+          background: #0E296B;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }

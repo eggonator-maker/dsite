@@ -1,0 +1,15 @@
+{# templates/paragraphs/paragraph--articles-by-center-center.html.twig #}
+
+{% if content.field_formatted_subtitle %}
+  <div class="center-subtitle mb-3">
+    {{ content.field_formatted_subtitle }}
+  </div>
+{% endif %}
+
+<div class="cards-scroller hide-scrollbar">
+  {% for key, item in content.field_article_cards %}
+    {% if key matches '/^\\d+$/' %}
+      {{ item }}
+    {% endif %}
+  {% endfor %}
+</div>

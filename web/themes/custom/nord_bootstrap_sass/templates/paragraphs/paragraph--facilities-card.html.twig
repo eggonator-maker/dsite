@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Template for Facilities Card paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  <div class="facilities-card">
+    {% if content.field_title %}
+      <div class="facilities-card__header">
+        <h2 class="facilities-card__title">
+          {{ content.field_title }}
+        </h2>
+      </div>
+    {% endif %}
+
+    {% if content.field_items %}
+      <div class="facilities-card__body">
+        <ul class="facilities-card__list">
+          {% for item in content.field_items['#items'] %}
+            <li class="facilities-card__item">
+              <div class="facilities-card__icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="9" r="8" stroke="#027FF7" stroke-width="1.5"/>
+                  <circle cx="9" cy="9" r="3" stroke="#027FF7" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span class="facilities-card__text">{{ item.value }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Template for Price Main Category paragraph
+ */
+#}
+
+{% set category_name = paragraph.field_category_name.value %}
+
+<div class="price-category-section">
+  {# Use content, not paragraph, for rendering fields #}
+  {{ content.field_subcategories }}
+</div>

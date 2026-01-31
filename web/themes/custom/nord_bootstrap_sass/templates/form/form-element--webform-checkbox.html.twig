@@ -4,19 +4,23 @@
   {# 1. The Input (Checkbox) #}
   {{ children }}
 
-  {# 2. The Label 
-  QUICK FIX, need to fix labels
-  {{ label }}
-  #}
+  {# 2. The Label with required indicator #}
+
+      {% if label['#title_display'] != 'invisible' %}
+          <label {{ label.attributes.addClass('form-check-label') }} for="{{ children['#id'] }}">
+           {{ label['#title'] }}
+            </label>
+
+      {% endif %}
+  
   {# 3. The Description #}
   {% if description.content %}
     <div class="form-text description text-muted">
-      {{ description.content }}
+      {{ description.content }}{% if label['#required'] %}<span class="required">*</span>{% endif %}
     </div>
   {% elseif description %}
-    {# Fallback if description is not an array #}
     <div class="form-text description text-muted">
-      {{ description }}
+      {{ description }}{% if label['#required'] %}<span class="required">*</span>{% endif %}
     </div>
   {% endif %}
   

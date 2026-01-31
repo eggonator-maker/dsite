@@ -1,0 +1,25 @@
+{# templates/paragraph--articles-by-center--card.html.twig #}
+
+{% set card = paragraph %}
+{% set link_url = card.field_link.0.url %}
+
+<a href="{{ link_url }}" class="service-card">
+  {% if content.field_card_image %}
+     <div class="service-card__media">
+      {{ content.field_card_image }}
+    </div>
+  {% endif %}
+
+  <div class="service-card__body">
+    <div class="service-card__text-content">
+        {{ content.field_title|add_class("service-card__title") }}
+      {% if content.field_card_description %}
+          {{ content.field_card_description|add_class("service-card__description") }}
+        
+      {% endif %}
+    </div>
+    <div class="service-card__arrow">
+      <span class="icon icon-right-arrow icon--xsm"></span>
+    </div>
+  </div>
+</a>

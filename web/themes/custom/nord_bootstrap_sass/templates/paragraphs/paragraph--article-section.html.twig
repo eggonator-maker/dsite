@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Template for Article Section paragraph.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'article-section',
+  ]
+%}
+
+<section{{ attributes.addClass(classes) }} id="{{ section_id }}" data-section-id="{{ section_id }}">
+  {% if content.field_section_title %}
+    <h2 class="article-section__title">{{ content.field_section_title.0 }}</h2>
+  {% endif %}
+  
+  {% if content.field_section_subtitle %}
+    <h3 class="article-section__subtitle">{{ content.field_section_subtitle.0 }}</h3>
+  {% endif %}
+  
+  {% if content.field_section_body %}
+    <div class="article-section__body">
+      {{ content.field_section_body }}
+    </div>
+  {% endif %}
+</section>

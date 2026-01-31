@@ -1,0 +1,259 @@
+{# center_services/templates/prices-mock-block.html.twig #}
+<div class="prices-page-wrapper">
+  <div class="container-fluid">
+    <div class="row g-4">
+      
+      {# Sidebar #}
+      <aside class="col-lg-3">
+        <div class="prices-sidebar">
+          <h3 class="prices-sidebar__title">Preturi</h3>
+          
+          <div class="prices-sidebar__search">
+            <input type="text" class="form-control" placeholder="Caută" id="prices-search">
+          </div>
+
+          <div class="accordion prices-sidebar-accordion" id="pricesSidebarAccordion">
+            
+            {# Laborator #}
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#sidebar-laborator"
+                        aria-expanded="false">
+                  Laborator
+                </button>
+              </h2>
+              <div id="sidebar-laborator" class="accordion-collapse collapse" data-bs-parent="#pricesSidebarAccordion">
+                <div class="accordion-body">
+                  <ul class="sidebar-category__list">
+                    <li><a href="#group-1" class="sidebar-category__link">Analize sânge</a></li>
+                    <li><a href="#group-2" class="sidebar-category__link">Analize urină</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {# Imagistică #}
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#sidebar-imagistica"
+                        aria-expanded="false">
+                  Imagistică
+                </button>
+              </h2>
+              <div id="sidebar-imagistica" class="accordion-collapse collapse" data-bs-parent="#pricesSidebarAccordion">
+                <div class="accordion-body">
+                  <ul class="sidebar-category__list">
+                    <li><a href="#group-rmn" class="sidebar-category__link">Rezonanță Magnetică Nucleară (RMN)</a></li>
+                    <li><a href="#group-ct" class="sidebar-category__link">Tomografie Computerizată</a></li>
+                    <li><a href="#group-mamografie" class="sidebar-category__link">Mamografie</a></li>
+                    <li><a href="#group-eco" class="sidebar-category__link">Ecografie generală și specializată</a></li>
+                    <li><a href="#group-rx" class="sidebar-category__link">Radiografie digitală (RX)</a></li>
+                    <li><a href="#group-dexa" class="sidebar-category__link">Osteodensitometrie (DEXA)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {# Ambulatoriu - Active by default #}
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#sidebar-ambulatoriu"
+                        aria-expanded="true">
+                  Ambulatoriu
+                </button>
+              </h2>
+              <div id="sidebar-ambulatoriu" class="accordion-collapse collapse show" data-bs-parent="#pricesSidebarAccordion">
+                <div class="accordion-body">
+                  <ul class="sidebar-category__list">
+                    <li><a href="#group-ati" class="sidebar-category__link">ATI</a></li>
+                    <li><a href="#group-cardiologie" class="sidebar-category__link">Cardiologie</a></li>
+                    <li><a href="#group-chir-cardio" class="sidebar-category__link">Chirurgie Cardiovasculară</a></li>
+                    <li><a href="#group-chir-gen" class="sidebar-category__link">Chirurgie Generală</a></li>
+                    <li><a href="#group-chir-plastica" class="sidebar-category__link">Chirurgie Plastică</a></li>
+                    <li><a href="#group-chir-vasc" class="sidebar-category__link">Chirurgie Vasculară</a></li>
+                    <li><a href="#group-dermato" class="sidebar-category__link">Dermatologie</a></li>
+                    <li><a href="#group-endocrino" class="sidebar-category__link active">Endocrinologie</a></li>
+                    <li><a href="#group-gastro" class="sidebar-category__link">Gastroenterologie</a></li>
+                    <li><a href="#group-gineco" class="sidebar-category__link">Ginecologie</a></li>
+                    <li><a href="#group-hemato" class="sidebar-category__link">Hematologie</a></li>
+                    <li><a href="#group-imagistica-amb" class="sidebar-category__link">Imagistică</a></li>
+                    <li><a href="#group-kineto" class="sidebar-category__link">Kinetoterapie și recuperare medicală</a></li>
+                    <li><a href="#group-med-gen" class="sidebar-category__link">Medicina Generală</a></li>
+                    <li><a href="#group-med-muncii" class="sidebar-category__link">Medicina Muncii</a></li>
+                    <li><a href="#group-med-interna" class="sidebar-category__link">Medicina Internă</a></li>
+                    <li><a href="#group-nefro" class="sidebar-category__link">Nefrologie</a></li>
+                    <li><a href="#group-neurochir" class="sidebar-category__link">Neurochirurgie</a></li>
+                    <li><a href="#group-neuro" class="sidebar-category__link">Neurologie</a></li>
+                    <li><a href="#group-orl" class="sidebar-category__link">ORL</a></li>
+                    <li><a href="#group-orto" class="sidebar-category__link">Ortopedie</a></li>
+                    <li><a href="#group-pneumo" class="sidebar-category__link">Pneumologie</a></li>
+                    <li><a href="#group-psihiatrie" class="sidebar-category__link">Psihiatrie și Psihiatrie pediatrică</a></li>
+                    <li><a href="#group-psiho" class="sidebar-category__link">Psihologie</a></li>
+                    <li><a href="#group-reuma" class="sidebar-category__link">Reumatologie</a></li>
+                    <li><a href="#group-uro" class="sidebar-category__link">Urologie</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+
+      {# Main Content #}
+      <main class="col-lg-9">
+        <div class="prices-content">
+          
+          <h2 class="price-category-section__title">Endocrinologie</h2>
+          
+          <div class="accordion prices-accordion" id="pricesAccordion">
+            
+            {# Price Group 1 - Expanded #}
+            <div class="accordion-item" id="group-endocrino">
+              <h2 class="accordion-header">
+                <button class="accordion-button" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapse-group-1"
+                        aria-expanded="true">
+                  Consult endocrinologie
+                </button>
+              </h2>
+              <div id="collapse-group-1" class="accordion-collapse collapse show" data-bs-parent="#pricesAccordion">
+                <div class="accordion-body">
+                  
+                  <div class="price-item">
+                    <div class="price-item__info">
+                      <p class="price-item__doctor">Dr. Popescu Ion</p>
+                      <p class="price-item__price">325 lei</p>
+                    </div>
+                    <div class="price-item__actions">
+                      <button class="btn btn-primary btn-sm">
+                        <i class="bi bi-telephone"></i> 0248 948
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-calendar"></i> Programează-te
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="price-item">
+                    <div class="price-item__info">
+                      <p class="price-item__doctor">Dr. Popescu Ion</p>
+                      <p class="price-item__price">325 lei</p>
+                    </div>
+                    <div class="price-item__actions">
+                      <button class="btn btn-primary btn-sm">
+                        <i class="bi bi-telephone"></i> 0248 948
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-calendar"></i> Programează-te
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="price-item">
+                    <div class="price-item__info">
+                      <p class="price-item__doctor">Dr. Popescu Ion</p>
+                      <p class="price-item__price">325 lei</p>
+                    </div>
+                    <div class="price-item__actions">
+                      <button class="btn btn-primary btn-sm">
+                        <i class="bi bi-telephone"></i> 0248 948
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-calendar"></i> Programează-te
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="price-item">
+                    <div class="price-item__info">
+                      <p class="price-item__doctor">Dr. Popescu Ion</p>
+                      <p class="price-item__price">325 lei</p>
+                    </div>
+                    <div class="price-item__actions">
+                      <button class="btn btn-primary btn-sm">
+                        <i class="bi bi-telephone"></i> 0248 948
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-calendar"></i> Programează-te
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            {# Price Group 2 - Collapsed #}
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapse-group-2"
+                        aria-expanded="false">
+                  Consult endocrinologie
+                </button>
+              </h2>
+              <div id="collapse-group-2" class="accordion-collapse collapse" data-bs-parent="#pricesAccordion">
+                <div class="accordion-body">
+                  {# Empty for now #}
+                </div>
+              </div>
+            </div>
+
+            {# Price Group 3 - Collapsed #}
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapse-group-3"
+                        aria-expanded="false">
+                  Consult endocrinologie
+                </button>
+              </h2>
+              <div id="collapse-group-3" class="accordion-collapse collapse" data-bs-parent="#pricesAccordion">
+                <div class="accordion-body">
+                  {# Empty for now #}
+                </div>
+              </div>
+            </div>
+
+            {# Price Group 4 - Collapsed #}
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapse-group-4"
+                        aria-expanded="false">
+                  Consult endocrinologie
+                </button>
+              </h2>
+              <div id="collapse-group-4" class="accordion-collapse collapse" data-bs-parent="#pricesAccordion">
+                <div class="accordion-body">
+                  {# Empty for now #}
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+</div>

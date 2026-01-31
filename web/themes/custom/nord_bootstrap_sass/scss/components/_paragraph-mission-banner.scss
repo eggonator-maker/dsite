@@ -1,0 +1,297 @@
+// Mission Banner Paragraph
+.paragraph--type--mission-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.25rem 0.875rem;
+    gap: 1.5rem;
+    width: 100%;
+    background: #001e60;
+    border-bottom: 5px solid #027ff7;
+    isolation: isolate;
+    overflow: hidden;
+  
+    @media (min-width: 768px) {
+      padding: 4rem 5rem 7rem 5rem;
+      gap: 2rem;
+    }
+  
+    .mission-banner {
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 21.6875rem;
+        position: relative;
+        z-index: 1;
+  
+        @media (min-width: 768px) {
+          max-width: 58.75rem;
+          gap: 2rem;
+        }
+      }
+  
+      &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 1.75rem;
+        line-height: 2.625rem;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        width: 100%;
+  
+        @media (min-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
+  
+      &__subtitle {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        width: 100%;
+        display: none;
+  
+        @media (max-width: 767.98px) {
+          display: block;
+        }
+      }
+  
+      &__card {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid #027ff7;
+        border-radius: 0.796875rem;
+        box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275),
+          0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035),
+          0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725),
+          0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+  
+        @media (min-width: 768px) {
+          padding: 1.3125rem 0 0 1.3125rem;
+          align-items: flex-start;
+          border: 1px solid #027ff7;
+        }
+      }
+  
+      &__card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+  
+        @media (min-width: 768px) {
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 0.875rem;
+          padding-right: 1.3125rem;
+          padding-bottom: 1.3125rem;
+        }
+      }
+  
+      &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        svg {
+          width: 100%;
+          height: 100%;
+          color: #e22a1f;
+          fill: white;
+        }
+  
+        @media (min-width: 768px) {
+          margin-left: 0.625rem;
+        }
+      }
+  
+      &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+        width: 100%;
+        max-width: 18.6875rem;
+  
+        @media (min-width: 768px) {
+          max-width: 54rem;
+        }
+  
+        p {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.3125rem;
+          letter-spacing: -0.150391px;
+          color: #2e333c;
+          margin: 0;
+  
+          strong {
+            font-weight: 700;
+          }
+  
+          & + p {
+            margin-top: 0.875rem;
+          }
+        }
+      }
+  
+      // Background decorative icons
+      &__bg-icon {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        opacity: 0.15;
+        z-index: 0;
+        pointer-events: none;
+  
+        svg,
+        img {
+          width: 100%;
+          height: 100%;
+          filter: brightness(0) invert(1);
+        }
+  
+        @media (min-width: 768px) {
+          &--tr-1 {
+            width: 4rem;
+            height: 4rem;
+            top: -2rem;
+            right: 6.5rem;
+            transform: rotate(30.41deg);
+          }
+  
+          &--tr-2 {
+            width: 4rem;
+            height: 4rem;
+            top: 5rem;
+            right: 6.25rem;
+            transform: rotate(-18.7deg);
+          }
+  
+          &--tr-3 {
+            width: 4rem;
+            height: 4rem;
+            top: 10.3125rem;
+            right: 11.75rem;
+            transform: rotate(30.41deg);
+          }
+  
+          &--br-1 {
+            width: 4rem;
+            height: 4rem;
+            bottom: -2rem;
+            right: 5.5rem;
+            transform: rotate(30.41deg);
+          }
+  
+          &--br-2 {
+            width: 4rem;
+            height: 4rem;
+            bottom: 9.0625rem;
+            right: 7.1875rem;
+            transform: rotate(30.41deg);
+          }
+  
+          &--tl-1 {
+            width: 5.0625rem;
+            height: 5.0625rem;
+            top: 0.25rem;
+            left: 7.0625rem;
+          }
+  
+          &--tl-2 {
+            width: 2.8125rem;
+            height: 2.8125rem;
+            top: 6.5rem;
+            left: 0.875rem;
+            transform: rotate(27.95deg);
+          }
+  
+          &--bl-1 {
+            width: 4.0625rem;
+            height: 4.0625rem;
+            bottom: 7.8125rem;
+            left: 4.875rem;
+            transform: rotate(-6.31deg);
+          }
+  
+          &--bl-2 {
+            width: 4rem;
+            height: 4rem;
+            bottom: -1.375rem;
+            left: 0.875rem;
+            transform: rotate(-21.5deg);
+          }
+        }
+  
+        @media (max-width: 767.98px) {
+          &--tl-1 {
+            width: 4.6875rem;
+            height: 4.6875rem;
+            top: 2.8125rem;
+            left: -1.75rem;
+            transform: rotate(27.95deg);
+          }
+  
+          &--tl-2 {
+            width: 4rem;
+            height: 4rem;
+            top: 0.625rem;
+            right: 0.1875rem;
+            transform: rotate(30.41deg);
+          }
+  
+          &--bl-1 {
+            width: 4rem;
+            height: 4rem;
+            bottom: 6.5625rem;
+            left: 0.75rem;
+            transform: rotate(-21.5deg);
+          }
+  
+          &--bl-2 {
+            width: 4.0625rem;
+            height: 4.0625rem;
+            bottom: 6.5625rem;
+            right: 1.875rem;
+            transform: rotate(-6.31deg);
+          }
+  
+          &--br-1 {
+            width: 4rem;
+            height: 4rem;
+            bottom: 14rem;
+            right: 1.0625rem;
+            transform: rotate(-18.7deg);
+          }
+  
+          &--tr-1,
+          &--tr-2,
+          &--tr-3,
+          &--br-1,
+          &--br-2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Template for Price Item paragraph - UNIFIED
+ *
+ * Works for all three patterns:
+ * - Ambulatoriu: field_display_name = Doctor name
+ * - Imagistică: field_display_name = Service name
+ * - Laborator: field_display_name = Test name
+ */
+#}
+
+{% set display_name = paragraph.field_display_name.value %}
+{% set price = paragraph.field_price.value %}
+{% set appointment_url = paragraph.field_appointment_url.0.url %}
+
+<div class="price-item">
+  <div class="price-item__info">
+    {% if display_name %}
+      <p class="price-item__name">{{ display_name }}</p>
+    {% endif %}
+    
+    {% if price %}
+      <p class="price-item__price">{{ price|number_format(0, ',', '.') }} lei</p>
+    {% endif %}
+  </div>
+  
+  <div class="price-item__actions">
+    <a href="tel:0248948" class="btn btn-primary">
+      <span class="icon icon-ion-call"></span>
+      0248 948
+    </a>
+    
+    {% if appointment_url %}
+      <a href="{{ appointment_url }}" class="btn btn-outline-primary">
+        <span class="icon icon-outline-email"></span>
+        Programează-te
+      </a>
+    {% else %}
+      <a href="#" class="btn btn-outline-primary">
+        <span class="icon icon-outline-email"></span>
+        Programează-te
+      </a>
+    {% endif %}
+  </div>
+</div>

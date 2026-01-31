@@ -1,0 +1,144 @@
+{#
+/**
+ * @file
+ * Template for Article Content inline block.
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'article-content-wrapper',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+{{ title_prefix }}
+{{ title_suffix }}
+  <div class="article-layout">
+    {# Main Article Content #}
+    <article class="article-main">
+      <div class="article-hero">
+        {# Title #}
+        {% if content.field_article_title %}
+          <h1 class="article-title">{{ content.field_article_title.0 }}</h1>
+        {% endif %}
+
+        {# Meta Row #}
+        <div class="article-meta">
+          <div class="article-meta__left">
+            {% if content.field_specialty %}
+              <span class="article-specialty">{{ content.field_specialty.0 }}</span>
+              <span class="article-meta__divider"></span>
+            {% endif %}
+            
+            {% if formatted_date %}
+              <span class="article-date">{{ formatted_date }}</span>
+              <span class="article-meta__divider"></span>
+            {% endif %}
+            
+            {% if content.field_reading_time %}
+              <span class="article-reading-time">{{ content.field_reading_time.0 }}</span>
+            {% endif %}
+          </div>
+
+          <div class="article-meta__right">
+            <div class="social-share">
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>')|url_encode }}" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="social-share__btn social-share__btn--facebook"
+                 aria-label="Share on Facebook">
+                <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.39703 19H2.65109V9.49999H0V6.29769H2.65109V4.18587C2.65109 1.5345 3.89958 0 7.06282 0H9.71757V3.20254H8.05318C6.79803 3.20254 6.39703 3.8505 6.39703 4.87754V6.29769H9.71757L9.05024 9.49999H6.39703V19Z" fill="#2E333C"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>')|url_encode }}" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="social-share__btn social-share__btn--linkedin"
+                 aria-label="Share on LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.17076 0C0.971787 0 0 0.971787 0 2.17076V15.8292C0 17.0282 0.971787 18 2.17076 18H15.8292C17.0282 18 18 17.0282 18 15.8292V2.17076C18 0.971787 17.0282 0 15.8292 0H2.17076ZM4.44539 3.3328C4.44539 4.03981 3.89063 4.59458 3.18361 4.59458C2.4766 4.59458 1.92183 4.03981 1.92183 3.3328C1.92183 2.62579 2.4766 2.07102 3.18361 2.07102C3.89063 2.07102 4.44539 2.62579 4.44539 3.3328ZM2.04648 5.69632H4.32074V14.1955H2.04648V5.69632ZM13.9535 14.1955H16.2278V9.22072C16.2278 6.29935 14.0614 5.57112 12.7857 5.57112C11.51 5.57112 10.6581 6.31099 10.361 6.86316V5.69632H8.08671V14.1955H10.361V9.67186C10.361 8.45852 11.1493 7.8451 11.9806 7.8451C12.812 7.8451 13.4254 8.33395 13.4254 9.62103V14.1955H13.9535Z" fill="#2E333C"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/?text={{ url('<current>')|url_encode }}" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="social-share__btn social-share__btn--whatsapp"
+                 aria-label="Share on WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.3643 2.6025C13.6643 0.9 11.4143 0 9.01429 0C4.08929 0 0.0892857 4 0.0892857 8.925C0.0892857 10.5 0.514286 12.0375 1.28929 13.3875L0 18L4.73929 16.7325C6.03929 17.4375 7.51429 17.8125 9.01429 17.8125C13.9393 17.8125 18 13.8125 18 8.8875C18 6.4875 17.0643 4.305 15.3643 2.6025ZM9.01429 16.3125C7.66429 16.3125 6.33929 15.9375 5.18929 15.2625L4.91429 15.1L2.13929 15.825L2.87679 13.125L2.72679 12.8375C1.97679 11.65 1.58929 10.3 1.58929 8.925C1.58929 4.825 4.91429 1.5 9.01429 1.5C11.0143 1.5 12.8893 2.2875 14.3018 3.7C15.7143 5.1125 16.5018 6.9875 16.5018 8.8875C16.5018 12.9875 13.1143 16.3125 9.01429 16.3125ZM13.0893 10.7875C12.8643 10.675 11.7643 10.1375 11.5643 10.0625C11.3643 9.9875 11.2143 9.95 11.0643 10.175C10.9143 10.4 10.4893 10.9 10.3643 11.05C10.2393 11.2 10.1143 11.225 9.88929 11.1C9.66429 10.9875 8.93929 10.75 8.08929 9.9875C7.41429 9.3875 6.96429 8.65 6.83929 8.425C6.71429 8.2 6.82679 8.0875 6.93929 7.975C7.03929 7.875 7.16429 7.7125 7.27679 7.5875C7.38929 7.4625 7.42679 7.3625 7.50179 7.2125C7.57679 7.0625 7.53929 6.9375 7.48929 6.825C7.43929 6.7125 6.96429 5.6125 6.78929 5.1625C6.61429 4.725 6.43929 4.7875 6.31429 4.7875C6.18929 4.7875 6.03929 4.7875 5.88929 4.7875C5.73929 4.7875 5.48929 4.8375 5.28929 5.0625C5.08929 5.2875 4.51429 5.825 4.51429 6.925C4.51429 8.025 5.31429 9.0875 5.42679 9.2375C5.53929 9.3875 6.96429 11.6375 9.21429 12.5875C11.4643 13.5375 11.4643 13.2125 11.8643 13.175C12.2643 13.1375 13.1893 12.6125 13.3643 12.0625C13.5393 11.5125 13.5393 11.05 13.4893 10.975C13.4393 10.9 13.2893 10.85 13.0643 10.7375L13.0893 10.7875Z" fill="#2E333C"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {# Featured Image #}
+        {% if content.field_article_image %}
+          <div class="article-image">
+            {{ content.field_article_image }}
+          </div>
+        {% endif %}
+      </div>
+
+      {# Description #}
+      {% if content.field_description %}
+        <div class="article-description">
+          {{ content.field_description }}
+        </div>
+      {% endif %}
+
+      {# Article Sections #}
+      {% if content.field_article_sections %}
+        <div class="article-sections">
+          {{ content.field_article_sections }}
+        </div>
+      {% endif %}
+    </article>
+
+    {# Sidebar #}
+    <aside class="article-sidebar">
+      {# Info Box - Echipa Nord #}
+      <div class="sidebar-box sidebar-box--info">
+        <h3 class="sidebar-box__title">Echipa Nord</h3>
+        <p class="sidebar-box__text">Acesta este angajamentul nostru pentru informații medicale de încredere. Ne dedicăm să oferim pacienților informații medicale de cea mai înaltă calitate.</p>
+      </div>
+
+      {# Table of Contents - Cuprins #}
+      {% if toc_items|length > 0 %}
+        <div class="sidebar-box sidebar-box--toc" id="article-toc">
+          <h3 class="sidebar-box__title">Cuprins</h3>
+          <div class="toc-wrapper">
+            <div class="toc-progress">
+              <div class="toc-progress__track"></div>
+              <div class="toc-progress__bar"></div>
+            </div>
+            <nav class="toc-nav" aria-label="Table of contents">
+              <ul class="toc-list">
+                {% for item in toc_items %}
+                  <li class="toc-list__item">
+                    <a href="#{{ item.id }}" 
+                       class="toc-link" 
+                       data-target="{{ item.id }}">
+                      {{ item.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </nav>
+          </div>
+        </div>
+      {% endif %}
+
+      {# Newsletter Box #}
+      <div class="sidebar-box sidebar-box--newsletter">
+        <h3 class="sidebar-box__title">Înscrie-te la newsletter.</h3>
+        <p class="sidebar-box__text">Află primul despre reducerile și ofertele speciale.</p>
+        {{ drupal_entity('webform', 'newsletter_signup') }}
+      </div>
+    </aside>
+  </div>
+</div>

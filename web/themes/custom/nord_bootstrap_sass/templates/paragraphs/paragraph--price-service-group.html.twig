@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Template for Price Service Group paragraph
+ * Used only for Ambulatoriu (service_groups mode)
+ */
+#}
+
+{% set service_name = paragraph.field_service_name.value %}
+{% set group_id = 'collapse-group-' ~ paragraph.id.value %}
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#{{ group_id }}" 
+            aria-expanded="false">
+      {{ service_name }}
+    </button>
+  </h2>
+  <div id="{{ group_id }}" 
+       class="accordion-collapse collapse" 
+       data-bs-parent="#pricesAccordion">
+    <div class="accordion-body">
+      {{ content.field_price_items }}
+    </div>
+  </div>
+</div>

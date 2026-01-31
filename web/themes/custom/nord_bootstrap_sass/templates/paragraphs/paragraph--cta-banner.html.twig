@@ -1,0 +1,19 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'cta-banner',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="cta-banner__content">
+    <div class="cta-banner__text">
+      <h3 class="cta-banner__title">{{ content.field_title }}</h3>
+      <p class="cta-banner__description">{{ content.field_description }}</p>
+    </div>
+    {% if paragraph.field_button is not empty %}
+        {{ content.field_button}}
+    {% endif %}
+
+  </div>
+</div>

@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Template for Price Subcategory paragraph - FLEXIBLE STRUCTURE
+ *
+ * Supports two display modes:
+ * 1. service_groups: Shows Service Groups with accordions (Ambulatoriu)
+ * 2. direct_items: Shows Price Items directly (Imagistică/Laborator)
+ */
+#}
+
+{% set subcategory_name = paragraph.field_subcategory_name.value %}
+{% set anchor_id = paragraph.field_anchor_id.value ?: ('group-' ~ subcategory_name|clean_id) %}
+{% set display_mode = paragraph.field_display_mode.value %}
+
+<div class="price-subcategory" id="{{ anchor_id }}">
+  <h3 class="price-subcategory__title">{{ subcategory_name }}</h3>
+  
+  {% if display_mode == 'service_groups' %}
+    {# Ambulatoriu: Service Groups with accordions #}
+    <div class="accordion prices-accordion" id="pricesAccordion-{{ anchor_id }}">
+      {{ content.field_service_groups }}
+    </div>
+    
+  {% elseif display_mode == 'direct_items' %}
+    {# Imagistică/Laborator: Direct price items without grouping #}
+    <div class="price-items-direct">
+      {{ content.field_direct_price_items }}
+    </div>
+    
+  {% endif %}
+</div>
