@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\YOUR_THEME\TwigExtension;
+namespace Drupal\nord_bootstrap_sass\TwigExtension;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;

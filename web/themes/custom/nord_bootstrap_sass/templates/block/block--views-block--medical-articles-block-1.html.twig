@@ -5,17 +5,16 @@
  * Wraps the view with a static title and "View All" button.
  */
 #}
-
+  {{ title_prefix }}
+  {{ title_suffix }}
 {# The classes are now hard-coded directly onto the section element. #}
 <section class="medical-articles-section">
   
   {# The title is now a static H2 element. #}
   <h2 class="medical-articles-section__title">Articole medicale și<br>recomandări de la<br class="d-block d-md-none"> specialiști</h2>
 
-  <div class="medical-articles-section__content">
     {# This renders your scrolling doctors carousel view. #}
     {{ content }}
-  </div>
 
   <div class="medical-articles-section__footer">
     <a href="#" class="btn btn-outline-danger">

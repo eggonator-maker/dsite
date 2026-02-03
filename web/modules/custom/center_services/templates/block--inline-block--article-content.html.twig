@@ -102,10 +102,17 @@
     {# Sidebar #}
     <aside class="article-sidebar">
       {# Info Box - Echipa Nord #}
+      {% if content.field_sidebar_box_title or content.field_sidebar_box_text %}
       <div class="sidebar-box sidebar-box--info">
-        <h3 class="sidebar-box__title">Echipa Nord</h3>
-        <p class="sidebar-box__text">Acesta este angajamentul nostru pentru informații medicale de încredere. Ne dedicăm să oferim pacienților informații medicale de cea mai înaltă calitate.</p>
+        {% if content.field_sidebar_box_title %}
+          <h3 class="sidebar-box__title">{{ content.field_sidebar_box_title }}</h3>
+        {% endif %}
+        {% if content.field_sidebar_box_text %}
+          <p class="sidebar-box__text">{{ content.field_sidebar_box_text}}</p>
+        {% endif %}
       </div>
+      {% endif %}
+
 
       {# Table of Contents - Cuprins #}
       {% if toc_items|length > 0 %}
@@ -133,12 +140,13 @@
         </div>
       {% endif %}
 
-      {# Newsletter Box #}
+      {# Newsletter Box 
       <div class="sidebar-box sidebar-box--newsletter">
         <h3 class="sidebar-box__title">Înscrie-te la newsletter.</h3>
         <p class="sidebar-box__text">Află primul despre reducerile și ofertele speciale.</p>
         {{ drupal_entity('webform', 'newsletter_signup') }}
       </div>
+      #}
     </aside>
   </div>
 </div>

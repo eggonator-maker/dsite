@@ -50,9 +50,11 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
       'block_title' => '',
       'description' => '',
       'content_type' => '',
+      'selection_mode' => 'taxonomy',
       'taxonomy_vocabulary' => '',
       'taxonomy_field' => '',
       'taxonomy_terms' => [],
+      'direct_entities' => [],
       'display_mode' => 'teaser',
       'items_to_show' => 10,
       'sort_field' => 'created',
@@ -60,10 +62,9 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
     ];
   }
 
-    /**
-     * {@inheritdoc}
-     */
-    
+  /**
+   * {@inheritdoc}
+   */
   public function blockForm($form, FormStateInterface $form_state) {
     $config = $this->configuration;
   
@@ -90,13 +91,32 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
       '#required' => TRUE,
       '#description' => $this->t('Note: After selecting, save and re-edit to populate field options.'),
     ];
+
+    $form['selection_mode'] = [
+      '#type' => 'radios',
+      '#title' => $this->t('Selection Mode'),
+      '#options' => [
+        'taxonomy' => $this->t('Filter by taxonomy terms'),
+        'direct' => $this->t('Select specific items'),
+      ],
+      '#default_value' => $config['selection_mode'],
+      '#required' => TRUE,
+    ];
+
+    $form['taxonomy_container'] = [
+      '#type' => 'container',
+      '#states' => [
+        'visible' => [
+          ':input[name="settings[selection_mode]"]' => ['value' => 'taxonomy'],
+        ],
+      ],
+    ];
   
-    $form['taxonomy_vocabulary'] = [
+    $form['taxonomy_container']['taxonomy_vocabulary'] = [
       '#type' => 'select',
       '#title' => $this->t('Taxonomy Vocabulary'),
       '#options' => ['' => $this->t('- Select -')] + $this->getVocabularyOptions(),
       '#default_value' => $config['taxonomy_vocabulary'],
-      '#required' => TRUE,
       '#description' => $this->t('Note: After selecting, save and re-edit to enable term selection.'),
     ];
   
@@ -108,12 +128,11 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
       $field_options += $this->getTaxonomyFieldOptions($content_type, $vocabulary);
     }
   
-    $form['taxonomy_field'] = [
+    $form['taxonomy_container']['taxonomy_field'] = [
       '#type' => 'select',
       '#title' => $this->t('Taxonomy Field'),
       '#options' => $field_options,
       '#default_value' => $config['taxonomy_field'],
-      '#required' => !empty($field_options) && count($field_options) > 1, // Only required if options exist
       '#description' => $this->t('Select the field on the content type that references the taxonomy vocabulary.'),
     ];
   
@@ -122,18 +141,35 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
       $selection_settings['target_bundles'] = [$vocabulary];
     }
   
-    $form['taxonomy_terms'] = [
+    $form['taxonomy_container']['taxonomy_terms'] = [
       '#type' => 'entity_autocomplete',
       '#target_type' => 'taxonomy_term',
       '#selection_settings' => $selection_settings,
       '#tags' => TRUE,
       '#title' => $this->t('Taxonomy Terms'),
       '#default_value' => $this->loadTerms($config['taxonomy_terms']),
-      '#required' => TRUE,
       '#description' => !empty($vocabulary)
         ? $this->t('Start typing to search for terms. You can add multiple terms separated by commas.')
         : $this->t('Please select a taxonomy vocabulary first to enable term selection.'),
       '#disabled' => empty($vocabulary),
+    ];
+
+    $form['direct_entities'] = [
+      '#type' => 'entity_autocomplete',
+      '#target_type' => 'node',
+      '#selection_settings' => [
+        'target_bundles' => !empty($content_type) ? [$content_type] : [],
+      ],
+      '#tags' => TRUE,
+      '#title' => $this->t('Select Items'),
+      '#default_value' => $this->loadEntities($config['direct_entities']),
+      '#description' => $this->t('Start typing to search for items.'),
+      '#states' => [
+        'visible' => [
+          ':input[name="settings[selection_mode]"]' => ['value' => 'direct'],
+        ],
+      ],
+      '#disabled' => empty($content_type),
     ];
   
     $form['display_settings'] = [
@@ -182,13 +218,10 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
     return $form;
   }
 
-
-
   /**
-   * Ajax callback to update taxonomy fields.
+   * Ajax callback to update taxonomy settings.
    */
   public function updateTaxonomySettings(array &$form, FormStateInterface $form_state) {
-    // Check multiple locations for the wrapper
     if (isset($form['settings']['block_form']['taxonomy_settings_wrapper'])) {
         return $form['settings']['block_form']['taxonomy_settings_wrapper'];
     }
@@ -201,18 +234,21 @@ class TaxonomyFilterBlock extends BlockBase implements ContainerFactoryPluginInt
     return ['#markup' => 'Error: Wrapper not found'];
   }
 
- /**
- * {@inheritdoc}
- */
-public function blockSubmit($form, FormStateInterface $form_state) {
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
     $this->configuration['block_title'] = $form_state->getValue('block_title');
     $this->configuration['description'] = $form_state->getValue('description');
     $this->configuration['content_type'] = $form_state->getValue('content_type');
-    $this->configuration['taxonomy_vocabulary'] = $form_state->getValue('taxonomy_vocabulary');
-    $this->configuration['taxonomy_field'] = $form_state->getValue('taxonomy_field');
+    $this->configuration['selection_mode'] = $form_state->getValue('selection_mode');
     
-    // Process taxonomy terms
-    $taxonomy_values = $form_state->getValue('taxonomy_terms');
+    // Handle taxonomy container values
+    $taxonomy_container = $form_state->getValue('taxonomy_container');
+    $this->configuration['taxonomy_vocabulary'] = $taxonomy_container['taxonomy_vocabulary'] ?? '';
+    $this->configuration['taxonomy_field'] = $taxonomy_container['taxonomy_field'] ?? '';
+    
+    $taxonomy_values = $taxonomy_container['taxonomy_terms'] ?? [];
     $term_ids = [];
     if (!empty($taxonomy_values)) {
       foreach ($taxonomy_values as $term) {
@@ -222,6 +258,18 @@ public function blockSubmit($form, FormStateInterface $form_state) {
       }
     }
     $this->configuration['taxonomy_terms'] = $term_ids;
+
+    // Handle direct entities
+    $direct_values = $form_state->getValue('direct_entities');
+    $entity_ids = [];
+    if (!empty($direct_values)) {
+      foreach ($direct_values as $entity) {
+        if (isset($entity['target_id'])) {
+          $entity_ids[] = $entity['target_id'];
+        }
+      }
+    }
+    $this->configuration['direct_entities'] = $entity_ids;
   
     // Display settings
     $display_settings = $form_state->getValue('display_settings');
@@ -230,56 +278,67 @@ public function blockSubmit($form, FormStateInterface $form_state) {
     $this->configuration['sort_field'] = $display_settings['sort_field'] ?? 'created';
     $this->configuration['sort_direction'] = $display_settings['sort_direction'] ?? 'DESC';
   }
+
   /**
    * {@inheritdoc}
    */
   public function build() {
     $config = $this->configuration;
     
-    // Validation: Require Content Type and Taxonomy Field
-    if (empty($config['content_type']) || empty($config['taxonomy_field'])) {
+    if (empty($config['content_type'])) {
       return [];
     }
 
-    $term_ids = $config['taxonomy_terms'];
+    $selection_mode = $config['selection_mode'] ?? 'taxonomy';
     $content_type = $config['content_type'];
-    $taxonomy_field = $config['taxonomy_field'];
-
-    $cache_tags = [
-      'node_list',
-      'node_list:' . $content_type,
-    ];
     
-    // Only query if we have terms (or if you want to show all when empty, remove this check)
-    // Assuming we only show if terms are selected based on 'required' in form.
-    if (empty($term_ids)) {
-        return []; 
-    }
+    $cache_tags = ['node_list', 'node_list:' . $content_type];
 
-    foreach ($term_ids as $term_id) {
-      $cache_tags[] = 'taxonomy_term:' . $term_id;
-    }
+    if ($selection_mode === 'direct') {
+      $nids = $config['direct_entities'] ?? [];
+      if (empty($nids)) {
+        return [];
+      }
+      
+      foreach ($nids as $nid) {
+        $cache_tags[] = 'node:' . $nid;
+      }
+    } else {
+      if (empty($config['taxonomy_field'])) {
+        return [];
+      }
+      
+      $term_ids = $config['taxonomy_terms'];
+      if (empty($term_ids)) {
+        return [];
+      }
+      
+      foreach ($term_ids as $term_id) {
+        $cache_tags[] = 'taxonomy_term:' . $term_id;
+      }
+      
+      $storage = $this->entityTypeManager->getStorage('node');
+      $query = $storage->getQuery()
+        ->condition('status', 1)
+        ->condition('type', $content_type)
+        ->accessCheck(TRUE);
 
-    $storage = $this->entityTypeManager->getStorage('node');
-    $query = $storage->getQuery()
-      ->condition('status', 1)
-      ->condition('type', $content_type)
-      ->accessCheck(TRUE);
-
-    if (count($term_ids) > 1) {
+      $taxonomy_field = $config['taxonomy_field'];
+      if (count($term_ids) > 1) {
         $or_group = $query->orConditionGroup();
         foreach ($term_ids as $term_id) {
-            $or_group->condition($taxonomy_field, $term_id);
+          $or_group->condition($taxonomy_field, $term_id);
         }
         $query->condition($or_group);
-    } else {
+      } else {
         $query->condition($taxonomy_field, $term_ids[0]);
+      }
+
+      $query->range(0, $config['items_to_show'])
+        ->sort($config['sort_field'], $config['sort_direction']);
+
+      $nids = $query->execute();
     }
-
-    $query->range(0, $config['items_to_show'])
-      ->sort($config['sort_field'], $config['sort_direction']);
-
-    $nids = $query->execute();
 
     $build = [
       '#theme' => 'taxonomy_filter_block',
@@ -294,6 +353,7 @@ public function blockSubmit($form, FormStateInterface $form_state) {
     ];
 
     if (!empty($nids)) {
+      $storage = $this->entityTypeManager->getStorage('node');
       $nodes = $storage->loadMultiple($nids);
       $view_builder = $this->entityTypeManager->getViewBuilder('node');
       
@@ -341,7 +401,6 @@ public function blockSubmit($form, FormStateInterface $form_state) {
           $handler_settings = $settings['handler_settings'] ?? [];
           $target_bundles = $handler_settings['target_bundles'] ?? [];
           
-          // If no vocabulary selected OR field matches vocabulary, include it
           if (empty($vocabulary) || empty($target_bundles) || isset($target_bundles[$vocabulary])) {
             $label = $field_definition->getLabel() . ' (' . $field_name . ')';
             $options[$field_name] = $label;
@@ -373,6 +432,13 @@ public function blockSubmit($form, FormStateInterface $form_state) {
       return [];
     }
     return $this->entityTypeManager->getStorage('taxonomy_term')->loadMultiple($term_ids);
+  }
+
+  protected function loadEntities($entity_ids) {
+    if (empty($entity_ids)) {
+      return [];
+    }
+    return $this->entityTypeManager->getStorage('node')->loadMultiple($entity_ids);
   }
 
 }
