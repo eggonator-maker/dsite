@@ -1,0 +1,3338 @@
+[
+  {
+    "main_category": "Laborator",
+    "subcategory": "Laborator Muntenia Medical Competences",
+    "service_groups": [
+      {
+        "service_name": "Analize externalizate",
+        "items": [
+          {
+            "item_name": "Imunoglobulina IgD",
+            "service_id": "288254",
+            "laboratory_id": "58660",
+            "price": 254.0
+          },
+          {
+            "item_name": "Factorul IX al coagularii",
+            "service_id": "288780",
+            "laboratory_id": "58660",
+            "price": 157.0
+          },
+          {
+            "item_name": "Anticorpi anti-ovarieni",
+            "service_id": "288986",
+            "laboratory_id": "58660",
+            "price": 184.0
+          },
+          {
+            "item_name": "Estrona (E1)",
+            "service_id": "288988",
+            "laboratory_id": "58660",
+            "price": 285.0
+          },
+          {
+            "item_name": "TPA test (tisue polipeptide antigen)",
+            "service_id": "288992",
+            "laboratory_id": "58660",
+            "price": 267.0
+          },
+          {
+            "item_name": "Profil anticorpi ENA- Blot",
+            "service_id": "294824",
+            "laboratory_id": "58660",
+            "price": 272.0
+          },
+          {
+            "item_name": "Vitamina B6",
+            "service_id": "299284",
+            "laboratory_id": "58660",
+            "price": 266.0
+          },
+          {
+            "item_name": "Vitamina B1 (tiamin-pirofosfat)",
+            "service_id": "299348",
+            "laboratory_id": "58660",
+            "price": 261.0
+          },
+          {
+            "item_name": "Serotonina urinara",
+            "service_id": "299378",
+            "laboratory_id": "58660",
+            "price": 162.0
+          },
+          {
+            "item_name": "Sindromul X fragil (testare numar repetitii CGG)",
+            "service_id": "299468",
+            "laboratory_id": "58660",
+            "price": 1545.0
+          },
+          {
+            "item_name": "Electroforeza lipoproteinelor",
+            "service_id": "717360",
+            "laboratory_id": "58660",
+            "price": 150.0
+          },
+          {
+            "item_name": "Timp de trombina",
+            "service_id": "3045317",
+            "laboratory_id": "58660",
+            "price": 51.0
+          },
+          {
+            "item_name": "Ac Anti-HD IgM",
+            "service_id": "281836",
+            "laboratory_id": "58660",
+            "price": 125.0
+          },
+          {
+            "item_name": "Yersinia Ac IgG, IgA",
+            "service_id": "3046345",
+            "laboratory_id": "58660",
+            "price": 398.0
+          },
+          {
+            "item_name": "Deficienta DPD (DPYD IVS14+1 G&gt;A)-toxicitate 5-FU",
+            "service_id": "3046357",
+            "laboratory_id": "58660",
+            "price": 621.0
+          },
+          {
+            "item_name": "Aldolaza",
+            "service_id": "280878",
+            "laboratory_id": "58660",
+            "price": 87.0
+          },
+          {
+            "item_name": "Dihidrotestosteron (DHT)",
+            "service_id": "718198",
+            "laboratory_id": "58660",
+            "price": 285.0
+          },
+          {
+            "item_name": "Seleniu",
+            "service_id": "718212",
+            "laboratory_id": "58660",
+            "price": 150.0
+          },
+          {
+            "item_name": "Mioglobina serica",
+            "service_id": "718272",
+            "laboratory_id": "58660",
+            "price": 156.0
+          },
+          {
+            "item_name": "Fosfataza alcalina osoasa (ostaza)",
+            "service_id": "718512",
+            "laboratory_id": "58660",
+            "price": 185.0
+          },
+          {
+            "item_name": "Glucozo-6-fosfat-dehidrogenaza (G6-PDH)",
+            "service_id": "718556",
+            "laboratory_id": "58660",
+            "price": 130.0
+          },
+          {
+            "item_name": "Ac anti-membrana bazala glomerulara (GMB)",
+            "service_id": "281858",
+            "laboratory_id": "58660",
+            "price": 179.0
+          },
+          {
+            "item_name": "Analiza calculilor urinari (renal)",
+            "service_id": "7757",
+            "laboratory_id": "58660",
+            "price": 217.0
+          },
+          {
+            "item_name": "17 Cetosteroizi",
+            "service_id": "7459",
+            "laboratory_id": "58660",
+            "price": 110.0
+          },
+          {
+            "item_name": "Histamina plasmatica (HISTA)",
+            "service_id": "719760",
+            "laboratory_id": "58660",
+            "price": 343.0
+          },
+          {
+            "item_name": "Virus urlian IgG, IgM",
+            "service_id": "3094434",
+            "laboratory_id": "58660",
+            "price": 202.0
+          },
+          {
+            "item_name": "Iod seric",
+            "service_id": "287306",
+            "laboratory_id": "58660",
+            "price": 210.0
+          },
+          {
+            "item_name": "Antigen Legionella pneumophila in urina",
+            "service_id": "270470",
+            "laboratory_id": "58660",
+            "price": 188.0
+          },
+          {
+            "item_name": "Vitamina B2",
+            "service_id": "720900",
+            "laboratory_id": "58660",
+            "price": 306.0
+          },
+          {
+            "item_name": "Triptaza",
+            "service_id": "274162",
+            "laboratory_id": "58660",
+            "price": 250.0
+          },
+          {
+            "item_name": "Elastaza pancreatica in materii fecale",
+            "service_id": "720964",
+            "laboratory_id": "58660",
+            "price": 185.0
+          },
+          {
+            "item_name": "^^CA 50",
+            "service_id": "724350",
+            "laboratory_id": "58660",
+            "price": 248.0
+          },
+          {
+            "item_name": "Amoniac",
+            "service_id": "7363",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Mannose binding lectin (MBL) in sange",
+            "service_id": "721652",
+            "laboratory_id": "58660",
+            "price": 206.0
+          },
+          {
+            "item_name": "Virus Urlian ARN-PCR",
+            "service_id": "3094471",
+            "laboratory_id": "58660",
+            "price": 362.0
+          },
+          {
+            "item_name": "Melatonina serica",
+            "service_id": "724566",
+            "laboratory_id": "58660",
+            "price": 361.0
+          },
+          {
+            "item_name": "Detectarea ADN de Coxiella burnetti prin RT-PCR",
+            "service_id": "3096349",
+            "laboratory_id": "58660",
+            "price": 362.0
+          },
+          {
+            "item_name": "Anticorpi anti Mycoplasma/Ureaplasma IgG",
+            "service_id": "724582",
+            "laboratory_id": "58660",
+            "price": 156.0
+          },
+          {
+            "item_name": "IgE specific la articaina",
+            "service_id": "769906",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Treponema pallidum - Anticorpi IgM (Blot)",
+            "service_id": "769910",
+            "laboratory_id": "58660",
+            "price": 260.0
+          },
+          {
+            "item_name": "Anti- EBNA IgG",
+            "service_id": "770504",
+            "laboratory_id": "58660",
+            "price": 121.0
+          },
+          {
+            "item_name": "Echinococcus granulosus Ac IgG - Westernblot",
+            "service_id": "770520",
+            "laboratory_id": "58660",
+            "price": 290.0
+          },
+          {
+            "item_name": "Litiu",
+            "service_id": "7367",
+            "laboratory_id": "58660",
+            "price": 66.0
+          },
+          {
+            "item_name": "Cupru in urina",
+            "service_id": "7371",
+            "laboratory_id": "58660",
+            "price": 105.0
+          },
+          {
+            "item_name": "Ac anti spermatozoizi",
+            "service_id": "7385",
+            "laboratory_id": "58660",
+            "price": 75.0
+          },
+          {
+            "item_name": "Pregnenolon sulfat",
+            "service_id": "1190024",
+            "laboratory_id": "58660",
+            "price": 445.0
+          },
+          {
+            "item_name": "Factor II - Protrombina",
+            "service_id": "7415",
+            "laboratory_id": "58660",
+            "price": 190.0
+          },
+          {
+            "item_name": "Interleukina 6 - IL6",
+            "service_id": "1196176",
+            "laboratory_id": "58660",
+            "price": 254.0
+          },
+          {
+            "item_name": "Anticorpi anti-aquaporina 4",
+            "service_id": "1197856",
+            "laboratory_id": "58660",
+            "price": 121.0
+          },
+          {
+            "item_name": "Aquaporina 4 (neuromielita optica) anticorpi IgA in ser",
+            "service_id": "1197858",
+            "laboratory_id": "58660",
+            "price": 90.0
+          },
+          {
+            "item_name": "Aquaporina 4 (neuromielita optica) anticorpi IgM in ser",
+            "service_id": "1197860",
+            "laboratory_id": "58660",
+            "price": 90.0
+          },
+          {
+            "item_name": "Aquaporina 4 (neuromielita optica) anticorpi totali in LCR",
+            "service_id": "1197862",
+            "laboratory_id": "58660",
+            "price": 167.0
+          },
+          {
+            "item_name": "Apolipoproteina E (APOLE)",
+            "service_id": "1202708",
+            "laboratory_id": "58660",
+            "price": 520.0
+          },
+          {
+            "item_name": "ARN viral hepatita E",
+            "service_id": "1204004",
+            "laboratory_id": "58660",
+            "price": 459.0
+          },
+          {
+            "item_name": "Par pisica (alergen recombinant: e228 rFel d4 )",
+            "service_id": "1376730",
+            "laboratory_id": "58660",
+            "price": 104.0
+          },
+          {
+            "item_name": "Alfa galactoza 1,3 galactoza, IgE specific (IgE alpha gal)",
+            "service_id": "1379702",
+            "laboratory_id": "58660",
+            "price": 435.0
+          },
+          {
+            "item_name": "Revers T3 (RT3)",
+            "service_id": "1379728",
+            "laboratory_id": "58660",
+            "price": 293.0
+          },
+          {
+            "item_name": "Sindrom Gilbert - testare genetica (promotor UGT1A1)",
+            "service_id": "1455926",
+            "laboratory_id": "58660",
+            "price": 982.0
+          },
+          {
+            "item_name": "Ac antiribonucleoproteine U1-RNP / Sm",
+            "service_id": "1546078",
+            "laboratory_id": "58660",
+            "price": 174.0
+          },
+          {
+            "item_name": "Anticorpi anti-glutamat decarboxilaza (GAD-II)",
+            "service_id": "7451",
+            "laboratory_id": "58660",
+            "price": 231.0
+          },
+          {
+            "item_name": "Fosfataza acida totala",
+            "service_id": "7041",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Fosfataza acida prostatica",
+            "service_id": "7043",
+            "laboratory_id": "58660",
+            "price": 27.0
+          },
+          {
+            "item_name": "Folat eritrocitar",
+            "service_id": "1673213",
+            "laboratory_id": "58660",
+            "price": 129.0
+          },
+          {
+            "item_name": "Estriol neconjugat",
+            "service_id": "1584652",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "Histamina in materii fecale",
+            "service_id": "1912666",
+            "laboratory_id": "58660",
+            "price": 321.0
+          },
+          {
+            "item_name": "Anticorpi anti -neuronali",
+            "service_id": "1858132",
+            "laboratory_id": "58660",
+            "price": 260.0
+          },
+          {
+            "item_name": "Treponema pallidum - Anticorpi IgG (Blot)",
+            "service_id": "1379350",
+            "laboratory_id": "58660",
+            "price": 260.0
+          },
+          {
+            "item_name": "Zonulin in materii fecale",
+            "service_id": "1823073",
+            "laboratory_id": "58660",
+            "price": 387.0
+          },
+          {
+            "item_name": "Metanefrine urinare fractionate",
+            "service_id": "7629",
+            "laboratory_id": "58660",
+            "price": 345.0
+          },
+          {
+            "item_name": "Treponema pallidum ADN-PCR din sange de cordon ombilical",
+            "service_id": "1956705",
+            "laboratory_id": "58660",
+            "price": 298.0
+          },
+          {
+            "item_name": "Galactoza in sange",
+            "service_id": "2015847",
+            "laboratory_id": "58660",
+            "price": 95.0
+          },
+          {
+            "item_name": "Electroforeza proteinelor urinare cu imunofixare (proteine Bence-Jones)",
+            "service_id": "7675",
+            "laboratory_id": "58660",
+            "price": 187.0
+          },
+          {
+            "item_name": "Taenia solium - Anticorpi IgG",
+            "service_id": "7695",
+            "laboratory_id": "58660",
+            "price": 96.0
+          },
+          {
+            "item_name": "Neurotransmitatori in LCR: neopterina, biopterina",
+            "service_id": "2016004",
+            "laboratory_id": "58660",
+            "price": 335.0
+          },
+          {
+            "item_name": "Predispozitie genetica boala celiaca (HLA-DQ2/DQ8)",
+            "service_id": "2030574",
+            "laboratory_id": "58660",
+            "price": 515.0
+          },
+          {
+            "item_name": "Examen histopatologic - coloratii speciale",
+            "service_id": "2193047",
+            "laboratory_id": "58660",
+            "price": 95.0
+          },
+          {
+            "item_name": "Cadmiu in sange",
+            "service_id": "7785",
+            "laboratory_id": "58660",
+            "price": 129.0
+          },
+          {
+            "item_name": "Angiotensin convertaza",
+            "service_id": "7807",
+            "laboratory_id": "58660",
+            "price": 100.0
+          },
+          {
+            "item_name": "Dermatophagoides farinae IgG4 specific",
+            "service_id": "7809",
+            "laboratory_id": "58660",
+            "price": 154.0
+          },
+          {
+            "item_name": "Inhibina A",
+            "service_id": "7771",
+            "laboratory_id": "58660",
+            "price": 295.0
+          },
+          {
+            "item_name": "IFD imunofluorescenta directa",
+            "service_id": "2240646",
+            "laboratory_id": "58660",
+            "price": 875.0
+          },
+          {
+            "item_name": "Sifilis in LCR - VDRL semicantitativ",
+            "service_id": "2513327",
+            "laboratory_id": "58660",
+            "price": 204.0
+          },
+          {
+            "item_name": "Magneziu intracelular",
+            "service_id": "2513896",
+            "laboratory_id": "58660",
+            "price": 90.0
+          },
+          {
+            "item_name": "HLA A Alele",
+            "service_id": "2514918",
+            "laboratory_id": "58660",
+            "price": 850.0
+          },
+          {
+            "item_name": "Anticorpi anti virus rabic (evaluare status imunizare)",
+            "service_id": "2571624",
+            "laboratory_id": "58660",
+            "price": 154.0
+          },
+          {
+            "item_name": "HIV-2 ARN-PCR - cantitativ (HIV2Q)*",
+            "service_id": "2600519",
+            "laboratory_id": "58660",
+            "price": 1106.0
+          },
+          {
+            "item_name": "HIV-1 ARN-PCR - cantitativ (HIV1Q)",
+            "service_id": "2600520",
+            "laboratory_id": "58660",
+            "price": 551.0
+          },
+          {
+            "item_name": "Anticorpi anti-receptor fosfolipaza A2",
+            "service_id": "2629164",
+            "laboratory_id": "58660",
+            "price": 150.0
+          },
+          {
+            "item_name": "PINP (propeptid N-terminal al procolagenului de tip I)",
+            "service_id": "2645484",
+            "laboratory_id": "58660",
+            "price": 75.0
+          },
+          {
+            "item_name": "HIV 1/2 - Westernblot (HIVW)",
+            "service_id": "2645627",
+            "laboratory_id": "58660",
+            "price": 420.0
+          },
+          {
+            "item_name": "Cupru intracelular",
+            "service_id": "2645631",
+            "laboratory_id": "58660",
+            "price": 94.0
+          },
+          {
+            "item_name": "LRP-4 - proteina 4 pentru receptorul lipoproteinelor cu densitate mica (LRP4)",
+            "service_id": "2675272",
+            "laboratory_id": "58660",
+            "price": 144.0
+          },
+          {
+            "item_name": "Strongyloides anticorpi totali (IgG/IgM) - screening test",
+            "service_id": "2748196",
+            "laboratory_id": "58660",
+            "price": 202.0
+          },
+          {
+            "item_name": "Ac Anti-celule insulare pancreatice",
+            "service_id": "7983",
+            "laboratory_id": "58660",
+            "price": 243.0
+          },
+          {
+            "item_name": "Catecolamine urinare",
+            "service_id": "8125",
+            "laboratory_id": "58660",
+            "price": 239.0
+          },
+          {
+            "item_name": "Catecolamine plasmatice - Adrenalina, Noradrenalina, Dopamina",
+            "service_id": "8133",
+            "laboratory_id": "58660",
+            "price": 180.0
+          },
+          {
+            "item_name": "Ac Anti-MuSK",
+            "service_id": "8145",
+            "laboratory_id": "58660",
+            "price": 220.0
+          },
+          {
+            "item_name": "Alcoolemie",
+            "service_id": "2804073",
+            "laboratory_id": "58660",
+            "price": 53.0
+          },
+          {
+            "item_name": "Nematode Anticorpi - BLOT screening: Ascaris, Filaria, Strongyloides, Toxocara, Trichinella, Ancylostoma",
+            "service_id": "2804238",
+            "laboratory_id": "58660",
+            "price": 716.0
+          },
+          {
+            "item_name": "Anticorpi anti-anexina V (IgM, IgG)",
+            "service_id": "2834060",
+            "laboratory_id": "58660",
+            "price": 330.0
+          },
+          {
+            "item_name": "Dozare Digoxina",
+            "service_id": "8205",
+            "laboratory_id": "58660",
+            "price": 139.0
+          },
+          {
+            "item_name": "Capacitatea oxidativa totala si capacitatea antioxidativa totala",
+            "service_id": "2905009",
+            "laboratory_id": "58660",
+            "price": 355.0
+          },
+          {
+            "item_name": "IgE specific pruna (Prunus domestica) (CF255)",
+            "service_id": "2905138",
+            "laboratory_id": "58660",
+            "price": 84.0
+          },
+          {
+            "item_name": "Proteina S (activitate)",
+            "service_id": "2905456",
+            "laboratory_id": "58660",
+            "price": 118.0
+          },
+          {
+            "item_name": "Hantavirus Ac IgG - Immunoblot",
+            "service_id": "2905457",
+            "laboratory_id": "58660",
+            "price": 170.0
+          },
+          {
+            "item_name": "Hantavirus Ac IgM - Immunoblot",
+            "service_id": "2905459",
+            "laboratory_id": "58660",
+            "price": 200.0
+          },
+          {
+            "item_name": "Anticorpi anti BPI (proteine ce cresc permeabilitatea bactericida)",
+            "service_id": "2905461",
+            "laboratory_id": "58660",
+            "price": 140.0
+          },
+          {
+            "item_name": "Coxiella burnetii - serologie",
+            "service_id": "2905466",
+            "laboratory_id": "58660",
+            "price": 470.0
+          },
+          {
+            "item_name": "Nitrotirozina",
+            "service_id": "2905467",
+            "laboratory_id": "58660",
+            "price": 195.0
+          },
+          {
+            "item_name": "Proteina prionica in LCR",
+            "service_id": "2919915",
+            "laboratory_id": "58660",
+            "price": 1950.0
+          },
+          {
+            "item_name": "Hidroximetilbilan sintaza",
+            "service_id": "2920191",
+            "laboratory_id": "58660",
+            "price": 140.0
+          },
+          {
+            "item_name": "Polipoza adenomatoasa familiala - gena APC - NGS",
+            "service_id": "2935642",
+            "laboratory_id": "58660",
+            "price": 2800.0
+          },
+          {
+            "item_name": "Anticorpi anti-fosfatidilserina IgG/IgM/IgA",
+            "service_id": "2935908",
+            "laboratory_id": "58660",
+            "price": 190.0
+          },
+          {
+            "item_name": "Anticorpi anti fosfatidil-inozitol IgG",
+            "service_id": "2935909",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "Serotonina serica",
+            "service_id": "245560",
+            "laboratory_id": "58660",
+            "price": 300.0
+          },
+          {
+            "item_name": "Scleroza laterala amiotrofica - (SOD 1)",
+            "service_id": "2952757",
+            "laboratory_id": "58660",
+            "price": 2190.0
+          },
+          {
+            "item_name": "Anticorpi anti-eritrocitari in sarcina",
+            "service_id": "2952758",
+            "laboratory_id": "58660",
+            "price": 260.0
+          },
+          {
+            "item_name": "Dimetilarginina asimetrica (ADMA)",
+            "service_id": "2967228",
+            "laboratory_id": "58660",
+            "price": 500.0
+          },
+          {
+            "item_name": "Anticorpi anti-receptor acetilcolina",
+            "service_id": "8017",
+            "laboratory_id": "58660",
+            "price": 209.0
+          },
+          {
+            "item_name": "Zonulin in ser",
+            "service_id": "2982911",
+            "laboratory_id": "58660",
+            "price": 350.0
+          },
+          {
+            "item_name": "Acizi grasi omega 3 si omega 6",
+            "service_id": "3013941",
+            "laboratory_id": "58660",
+            "price": 482.0
+          },
+          {
+            "item_name": "Vancomicina in ser",
+            "service_id": "3013971",
+            "laboratory_id": "58660",
+            "price": 171.0
+          },
+          {
+            "item_name": "ARN viral hepatita D (cantitativ)",
+            "service_id": "7161",
+            "laboratory_id": "58660",
+            "price": 754.0
+          },
+          {
+            "item_name": "Test Quantiferone",
+            "service_id": "294820",
+            "laboratory_id": "58660",
+            "price": 385.0
+          }
+        ]
+      },
+      {
+        "service_name": "Anatomie-patologica",
+        "items": [
+          {
+            "item_name": "Ex. Citodiagnostic Papanicolaou",
+            "service_id": "282096",
+            "laboratory_id": "58660",
+            "price": 45.0
+          },
+          {
+            "item_name": "Coloratie PD-L(Pathoteam)",
+            "service_id": "3030653",
+            "laboratory_id": "58660",
+            "price": 1350.0
+          },
+          {
+            "item_name": "Biopsie piesa mica(1 bloc)-Resident  Laboratory",
+            "service_id": "3111618",
+            "laboratory_id": "58660",
+            "price": 180.0
+          },
+          {
+            "item_name": "Biopsie piesa medie(2-3 blocuri)-Resident  Laboratory",
+            "service_id": "3111619",
+            "laboratory_id": "58660",
+            "price": 285.0
+          },
+          {
+            "item_name": "Biopsie piesa mare(4-6 blocuri)-Resident  Laboratory",
+            "service_id": "3111620",
+            "laboratory_id": "58660",
+            "price": 375.0
+          },
+          {
+            "item_name": "Coloratie speciala (1buc)-Resident  Laboratory",
+            "service_id": "3111621",
+            "laboratory_id": "58660",
+            "price": 110.0
+          },
+          {
+            "item_name": "Citodiagnostic Papanicolau in mediu lichid",
+            "service_id": "1741243",
+            "laboratory_id": "58660",
+            "price": 140.0
+          },
+          {
+            "item_name": "Ex histopatologic biopsii osteomedulare cu IHC si sau coloratii speciale",
+            "service_id": "1940832",
+            "laboratory_id": "58660",
+            "price": 290.0
+          },
+          {
+            "item_name": "Ex. citologic lichid de punctie",
+            "service_id": "7659",
+            "laboratory_id": "58660",
+            "price": 100.0
+          },
+          {
+            "item_name": "Ex histopatologic disectii limfoganglionare",
+            "service_id": "1940835",
+            "laboratory_id": "58660",
+            "price": 535.0
+          },
+          {
+            "item_name": "Teste imunohistochimice (bloc parafina)",
+            "service_id": "1957826",
+            "laboratory_id": "58660",
+            "price": 570.0
+          },
+          {
+            "item_name": "Examen histopatologic alte piese mici (1-2 bl)",
+            "service_id": "2061441",
+            "laboratory_id": "58660",
+            "price": 285.0
+          },
+          {
+            "item_name": "Examen histopatologic piese medii (3-5 bl)",
+            "service_id": "2061442",
+            "laboratory_id": "58660",
+            "price": 375.0
+          },
+          {
+            "item_name": "Examen histopatologic piesa complexa (&gt;10 bl)",
+            "service_id": "2061443",
+            "laboratory_id": "58660",
+            "price": 640.0
+          },
+          {
+            "item_name": "Ex histopatologic anexectomie unilaterala",
+            "service_id": "2092549",
+            "laboratory_id": "58660",
+            "price": 510.0
+          },
+          {
+            "item_name": "Ex histopatologic anexectomie bilaterala",
+            "service_id": "2092550",
+            "laboratory_id": "58660",
+            "price": 595.0
+          },
+          {
+            "item_name": "Ex histopatologic histerectomie cu anexectomie bilaterala",
+            "service_id": "2092553",
+            "laboratory_id": "58660",
+            "price": 2100.0
+          },
+          {
+            "item_name": "Ex histopatologic biopsii prostatice multiple (6-12 blocuri)",
+            "service_id": "2092557",
+            "laboratory_id": "58660",
+            "price": 860.0
+          },
+          {
+            "item_name": "Ex histopatologic lobectomie tiroidiana",
+            "service_id": "2092565",
+            "laboratory_id": "58660",
+            "price": 660.0
+          },
+          {
+            "item_name": "Ex histopatologic 1 -2 blocuri cu dg HP (a doua opinie)",
+            "service_id": "2092568",
+            "laboratory_id": "58660",
+            "price": 130.0
+          },
+          {
+            "item_name": "Ex histopatologic 3-5 blocuri cu dg HP (a doua opinie)",
+            "service_id": "2092569",
+            "laboratory_id": "58660",
+            "price": 220.0
+          },
+          {
+            "item_name": "N-RAS - exon 2, 3 si 4",
+            "service_id": "2630435",
+            "laboratory_id": "58660",
+            "price": 1440.0
+          },
+          {
+            "item_name": "Examen histopatologic col uterin - conizatie",
+            "service_id": "8163",
+            "laboratory_id": "58660",
+            "price": 435.0
+          },
+          {
+            "item_name": "1 test IHC",
+            "service_id": "2875642",
+            "laboratory_id": "58660",
+            "price": 95.0
+          },
+          {
+            "item_name": "Biopsie EDI",
+            "service_id": "2875905",
+            "laboratory_id": "58660",
+            "price": 315.0
+          },
+          {
+            "item_name": "Set 5 Teste Imunohistochimice",
+            "service_id": "2876279",
+            "laboratory_id": "58660",
+            "price": 730.0
+          },
+          {
+            "item_name": "Examen histopatologic (biopsie cutanata piesa mica sub 4 cm",
+            "service_id": "2890212",
+            "laboratory_id": "58660",
+            "price": 380.0
+          },
+          {
+            "item_name": "Examen histopatologic (biopsie cutanata piesa medie 4-8 cm",
+            "service_id": "2890213",
+            "laboratory_id": "58660",
+            "price": 825.0
+          },
+          {
+            "item_name": "Examen histopatologic (biopsie cutanata piesa mare&gt;8 cm",
+            "service_id": "2890214",
+            "laboratory_id": "58660",
+            "price": 1650.0
+          },
+          {
+            "item_name": "Biopsie piesa operatorie mica",
+            "service_id": "2904876",
+            "laboratory_id": "58660",
+            "price": 330.0
+          },
+          {
+            "item_name": "Examen imunohistochimie (cutanata)",
+            "service_id": "2905136",
+            "laboratory_id": "58660",
+            "price": 670.0
+          },
+          {
+            "item_name": "1 Coloratie speciala",
+            "service_id": "2905449",
+            "laboratory_id": "58660",
+            "price": 135.0
+          },
+          {
+            "item_name": "Biopsie EDS + coloratie Giemsa pt.Helicobacter Pylori",
+            "service_id": "2905454",
+            "laboratory_id": "58660",
+            "price": 315.0
+          },
+          {
+            "item_name": "Examen citologic ( mamar, tiroidian)",
+            "service_id": "2935360",
+            "laboratory_id": "58660",
+            "price": 330.0
+          },
+          {
+            "item_name": "Biopsie piesa mica (1-3 blocuri)",
+            "service_id": "2935887",
+            "laboratory_id": "58660",
+            "price": 285.0
+          },
+          {
+            "item_name": "Biopsie piesa medie (4-6 blocuri)",
+            "service_id": "2935888",
+            "laboratory_id": "58660",
+            "price": 375.0
+          },
+          {
+            "item_name": "Biopsie piesa mare (7-10 blocuri)",
+            "service_id": "2935889",
+            "laboratory_id": "58660",
+            "price": 640.0
+          },
+          {
+            "item_name": "Examen IHC (1- 5 anticorpi)",
+            "service_id": "2935890",
+            "laboratory_id": "58660",
+            "price": 570.0
+          },
+          {
+            "item_name": "1 Test Suplimentar IHC",
+            "service_id": "2935892",
+            "laboratory_id": "58660",
+            "price": 95.0
+          },
+          {
+            "item_name": "SISH HER 2",
+            "service_id": "2968418",
+            "laboratory_id": "58660",
+            "price": 938.0
+          }
+        ]
+      },
+      {
+        "service_name": "Biochimie",
+        "items": [
+          {
+            "item_name": "Vitamina E (tocoferol)",
+            "service_id": "299428",
+            "laboratory_id": "58660",
+            "price": 267.0
+          },
+          {
+            "item_name": "Proteine urinare",
+            "service_id": "7165",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "IgA",
+            "service_id": "7175",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "Bicarbonat seric",
+            "service_id": "246336",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "Vitamina A (retinol)",
+            "service_id": "284244",
+            "laboratory_id": "58660",
+            "price": 204.0
+          },
+          {
+            "item_name": "Proteina C Reactiva",
+            "service_id": "7203",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "ASLO cantitativ",
+            "service_id": "7173",
+            "laboratory_id": "58660",
+            "price": 34.0
+          },
+          {
+            "item_name": "Amilazurie",
+            "service_id": "6983",
+            "laboratory_id": "58660",
+            "price": 24.0
+          },
+          {
+            "item_name": "HDL- Colesterol",
+            "service_id": "6981",
+            "laboratory_id": "58660",
+            "price": 28.0
+          },
+          {
+            "item_name": "TGO/AST",
+            "service_id": "7229",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "TGP/ALT",
+            "service_id": "7227",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "Fosfataza alcalina",
+            "service_id": "7225",
+            "laboratory_id": "58660",
+            "price": 26.0
+          },
+          {
+            "item_name": "Amilaza serica",
+            "service_id": "7221",
+            "laboratory_id": "58660",
+            "price": 23.0
+          },
+          {
+            "item_name": "Proteine totale",
+            "service_id": "7259",
+            "laboratory_id": "58660",
+            "price": 20.0
+          },
+          {
+            "item_name": "Bilirubina totala",
+            "service_id": "7257",
+            "laboratory_id": "58660",
+            "price": 20.0
+          },
+          {
+            "item_name": "Bilirubina directa",
+            "service_id": "7237",
+            "laboratory_id": "58660",
+            "price": 20.0
+          },
+          {
+            "item_name": "Colesterol total",
+            "service_id": "7233",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "Trigliceride",
+            "service_id": "7261",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "Lipide totale",
+            "service_id": "7249",
+            "laboratory_id": "58660",
+            "price": 30.0
+          },
+          {
+            "item_name": "Glucoza serica",
+            "service_id": "7245",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "Glucoza urinara",
+            "service_id": "7223",
+            "laboratory_id": "58660",
+            "price": 18.0
+          },
+          {
+            "item_name": "Uree serica",
+            "service_id": "7265",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "Acid uric",
+            "service_id": "7267",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "Creatinina serica",
+            "service_id": "7235",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "Factor reumatoid cantitativ",
+            "service_id": "7469",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "Calciu seric total",
+            "service_id": "7231",
+            "laboratory_id": "58660",
+            "price": 25.0
+          },
+          {
+            "item_name": "Calciu ionic",
+            "service_id": "7135",
+            "laboratory_id": "58660",
+            "price": 20.0
+          },
+          {
+            "item_name": "Gama GT",
+            "service_id": "7171",
+            "laboratory_id": "58660",
+            "price": 23.0
+          },
+          {
+            "item_name": "LDH",
+            "service_id": "7169",
+            "laboratory_id": "58660",
+            "price": 21.0
+          },
+          {
+            "item_name": "LDL-Colesterol",
+            "service_id": "7167",
+            "laboratory_id": "58660",
+            "price": 26.0
+          },
+          {
+            "item_name": "Magneziu",
+            "service_id": "6985",
+            "laboratory_id": "58660",
+            "price": 20.0
+          },
+          {
+            "item_name": "Sodiu seric",
+            "service_id": "7251",
+            "laboratory_id": "58660",
+            "price": 24.0
+          },
+          {
+            "item_name": "Potasiu seric",
+            "service_id": "7247",
+            "laboratory_id": "58660",
+            "price": 24.0
+          },
+          {
+            "item_name": "Ceruloplasmina",
+            "service_id": "7475",
+            "laboratory_id": "58660",
+            "price": 76.0
+          },
+          {
+            "item_name": "Sideremie",
+            "service_id": "7239",
+            "laboratory_id": "58660",
+            "price": 23.0
+          },
+          {
+            "item_name": "Fosfor seric",
+            "service_id": "7333",
+            "laboratory_id": "58660",
+            "price": 26.0
+          },
+          {
+            "item_name": "Sumar de urina si sediment urinar",
+            "service_id": "7137",
+            "laboratory_id": "58660",
+            "price": 37.0
+          },
+          {
+            "item_name": "Albumina in lichid de punctie",
+            "service_id": "3110972",
+            "laboratory_id": "58660",
+            "price": 26.0
+          },
+          {
+            "item_name": "Proba Hamburger",
+            "service_id": "3112253",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "Vitamina C",
+            "service_id": "770506",
+            "laboratory_id": "58660",
+            "price": 250.0
+          },
+          {
+            "item_name": "Procalcitonina",
+            "service_id": "7365",
+            "laboratory_id": "58660",
+            "price": 185.0
+          },
+          {
+            "item_name": "Cupru seric",
+            "service_id": "7369",
+            "laboratory_id": "58660",
+            "price": 105.0
+          },
+          {
+            "item_name": "Microalbumina urinara",
+            "service_id": "7381",
+            "laboratory_id": "58660",
+            "price": 62.0
+          },
+          {
+            "item_name": "Clearance creatinina",
+            "service_id": "7377",
+            "laboratory_id": "58660",
+            "price": 32.0
+          },
+          {
+            "item_name": "Zinc",
+            "service_id": "7393",
+            "laboratory_id": "58660",
+            "price": 113.0
+          },
+          {
+            "item_name": "Alfa 1 antitripsina",
+            "service_id": "7009",
+            "laboratory_id": "58660",
+            "price": 77.0
+          },
+          {
+            "item_name": "Bilirubina indirecta",
+            "service_id": "7187",
+            "laboratory_id": "58660",
+            "price": 25.0
+          },
+          {
+            "item_name": "Complement seric C4",
+            "service_id": "7421",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "Hemoglobina glicozilata (HbA1C)",
+            "service_id": "7435",
+            "laboratory_id": "58660",
+            "price": 58.0
+          },
+          {
+            "item_name": "IgM",
+            "service_id": "6991",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "IgG",
+            "service_id": "6989",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "Complement seric C3",
+            "service_id": "6997",
+            "laboratory_id": "58660",
+            "price": 36.0
+          },
+          {
+            "item_name": "Apolipoproteina A1",
+            "service_id": "7001",
+            "laboratory_id": "58660",
+            "price": 45.0
+          },
+          {
+            "item_name": "Apolipoproteina B",
+            "service_id": "7003",
+            "laboratory_id": "58660",
+            "price": 45.0
+          },
+          {
+            "item_name": "Lipaza",
+            "service_id": "7049",
+            "laboratory_id": "58660",
+            "price": 33.0
+          },
+          {
+            "item_name": "Colinesteraza",
+            "service_id": "7051",
+            "laboratory_id": "58660",
+            "price": 37.0
+          },
+          {
+            "item_name": "Albumina serica",
+            "service_id": "7053",
+            "laboratory_id": "58660",
+            "price": 20.0
+          },
+          {
+            "item_name": "VLDL - Colesterol",
+            "service_id": "7101",
+            "laboratory_id": "58660",
+            "price": 18.0
+          },
+          {
+            "item_name": "Uree urinara",
+            "service_id": "7103",
+            "laboratory_id": "58660",
+            "price": 16.0
+          },
+          {
+            "item_name": "Creatinina urinara",
+            "service_id": "6987",
+            "laboratory_id": "58660",
+            "price": 25.0
+          },
+          {
+            "item_name": "Acid uric urinar",
+            "service_id": "7105",
+            "laboratory_id": "58660",
+            "price": 23.0
+          },
+          {
+            "item_name": "Clor seric",
+            "service_id": "7107",
+            "laboratory_id": "58660",
+            "price": 24.0
+          },
+          {
+            "item_name": "Calciu urinar",
+            "service_id": "7109",
+            "laboratory_id": "58660",
+            "price": 14.0
+          },
+          {
+            "item_name": "Magneziu urinar",
+            "service_id": "7111",
+            "laboratory_id": "58660",
+            "price": 14.0
+          },
+          {
+            "item_name": "Sodiu urinar",
+            "service_id": "7125",
+            "laboratory_id": "58660",
+            "price": 14.0
+          },
+          {
+            "item_name": "Potasiu urinar",
+            "service_id": "7127",
+            "laboratory_id": "58660",
+            "price": 17.0
+          },
+          {
+            "item_name": "Clor urinar",
+            "service_id": "7129",
+            "laboratory_id": "58660",
+            "price": 14.0
+          },
+          {
+            "item_name": "Amilaza pancreatica",
+            "service_id": "7551",
+            "laboratory_id": "58660",
+            "price": 24.0
+          },
+          {
+            "item_name": "CRP hs",
+            "service_id": "1822677",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Albumina urinara",
+            "service_id": "7559",
+            "laboratory_id": "58660",
+            "price": 25.0
+          },
+          {
+            "item_name": "Fosfor urinar",
+            "service_id": "7607",
+            "laboratory_id": "58660",
+            "price": 27.0
+          },
+          {
+            "item_name": "Test de toleranta la glucoza/75 g",
+            "service_id": "7777",
+            "laboratory_id": "58660",
+            "price": 30.0
+          },
+          {
+            "item_name": "^Indice Homa",
+            "service_id": "2240397",
+            "laboratory_id": "58660",
+            "price": 87.0
+          },
+          {
+            "item_name": "Anticorpi specifici Anti A IgG",
+            "service_id": "2875639",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "Raport Albumina/Creatinina",
+            "service_id": "8195",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Lanturi usoare libere Kappa in LCR",
+            "service_id": "2905453",
+            "laboratory_id": "58660",
+            "price": 233.0
+          },
+          {
+            "item_name": "Raport calciu / creatinina",
+            "service_id": "280858",
+            "laboratory_id": "58660",
+            "price": 25.0
+          },
+          {
+            "item_name": "Test de toleranta la glucoza - screening in sarcina 75 g",
+            "service_id": "1547026",
+            "laboratory_id": "58660",
+            "price": 50.0
+          },
+          {
+            "item_name": "Haptoglobina",
+            "service_id": "8063",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Fibromax",
+            "service_id": "8073",
+            "laboratory_id": "58660",
+            "price": 740.0
+          },
+          {
+            "item_name": "Lipoproteina (a)",
+            "service_id": "268528",
+            "laboratory_id": "58660",
+            "price": 90.0
+          }
+        ]
+      },
+      {
+        "service_name": "Citologie",
+        "items": [
+          {
+            "item_name": "Imunocitodiagnostic CIN2+ (CINtec PLUS)",
+            "service_id": "1584316",
+            "laboratory_id": "58660",
+            "price": 450.0
+          }
+        ]
+      },
+      {
+        "service_name": "Coagulare/Hemostaza",
+        "items": [
+          {
+            "item_name": "PT, INR",
+            "service_id": "7195",
+            "laboratory_id": "58660",
+            "price": 28.0
+          },
+          {
+            "item_name": "Fibrinogen",
+            "service_id": "7241",
+            "laboratory_id": "58660",
+            "price": 36.0
+          },
+          {
+            "item_name": "Timp de sangerare",
+            "service_id": "7199",
+            "laboratory_id": "58660",
+            "price": 20.0
+          },
+          {
+            "item_name": "Proteina C",
+            "service_id": "7417",
+            "laboratory_id": "58660",
+            "price": 94.0
+          },
+          {
+            "item_name": "APTT",
+            "service_id": "7149",
+            "laboratory_id": "58660",
+            "price": 32.0
+          },
+          {
+            "item_name": "Proteina S (libera)",
+            "service_id": "7419",
+            "laboratory_id": "58660",
+            "price": 114.0
+          },
+          {
+            "item_name": "Timp de coagulare",
+            "service_id": "7301",
+            "laboratory_id": "58660",
+            "price": 18.0
+          },
+          {
+            "item_name": "Antitrombina III",
+            "service_id": "7007",
+            "laboratory_id": "58660",
+            "price": 73.0
+          },
+          {
+            "item_name": "Anticoagulant lupic",
+            "service_id": "7493",
+            "laboratory_id": "58660",
+            "price": 165.0
+          },
+          {
+            "item_name": "Factor V Leiden APCR",
+            "service_id": "7597",
+            "laboratory_id": "58660",
+            "price": 105.0
+          },
+          {
+            "item_name": "D-Dimeri",
+            "service_id": "8151",
+            "laboratory_id": "58660",
+            "price": 105.0
+          }
+        ]
+      },
+      {
+        "service_name": "Depistari teste rapide",
+        "items": [
+          {
+            "item_name": "Depistare ac. HIV 1/2-screening",
+            "service_id": "268636",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "Depistare Ac Anti-HCV",
+            "service_id": "268650",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "Ac Anti-Helicobacter pylori - test calitativ",
+            "service_id": "7075",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "Depistare Ac Anti-HAV IgM",
+            "service_id": "1351960",
+            "laboratory_id": "58660",
+            "price": 49.0
+          },
+          {
+            "item_name": "Depistare Ag HBs-screening",
+            "service_id": "7565",
+            "laboratory_id": "58660",
+            "price": 60.0
+          }
+        ]
+      },
+      {
+        "service_name": "Electroforeza",
+        "items": [
+          {
+            "item_name": "Electroforeza proteinelor serice cu imunofixare",
+            "service_id": "7177",
+            "laboratory_id": "58660",
+            "price": 275.0
+          },
+          {
+            "item_name": "Electroforeza hemoglobinei",
+            "service_id": "7423",
+            "laboratory_id": "58660",
+            "price": 69.0
+          },
+          {
+            "item_name": "Electroforeza proteinelor serice",
+            "service_id": "7151",
+            "laboratory_id": "58660",
+            "price": 50.0
+          }
+        ]
+      },
+      {
+        "service_name": "Genetica",
+        "items": [
+          {
+            "item_name": "Panel biologie moleculara de boli cu transmitere sexuala: M. genitalium, M. hominis, Trichomonas vaginalis, Ureaplasma urealyticum/parvum, Haemophilus ducreyi, HSV 1, HSV 2, Treponema pallidum, Neisseria gonorrhoeae, Ch.trachomatis, Ch. trachomatis LGV",
+            "service_id": "2600505",
+            "laboratory_id": "58660",
+            "price": 537.0
+          }
+        ]
+      },
+      {
+        "service_name": "Genetica si biologie moleculara",
+        "items": [
+          {
+            "item_name": "Mutatia factorului XIII (V34L)",
+            "service_id": "295488",
+            "laboratory_id": "58660",
+            "price": 248.0
+          },
+          {
+            "item_name": "Intoleranta la lactoza - test genetic",
+            "service_id": "718220",
+            "laboratory_id": "58660",
+            "price": 365.0
+          },
+          {
+            "item_name": "ADN-HPV tesut ,genotipare14 tulpini de risc crescut",
+            "service_id": "3075424",
+            "laboratory_id": "58660",
+            "price": 430.0
+          },
+          {
+            "item_name": "Panel trombofilii ereditare",
+            "service_id": "716552",
+            "laboratory_id": "58660",
+            "price": 850.0
+          },
+          {
+            "item_name": "Test de predispozitie la cancerul ereditar de san si ovar (secventierea genelor BRCA1, BRCA2)",
+            "service_id": "1858136",
+            "laboratory_id": "58660",
+            "price": 2575.0
+          },
+          {
+            "item_name": "Genotipare HPV - 35 tulpini",
+            "service_id": "2240648",
+            "laboratory_id": "58660",
+            "price": 460.0
+          },
+          {
+            "item_name": "Viremie hepatita B",
+            "service_id": "7833",
+            "laboratory_id": "58660",
+            "price": 457.0
+          },
+          {
+            "item_name": "Viremie hepatita C",
+            "service_id": "7835",
+            "laboratory_id": "58660",
+            "price": 457.0
+          },
+          {
+            "item_name": "HPV- tipaj viral 28 tulpini",
+            "service_id": "2470374",
+            "laboratory_id": "58660",
+            "price": 439.0
+          },
+          {
+            "item_name": "Panel boli cu transmitere sexuala (Mycoplasma genitalium, Chlamydia trachomatis, Neisseria gonorrhoeae, Trichomonas vaginalis)",
+            "service_id": "2570921",
+            "laboratory_id": "58660",
+            "price": 350.0
+          },
+          {
+            "item_name": "Detectie ADN protozoare materii fecale PCR",
+            "service_id": "2630608",
+            "laboratory_id": "58660",
+            "price": 300.0
+          },
+          {
+            "item_name": "Detectie ADN helminti si microsporidii  materii fecale PCR",
+            "service_id": "2630609",
+            "laboratory_id": "58660",
+            "price": 310.0
+          },
+          {
+            "item_name": "Panel boli cu transmitere sexuala din urina (Mycoplasma genitalium, Chlamydia trachomatis, Neisseria gonorrhoeae, Trichomonas vaginalis)",
+            "service_id": "2720012",
+            "laboratory_id": "58660",
+            "price": 350.0
+          },
+          {
+            "item_name": "Mutatiile genei MTHFR",
+            "service_id": "8101",
+            "laboratory_id": "58660",
+            "price": 380.0
+          },
+          {
+            "item_name": "Mutatiile genei PAI-1",
+            "service_id": "8103",
+            "laboratory_id": "58660",
+            "price": 345.0
+          },
+          {
+            "item_name": "Mutatia Factor V Leiden",
+            "service_id": "2834041",
+            "laboratory_id": "58660",
+            "price": 200.0
+          },
+          {
+            "item_name": "Mutatia Factor II (G20210A)",
+            "service_id": "2834042",
+            "laboratory_id": "58660",
+            "price": 190.0
+          },
+          {
+            "item_name": "NIPT neoBona Advanced plus - Trisomiile 21, 18, 13 + sex fetal + anomalii de cromosomi sexuali (X si Y) + microdeletii trisomiile 16 si 9",
+            "service_id": "2875638",
+            "laboratory_id": "58660",
+            "price": 3000.0
+          },
+          {
+            "item_name": "Cariotip molecular rezolutie 750K (SNP microarray) - Lichid amniotic/Vilozitatii coriale (CVS) si QF-PCR (13,18,21,X,Y)",
+            "service_id": "2905135",
+            "laboratory_id": "58660",
+            "price": 2450.0
+          },
+          {
+            "item_name": "Leucodistrofie si leucoencefalopatie - panel 118 de gene - PLUS, SEQ, DEL/DUP",
+            "service_id": "2935886",
+            "laboratory_id": "58660",
+            "price": 4600.0
+          },
+          {
+            "item_name": "Secventierea intregului genom (WGS)",
+            "service_id": "2967266",
+            "laboratory_id": "58660",
+            "price": 8500.0
+          },
+          {
+            "item_name": "HLA B27",
+            "service_id": "8089",
+            "laboratory_id": "58660",
+            "price": 300.0
+          }
+        ]
+      },
+      {
+        "service_name": "Hematologie",
+        "items": [
+          {
+            "item_name": "VSH",
+            "service_id": "7189",
+            "laboratory_id": "58660",
+            "price": 18.0
+          },
+          {
+            "item_name": "Hemoleucograma completa",
+            "service_id": "7191",
+            "laboratory_id": "58660",
+            "price": 51.0
+          },
+          {
+            "item_name": "Test Coombs direct",
+            "service_id": "7181",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "Numaratoare de reticulocite",
+            "service_id": "7281",
+            "laboratory_id": "58660",
+            "price": 44.0
+          },
+          {
+            "item_name": "Grup sangvin ABO",
+            "service_id": "1584116",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "Grup sangvin RH",
+            "service_id": "1584118",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "Frotiu sange venos",
+            "service_id": "1740582",
+            "laboratory_id": "58660",
+            "price": 45.0
+          },
+          {
+            "item_name": "Eritropoietina",
+            "service_id": "7547",
+            "laboratory_id": "58660",
+            "price": 221.0
+          },
+          {
+            "item_name": "Ac Anti D (Rh)",
+            "service_id": "8011",
+            "laboratory_id": "58660",
+            "price": 75.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie- Markeri inflamatori",
+        "items": [
+          {
+            "item_name": "Calprotectina",
+            "service_id": "8215",
+            "laboratory_id": "58660",
+            "price": 220.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Autoimunitate",
+        "items": [
+          {
+            "item_name": "Ac Anti-celula parietala gastrica",
+            "service_id": "285062",
+            "laboratory_id": "58660",
+            "price": 110.0
+          },
+          {
+            "item_name": "Ac Anti-factor intrinsec",
+            "service_id": "273648",
+            "laboratory_id": "58660",
+            "price": 179.0
+          },
+          {
+            "item_name": "Ac Anti-Tiroglobulina",
+            "service_id": "7331",
+            "laboratory_id": "58660",
+            "price": 61.0
+          },
+          {
+            "item_name": "Profil ANA-16 ANTIGENE NUCLEARE BLOT   (nRNP/Sm,Sm,Ro-52,SS-A, SS-B,Scl-70,PM-Scl,Jo-1,CENP B,PCNA,dsDNA,nucleosomi,Histone,rib P-prot,AMA-M2,DFS70)",
+            "service_id": "722750",
+            "laboratory_id": "58660",
+            "price": 200.0
+          },
+          {
+            "item_name": "Ac antineuronali - BLOT (sdr. paraneoplazice neurologice)",
+            "service_id": "1200120",
+            "laboratory_id": "58660",
+            "price": 342.0
+          },
+          {
+            "item_name": "Profil Boli Hepatice Autoimune IgG-BLOT (AMA-M2, M2-3E,SP100,PML,gp210,LKM-1,LC-1,SLA/LP,SS-A ,Ro-52 ,Scl-70,CENP A,CENP B ,PGDH)",
+            "service_id": "1200122",
+            "laboratory_id": "58660",
+            "price": 210.0
+          },
+          {
+            "item_name": "Ac Antinucleari (ANA) depistare si titrare IgG",
+            "service_id": "1199872",
+            "laboratory_id": "58660",
+            "price": 76.0
+          },
+          {
+            "item_name": "Complexe imune circulante",
+            "service_id": "7479",
+            "laboratory_id": "58660",
+            "price": 64.0
+          },
+          {
+            "item_name": "Ac Anti-SSa (Ro)",
+            "service_id": "7311",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "Ac Anti-transglutaminaza tisulara IgA",
+            "service_id": "7443",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Ac Anti-Fibra musculara neteda (ASMA)",
+            "service_id": "7773",
+            "laboratory_id": "58660",
+            "price": 92.0
+          },
+          {
+            "item_name": "Ac LKM 1",
+            "service_id": "7283",
+            "laboratory_id": "58660",
+            "price": 100.0
+          },
+          {
+            "item_name": "Ac Anti-Tireoperoxidaza (TPO)",
+            "service_id": "7033",
+            "laboratory_id": "58660",
+            "price": 71.0
+          },
+          {
+            "item_name": "Ac Anti-Centromer",
+            "service_id": "7657",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "Ac Anti-transglutaminaza tisulara IgG",
+            "service_id": "7665",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Ac Anti-ADN dublucatenari (screening: IgG, IgA, IgM)",
+            "service_id": "7711",
+            "laboratory_id": "58660",
+            "price": 66.0
+          },
+          {
+            "item_name": "Ac Anti-cANCA",
+            "service_id": "7713",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Ac Anti-Cardiolipinici IgG",
+            "service_id": "7715",
+            "laboratory_id": "58660",
+            "price": 80.0
+          },
+          {
+            "item_name": "Ac Anti-Cardiolipinici IgM",
+            "service_id": "7717",
+            "laboratory_id": "58660",
+            "price": 80.0
+          },
+          {
+            "item_name": "Ac Anti-Jo1",
+            "service_id": "7719",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "Ac Anti-SSb (La)",
+            "service_id": "7721",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "Ac Anti-pANCA",
+            "service_id": "7725",
+            "laboratory_id": "58660",
+            "price": 88.0
+          },
+          {
+            "item_name": "Ac Anti-SCL 70",
+            "service_id": "7727",
+            "laboratory_id": "58660",
+            "price": 87.0
+          },
+          {
+            "item_name": "Ac Anti-Sm",
+            "service_id": "7729",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "Ac antimitocondriali (AMA-M2)",
+            "service_id": "7769",
+            "laboratory_id": "58660",
+            "price": 116.0
+          },
+          {
+            "item_name": "Ac Anti-Insulina",
+            "service_id": "7981",
+            "laboratory_id": "58660",
+            "price": 105.0
+          },
+          {
+            "item_name": "Profil ANA - 23 ANTIGENE NUCLEARE BLOT EXTINS (ADNds, nucleosome, histone, SS-A, Ro52, SS-B, nRNP/Sm, Mi-2 beta, Mi-2 alfa, Ku, CENP A, CENP B, Sp100, PML, Scl 70, PM-Scl 100, PM-Scl 75, RP 11, RP 155, gp 210, PCNA, DFS 70)",
+            "service_id": "2675271",
+            "laboratory_id": "58660",
+            "price": 310.0
+          },
+          {
+            "item_name": "Ac Anti-Fosfolipidici IgM",
+            "service_id": "8207",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "Ac Anti-Fosfolipidici IgG",
+            "service_id": "8209",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "Ac anti-cANCA hs",
+            "service_id": "2935907",
+            "laboratory_id": "58660",
+            "price": 84.0
+          },
+          {
+            "item_name": "Ac Anti-SLA-(Soluble liver antigen)",
+            "service_id": "270462",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "Ac Anti-CCP",
+            "service_id": "8015",
+            "laboratory_id": "58660",
+            "price": 121.0
+          },
+          {
+            "item_name": "Ac Anti-receptor TSH",
+            "service_id": "8083",
+            "laboratory_id": "58660",
+            "price": 135.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Markeri Alergii",
+        "items": [
+          {
+            "item_name": "Proteina eozinofil-cationica (ECP)",
+            "service_id": "286742",
+            "laboratory_id": "58660",
+            "price": 243.0
+          },
+          {
+            "item_name": "IgE specific la lapte de vaca pasteurizat )f231)",
+            "service_id": "285042",
+            "laboratory_id": "58660",
+            "price": 82.0
+          },
+          {
+            "item_name": "IgE specific la gluten (f79)",
+            "service_id": "272706",
+            "laboratory_id": "58660",
+            "price": 88.0
+          },
+          {
+            "item_name": "IgE specific la Ou (f245)",
+            "service_id": "767264",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "IgE specific la Alfa-lactalbumina f76",
+            "service_id": "767270",
+            "laboratory_id": "58660",
+            "price": 95.0
+          },
+          {
+            "item_name": "IgE specific la Beta-lactoglobulina f77",
+            "service_id": "767272",
+            "laboratory_id": "58660",
+            "price": 91.0
+          },
+          {
+            "item_name": "IgE specific la Cazeina f78",
+            "service_id": "767278",
+            "laboratory_id": "58660",
+            "price": 91.0
+          },
+          {
+            "item_name": "Panel alimentar 35 alergeni",
+            "service_id": "1199698",
+            "laboratory_id": "58660",
+            "price": 286.0
+          },
+          {
+            "item_name": "IgE specific la caine - scuame (e5)",
+            "service_id": "1200232",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "Panel inhalator IgE 20",
+            "service_id": "1203066",
+            "laboratory_id": "58660",
+            "price": 250.0
+          },
+          {
+            "item_name": "Panel 1 mixt Euroimmun",
+            "service_id": "1203454",
+            "laboratory_id": "58660",
+            "price": 253.0
+          },
+          {
+            "item_name": "IgE",
+            "service_id": "6995",
+            "laboratory_id": "58660",
+            "price": 49.0
+          },
+          {
+            "item_name": "IgE - calitativ",
+            "service_id": "1673215",
+            "laboratory_id": "58660",
+            "price": 50.0
+          },
+          {
+            "item_name": "ALEX-MADx (IgE specific- 295 alergeni)",
+            "service_id": "1823707",
+            "laboratory_id": "58660",
+            "price": 825.0
+          },
+          {
+            "item_name": "Panel 96 alergeni (inhalator si alimentar)",
+            "service_id": "2438253",
+            "laboratory_id": "58660",
+            "price": 460.0
+          },
+          {
+            "item_name": "Panel Inhalator IgE 33 alergeni",
+            "service_id": "2513317",
+            "laboratory_id": "58660",
+            "price": 300.0
+          },
+          {
+            "item_name": "IgE specific la ibuprofen",
+            "service_id": "7883",
+            "laboratory_id": "58660",
+            "price": 72.0
+          },
+          {
+            "item_name": "IgE specific la mepivacaina",
+            "service_id": "7899",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "IgE specific la lapte de vaca",
+            "service_id": "7961",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "IgE specific insulina umana (CC73)",
+            "service_id": "2875637",
+            "laboratory_id": "58660",
+            "price": 60.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Markeri Anemie",
+        "items": [
+          {
+            "item_name": "Feritina",
+            "service_id": "7269",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "Transferina",
+            "service_id": "6999",
+            "laboratory_id": "58660",
+            "price": 35.0
+          },
+          {
+            "item_name": "CTLFe (Capacitatea totala de legare a fierului)",
+            "service_id": "7055",
+            "laboratory_id": "58660",
+            "price": 33.0
+          },
+          {
+            "item_name": "Folat seric",
+            "service_id": "7511",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "Vitamina B12",
+            "service_id": "7605",
+            "laboratory_id": "58660",
+            "price": 68.0
+          },
+          {
+            "item_name": "Holotranscobalamina (vitamina B12 activa)",
+            "service_id": "2061449",
+            "laboratory_id": "58660",
+            "price": 166.0
+          },
+          {
+            "item_name": "Coeficient de saturare a transferinei",
+            "service_id": "7813",
+            "laboratory_id": "58660",
+            "price": 78.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Markeri Cardiovasculari",
+        "items": [
+          {
+            "item_name": "Troponina Ihs - Acut",
+            "service_id": "1350604",
+            "laboratory_id": "58660",
+            "price": 83.0
+          },
+          {
+            "item_name": "Creatinkinaza-CK",
+            "service_id": "7045",
+            "laboratory_id": "58660",
+            "price": 30.0
+          },
+          {
+            "item_name": "Creatinkinaza-CKMB",
+            "service_id": "7047",
+            "laboratory_id": "58660",
+            "price": 34.0
+          },
+          {
+            "item_name": "Homocisteina",
+            "service_id": "7557",
+            "laboratory_id": "58660",
+            "price": 210.0
+          },
+          {
+            "item_name": "NT proBNP",
+            "service_id": "7995",
+            "laboratory_id": "58660",
+            "price": 180.0
+          },
+          {
+            "item_name": "Troponina T",
+            "service_id": "2999400",
+            "laboratory_id": "58660",
+            "price": 80.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Markeri Endocrini",
+        "items": [
+          {
+            "item_name": "Renina, aldosteron si raport aldosteron / renina",
+            "service_id": "717900",
+            "laboratory_id": "58660",
+            "price": 413.0
+          },
+          {
+            "item_name": "Androstendion",
+            "service_id": "281806",
+            "laboratory_id": "58660",
+            "price": 80.0
+          },
+          {
+            "item_name": "Insulina",
+            "service_id": "7315",
+            "laboratory_id": "58660",
+            "price": 58.0
+          },
+          {
+            "item_name": "Free T3",
+            "service_id": "7325",
+            "laboratory_id": "58660",
+            "price": 55.0
+          },
+          {
+            "item_name": "Hormon de crestere (GH)",
+            "service_id": "7327",
+            "laboratory_id": "58660",
+            "price": 66.0
+          },
+          {
+            "item_name": "Diaminoxidaza concentratie (DAO)- intoleranta la histamina",
+            "service_id": "298982",
+            "laboratory_id": "58660",
+            "price": 220.0
+          },
+          {
+            "item_name": "^Metanefrine si normetanefrine  plasmatice",
+            "service_id": "281848",
+            "laboratory_id": "58660",
+            "price": 370.0
+          },
+          {
+            "item_name": "Free T4",
+            "service_id": "7029",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "Renina plasmatica",
+            "service_id": "1197350",
+            "laboratory_id": "58660",
+            "price": 215.0
+          },
+          {
+            "item_name": "17 OH Progesteron",
+            "service_id": "7767",
+            "laboratory_id": "58660",
+            "price": 72.0
+          },
+          {
+            "item_name": "T3",
+            "service_id": "7253",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "T4",
+            "service_id": "7255",
+            "laboratory_id": "58660",
+            "price": 55.0
+          },
+          {
+            "item_name": "TSH",
+            "service_id": "7263",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "LH",
+            "service_id": "7209",
+            "laboratory_id": "58660",
+            "price": 57.0
+          },
+          {
+            "item_name": "FSH",
+            "service_id": "7243",
+            "laboratory_id": "58660",
+            "price": 62.0
+          },
+          {
+            "item_name": "Prolactina",
+            "service_id": "7211",
+            "laboratory_id": "58660",
+            "price": 61.0
+          },
+          {
+            "item_name": "Progesteron",
+            "service_id": "7213",
+            "laboratory_id": "58660",
+            "price": 59.0
+          },
+          {
+            "item_name": "Peptid C",
+            "service_id": "7449",
+            "laboratory_id": "58660",
+            "price": 90.0
+          },
+          {
+            "item_name": "Testosteron liber",
+            "service_id": "7291",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Estradiol",
+            "service_id": "7035",
+            "laboratory_id": "58660",
+            "price": 61.0
+          },
+          {
+            "item_name": "Cortisol seric",
+            "service_id": "7037",
+            "laboratory_id": "58660",
+            "price": 59.0
+          },
+          {
+            "item_name": "Aldosteron",
+            "service_id": "1583966",
+            "laboratory_id": "58660",
+            "price": 188.0
+          },
+          {
+            "item_name": "Testosteron",
+            "service_id": "7083",
+            "laboratory_id": "58660",
+            "price": 61.0
+          },
+          {
+            "item_name": "Big prolactina (Prolactina dupa PEG)",
+            "service_id": "7123",
+            "laboratory_id": "58660",
+            "price": 100.0
+          },
+          {
+            "item_name": "ACTH",
+            "service_id": "7539",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "IGF-1 (somatomedin C)",
+            "service_id": "7561",
+            "laboratory_id": "58660",
+            "price": 78.0
+          },
+          {
+            "item_name": "DHEAS",
+            "service_id": "7581",
+            "laboratory_id": "58660",
+            "price": 63.0
+          },
+          {
+            "item_name": "SHBG",
+            "service_id": "7587",
+            "laboratory_id": "58660",
+            "price": 61.0
+          },
+          {
+            "item_name": "Cortisol urinar",
+            "service_id": "7595",
+            "laboratory_id": "58660",
+            "price": 49.0
+          },
+          {
+            "item_name": "Hormon Anti-Mullerian",
+            "service_id": "8121",
+            "laboratory_id": "58660",
+            "price": 300.0
+          },
+          {
+            "item_name": "Inhibina B",
+            "service_id": "8005",
+            "laboratory_id": "58660",
+            "price": 220.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Markeri Infectiosi",
+        "items": [
+          {
+            "item_name": "Ac Anti-Hepatita E IgM",
+            "service_id": "296362",
+            "laboratory_id": "58660",
+            "price": 130.0
+          },
+          {
+            "item_name": "Ac Anti-Hepatita E IgG",
+            "service_id": "297754",
+            "laboratory_id": "58660",
+            "price": 130.0
+          },
+          {
+            "item_name": "Virus varicelo-zosterian Ac IgG",
+            "service_id": "299366",
+            "laboratory_id": "58660",
+            "price": 132.0
+          },
+          {
+            "item_name": "Virus varicelo-zosterian Ac IgM",
+            "service_id": "717966",
+            "laboratory_id": "58660",
+            "price": 132.0
+          },
+          {
+            "item_name": "Chlamydia pneumoniae IgG",
+            "service_id": "270986",
+            "laboratory_id": "58660",
+            "price": 149.0
+          },
+          {
+            "item_name": "Parvovirus B19 IgM - Anticorpi",
+            "service_id": "718598",
+            "laboratory_id": "58660",
+            "price": 120.0
+          },
+          {
+            "item_name": "Parvovirus B19  IgG - Anticorpi",
+            "service_id": "718596",
+            "laboratory_id": "58660",
+            "price": 120.0
+          },
+          {
+            "item_name": "Antigen Aspergillus (galactomannan)",
+            "service_id": "769896",
+            "laboratory_id": "58660",
+            "price": 135.0
+          },
+          {
+            "item_name": "Rubeola Ac IgG",
+            "service_id": "7081",
+            "laboratory_id": "58660",
+            "price": 73.0
+          },
+          {
+            "item_name": "Ac Anti-virus rujeolos IgG",
+            "service_id": "7085",
+            "laboratory_id": "58660",
+            "price": 96.0
+          },
+          {
+            "item_name": "Ac Anti-CMV IgG",
+            "service_id": "7087",
+            "laboratory_id": "58660",
+            "price": 73.0
+          },
+          {
+            "item_name": "Ac Anti-HBc",
+            "service_id": "7089",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Ag HBe",
+            "service_id": "7091",
+            "laboratory_id": "58660",
+            "price": 67.0
+          },
+          {
+            "item_name": "Ac Anti-HBe",
+            "service_id": "7093",
+            "laboratory_id": "58660",
+            "price": 69.0
+          },
+          {
+            "item_name": "RPR",
+            "service_id": "270520",
+            "laboratory_id": "58660",
+            "price": 45.0
+          },
+          {
+            "item_name": "Ac Anti-HAV IgM",
+            "service_id": "7019",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Ac Anti-HAV IgG",
+            "service_id": "7021",
+            "laboratory_id": "58660",
+            "price": 66.0
+          },
+          {
+            "item_name": "Ac Anti-virus rujeolos  IgM",
+            "service_id": "7023",
+            "laboratory_id": "58660",
+            "price": 96.0
+          },
+          {
+            "item_name": "Rubeola Ac IgM",
+            "service_id": "7025",
+            "laboratory_id": "58660",
+            "price": 73.0
+          },
+          {
+            "item_name": "Ac Anti-CMV IgM",
+            "service_id": "7027",
+            "laboratory_id": "58660",
+            "price": 71.0
+          },
+          {
+            "item_name": "Ac Anti-Herpes simplex 1-2 IgG",
+            "service_id": "7405",
+            "laboratory_id": "58660",
+            "price": 115.0
+          },
+          {
+            "item_name": "Ac Borrelia burgdorferi sensu lato IgG",
+            "service_id": "7407",
+            "laboratory_id": "58660",
+            "price": 120.0
+          },
+          {
+            "item_name": "Ac Anti-Echinococcus  IgG (E.granulosus &amp; E.multilocularis)",
+            "service_id": "7059",
+            "laboratory_id": "58660",
+            "price": 78.0
+          },
+          {
+            "item_name": "Ac Anti-Trichinella spiralis IgG",
+            "service_id": "7061",
+            "laboratory_id": "58660",
+            "price": 96.0
+          },
+          {
+            "item_name": "Ac Anti-Toxocara canis IgG",
+            "service_id": "7063",
+            "laboratory_id": "58660",
+            "price": 73.0
+          },
+          {
+            "item_name": "Ac Anti-Toxoplasma gondii IgM",
+            "service_id": "7065",
+            "laboratory_id": "58660",
+            "price": 86.0
+          },
+          {
+            "item_name": "Ac Anti-Toxoplasma gondii IgG",
+            "service_id": "7067",
+            "laboratory_id": "58660",
+            "price": 71.0
+          },
+          {
+            "item_name": "Ac Anti-Chlamydia trachomatis IgA",
+            "service_id": "7069",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Ac Anti-Chlamydia trachomatis IgG",
+            "service_id": "7439",
+            "laboratory_id": "58660",
+            "price": 75.0
+          },
+          {
+            "item_name": "Listeria monocitogenes-serologie",
+            "service_id": "7305",
+            "laboratory_id": "58660",
+            "price": 95.0
+          },
+          {
+            "item_name": "Ac Anti-HCV",
+            "service_id": "7215",
+            "laboratory_id": "58660",
+            "price": 87.0
+          },
+          {
+            "item_name": "Ac Anti-HBs",
+            "service_id": "7217",
+            "laboratory_id": "58660",
+            "price": 61.0
+          },
+          {
+            "item_name": "Ag HBs",
+            "service_id": "7219",
+            "laboratory_id": "58660",
+            "price": 73.0
+          },
+          {
+            "item_name": "TPHA",
+            "service_id": "6993",
+            "laboratory_id": "58660",
+            "price": 45.0
+          },
+          {
+            "item_name": "Ac Anti-Epstein Barr VCA IgG",
+            "service_id": "7487",
+            "laboratory_id": "58660",
+            "price": 78.0
+          },
+          {
+            "item_name": "Ac Anti-Epstein Barr VCA IgM",
+            "service_id": "7489",
+            "laboratory_id": "58660",
+            "price": 78.0
+          },
+          {
+            "item_name": "Ac heterofili (mononucleoza infectioasa)",
+            "service_id": "7099",
+            "laboratory_id": "58660",
+            "price": 55.0
+          },
+          {
+            "item_name": "Borrelia Ac. IgG din ser - Westerblot",
+            "service_id": "1912662",
+            "laboratory_id": "58660",
+            "price": 220.0
+          },
+          {
+            "item_name": "Borrelia Ac. IgM din ser - Westerblot",
+            "service_id": "1912663",
+            "laboratory_id": "58660",
+            "price": 220.0
+          },
+          {
+            "item_name": "Ac Anti-Yersinia IgA",
+            "service_id": "2015803",
+            "laboratory_id": "58660",
+            "price": 121.0
+          },
+          {
+            "item_name": "Ac Anti-Helicobacter Pylori IgG",
+            "service_id": "7693",
+            "laboratory_id": "58660",
+            "price": 60.0
+          },
+          {
+            "item_name": "Ac Anti-Herpes simplex 1-2 IgM",
+            "service_id": "7701",
+            "laboratory_id": "58660",
+            "price": 115.0
+          },
+          {
+            "item_name": "Ac Anti-HD IgG",
+            "service_id": "7733",
+            "laboratory_id": "58660",
+            "price": 125.0
+          },
+          {
+            "item_name": "Ac Anti-HBc IgM",
+            "service_id": "7755",
+            "laboratory_id": "58660",
+            "price": 66.0
+          },
+          {
+            "item_name": "Ac Anti-Yersinia IgG",
+            "service_id": "7829",
+            "laboratory_id": "58660",
+            "price": 111.0
+          },
+          {
+            "item_name": "VDRL",
+            "service_id": "2285394",
+            "laboratory_id": "58660",
+            "price": 23.0
+          },
+          {
+            "item_name": "Ac Borrelia burgdorferi sensu lato IgM",
+            "service_id": "7863",
+            "laboratory_id": "58660",
+            "price": 120.0
+          },
+          {
+            "item_name": "Ac Anti-Treponema pallidum",
+            "service_id": "8105",
+            "laboratory_id": "58660",
+            "price": 45.0
+          },
+          {
+            "item_name": "Ac Mycoplasma pneumoniae IgG",
+            "service_id": "8109",
+            "laboratory_id": "58660",
+            "price": 149.0
+          },
+          {
+            "item_name": "Ac Mycoplasma pneumoniae IgA",
+            "service_id": "8111",
+            "laboratory_id": "58660",
+            "price": 166.0
+          },
+          {
+            "item_name": "Ac Mycoplasma pneumoniae IgM",
+            "service_id": "8113",
+            "laboratory_id": "58660",
+            "price": 149.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Markeri Ososi",
+        "items": [
+          {
+            "item_name": "1,25 Dihidroxi Vitamina D3",
+            "service_id": "276354",
+            "laboratory_id": "58660",
+            "price": 280.0
+          },
+          {
+            "item_name": "Parathormon(iPTH)",
+            "service_id": "7329",
+            "laboratory_id": "58660",
+            "price": 84.0
+          },
+          {
+            "item_name": "Osteocalcin",
+            "service_id": "7553",
+            "laboratory_id": "58660",
+            "price": 78.0
+          },
+          {
+            "item_name": "Beta Crosslaps",
+            "service_id": "7709",
+            "laboratory_id": "58660",
+            "price": 63.0
+          },
+          {
+            "item_name": "25-OH Vitamina D",
+            "service_id": "7979",
+            "laboratory_id": "58660",
+            "price": 170.0
+          }
+        ]
+      },
+      {
+        "service_name": "Imunologie-Markeri Tumorali",
+        "items": [
+          {
+            "item_name": "Beta2 Microglobulina",
+            "service_id": "7319",
+            "laboratory_id": "58660",
+            "price": 79.0
+          },
+          {
+            "item_name": "Free PSA",
+            "service_id": "7321",
+            "laboratory_id": "58660",
+            "price": 62.0
+          },
+          {
+            "item_name": "ROMA-Evaluare risc de neoplasm ovarian",
+            "service_id": "269454",
+            "laboratory_id": "58660",
+            "price": 195.0
+          },
+          {
+            "item_name": "AFP - Marker Tumoral",
+            "service_id": "7011",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "Ag carcinoembrionar (CEA)",
+            "service_id": "7013",
+            "laboratory_id": "58660",
+            "price": 63.0
+          },
+          {
+            "item_name": "CA 125",
+            "service_id": "7015",
+            "laboratory_id": "58660",
+            "price": 63.0
+          },
+          {
+            "item_name": "CA 19-9",
+            "service_id": "7017",
+            "laboratory_id": "58660",
+            "price": 66.0
+          },
+          {
+            "item_name": "Lanturi usoare libere Kappa in ser",
+            "service_id": "1351850",
+            "laboratory_id": "58660",
+            "price": 191.0
+          },
+          {
+            "item_name": "Lanturi usoare libere Lambda in ser",
+            "service_id": "1351852",
+            "laboratory_id": "58660",
+            "price": 191.0
+          },
+          {
+            "item_name": "Lanturi usoare libere Kappa in urina",
+            "service_id": "1379716",
+            "laboratory_id": "58660",
+            "price": 221.0
+          },
+          {
+            "item_name": "Lanturi usoare libere Lambda in urina",
+            "service_id": "1379718",
+            "laboratory_id": "58660",
+            "price": 221.0
+          },
+          {
+            "item_name": "CA 15-3",
+            "service_id": "7205",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Ag. specific prostatic (PSA)",
+            "service_id": "7207",
+            "laboratory_id": "58660",
+            "price": 63.0
+          },
+          {
+            "item_name": "hCG Total- marker tumoral",
+            "service_id": "1582508",
+            "laboratory_id": "58660",
+            "price": 59.0
+          },
+          {
+            "item_name": "Lanturi usoare libere Kappa in urina 24h",
+            "service_id": "1760589",
+            "laboratory_id": "58660",
+            "price": 213.0
+          },
+          {
+            "item_name": "Lanturi usoare libere Lambda in urina 24h",
+            "service_id": "1760590",
+            "laboratory_id": "58660",
+            "price": 213.0
+          },
+          {
+            "item_name": "CYFRA 21-1",
+            "service_id": "7513",
+            "laboratory_id": "58660",
+            "price": 120.0
+          },
+          {
+            "item_name": "S 100",
+            "service_id": "7533",
+            "laboratory_id": "58660",
+            "price": 121.0
+          },
+          {
+            "item_name": "Calcitonina",
+            "service_id": "7555",
+            "laboratory_id": "58660",
+            "price": 87.0
+          },
+          {
+            "item_name": "Tiroglobulina",
+            "service_id": "7589",
+            "laboratory_id": "58660",
+            "price": 81.0
+          },
+          {
+            "item_name": "NSE",
+            "service_id": "7735",
+            "laboratory_id": "58660",
+            "price": 120.0
+          },
+          {
+            "item_name": "CA 72-4",
+            "service_id": "7747",
+            "laboratory_id": "58660",
+            "price": 175.0
+          },
+          {
+            "item_name": "SCC",
+            "service_id": "269450",
+            "laboratory_id": "58660",
+            "price": 152.0
+          },
+          {
+            "item_name": "HE 4",
+            "service_id": "268536",
+            "laboratory_id": "58660",
+            "price": 125.0
+          }
+        ]
+      },
+      {
+        "service_name": "Laborator",
+        "items": [
+          {
+            "item_name": "Dublu test cu interpretare(Free Beta hCG, PAPP-A, interpretare)",
+            "service_id": "2151240",
+            "laboratory_id": "58660",
+            "price": 242.0
+          },
+          {
+            "item_name": "Triplu-test cu interpretare(AFO-triplu test, estriol liber, hCG total, interpretare)",
+            "service_id": "2151241",
+            "laboratory_id": "58660",
+            "price": 169.0
+          }
+        ]
+      },
+      {
+        "service_name": "Microbiologie",
+        "items": [
+          {
+            "item_name": "Coprocultura",
+            "service_id": "7155",
+            "laboratory_id": "58660",
+            "price": 75.0
+          },
+          {
+            "item_name": "Hemocultura",
+            "service_id": "6971",
+            "laboratory_id": "58660",
+            "price": 92.0
+          },
+          {
+            "item_name": "Proba de digestie",
+            "service_id": "6969",
+            "laboratory_id": "58660",
+            "price": 36.0
+          },
+          {
+            "item_name": "Ex. microscopic citobacteriologic secretie vaginala",
+            "service_id": "6965",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Amprenta anala",
+            "service_id": "7471",
+            "laboratory_id": "58660",
+            "price": 46.0
+          },
+          {
+            "item_name": "Coprocitograma",
+            "service_id": "7355",
+            "laboratory_id": "58660",
+            "price": 44.0
+          },
+          {
+            "item_name": "Urocultura",
+            "service_id": "7141",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Exsudat faringian",
+            "service_id": "7143",
+            "laboratory_id": "58660",
+            "price": 62.0
+          },
+          {
+            "item_name": "Ag Chlamydia Trachomatis",
+            "service_id": "7409",
+            "laboratory_id": "58660",
+            "price": 63.0
+          },
+          {
+            "item_name": "Examen fungic secreţii uretrale",
+            "service_id": "1196852",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Examen fungic din secreţii otice",
+            "service_id": "1196854",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Examen fungic din secreţii conjunctivale",
+            "service_id": "1196858",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Examen fungic din colectie purulenta",
+            "service_id": "1196860",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Ag Giardia",
+            "service_id": "7057",
+            "laboratory_id": "58660",
+            "price": 59.0
+          },
+          {
+            "item_name": "Spermocultura",
+            "service_id": "7285",
+            "laboratory_id": "58660",
+            "price": 80.0
+          },
+          {
+            "item_name": "Ag.Rotavirus",
+            "service_id": "7309",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "Ex. coproparazitologic",
+            "service_id": "7153",
+            "laboratory_id": "58660",
+            "price": 75.0
+          },
+          {
+            "item_name": "Controlul microbiologic al tegumentelor",
+            "service_id": "1352264",
+            "laboratory_id": "58660",
+            "price": 55.0
+          },
+          {
+            "item_name": "Influenza A + B antigen",
+            "service_id": "1382696",
+            "laboratory_id": "58660",
+            "price": 80.0
+          },
+          {
+            "item_name": "Clostridium difficile  GDH + Toxina A/B",
+            "service_id": "1546074",
+            "laboratory_id": "58660",
+            "price": 130.0
+          },
+          {
+            "item_name": "Examen microbiologic din lichid de punctie",
+            "service_id": "7491",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Secretie uretrala - Ex. microscopic colorat (2 lame)",
+            "service_id": "1584134",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Ex. microbiologic secretie uretrala",
+            "service_id": "7097",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Exsudat nazal",
+            "service_id": "7113",
+            "laboratory_id": "58660",
+            "price": 68.0
+          },
+          {
+            "item_name": "Exsudat lingual",
+            "service_id": "7115",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Examen microbiologic secretie otica",
+            "service_id": "7117",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Examen microbiologic secretie conjunctivala",
+            "service_id": "7119",
+            "laboratory_id": "58660",
+            "price": 70.0
+          },
+          {
+            "item_name": "Examen microbiologic secretii,plagi,fistule,abcese",
+            "service_id": "7121",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Ex. bact. secretie col",
+            "service_id": "1584350",
+            "laboratory_id": "58660",
+            "price": 78.0
+          },
+          {
+            "item_name": "Spermocultura - fungi",
+            "service_id": "1584520",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Mycoplasma / Ureaplasma- identificare/antibiograma",
+            "service_id": "7515",
+            "laboratory_id": "58660",
+            "price": 134.0
+          },
+          {
+            "item_name": "Ag. Adenovirus+Rotavirus",
+            "service_id": "7519",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "Ag Helicobacter Pylori",
+            "service_id": "7521",
+            "laboratory_id": "58660",
+            "price": 110.0
+          },
+          {
+            "item_name": "Screening MRSA",
+            "service_id": "1382278",
+            "laboratory_id": "58660",
+            "price": 55.0
+          },
+          {
+            "item_name": "Ag. Campylobacter jejuni/ Coli",
+            "service_id": "7697",
+            "laboratory_id": "58660",
+            "price": 100.0
+          },
+          {
+            "item_name": "Examen fungic urina (cultura si identificare fungica)",
+            "service_id": "2270407",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Examen fungic exsudat faringian (cultura si identificare fungica)",
+            "service_id": "2629139",
+            "laboratory_id": "58660",
+            "price": 62.0
+          },
+          {
+            "item_name": "Examen fungic exsudat nazal (cultura si identificare fungica)",
+            "service_id": "2629140",
+            "laboratory_id": "58660",
+            "price": 64.0
+          },
+          {
+            "item_name": "Coprocultura extinsa",
+            "service_id": "2630614",
+            "laboratory_id": "58660",
+            "price": 276.0
+          },
+          {
+            "item_name": "Examenul microbiologic al secretiilor vaginale/examen microscopic, cultura si identificare bacteriana",
+            "service_id": "2690037",
+            "laboratory_id": "58660",
+            "price": 80.0
+          },
+          {
+            "item_name": "Examenul microbiologic al secretiilor vaginale/ examen microscopic, cultura şi identificare fungica",
+            "service_id": "2690041",
+            "laboratory_id": "58660",
+            "price": 65.0
+          },
+          {
+            "item_name": "Ex bact. str. grup B secretie genitala",
+            "service_id": "7999",
+            "laboratory_id": "58660",
+            "price": 73.0
+          },
+          {
+            "item_name": "Cultura fungi lichid de punctie (cu antifungigrama dupa caz)",
+            "service_id": "2875640",
+            "laboratory_id": "58660",
+            "price": 54.0
+          },
+          {
+            "item_name": "Cultura fungi col uterin (cu antifungigrama dupa caz)",
+            "service_id": "2875641",
+            "laboratory_id": "58660",
+            "price": 80.0
+          },
+          {
+            "item_name": "Ag. Streptococ beta-hemolitic gr. A",
+            "service_id": "8003",
+            "laboratory_id": "58660",
+            "price": 40.0
+          },
+          {
+            "item_name": "Ex. Coproparazitologic-1 proba",
+            "service_id": "2982915",
+            "laboratory_id": "58660",
+            "price": 28.0
+          }
+        ]
+      },
+      {
+        "service_name": "SARS-COV-2",
+        "items": [
+          {
+            "item_name": "Depistare SARS-COV-2 (RT PCR)",
+            "service_id": "2092171",
+            "laboratory_id": "58660",
+            "price": 190.0
+          },
+          {
+            "item_name": "Ag SARS - Cov 2",
+            "service_id": "2193065",
+            "laboratory_id": "58660",
+            "price": 71.0
+          },
+          {
+            "item_name": "SARS Cov2 antigen+ Influenza A+B antigen",
+            "service_id": "2209212",
+            "laboratory_id": "58660",
+            "price": 85.0
+          },
+          {
+            "item_name": "Serologie SARS-COV-2 Anticorpi totali anti-Spike (RBD – fragment de proteina)  cantitativ",
+            "service_id": "2270396",
+            "laboratory_id": "58660",
+            "price": 130.0
+          }
+        ]
+      },
+      {
+        "service_name": "Servicii auxiliare de laborator",
+        "items": [
+          {
+            "item_name": "Taxa urgenta",
+            "service_id": "1204368",
+            "laboratory_id": "58660",
+            "price": 30.0
+          }
+        ]
+      },
+      {
+        "service_name": "Toxicologie",
+        "items": [
+          {
+            "item_name": "Metale grele in urina (plumb, mercur, crom, aluminiu, nichel, arsenic ,cadmiu)",
+            "service_id": "3045318",
+            "laboratory_id": "58660",
+            "price": 440.0
+          },
+          {
+            "item_name": "Mercur in sange",
+            "service_id": "286334",
+            "laboratory_id": "58660",
+            "price": 272.0
+          },
+          {
+            "item_name": "Mercur urinar",
+            "service_id": "717754",
+            "laboratory_id": "58660",
+            "price": 272.0
+          },
+          {
+            "item_name": "Uroporfirine",
+            "service_id": "7387",
+            "laboratory_id": "58660",
+            "price": 58.0
+          },
+          {
+            "item_name": "Droguri in urina",
+            "service_id": "7079",
+            "laboratory_id": "58660",
+            "price": 300.0
+          },
+          {
+            "item_name": "Plumbemie",
+            "service_id": "7631",
+            "laboratory_id": "58660",
+            "price": 116.0
+          },
+          {
+            "item_name": "Plumb urinar",
+            "service_id": "7633",
+            "laboratory_id": "58660",
+            "price": 172.0
+          }
+        ]
+      }
+    ]
+  }
+]

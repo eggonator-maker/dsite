@@ -1,0 +1,4282 @@
+[
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "288254",
+    "ServiceName": "Imunoglobulina IgD",
+    "Price": 254.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "288780",
+    "ServiceName": "Factorul IX al coagularii",
+    "Price": 157.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "288986",
+    "ServiceName": "Anticorpi anti-ovarieni",
+    "Price": 184.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "288988",
+    "ServiceName": "Estrona (E1)",
+    "Price": 285.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "288992",
+    "ServiceName": "TPA test (tisue polipeptide antigen)",
+    "Price": 267.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "294824",
+    "ServiceName": "Profil anticorpi ENA- Blot",
+    "Price": 272.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "295488",
+    "ServiceName": "Mutatia factorului XIII (V34L)",
+    "Price": 248.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "296362",
+    "ServiceName": "Ac Anti-Hepatita E IgM",
+    "Price": 130.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "297754",
+    "ServiceName": "Ac Anti-Hepatita E IgG",
+    "Price": 130.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "299284",
+    "ServiceName": "Vitamina B6",
+    "Price": 266.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "299348",
+    "ServiceName": "Vitamina B1 (tiamin-pirofosfat)",
+    "Price": 261.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "299366",
+    "ServiceName": "Virus varicelo-zosterian Ac IgG",
+    "Price": 132.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "299378",
+    "ServiceName": "Serotonina urinara",
+    "Price": 162.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "299428",
+    "ServiceName": "Vitamina E (tocoferol)",
+    "Price": 267.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "299468",
+    "ServiceName": "Sindromul X fragil (testare numar repetitii CGG)",
+    "Price": 1545.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "7189",
+    "ServiceName": "VSH",
+    "Price": 18.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "7191",
+    "ServiceName": "Hemoleucograma completa",
+    "Price": 51.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7155",
+    "ServiceName": "Coprocultura",
+    "Price": 75.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "282096",
+    "ServiceName": "Ex. Citodiagnostic Papanicolaou",
+    "Price": 45.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7165",
+    "ServiceName": "Proteine urinare",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7195",
+    "ServiceName": "PT, INR",
+    "Price": 28.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7241",
+    "ServiceName": "Fibrinogen",
+    "Price": 36.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7199",
+    "ServiceName": "Timp de sangerare",
+    "Price": 20.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "7181",
+    "ServiceName": "Test Coombs direct",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Electroforeza",
+    "ServiceId": "7177",
+    "ServiceName": "Electroforeza proteinelor serice cu imunofixare",
+    "Price": 275.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7175",
+    "ServiceName": "IgA",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Ososi",
+    "ServiceId": "276354",
+    "ServiceName": "1,25 Dihidroxi Vitamina D3",
+    "Price": 280.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "717360",
+    "ServiceName": "Electroforeza lipoproteinelor",
+    "Price": 150.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "3030653",
+    "ServiceName": "Coloratie PD-L(Pathoteam)",
+    "Price": 1350.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3045317",
+    "ServiceName": "Timp de trombina",
+    "Price": 51.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Toxicologie",
+    "ServiceId": "3045318",
+    "ServiceName": "Metale grele in urina (plumb, mercur, crom, aluminiu, nichel, arsenic ,cadmiu)",
+    "Price": 440.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "281836",
+    "ServiceName": "Ac Anti-HD IgM",
+    "Price": 125.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "285062",
+    "ServiceName": "Ac Anti-celula parietala gastrica",
+    "Price": 110.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3046345",
+    "ServiceName": "Yersinia Ac IgG, IgA",
+    "Price": 398.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3046357",
+    "ServiceName": "Deficienta DPD (DPYD IVS14+1 G&gt;A)-toxicitate 5-FU",
+    "Price": 621.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "717900",
+    "ServiceName": "Renina, aldosteron si raport aldosteron / renina",
+    "Price": 413.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "717966",
+    "ServiceName": "Virus varicelo-zosterian Ac IgM",
+    "Price": 132.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "286742",
+    "ServiceName": "Proteina eozinofil-cationica (ECP)",
+    "Price": 243.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "281806",
+    "ServiceName": "Androstendion",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "273648",
+    "ServiceName": "Ac Anti-factor intrinsec",
+    "Price": 179.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "280878",
+    "ServiceName": "Aldolaza",
+    "Price": 87.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "270986",
+    "ServiceName": "Chlamydia pneumoniae IgG",
+    "Price": 149.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "246336",
+    "ServiceName": "Bicarbonat seric",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Depistari teste rapide",
+    "ServiceId": "268636",
+    "ServiceName": "Depistare ac. HIV 1/2-screening",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "284244",
+    "ServiceName": "Vitamina A (retinol)",
+    "Price": 204.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "285042",
+    "ServiceName": "IgE specific la lapte de vaca pasteurizat )f231)",
+    "Price": 82.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "718198",
+    "ServiceName": "Dihidrotestosteron (DHT)",
+    "Price": 285.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "718212",
+    "ServiceName": "Seleniu",
+    "Price": 150.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "718220",
+    "ServiceName": "Intoleranta la lactoza - test genetic",
+    "Price": 365.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "6971",
+    "ServiceName": "Hemocultura",
+    "Price": 92.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "6969",
+    "ServiceName": "Proba de digestie",
+    "Price": 36.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "6965",
+    "ServiceName": "Ex. microscopic citobacteriologic secretie vaginala",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7203",
+    "ServiceName": "Proteina C Reactiva",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7173",
+    "ServiceName": "ASLO cantitativ",
+    "Price": 34.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "6983",
+    "ServiceName": "Amilazurie",
+    "Price": 24.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "6981",
+    "ServiceName": "HDL- Colesterol",
+    "Price": 28.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7229",
+    "ServiceName": "TGO/AST",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7227",
+    "ServiceName": "TGP/ALT",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7225",
+    "ServiceName": "Fosfataza alcalina",
+    "Price": 26.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7315",
+    "ServiceName": "Insulina",
+    "Price": 58.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7221",
+    "ServiceName": "Amilaza serica",
+    "Price": 23.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7319",
+    "ServiceName": "Beta2 Microglobulina",
+    "Price": 79.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7321",
+    "ServiceName": "Free PSA",
+    "Price": 62.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7325",
+    "ServiceName": "Free T3",
+    "Price": 55.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7327",
+    "ServiceName": "Hormon de crestere (GH)",
+    "Price": 66.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "718272",
+    "ServiceName": "Mioglobina serica",
+    "Price": 156.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "718512",
+    "ServiceName": "Fosfataza alcalina osoasa (ostaza)",
+    "Price": 185.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "718556",
+    "ServiceName": "Glucozo-6-fosfat-dehidrogenaza (G6-PDH)",
+    "Price": 130.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "281858",
+    "ServiceName": "Ac anti-membrana bazala glomerulara (GMB)",
+    "Price": 179.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "718598",
+    "ServiceName": "Parvovirus B19 IgM - Anticorpi",
+    "Price": 120.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "718596",
+    "ServiceName": "Parvovirus B19  IgG - Anticorpi",
+    "Price": 120.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7259",
+    "ServiceName": "Proteine totale",
+    "Price": 20.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Ososi",
+    "ServiceId": "7329",
+    "ServiceName": "Parathormon(iPTH)",
+    "Price": 84.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7257",
+    "ServiceName": "Bilirubina totala",
+    "Price": 20.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7331",
+    "ServiceName": "Ac Anti-Tiroglobulina",
+    "Price": 61.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7237",
+    "ServiceName": "Bilirubina directa",
+    "Price": 20.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7233",
+    "ServiceName": "Colesterol total",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7757",
+    "ServiceName": "Analiza calculilor urinari (renal)",
+    "Price": 217.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7261",
+    "ServiceName": "Trigliceride",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7249",
+    "ServiceName": "Lipide totale",
+    "Price": 30.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7245",
+    "ServiceName": "Glucoza serica",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7223",
+    "ServiceName": "Glucoza urinara",
+    "Price": 18.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7459",
+    "ServiceName": "17 Cetosteroizi",
+    "Price": 110.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7265",
+    "ServiceName": "Uree serica",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7267",
+    "ServiceName": "Acid uric",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7235",
+    "ServiceName": "Creatinina serica",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7469",
+    "ServiceName": "Factor reumatoid cantitativ",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7231",
+    "ServiceName": "Calciu seric total",
+    "Price": 25.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7471",
+    "ServiceName": "Amprenta anala",
+    "Price": 46.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7135",
+    "ServiceName": "Calciu ionic",
+    "Price": 20.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "719760",
+    "ServiceName": "Histamina plasmatica (HISTA)",
+    "Price": 343.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Toxicologie",
+    "ServiceId": "286334",
+    "ServiceName": "Mercur in sange",
+    "Price": 272.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Toxicologie",
+    "ServiceId": "717754",
+    "ServiceName": "Mercur urinar",
+    "Price": 272.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "3075424",
+    "ServiceName": "ADN-HPV tesut ,genotipare14 tulpini de risc crescut",
+    "Price": 430.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3094434",
+    "ServiceName": "Virus urlian IgG, IgM",
+    "Price": 202.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "298982",
+    "ServiceName": "Diaminoxidaza concentratie (DAO)- intoleranta la histamina",
+    "Price": 220.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "287306",
+    "ServiceName": "Iod seric",
+    "Price": 210.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "270470",
+    "ServiceName": "Antigen Legionella pneumophila in urina",
+    "Price": 188.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "720900",
+    "ServiceName": "Vitamina B2",
+    "Price": 306.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "281848",
+    "ServiceName": "^Metanefrine si normetanefrine  plasmatice",
+    "Price": 370.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "274162",
+    "ServiceName": "Triptaza",
+    "Price": 250.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "720964",
+    "ServiceName": "Elastaza pancreatica in materii fecale",
+    "Price": 185.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "272706",
+    "ServiceName": "IgE specific la gluten (f79)",
+    "Price": 88.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "269454",
+    "ServiceName": "ROMA-Evaluare risc de neoplasm ovarian",
+    "Price": 195.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "724350",
+    "ServiceName": "^^CA 50",
+    "Price": 248.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7171",
+    "ServiceName": "Gama GT",
+    "Price": 23.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7169",
+    "ServiceName": "LDH",
+    "Price": 21.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7167",
+    "ServiceName": "LDL-Colesterol",
+    "Price": 26.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "6985",
+    "ServiceName": "Magneziu",
+    "Price": 20.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7251",
+    "ServiceName": "Sodiu seric",
+    "Price": 24.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7247",
+    "ServiceName": "Potasiu seric",
+    "Price": 24.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7475",
+    "ServiceName": "Ceruloplasmina",
+    "Price": 76.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7239",
+    "ServiceName": "Sideremie",
+    "Price": 23.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7333",
+    "ServiceName": "Fosfor seric",
+    "Price": 26.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7137",
+    "ServiceName": "Sumar de urina si sediment urinar",
+    "Price": 37.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7355",
+    "ServiceName": "Coprocitograma",
+    "Price": 44.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7363",
+    "ServiceName": "Amoniac",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "721652",
+    "ServiceName": "Mannose binding lectin (MBL) in sange",
+    "Price": 206.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3094471",
+    "ServiceName": "Virus Urlian ARN-PCR",
+    "Price": 362.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "724566",
+    "ServiceName": "Melatonina serica",
+    "Price": 361.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3096349",
+    "ServiceName": "Detectarea ADN de Coxiella burnetti prin RT-PCR",
+    "Price": 362.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "716552",
+    "ServiceName": "Panel trombofilii ereditare",
+    "Price": 850.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "3110972",
+    "ServiceName": "Albumina in lichid de punctie",
+    "Price": 26.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "724582",
+    "ServiceName": "Anticorpi anti Mycoplasma/Ureaplasma IgG",
+    "Price": 156.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "3111618",
+    "ServiceName": "Biopsie piesa mica(1 bloc)-Resident  Laboratory",
+    "Price": 180.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "3111619",
+    "ServiceName": "Biopsie piesa medie(2-3 blocuri)-Resident  Laboratory",
+    "Price": 285.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "3111620",
+    "ServiceName": "Biopsie piesa mare(4-6 blocuri)-Resident  Laboratory",
+    "Price": 375.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "3111621",
+    "ServiceName": "Coloratie speciala (1buc)-Resident  Laboratory",
+    "Price": 110.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "3112253",
+    "ServiceName": "Proba Hamburger",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "767264",
+    "ServiceName": "IgE specific la Ou (f245)",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "767270",
+    "ServiceName": "IgE specific la Alfa-lactalbumina f76",
+    "Price": 95.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "767272",
+    "ServiceName": "IgE specific la Beta-lactoglobulina f77",
+    "Price": 91.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "767278",
+    "ServiceName": "IgE specific la Cazeina f78",
+    "Price": 91.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "769896",
+    "ServiceName": "Antigen Aspergillus (galactomannan)",
+    "Price": 135.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "769906",
+    "ServiceName": "IgE specific la articaina",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "769910",
+    "ServiceName": "Treponema pallidum - Anticorpi IgM (Blot)",
+    "Price": 260.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "722750",
+    "ServiceName": "Profil ANA-16 ANTIGENE NUCLEARE BLOT   (nRNP/Sm,Sm,Ro-52,SS-A, SS-B,Scl-70,PM-Scl,Jo-1,CENP B,PCNA,dsDNA,nucleosomi,Histone,rib P-prot,AMA-M2,DFS70)",
+    "Price": 200.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "770504",
+    "ServiceName": "Anti- EBNA IgG",
+    "Price": 121.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "770506",
+    "ServiceName": "Vitamina C",
+    "Price": 250.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "770520",
+    "ServiceName": "Echinococcus granulosus Ac IgG - Westernblot",
+    "Price": 290.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7365",
+    "ServiceName": "Procalcitonina",
+    "Price": 185.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7011",
+    "ServiceName": "AFP - Marker Tumoral",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7013",
+    "ServiceName": "Ag carcinoembrionar (CEA)",
+    "Price": 63.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7081",
+    "ServiceName": "Rubeola Ac IgG",
+    "Price": 73.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7085",
+    "ServiceName": "Ac Anti-virus rujeolos IgG",
+    "Price": 96.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7087",
+    "ServiceName": "Ac Anti-CMV IgG",
+    "Price": 73.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7089",
+    "ServiceName": "Ac Anti-HBc",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7091",
+    "ServiceName": "Ag HBe",
+    "Price": 67.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7093",
+    "ServiceName": "Ac Anti-HBe",
+    "Price": 69.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7367",
+    "ServiceName": "Litiu",
+    "Price": 66.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7369",
+    "ServiceName": "Cupru seric",
+    "Price": 105.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7371",
+    "ServiceName": "Cupru in urina",
+    "Price": 105.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7381",
+    "ServiceName": "Microalbumina urinara",
+    "Price": 62.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7377",
+    "ServiceName": "Clearance creatinina",
+    "Price": 32.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7385",
+    "ServiceName": "Ac anti spermatozoizi",
+    "Price": 75.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Toxicologie",
+    "ServiceId": "7387",
+    "ServiceName": "Uroporfirine",
+    "Price": 58.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7393",
+    "ServiceName": "Zinc",
+    "Price": 113.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1190024",
+    "ServiceName": "Pregnenolon sulfat",
+    "Price": 445.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Depistari teste rapide",
+    "ServiceId": "268650",
+    "ServiceName": "Depistare Ac Anti-HCV",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "270520",
+    "ServiceName": "RPR",
+    "Price": 45.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7009",
+    "ServiceName": "Alfa 1 antitripsina",
+    "Price": 77.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7141",
+    "ServiceName": "Urocultura",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7143",
+    "ServiceName": "Exsudat faringian",
+    "Price": 62.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7015",
+    "ServiceName": "CA 125",
+    "Price": 63.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7017",
+    "ServiceName": "CA 19-9",
+    "Price": 66.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7019",
+    "ServiceName": "Ac Anti-HAV IgM",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7021",
+    "ServiceName": "Ac Anti-HAV IgG",
+    "Price": 66.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7023",
+    "ServiceName": "Ac Anti-virus rujeolos  IgM",
+    "Price": 96.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7025",
+    "ServiceName": "Rubeola Ac IgM",
+    "Price": 73.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7027",
+    "ServiceName": "Ac Anti-CMV IgM",
+    "Price": 71.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7029",
+    "ServiceName": "Free T4",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7187",
+    "ServiceName": "Bilirubina indirecta",
+    "Price": 25.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7405",
+    "ServiceName": "Ac Anti-Herpes simplex 1-2 IgG",
+    "Price": 115.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7407",
+    "ServiceName": "Ac Borrelia burgdorferi sensu lato IgG",
+    "Price": 120.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7409",
+    "ServiceName": "Ag Chlamydia Trachomatis",
+    "Price": 63.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7415",
+    "ServiceName": "Factor II - Protrombina",
+    "Price": 190.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7417",
+    "ServiceName": "Proteina C",
+    "Price": 94.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1196852",
+    "ServiceName": "Examen fungic secreţii uretrale",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1196854",
+    "ServiceName": "Examen fungic din secreţii otice",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1196858",
+    "ServiceName": "Examen fungic din secreţii conjunctivale",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1196860",
+    "ServiceName": "Examen fungic din colectie purulenta",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1196176",
+    "ServiceName": "Interleukina 6 - IL6",
+    "Price": 254.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1197856",
+    "ServiceName": "Anticorpi anti-aquaporina 4",
+    "Price": 121.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1197858",
+    "ServiceName": "Aquaporina 4 (neuromielita optica) anticorpi IgA in ser",
+    "Price": 90.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1197860",
+    "ServiceName": "Aquaporina 4 (neuromielita optica) anticorpi IgM in ser",
+    "Price": 90.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1197862",
+    "ServiceName": "Aquaporina 4 (neuromielita optica) anticorpi totali in LCR",
+    "Price": 167.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "1199698",
+    "ServiceName": "Panel alimentar 35 alergeni",
+    "Price": 286.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "1200120",
+    "ServiceName": "Ac antineuronali - BLOT (sdr. paraneoplazice neurologice)",
+    "Price": 342.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "1200122",
+    "ServiceName": "Profil Boli Hepatice Autoimune IgG-BLOT (AMA-M2, M2-3E,SP100,PML,gp210,LKM-1,LC-1,SLA/LP,SS-A ,Ro-52 ,Scl-70,CENP A,CENP B ,PGDH)",
+    "Price": 210.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "1197350",
+    "ServiceName": "Renina plasmatica",
+    "Price": 215.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "1199872",
+    "ServiceName": "Ac Antinucleari (ANA) depistare si titrare IgG",
+    "Price": 76.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "1200232",
+    "ServiceName": "IgE specific la caine - scuame (e5)",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7057",
+    "ServiceName": "Ag Giardia",
+    "Price": 59.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7059",
+    "ServiceName": "Ac Anti-Echinococcus  IgG (E.granulosus &amp; E.multilocularis)",
+    "Price": 78.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7061",
+    "ServiceName": "Ac Anti-Trichinella spiralis IgG",
+    "Price": 96.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7063",
+    "ServiceName": "Ac Anti-Toxocara canis IgG",
+    "Price": 73.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7065",
+    "ServiceName": "Ac Anti-Toxoplasma gondii IgM",
+    "Price": 86.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7067",
+    "ServiceName": "Ac Anti-Toxoplasma gondii IgG",
+    "Price": 71.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7069",
+    "ServiceName": "Ac Anti-Chlamydia trachomatis IgA",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Depistari teste rapide",
+    "ServiceId": "7075",
+    "ServiceName": "Ac Anti-Helicobacter pylori - test calitativ",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Toxicologie",
+    "ServiceId": "7079",
+    "ServiceName": "Droguri in urina",
+    "Price": 300.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7479",
+    "ServiceName": "Complexe imune circulante",
+    "Price": 64.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7149",
+    "ServiceName": "APTT",
+    "Price": 32.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7419",
+    "ServiceName": "Proteina S (libera)",
+    "Price": 114.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7421",
+    "ServiceName": "Complement seric C4",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Electroforeza",
+    "ServiceId": "7423",
+    "ServiceName": "Electroforeza hemoglobinei",
+    "Price": 69.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7435",
+    "ServiceName": "Hemoglobina glicozilata (HbA1C)",
+    "Price": 58.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7439",
+    "ServiceName": "Ac Anti-Chlamydia trachomatis IgG",
+    "Price": 75.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1202708",
+    "ServiceName": "Apolipoproteina E (APOLE)",
+    "Price": 520.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "1203066",
+    "ServiceName": "Panel inhalator IgE 20",
+    "Price": 250.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "1203454",
+    "ServiceName": "Panel 1 mixt Euroimmun",
+    "Price": 253.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1204004",
+    "ServiceName": "ARN viral hepatita E",
+    "Price": 459.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Servicii auxiliare de laborator",
+    "ServiceId": "1204368",
+    "ServiceName": "Taxa urgenta",
+    "Price": 30.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Anemie",
+    "ServiceId": "7269",
+    "ServiceName": "Feritina",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "7281",
+    "ServiceName": "Numaratoare de reticulocite",
+    "Price": 44.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7285",
+    "ServiceName": "Spermocultura",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7767",
+    "ServiceName": "17 OH Progesteron",
+    "Price": 72.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7301",
+    "ServiceName": "Timp de coagulare",
+    "Price": 18.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7305",
+    "ServiceName": "Listeria monocitogenes-serologie",
+    "Price": 95.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7309",
+    "ServiceName": "Ag.Rotavirus",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7311",
+    "ServiceName": "Ac Anti-SSa (Ro)",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Electroforeza",
+    "ServiceId": "7151",
+    "ServiceName": "Electroforeza proteinelor serice",
+    "Price": 50.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7153",
+    "ServiceName": "Ex. coproparazitologic",
+    "Price": 75.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Cardiovasculari",
+    "ServiceId": "1350604",
+    "ServiceName": "Troponina Ihs - Acut",
+    "Price": 83.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "1351850",
+    "ServiceName": "Lanturi usoare libere Kappa in ser",
+    "Price": 191.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "1351852",
+    "ServiceName": "Lanturi usoare libere Lambda in ser",
+    "Price": 191.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Depistari teste rapide",
+    "ServiceId": "1351960",
+    "ServiceName": "Depistare Ac Anti-HAV IgM",
+    "Price": 49.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1352264",
+    "ServiceName": "Controlul microbiologic al tegumentelor",
+    "Price": 55.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1376730",
+    "ServiceName": "Par pisica (alergen recombinant: e228 rFel d4 )",
+    "Price": 104.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1379702",
+    "ServiceName": "Alfa galactoza 1,3 galactoza, IgE specific (IgE alpha gal)",
+    "Price": 435.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "1379716",
+    "ServiceName": "Lanturi usoare libere Kappa in urina",
+    "Price": 221.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "1379718",
+    "ServiceName": "Lanturi usoare libere Lambda in urina",
+    "Price": 221.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1379728",
+    "ServiceName": "Revers T3 (RT3)",
+    "Price": 293.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "6991",
+    "ServiceName": "IgM",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "6989",
+    "ServiceName": "IgG",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7253",
+    "ServiceName": "T3",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7255",
+    "ServiceName": "T4",
+    "Price": 55.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7263",
+    "ServiceName": "TSH",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7205",
+    "ServiceName": "CA 15-3",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7207",
+    "ServiceName": "Ag. specific prostatic (PSA)",
+    "Price": 63.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7209",
+    "ServiceName": "LH",
+    "Price": 57.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7243",
+    "ServiceName": "FSH",
+    "Price": 62.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7211",
+    "ServiceName": "Prolactina",
+    "Price": 61.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7213",
+    "ServiceName": "Progesteron",
+    "Price": 59.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7215",
+    "ServiceName": "Ac Anti-HCV",
+    "Price": 87.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7217",
+    "ServiceName": "Ac Anti-HBs",
+    "Price": 61.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7219",
+    "ServiceName": "Ag HBs",
+    "Price": 73.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "6993",
+    "ServiceName": "TPHA",
+    "Price": 45.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "6995",
+    "ServiceName": "IgE",
+    "Price": 49.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "6997",
+    "ServiceName": "Complement seric C3",
+    "Price": 36.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Anemie",
+    "ServiceId": "6999",
+    "ServiceName": "Transferina",
+    "Price": 35.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7001",
+    "ServiceName": "Apolipoproteina A1",
+    "Price": 45.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7487",
+    "ServiceName": "Ac Anti-Epstein Barr VCA IgG",
+    "Price": 78.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7003",
+    "ServiceName": "Apolipoproteina B",
+    "Price": 45.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7007",
+    "ServiceName": "Antitrombina III",
+    "Price": 73.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1382696",
+    "ServiceName": "Influenza A + B antigen",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1455926",
+    "ServiceName": "Sindrom Gilbert - testare genetica (promotor UGT1A1)",
+    "Price": 982.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1546074",
+    "ServiceName": "Clostridium difficile  GDH + Toxina A/B",
+    "Price": 130.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1546078",
+    "ServiceName": "Ac antiribonucleoproteine U1-RNP / Sm",
+    "Price": 174.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7049",
+    "ServiceName": "Lipaza",
+    "Price": 33.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7443",
+    "ServiceName": "Ac Anti-transglutaminaza tisulara IgA",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7449",
+    "ServiceName": "Peptid C",
+    "Price": 90.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7451",
+    "ServiceName": "Anticorpi anti-glutamat decarboxilaza (GAD-II)",
+    "Price": 231.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7489",
+    "ServiceName": "Ac Anti-Epstein Barr VCA IgM",
+    "Price": 78.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7773",
+    "ServiceName": "Ac Anti-Fibra musculara neteda (ASMA)",
+    "Price": 92.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7283",
+    "ServiceName": "Ac LKM 1",
+    "Price": 100.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7291",
+    "ServiceName": "Testosteron liber",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7033",
+    "ServiceName": "Ac Anti-Tireoperoxidaza (TPO)",
+    "Price": 71.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7035",
+    "ServiceName": "Estradiol",
+    "Price": 61.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7037",
+    "ServiceName": "Cortisol seric",
+    "Price": 59.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7491",
+    "ServiceName": "Examen microbiologic din lichid de punctie",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7041",
+    "ServiceName": "Fosfataza acida totala",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7043",
+    "ServiceName": "Fosfataza acida prostatica",
+    "Price": 27.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Cardiovasculari",
+    "ServiceId": "7045",
+    "ServiceName": "Creatinkinaza-CK",
+    "Price": 30.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Cardiovasculari",
+    "ServiceId": "7047",
+    "ServiceName": "Creatinkinaza-CKMB",
+    "Price": 34.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7493",
+    "ServiceName": "Anticoagulant lupic",
+    "Price": 165.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7051",
+    "ServiceName": "Colinesteraza",
+    "Price": 37.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7053",
+    "ServiceName": "Albumina serica",
+    "Price": 20.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Anemie",
+    "ServiceId": "7055",
+    "ServiceName": "CTLFe (Capacitatea totala de legare a fierului)",
+    "Price": 33.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "1582508",
+    "ServiceName": "hCG Total- marker tumoral",
+    "Price": 59.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "1583966",
+    "ServiceName": "Aldosteron",
+    "Price": 188.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "1584116",
+    "ServiceName": "Grup sangvin ABO",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "1584118",
+    "ServiceName": "Grup sangvin RH",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1584134",
+    "ServiceName": "Secretie uretrala - Ex. microscopic colorat (2 lame)",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7083",
+    "ServiceName": "Testosteron",
+    "Price": 61.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7097",
+    "ServiceName": "Ex. microbiologic secretie uretrala",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7099",
+    "ServiceName": "Ac heterofili (mononucleoza infectioasa)",
+    "Price": 55.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7101",
+    "ServiceName": "VLDL - Colesterol",
+    "Price": 18.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7103",
+    "ServiceName": "Uree urinara",
+    "Price": 16.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "6987",
+    "ServiceName": "Creatinina urinara",
+    "Price": 25.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7105",
+    "ServiceName": "Acid uric urinar",
+    "Price": 23.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7107",
+    "ServiceName": "Clor seric",
+    "Price": 24.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7109",
+    "ServiceName": "Calciu urinar",
+    "Price": 14.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7111",
+    "ServiceName": "Magneziu urinar",
+    "Price": 14.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7113",
+    "ServiceName": "Exsudat nazal",
+    "Price": 68.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7115",
+    "ServiceName": "Exsudat lingual",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7117",
+    "ServiceName": "Examen microbiologic secretie otica",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7119",
+    "ServiceName": "Examen microbiologic secretie conjunctivala",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7121",
+    "ServiceName": "Examen microbiologic secretii,plagi,fistule,abcese",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7123",
+    "ServiceName": "Big prolactina (Prolactina dupa PEG)",
+    "Price": 100.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7125",
+    "ServiceName": "Sodiu urinar",
+    "Price": 14.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7127",
+    "ServiceName": "Potasiu urinar",
+    "Price": 17.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7129",
+    "ServiceName": "Clor urinar",
+    "Price": 14.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Citologie",
+    "ServiceId": "1584316",
+    "ServiceName": "Imunocitodiagnostic CIN2+ (CINtec PLUS)",
+    "Price": 450.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1584350",
+    "ServiceName": "Ex. bact. secretie col",
+    "Price": 78.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1584520",
+    "ServiceName": "Spermocultura - fungi",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "1673215",
+    "ServiceName": "IgE - calitativ",
+    "Price": 50.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "1740582",
+    "ServiceName": "Frotiu sange venos",
+    "Price": 45.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "1760589",
+    "ServiceName": "Lanturi usoare libere Kappa in urina 24h",
+    "Price": 213.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "1760590",
+    "ServiceName": "Lanturi usoare libere Lambda in urina 24h",
+    "Price": 213.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Anemie",
+    "ServiceId": "7511",
+    "ServiceName": "Folat seric",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7513",
+    "ServiceName": "CYFRA 21-1",
+    "Price": 120.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7515",
+    "ServiceName": "Mycoplasma / Ureaplasma- identificare/antibiograma",
+    "Price": 134.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7519",
+    "ServiceName": "Ag. Adenovirus+Rotavirus",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7521",
+    "ServiceName": "Ag Helicobacter Pylori",
+    "Price": 110.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7533",
+    "ServiceName": "S 100",
+    "Price": 121.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7539",
+    "ServiceName": "ACTH",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "7547",
+    "ServiceName": "Eritropoietina",
+    "Price": 221.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7551",
+    "ServiceName": "Amilaza pancreatica",
+    "Price": 24.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Ososi",
+    "ServiceId": "7553",
+    "ServiceName": "Osteocalcin",
+    "Price": 78.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7555",
+    "ServiceName": "Calcitonina",
+    "Price": 87.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Cardiovasculari",
+    "ServiceId": "7557",
+    "ServiceName": "Homocisteina",
+    "Price": 210.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "1822677",
+    "ServiceName": "CRP hs",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "1823707",
+    "ServiceName": "ALEX-MADx (IgE specific- 295 alergeni)",
+    "Price": 825.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1673213",
+    "ServiceName": "Folat eritrocitar",
+    "Price": 129.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "1382278",
+    "ServiceName": "Screening MRSA",
+    "Price": 55.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "1858136",
+    "ServiceName": "Test de predispozitie la cancerul ereditar de san si ovar (secventierea genelor BRCA1, BRCA2)",
+    "Price": 2575.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "1912662",
+    "ServiceName": "Borrelia Ac. IgG din ser - Westerblot",
+    "Price": 220.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "1912663",
+    "ServiceName": "Borrelia Ac. IgM din ser - Westerblot",
+    "Price": 220.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1584652",
+    "ServiceName": "Estriol neconjugat",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7559",
+    "ServiceName": "Albumina urinara",
+    "Price": 25.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7561",
+    "ServiceName": "IGF-1 (somatomedin C)",
+    "Price": 78.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Depistari teste rapide",
+    "ServiceId": "7565",
+    "ServiceName": "Depistare Ag HBs-screening",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7581",
+    "ServiceName": "DHEAS",
+    "Price": 63.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7587",
+    "ServiceName": "SHBG",
+    "Price": 61.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7589",
+    "ServiceName": "Tiroglobulina",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "7595",
+    "ServiceName": "Cortisol urinar",
+    "Price": 49.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "7597",
+    "ServiceName": "Factor V Leiden APCR",
+    "Price": 105.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Anemie",
+    "ServiceId": "7605",
+    "ServiceName": "Vitamina B12",
+    "Price": 68.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7607",
+    "ServiceName": "Fosfor urinar",
+    "Price": 27.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1912666",
+    "ServiceName": "Histamina in materii fecale",
+    "Price": 321.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1858132",
+    "ServiceName": "Anticorpi anti -neuronali",
+    "Price": 260.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "1741243",
+    "ServiceName": "Citodiagnostic Papanicolau in mediu lichid",
+    "Price": 140.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1379350",
+    "ServiceName": "Treponema pallidum - Anticorpi IgG (Blot)",
+    "Price": 260.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1823073",
+    "ServiceName": "Zonulin in materii fecale",
+    "Price": 387.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "1940832",
+    "ServiceName": "Ex histopatologic biopsii osteomedulare cu IHC si sau coloratii speciale",
+    "Price": 290.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7629",
+    "ServiceName": "Metanefrine urinare fractionate",
+    "Price": 345.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Toxicologie",
+    "ServiceId": "7631",
+    "ServiceName": "Plumbemie",
+    "Price": 116.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Toxicologie",
+    "ServiceId": "7633",
+    "ServiceName": "Plumb urinar",
+    "Price": 172.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7657",
+    "ServiceName": "Ac Anti-Centromer",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "7659",
+    "ServiceName": "Ex. citologic lichid de punctie",
+    "Price": 100.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "1940835",
+    "ServiceName": "Ex histopatologic disectii limfoganglionare",
+    "Price": 535.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "1956705",
+    "ServiceName": "Treponema pallidum ADN-PCR din sange de cordon ombilical",
+    "Price": 298.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "1957826",
+    "ServiceName": "Teste imunohistochimice (bloc parafina)",
+    "Price": 570.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "2015803",
+    "ServiceName": "Ac Anti-Yersinia IgA",
+    "Price": 121.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2015847",
+    "ServiceName": "Galactoza in sange",
+    "Price": 95.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7665",
+    "ServiceName": "Ac Anti-transglutaminaza tisulara IgG",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7675",
+    "ServiceName": "Electroforeza proteinelor urinare cu imunofixare (proteine Bence-Jones)",
+    "Price": 187.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7695",
+    "ServiceName": "Taenia solium - Anticorpi IgG",
+    "Price": 96.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7693",
+    "ServiceName": "Ac Anti-Helicobacter Pylori IgG",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7697",
+    "ServiceName": "Ag. Campylobacter jejuni/ Coli",
+    "Price": 100.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7701",
+    "ServiceName": "Ac Anti-Herpes simplex 1-2 IgM",
+    "Price": 115.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Ososi",
+    "ServiceId": "7709",
+    "ServiceName": "Beta Crosslaps",
+    "Price": 63.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7711",
+    "ServiceName": "Ac Anti-ADN dublucatenari (screening: IgG, IgA, IgM)",
+    "Price": 66.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7713",
+    "ServiceName": "Ac Anti-cANCA",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2016004",
+    "ServiceName": "Neurotransmitatori in LCR: neopterina, biopterina",
+    "Price": 335.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2030574",
+    "ServiceName": "Predispozitie genetica boala celiaca (HLA-DQ2/DQ8)",
+    "Price": 515.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2061441",
+    "ServiceName": "Examen histopatologic alte piese mici (1-2 bl)",
+    "Price": 285.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2061442",
+    "ServiceName": "Examen histopatologic piese medii (3-5 bl)",
+    "Price": 375.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2061443",
+    "ServiceName": "Examen histopatologic piesa complexa (&gt;10 bl)",
+    "Price": 640.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Anemie",
+    "ServiceId": "2061449",
+    "ServiceName": "Holotranscobalamina (vitamina B12 activa)",
+    "Price": 166.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7715",
+    "ServiceName": "Ac Anti-Cardiolipinici IgG",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7717",
+    "ServiceName": "Ac Anti-Cardiolipinici IgM",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7719",
+    "ServiceName": "Ac Anti-Jo1",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7721",
+    "ServiceName": "Ac Anti-SSb (La)",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7725",
+    "ServiceName": "Ac Anti-pANCA",
+    "Price": 88.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7727",
+    "ServiceName": "Ac Anti-SCL 70",
+    "Price": 87.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7729",
+    "ServiceName": "Ac Anti-Sm",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7733",
+    "ServiceName": "Ac Anti-HD IgG",
+    "Price": 125.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7735",
+    "ServiceName": "NSE",
+    "Price": 120.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "7747",
+    "ServiceName": "CA 72-4",
+    "Price": 175.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7769",
+    "ServiceName": "Ac antimitocondriali (AMA-M2)",
+    "Price": 116.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7755",
+    "ServiceName": "Ac Anti-HBc IgM",
+    "Price": 66.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "7777",
+    "ServiceName": "Test de toleranta la glucoza/75 g",
+    "Price": 30.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "SARS-COV-2",
+    "ServiceId": "2092171",
+    "ServiceName": "Depistare SARS-COV-2 (RT PCR)",
+    "Price": 190.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2092549",
+    "ServiceName": "Ex histopatologic anexectomie unilaterala",
+    "Price": 510.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2092550",
+    "ServiceName": "Ex histopatologic anexectomie bilaterala",
+    "Price": 595.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2092553",
+    "ServiceName": "Ex histopatologic histerectomie cu anexectomie bilaterala",
+    "Price": 2100.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2092557",
+    "ServiceName": "Ex histopatologic biopsii prostatice multiple (6-12 blocuri)",
+    "Price": 860.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2092565",
+    "ServiceName": "Ex histopatologic lobectomie tiroidiana",
+    "Price": 660.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2092568",
+    "ServiceName": "Ex histopatologic 1 -2 blocuri cu dg HP (a doua opinie)",
+    "Price": 130.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2092569",
+    "ServiceName": "Ex histopatologic 3-5 blocuri cu dg HP (a doua opinie)",
+    "Price": 220.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2193047",
+    "ServiceName": "Examen histopatologic - coloratii speciale",
+    "Price": 95.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "SARS-COV-2",
+    "ServiceId": "2193065",
+    "ServiceName": "Ag SARS - Cov 2",
+    "Price": 71.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7785",
+    "ServiceName": "Cadmiu in sange",
+    "Price": 129.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7807",
+    "ServiceName": "Angiotensin convertaza",
+    "Price": 100.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7809",
+    "ServiceName": "Dermatophagoides farinae IgG4 specific",
+    "Price": 154.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Anemie",
+    "ServiceId": "7813",
+    "ServiceName": "Coeficient de saturare a transferinei",
+    "Price": 78.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7771",
+    "ServiceName": "Inhibina A",
+    "Price": 295.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7829",
+    "ServiceName": "Ac Anti-Yersinia IgG",
+    "Price": 111.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "SARS-COV-2",
+    "ServiceId": "2209212",
+    "ServiceName": "SARS Cov2 antigen+ Influenza A+B antigen",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "2240397",
+    "ServiceName": "^Indice Homa",
+    "Price": 87.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2240646",
+    "ServiceName": "IFD imunofluorescenta directa",
+    "Price": 875.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2240648",
+    "ServiceName": "Genotipare HPV - 35 tulpini",
+    "Price": 460.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "SARS-COV-2",
+    "ServiceId": "2270396",
+    "ServiceName": "Serologie SARS-COV-2 Anticorpi totali anti-Spike (RBD – fragment de proteina)  cantitativ",
+    "Price": 130.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2270407",
+    "ServiceName": "Examen fungic urina (cultura si identificare fungica)",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "2285394",
+    "ServiceName": "VDRL",
+    "Price": 23.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "7833",
+    "ServiceName": "Viremie hepatita B",
+    "Price": 457.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "7835",
+    "ServiceName": "Viremie hepatita C",
+    "Price": 457.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "7863",
+    "ServiceName": "Ac Borrelia burgdorferi sensu lato IgM",
+    "Price": 120.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "2438253",
+    "ServiceName": "Panel 96 alergeni (inhalator si alimentar)",
+    "Price": 460.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2470374",
+    "ServiceName": "HPV- tipaj viral 28 tulpini",
+    "Price": 439.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "2513317",
+    "ServiceName": "Panel Inhalator IgE 33 alergeni",
+    "Price": 300.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2513327",
+    "ServiceName": "Sifilis in LCR - VDRL semicantitativ",
+    "Price": 204.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2513896",
+    "ServiceName": "Magneziu intracelular",
+    "Price": 90.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2514918",
+    "ServiceName": "HLA A Alele",
+    "Price": 850.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2570921",
+    "ServiceName": "Panel boli cu transmitere sexuala (Mycoplasma genitalium, Chlamydia trachomatis, Neisseria gonorrhoeae, Trichomonas vaginalis)",
+    "Price": 350.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2571624",
+    "ServiceName": "Anticorpi anti virus rabic (evaluare status imunizare)",
+    "Price": 154.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica",
+    "ServiceId": "2600505",
+    "ServiceName": "Panel biologie moleculara de boli cu transmitere sexuala: M. genitalium, M. hominis, Trichomonas vaginalis, Ureaplasma urealyticum/parvum, Haemophilus ducreyi, HSV 1, HSV 2, Treponema pallidum, Neisseria gonorrhoeae, Ch.trachomatis, Ch. trachomatis LGV",
+    "Price": 537.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "7883",
+    "ServiceName": "IgE specific la ibuprofen",
+    "Price": 72.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "7899",
+    "ServiceName": "IgE specific la mepivacaina",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2600519",
+    "ServiceName": "HIV-2 ARN-PCR - cantitativ (HIV2Q)*",
+    "Price": 1106.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2600520",
+    "ServiceName": "HIV-1 ARN-PCR - cantitativ (HIV1Q)",
+    "Price": 551.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2629139",
+    "ServiceName": "Examen fungic exsudat faringian (cultura si identificare fungica)",
+    "Price": 62.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2629140",
+    "ServiceName": "Examen fungic exsudat nazal (cultura si identificare fungica)",
+    "Price": 64.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2629164",
+    "ServiceName": "Anticorpi anti-receptor fosfolipaza A2",
+    "Price": 150.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2630435",
+    "ServiceName": "N-RAS - exon 2, 3 si 4",
+    "Price": 1440.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2630608",
+    "ServiceName": "Detectie ADN protozoare materii fecale PCR",
+    "Price": 300.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2630609",
+    "ServiceName": "Detectie ADN helminti si microsporidii  materii fecale PCR",
+    "Price": 310.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2630614",
+    "ServiceName": "Coprocultura extinsa",
+    "Price": 276.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2645484",
+    "ServiceName": "PINP (propeptid N-terminal al procolagenului de tip I)",
+    "Price": 75.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2645627",
+    "ServiceName": "HIV 1/2 - Westernblot (HIVW)",
+    "Price": 420.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2645631",
+    "ServiceName": "Cupru intracelular",
+    "Price": 94.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "7961",
+    "ServiceName": "IgE specific la lapte de vaca",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Ososi",
+    "ServiceId": "7979",
+    "ServiceName": "25-OH Vitamina D",
+    "Price": 170.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "7981",
+    "ServiceName": "Ac Anti-Insulina",
+    "Price": 105.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "2675271",
+    "ServiceName": "Profil ANA - 23 ANTIGENE NUCLEARE BLOT EXTINS (ADNds, nucleosome, histone, SS-A, Ro52, SS-B, nRNP/Sm, Mi-2 beta, Mi-2 alfa, Ku, CENP A, CENP B, Sp100, PML, Scl 70, PM-Scl 100, PM-Scl 75, RP 11, RP 155, gp 210, PCNA, DFS 70)",
+    "Price": 310.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2675272",
+    "ServiceName": "LRP-4 - proteina 4 pentru receptorul lipoproteinelor cu densitate mica (LRP4)",
+    "Price": 144.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2690037",
+    "ServiceName": "Examenul microbiologic al secretiilor vaginale/examen microscopic, cultura si identificare bacteriana",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2690041",
+    "ServiceName": "Examenul microbiologic al secretiilor vaginale/ examen microscopic, cultura şi identificare fungica",
+    "Price": 65.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2720012",
+    "ServiceName": "Panel boli cu transmitere sexuala din urina (Mycoplasma genitalium, Chlamydia trachomatis, Neisseria gonorrhoeae, Trichomonas vaginalis)",
+    "Price": 350.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2748196",
+    "ServiceName": "Strongyloides anticorpi totali (IgG/IgM) - screening test",
+    "Price": 202.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7983",
+    "ServiceName": "Ac Anti-celule insulare pancreatice",
+    "Price": 243.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Cardiovasculari",
+    "ServiceId": "7995",
+    "ServiceName": "NT proBNP",
+    "Price": 180.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "7999",
+    "ServiceName": "Ex bact. str. grup B secretie genitala",
+    "Price": 73.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "8101",
+    "ServiceName": "Mutatiile genei MTHFR",
+    "Price": 380.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "8103",
+    "ServiceName": "Mutatiile genei PAI-1",
+    "Price": 345.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "8105",
+    "ServiceName": "Ac Anti-Treponema pallidum",
+    "Price": 45.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "8109",
+    "ServiceName": "Ac Mycoplasma pneumoniae IgG",
+    "Price": 149.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "8111",
+    "ServiceName": "Ac Mycoplasma pneumoniae IgA",
+    "Price": 166.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Infectiosi",
+    "ServiceId": "8113",
+    "ServiceName": "Ac Mycoplasma pneumoniae IgM",
+    "Price": 149.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "8121",
+    "ServiceName": "Hormon Anti-Mullerian",
+    "Price": 300.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "8125",
+    "ServiceName": "Catecolamine urinare",
+    "Price": 239.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Laborator",
+    "ServiceId": "2151240",
+    "ServiceName": "Dublu test cu interpretare(Free Beta hCG, PAPP-A, interpretare)",
+    "Price": 242.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Laborator",
+    "ServiceId": "2151241",
+    "ServiceName": "Triplu-test cu interpretare(AFO-triplu test, estriol liber, hCG total, interpretare)",
+    "Price": 169.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "8133",
+    "ServiceName": "Catecolamine plasmatice - Adrenalina, Noradrenalina, Dopamina",
+    "Price": 180.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "8145",
+    "ServiceName": "Ac Anti-MuSK",
+    "Price": 220.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Coagulare/Hemostaza",
+    "ServiceId": "8151",
+    "ServiceName": "D-Dimeri",
+    "Price": 105.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "8163",
+    "ServiceName": "Examen histopatologic col uterin - conizatie",
+    "Price": 435.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2804073",
+    "ServiceName": "Alcoolemie",
+    "Price": 53.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2804238",
+    "ServiceName": "Nematode Anticorpi - BLOT screening: Ascaris, Filaria, Strongyloides, Toxocara, Trichinella, Ancylostoma",
+    "Price": 716.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2834041",
+    "ServiceName": "Mutatia Factor V Leiden",
+    "Price": 200.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2834042",
+    "ServiceName": "Mutatia Factor II (G20210A)",
+    "Price": 190.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2834060",
+    "ServiceName": "Anticorpi anti-anexina V (IgM, IgG)",
+    "Price": 330.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Alergii",
+    "ServiceId": "2875637",
+    "ServiceName": "IgE specific insulina umana (CC73)",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2875638",
+    "ServiceName": "NIPT neoBona Advanced plus - Trisomiile 21, 18, 13 + sex fetal + anomalii de cromosomi sexuali (X si Y) + microdeletii trisomiile 16 si 9",
+    "Price": 3000.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "2875639",
+    "ServiceName": "Anticorpi specifici Anti A IgG",
+    "Price": 60.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2875640",
+    "ServiceName": "Cultura fungi lichid de punctie (cu antifungigrama dupa caz)",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2875641",
+    "ServiceName": "Cultura fungi col uterin (cu antifungigrama dupa caz)",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2875642",
+    "ServiceName": "1 test IHC",
+    "Price": 95.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2875905",
+    "ServiceName": "Biopsie EDI",
+    "Price": 315.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "8195",
+    "ServiceName": "Raport Albumina/Creatinina",
+    "Price": 54.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "8205",
+    "ServiceName": "Dozare Digoxina",
+    "Price": 139.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "8207",
+    "ServiceName": "Ac Anti-Fosfolipidici IgM",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "8209",
+    "ServiceName": "Ac Anti-Fosfolipidici IgG",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie- Markeri inflamatori",
+    "ServiceId": "8215",
+    "ServiceName": "Calprotectina",
+    "Price": 220.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2876279",
+    "ServiceName": "Set 5 Teste Imunohistochimice",
+    "Price": 730.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2890212",
+    "ServiceName": "Examen histopatologic (biopsie cutanata piesa mica sub 4 cm",
+    "Price": 380.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2890213",
+    "ServiceName": "Examen histopatologic (biopsie cutanata piesa medie 4-8 cm",
+    "Price": 825.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2890214",
+    "ServiceName": "Examen histopatologic (biopsie cutanata piesa mare&gt;8 cm",
+    "Price": 1650.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2904876",
+    "ServiceName": "Biopsie piesa operatorie mica",
+    "Price": 330.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905009",
+    "ServiceName": "Capacitatea oxidativa totala si capacitatea antioxidativa totala",
+    "Price": 355.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2905135",
+    "ServiceName": "Cariotip molecular rezolutie 750K (SNP microarray) - Lichid amniotic/Vilozitatii coriale (CVS) si QF-PCR (13,18,21,X,Y)",
+    "Price": 2450.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2905136",
+    "ServiceName": "Examen imunohistochimie (cutanata)",
+    "Price": 670.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905138",
+    "ServiceName": "IgE specific pruna (Prunus domestica) (CF255)",
+    "Price": 84.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2905449",
+    "ServiceName": "1 Coloratie speciala",
+    "Price": 135.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "2905453",
+    "ServiceName": "Lanturi usoare libere Kappa in LCR",
+    "Price": 233.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2905454",
+    "ServiceName": "Biopsie EDS + coloratie Giemsa pt.Helicobacter Pylori",
+    "Price": 315.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905456",
+    "ServiceName": "Proteina S (activitate)",
+    "Price": 118.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905457",
+    "ServiceName": "Hantavirus Ac IgG - Immunoblot",
+    "Price": 170.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905459",
+    "ServiceName": "Hantavirus Ac IgM - Immunoblot",
+    "Price": 200.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905461",
+    "ServiceName": "Anticorpi anti BPI (proteine ce cresc permeabilitatea bactericida)",
+    "Price": 140.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905466",
+    "ServiceName": "Coxiella burnetii - serologie",
+    "Price": 470.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2905467",
+    "ServiceName": "Nitrotirozina",
+    "Price": 195.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2919915",
+    "ServiceName": "Proteina prionica in LCR",
+    "Price": 1950.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2920191",
+    "ServiceName": "Hidroximetilbilan sintaza",
+    "Price": 140.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2935360",
+    "ServiceName": "Examen citologic ( mamar, tiroidian)",
+    "Price": 330.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2935642",
+    "ServiceName": "Polipoza adenomatoasa familiala - gena APC - NGS",
+    "Price": 2800.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2935886",
+    "ServiceName": "Leucodistrofie si leucoencefalopatie - panel 118 de gene - PLUS, SEQ, DEL/DUP",
+    "Price": 4600.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2935887",
+    "ServiceName": "Biopsie piesa mica (1-3 blocuri)",
+    "Price": 285.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2935888",
+    "ServiceName": "Biopsie piesa medie (4-6 blocuri)",
+    "Price": 375.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2935889",
+    "ServiceName": "Biopsie piesa mare (7-10 blocuri)",
+    "Price": 640.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2935890",
+    "ServiceName": "Examen IHC (1- 5 anticorpi)",
+    "Price": 570.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2935892",
+    "ServiceName": "1 Test Suplimentar IHC",
+    "Price": 95.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "2935907",
+    "ServiceName": "Ac anti-cANCA hs",
+    "Price": 84.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2935908",
+    "ServiceName": "Anticorpi anti-fosfatidilserina IgG/IgM/IgA",
+    "Price": 190.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2935909",
+    "ServiceName": "Anticorpi anti fosfatidil-inozitol IgG",
+    "Price": 85.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "269450",
+    "ServiceName": "SCC",
+    "Price": 152.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "280858",
+    "ServiceName": "Raport calciu / creatinina",
+    "Price": 25.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "270462",
+    "ServiceName": "Ac Anti-SLA-(Soluble liver antigen)",
+    "Price": 81.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "1547026",
+    "ServiceName": "Test de toleranta la glucoza - screening in sarcina 75 g",
+    "Price": 50.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "245560",
+    "ServiceName": "Serotonina serica",
+    "Price": 300.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2952757",
+    "ServiceName": "Scleroza laterala amiotrofica - (SOD 1)",
+    "Price": 2190.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2952758",
+    "ServiceName": "Anticorpi anti-eritrocitari in sarcina",
+    "Price": 260.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2967228",
+    "ServiceName": "Dimetilarginina asimetrica (ADMA)",
+    "Price": 500.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "8015",
+    "ServiceName": "Ac Anti-CCP",
+    "Price": 121.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "8003",
+    "ServiceName": "Ag. Streptococ beta-hemolitic gr. A",
+    "Price": 40.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Endocrini",
+    "ServiceId": "8005",
+    "ServiceName": "Inhibina B",
+    "Price": 220.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Hematologie",
+    "ServiceId": "8011",
+    "ServiceName": "Ac Anti D (Rh)",
+    "Price": 75.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "8017",
+    "ServiceName": "Anticorpi anti-receptor acetilcolina",
+    "Price": 209.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "2967266",
+    "ServiceName": "Secventierea intregului genom (WGS)",
+    "Price": 8500.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Anatomie-patologica",
+    "ServiceId": "2968418",
+    "ServiceName": "SISH HER 2",
+    "Price": 938.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "2982911",
+    "ServiceName": "Zonulin in ser",
+    "Price": 350.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Microbiologie",
+    "ServiceId": "2982915",
+    "ServiceName": "Ex. Coproparazitologic-1 proba",
+    "Price": 28.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Cardiovasculari",
+    "ServiceId": "2999400",
+    "ServiceName": "Troponina T",
+    "Price": 80.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3013941",
+    "ServiceName": "Acizi grasi omega 3 si omega 6",
+    "Price": 482.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "3013971",
+    "ServiceName": "Vancomicina in ser",
+    "Price": 171.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "8063",
+    "ServiceName": "Haptoglobina",
+    "Price": 70.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "8073",
+    "ServiceName": "Fibromax",
+    "Price": 740.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Autoimunitate",
+    "ServiceId": "8083",
+    "ServiceName": "Ac Anti-receptor TSH",
+    "Price": 135.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Genetica si biologie moleculara",
+    "ServiceId": "8089",
+    "ServiceName": "HLA B27",
+    "Price": 300.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Imunologie-Markeri Tumorali",
+    "ServiceId": "268536",
+    "ServiceName": "HE 4",
+    "Price": 125.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "7161",
+    "ServiceName": "ARN viral hepatita D (cantitativ)",
+    "Price": 754.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Biochimie",
+    "ServiceId": "268528",
+    "ServiceName": "Lipoproteina (a)",
+    "Price": 90.0
+  },
+  {
+    "LaboratoryId": "58660",
+    "LaboratoryName": "Laborator Muntenia Medical Competences",
+    "ServiceGroup": "Analize externalizate",
+    "ServiceId": "294820",
+    "ServiceName": "Test Quantiferone",
+    "Price": 385.0
+  }
+]

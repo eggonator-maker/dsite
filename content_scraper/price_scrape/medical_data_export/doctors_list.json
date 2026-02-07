@@ -1,0 +1,227 @@
+[
+  {
+    "DoctorId": 128709,
+    "DoctorName": "Ionescu Mihai",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 146670,
+    "DoctorName": "Azamfire Bogdan",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 146680,
+    "DoctorName": "Florea Marius-Daniel",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 147106,
+    "DoctorName": "Florea Silvia-Mihaela",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 148722,
+    "DoctorName": "Marian Ruxandra Nicoleta",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 153345,
+    "DoctorName": "Popescu Radu Bogdan Calin",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 176127,
+    "DoctorName": "Margaritescu Alexandru-Cristian",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 145249,
+    "DoctorName": "Paun Alexandra Oana",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 146696,
+    "DoctorName": "Stoica Paulina",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 146700,
+    "DoctorName": "Rob Robert-Razvan",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 146706,
+    "DoctorName": "Gaitan Andrei",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 146708,
+    "DoctorName": "Ciopleasi Moise",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 171416,
+    "DoctorName": "Petrescu Bogdan-Marian",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 187758,
+    "DoctorName": "Bunea Ancuta-Maria",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 146732,
+    "DoctorName": "Barabancia-Romete Simona-Manuela",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 146734,
+    "DoctorName": "Mirzacu Ramona",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 146736,
+    "DoctorName": "Gupta Sidharth",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 148583,
+    "DoctorName": "Iordache Madalina-Elena",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 179081,
+    "DoctorName": "Todorovic Petar",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 45416,
+    "DoctorName": "Neacsu Gabriela Liliana",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 147366,
+    "DoctorName": "Ursescu Diana Isabela",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 146786,
+    "DoctorName": "Gatita Codrut-Emilian",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 157410,
+    "DoctorName": "Guita-Alexandru Gigel",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 174699,
+    "DoctorName": "Tanase Cristian",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 123796,
+    "DoctorName": "Craciun Mihai",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 173796,
+    "DoctorName": "Mihai Marian-Alexandru",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 146357,
+    "DoctorName": "Shamim Umar",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 146948,
+    "DoctorName": "Petria Alina-Elena",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 171755,
+    "DoctorName": "Anghel Tiberiu-Nicolae",
+    "DoctorTitle": ""
+  },
+  {
+    "DoctorId": 194057,
+    "DoctorName": "Cojocariu Andra Ioana",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 146902,
+    "DoctorName": "Constantin Andreea-Poliana",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 146990,
+    "DoctorName": "Mihaila Adrian",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 149107,
+    "DoctorName": "Irimia Traian",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 171753,
+    "DoctorName": "Simon Elena-Rafila",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 116456,
+    "DoctorName": "Dumitrache Mihai",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 146664,
+    "DoctorName": "Constantinescu Teodor-Catalin",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 147010,
+    "DoctorName": "Bajan Flavius",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 147014,
+    "DoctorName": "Petrica Florin",
+    "DoctorTitle": "Medic Primar"
+  },
+  {
+    "DoctorId": 147016,
+    "DoctorName": "Crasneanu Mugurel-Alexandru",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 148591,
+    "DoctorName": "Pavelescu Cristian",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 167948,
+    "DoctorName": "Burtea Florian-Gabriel",
+    "DoctorTitle": "Medic Specialst"
+  },
+  {
+    "DoctorId": 178798,
+    "DoctorName": "Mares Dragos-Claude",
+    "DoctorTitle": "Medic Specialist"
+  },
+  {
+    "DoctorId": 147210,
+    "DoctorName": "Copciag Gabriel",
+    "DoctorTitle": "Doctor"
+  },
+  {
+    "DoctorId": 180292,
+    "DoctorName": "Popa Theodor Ioan",
+    "DoctorTitle": ""
+  },
+  {
+    "DoctorId": 194963,
+    "DoctorName": "Nitulescu Alexandru",
+    "DoctorTitle": "Medic Specialist"
+  }
+]
