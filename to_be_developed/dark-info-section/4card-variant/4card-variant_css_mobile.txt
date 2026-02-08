@@ -1,0 +1,528 @@
+/* Specializari */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 64px 14px;
+gap: 51px;
+
+position: absolute;
+width: 375px;
+height: 1204px;
+left: calc(50% - 375px/2);
+top: 1283px;
+
+background: #001E60;
+
+
+/* titlu */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 347px;
+height: 59px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Heading H1 */
+
+width: 347px;
+height: 59px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 39px;
+/* or 139% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1272638776 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 347px;
+height: 966px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Row 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 347px;
+height: 481px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 246px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* mingcute:paper-fill */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* heart (1) 1 */
+
+position: absolute;
+width: 42px;
+height: 42px;
+left: calc(50% - 42px/2 - 0.25px);
+top: calc(50% - 42px/2);
+
+background: url(heart (1).png);
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 94px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 94px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* or 150% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 219px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* ion:woman */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 39.01%;
+right: 39.11%;
+top: 0%;
+bottom: 78.12%;
+
+background: #001E60;
+
+
+/* Vector */
+
+position: absolute;
+left: 22.85%;
+right: 22.75%;
+top: 25%;
+bottom: 0%;
+
+background: #001E60;
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 67px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 67px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* or 150% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Row 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 347px;
+height: 461px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 219px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* mingcute:paper-fill */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* thyroid (1) 1 */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px/2);
+top: calc(50% - 40px/2);
+
+background: url(thyroid (1).png);
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 67px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 67px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* or 150% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 226px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* fa6-solid:user-doctor */
+
+width: 48px;
+height: 55px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 40px;
+height: 46px;
+left: calc(50% - 40px/2 + 0.25px);
+top: calc(50% - 46px/2 + 0.5px);
+
+background: #001E60;
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 67px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 67px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* or 150% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;

@@ -1,0 +1,376 @@
+/* De ce */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 16px;
+
+width: 944px;
+height: 492px;
+
+background: #FFFFFF;
+box-shadow: 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Testimoniale pacienți Centrul de Sân */
+
+width: 864px;
+height: 48px;
+
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group 15 */
+
+width: 865px;
+height: 33px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Line Rounded/Chevron right */
+
+position: absolute;
+width: 29px;
+height: 31px;
+right: 39px;
+bottom: 357px;
+
+background: #027FF7;
+box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.09);
+border-radius: 35px;
+
+
+/* Chevron right */
+
+position: absolute;
+width: 14.3px;
+height: 7.7px;
+left: calc(50% - 14.3px/2 + 3.8px);
+top: calc(50% - 7.7px/2 - 2.8px);
+
+border: 1.95px solid #FFFFFF;
+transform: rotate(90deg);
+
+
+/* Line Rounded/Chevron right */
+
+position: absolute;
+width: 29px;
+height: 31px;
+right: 875px;
+bottom: 355px;
+
+background: #027FF7;
+box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.09);
+border-radius: 35px;
+transform: rotate(-180deg);
+
+
+/* Chevron right */
+
+position: absolute;
+width: 14.3px;
+height: 7.7px;
+left: calc(50% - 14.3px/2 + 2.8px);
+top: calc(50% - 7.7px/2 - 3.8px);
+
+border: 1.95px solid #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Frame 1272639104 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 942px;
+height: 299px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Card 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 40px 24px;
+gap: 24px;
+
+width: 463px;
+height: 299px;
+
+background: #FFFFFF;
+border-bottom: 8px solid #D3E9FF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* tabler:quote-filled */
+
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 20.83%;
+bottom: 20.83%;
+
+background: #027FF7;
+
+
+/* Frame 39538 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 359px;
+height: 171px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Web design */
+
+width: 359px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 359px;
+height: 131px;
+
+font-family: 'Open Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 40px 24px;
+gap: 24px;
+
+width: 463px;
+height: 299px;
+
+background: #FFFFFF;
+border-bottom: 8px solid #D3E9FF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* tabler:quote-filled */
+
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 20.83%;
+bottom: 20.83%;
+
+background: #027FF7;
+
+
+/* Frame 39538 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 359px;
+height: 219px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Web design */
+
+width: 359px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 359px;
+height: 179px;
+
+font-family: 'Open Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;

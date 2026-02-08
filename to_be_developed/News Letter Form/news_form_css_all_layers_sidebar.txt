@@ -1,0 +1,300 @@
+/* Frame 1272639125 */
+
+box-sizing: border-box;
+
+width: 405px;
+height: 381px;
+
+background: #EAEAEA;
+border: 1px solid #DEDEDE;
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Heading H1 */
+
+position: absolute;
+width: 353px;
+height: 20px;
+left: 33px;
+top: 41px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 48px;
+/* or 171% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #001E60;
+
+
+
+/* Frame 1272639121 */
+
+position: absolute;
+width: 1px;
+height: 1px;
+left: 95px;
+top: 162px;
+
+
+
+/* Frame 1272639122 */
+
+position: absolute;
+width: 1px;
+height: 1px;
+left: 137px;
+top: 248px;
+
+
+
+/* Frame 1272639131 */
+
+position: absolute;
+width: 3px;
+height: 1px;
+left: 92px;
+top: 214px;
+
+
+
+/* Află primul despre reducerile și ofertele speciale. */
+
+position: absolute;
+width: 344px;
+height: 58px;
+left: 33px;
+top: 83px;
+
+/* Paragraph 1 R/Mobile/Regular
+
+Site Razvan
+*/
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 150%;
+/* or 28px */
+
+color: #434343;
+
+
+
+/* Input */
+
+box-sizing: border-box;
+
+position: absolute;
+height: 52px;
+left: 33px;
+right: 28px;
+top: 162px;
+
+/* Shades/White */
+background: #FFFFFF;
+/* Neutral / Gray 300 */
+border: 1px solid #CBD5E1;
+border-radius: 12px;
+
+
+/* Adresa de e-mail* */
+
+position: absolute;
+width: 137px;
+height: 24px;
+left: 16px;
+top: calc(50% - 24px/2);
+
+/* Paragraph/P2/Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #94A3B8;
+
+
+
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 18px;
+gap: 6px;
+
+position: absolute;
+width: 100px;
+height: 43px;
+left: 239px;
+top: 5px;
+
+background: #E22A1F;
+border-radius: 8px;
+
+
+/* Programează-te acum */
+
+width: 49px;
+height: 21px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+text-align: center;
+
+/* Neutral / Gray 50 */
+color: #F8FAFC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Checkbox */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 344px;
+height: 51px;
+left: 33px;
+top: 237px;
+
+
+
+/* Icon */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Neutral / Gray 400 */
+border: 1.66667px solid #94A3B8;
+
+
+/* List item */
+
+width: 316px;
+height: 51px;
+
+/* Paragraph/P1 / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* or 121% */
+
+color: #0F172A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Checkbox */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 344px;
+height: 34px;
+left: 33px;
+top: 309px;
+
+
+
+/* Icon */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Neutral / Gray 400 */
+border: 1.66667px solid #94A3B8;
+
+
+/* List item */
+
+width: 316px;
+height: 34px;
+
+/* Paragraph/P1 / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* or 121% */
+
+color: #0F172A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;

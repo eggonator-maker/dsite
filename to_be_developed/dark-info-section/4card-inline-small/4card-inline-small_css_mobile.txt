@@ -1,0 +1,683 @@
+/* Banda banner */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 32px 14px;
+gap: 48px;
+isolation: isolate;
+
+position: absolute;
+width: 375px;
+height: 1154px;
+left: calc(50% - 375px/2);
+top: 1105px;
+
+background: #001E60;
+border-bottom: 5px solid #027FF7;
+
+
+/* drugs_alb 2 */
+
+position: absolute;
+width: 63.95px;
+height: 63.95px;
+left: 1352px;
+top: 466px;
+
+background: url(drugs_alb.png);
+transform: rotate(30.41deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 48px;
+
+width: 347px;
+height: 258px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Heading H1 */
+
+width: 347px;
+height: 151px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 42px;
+/* or 117% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 347px;
+height: 59px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* drugs_alb 1 */
+
+position: absolute;
+width: 63.95px;
+height: 63.95px;
+left: 1336.49px;
+top: -31.53px;
+
+background: url(drugs_alb.png);
+transform: rotate(30.41deg);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Frame 1272639092 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 347px;
+height: 784px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+z-index: 3;
+
+
+/* Card 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 190px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* maki:toilet */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 3.3%;
+right: 6.66%;
+top: 0%;
+bottom: 6.67%;
+
+background: #001E60;
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 14px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* or 120% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 190px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* fluent:food-20-filled */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 17.5%;
+right: 17.5%;
+top: 10%;
+bottom: 10%;
+
+background: #001E60;
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 38px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 38px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* or 120% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 190px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* famicons:tv-sharp */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 3.12%;
+right: 3.12%;
+top: 15.62%;
+bottom: 25%;
+
+background: #001E60;
+
+
+/* Vector */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 78.12%;
+bottom: 15.62%;
+
+background: #001E60;
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 14px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* or 120% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px;
+gap: 24px;
+
+width: 347px;
+height: 190px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* material-symbols:wifi-rounded */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 2.6%;
+right: 2.6%;
+top: 16.67%;
+bottom: 12.5%;
+
+background: #001E60;
+
+
+/* Frame 39537 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 299px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Web design */
+
+width: 299px;
+height: 14px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* or 120% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E333C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* drugs_alb 8 */
+
+position: absolute;
+width: 63.95px;
+height: 63.95px;
+left: 1352px;
+top: 466px;
+
+background: url(drugs_alb.png);
+transform: rotate(30.41deg);
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 4;
+
+
+/* drugs_alb 4 */
+
+position: absolute;
+width: 63.95px;
+height: 63.95px;
+left: 1252px;
+top: 165px;
+
+background: url(ph_hospital.png);
+transform: rotate(30.41deg);
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 5;
+
+
+/* drugs_alb 3 */
+
+position: absolute;
+width: 63.95px;
+height: 63.95px;
+left: 1325px;
+top: 336px;
+
+background: url(hugeicons_bed.png);
+transform: rotate(30.41deg);
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 6;
+
+
+/* drugs_alb 7 */
+
+position: absolute;
+width: 63.95px;
+height: 63.95px;
+left: 1340.22px;
+top: 80.22px;
+
+background: url(uil_medical-drip.png);
+transform: rotate(-18.7deg);
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 7;
+
+
+/* drugs_alb 5 */
+
+position: absolute;
+width: 63.95px;
+height: 63.95px;
+left: 14px;
+top: 357px;
+
+background: url(Vector.png);
+transform: rotate(-21.5deg);
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* robotic-surgery_alb 2 */
+
+position: absolute;
+width: 64.8px;
+height: 64.8px;
+left: 77.64px;
+top: 225.64px;
+
+background: url(streamline-ultimate_medical-instrument-ambulance-bed.png);
+transform: rotate(-6.31deg);
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 9;
+
+
+/* stethoscope_alb 2 */
+
+position: absolute;
+width: 75.23px;
+height: 75.23px;
+left: 2px;
+top: 16px;
+
+background: url(stethoscope_alb.png);
+transform: rotate(27.95deg);
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 10;

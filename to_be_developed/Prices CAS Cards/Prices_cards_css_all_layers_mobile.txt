@@ -1,0 +1,1017 @@
+/* Carduri */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 16px;
+gap: 43px;
+
+position: absolute;
+width: 375px;
+height: 1007px;
+left: calc(50% - 375px/2);
+top: 659px;
+
+
+
+/* Card pachet */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 16px;
+gap: 16px;
+
+width: 343px;
+height: 307px;
+
+background: #FFFFFF;
+box-shadow: 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 343px;
+height: 179px;
+
+background: url(woman-getting-medical-consultation.jpg);
+border-radius: 12px 12px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1272638769 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+visibility: hidden;
+width: 321.75px;
+height: 21px;
+left: 16.12px;
+top: 277px;
+
+
+
+/* Tag */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 9px;
+
+width: 321.75px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Paragraph */
+
+width: 56px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line 2 */
+
+width: 21px;
+height: 0px;
+
+/* Grays/White */
+border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 65px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Line 3 */
+
+width: 21px;
+height: 0px;
+
+/* Grays/White */
+border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 60px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 16px;
+gap: 24px;
+
+width: 343px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 16px;
+gap: 16px;
+
+width: 311px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 279px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Laborator decontat CAS */
+
+width: 279px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 23px;
+/* identical to box height, or 110% */
+text-align: center;
+
+color: #262626;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 18px;
+gap: 8px;
+
+width: 300px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #E22A1F;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Programează-te acum */
+
+width: 108px;
+height: 21px;
+
+/* Paragraph 3/Semi Bold */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #E22A1F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* material-symbols:download */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #E22A1F;
+
+
+/* Card pachet */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 16px;
+gap: 16px;
+
+width: 343px;
+height: 307px;
+
+background: #FFFFFF;
+box-shadow: 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 343px;
+height: 179px;
+
+background: url(woman-getting-medical-consultation.jpg);
+border-radius: 12px 12px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1272638769 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+visibility: hidden;
+width: 321.75px;
+height: 21px;
+left: 16.12px;
+top: 277px;
+
+
+
+/* Tag */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 9px;
+
+width: 321.75px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Paragraph */
+
+width: 56px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line 2 */
+
+width: 21px;
+height: 0px;
+
+/* Grays/White */
+border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 65px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Line 3 */
+
+width: 21px;
+height: 0px;
+
+/* Grays/White */
+border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 60px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 16px;
+gap: 24px;
+
+width: 343px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 16px;
+gap: 16px;
+
+width: 311px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 279px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Imagistică decontat CAS */
+
+width: 279px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 23px;
+/* identical to box height, or 110% */
+text-align: center;
+
+color: #262626;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 18px;
+gap: 8px;
+
+width: 300px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #E22A1F;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Programează-te acum */
+
+width: 108px;
+height: 21px;
+
+/* Paragraph 3/Semi Bold */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #E22A1F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* material-symbols:download */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #E22A1F;
+
+
+/* Card pachet */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 16px;
+gap: 16px;
+
+width: 343px;
+height: 307px;
+
+background: #FFFFFF;
+box-shadow: 0px 12.5216px 10.0172px rgba(0, 124, 247, 0.035), 0px 6.6501px 5.32008px rgba(0, 124, 247, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 124, 247, 0.0196802);
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 343px;
+height: 179px;
+
+background: url(woman-getting-medical-consultation.jpg);
+border-radius: 12px 12px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1272638769 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+visibility: hidden;
+width: 321.75px;
+height: 21px;
+left: 16.12px;
+top: 277px;
+
+
+
+/* Tag */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 9px;
+
+width: 321.75px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Paragraph */
+
+width: 56px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line 2 */
+
+width: 21px;
+height: 0px;
+
+/* Grays/White */
+border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 65px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Line 3 */
+
+width: 21px;
+height: 0px;
+
+/* Grays/White */
+border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Paragraph */
+
+width: 60px;
+height: 21px;
+
+/* Paragraph 3/Regular */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+display: flex;
+align-items: flex-end;
+
+/* Grays/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 16px;
+gap: 24px;
+
+width: 343px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 16px;
+gap: 16px;
+
+width: 311px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 279px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Ambulatoriu decontat CAS */
+
+width: 279px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 23px;
+/* identical to box height, or 110% */
+text-align: center;
+
+color: #262626;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 18px;
+gap: 8px;
+
+width: 300px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #E22A1F;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Programează-te acum */
+
+width: 108px;
+height: 21px;
+
+/* Paragraph 3/Semi Bold */
+font-family: 'Noto Sans Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #E22A1F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* material-symbols:download */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #E22A1F;
