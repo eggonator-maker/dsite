@@ -24,11 +24,11 @@
             <span class="icon icon-phone"></span>
             <span class="site-header__phone-number">0248 948</span>
           </a>
-          <a href="#">
+          <a target="_blank" rel="noopener noreferrer" href="https://muntenia.web-med.ro/">
             <span class="icon icon-lab"></span>
             <span>Rezultate analize</span>
           </a>
-          <a href="/user">
+          <a target="_blank" rel="noopener noreferrer" href="https://analize.munteniahospital.ro/#toregister">
             <span class="icon icon-profile"></span>
             <span>Intră în cont</span>
           </a>
@@ -48,29 +48,29 @@
               <a href="/cariere">Cariere</a> #}
             </div>
           </li>
-          <li class="site-header__nav-item"><a href="/specialities" data-nav-item="specialities">Specialitati</a></li>
-          <li class="site-header__nav-item"><a href="/doctors" data-nav-item="doctors">Medici</a></li>
+          <li class="site-header__nav-item"><a href="/specialitati" data-nav-item="specialitati">Specialitati</a></li>
+          <li class="site-header__nav-item"><a href="/medici" data-nav-item="medici">Medici</a></li>
           <li class="site-header__nav-item site-header__nav-item--dropdown">
-            <a data-nav-item="centers">Centre medicale</a>
+            <a data-nav-item="centre-medicale">Centre medicale</a>
             <div class="site-header__dropdown">
-              <a href="/centers/san/despre-centru">Centru - San</a>
-              <a href="/centers/centrul-de-imagistica/despre-centru">Centru - Imagistica</a>
-              <a href="/centers/centrul-de-ortopedietraumatologie/despre-centru">Centru - Ortopedie-Traumatologie</a>
+              <a href="/centre-medicale/centrul-de-san/despre-centru">Centrul de San</a>
+              <a href="/centre-medicale/centrul-de-imagistica/despre-centru">Centrul de Imagistica</a>
+              <a href="/centre-medicale/centrul-de-ortopedietraumatologie/despre-centru">Centrul de Ortopedie-Traumatologie</a>
             </div>
           </li>
           <li class="site-header__nav-item site-header__nav-item--dropdown">
-            <a href="/pachete-preturi" data-nav-item="packages">Pachete si preturi</a>
+            <a href="/preturi" data-nav-item="preturi">Pachete si preturi</a>
             <div class="site-header__dropdown">
-              <a href="/pachete">Pachete</a>
+              {# <a href="/pachete">Pachete</a> #}
               <a href="/preturi">Preturi</a>
             </div>
           </li>
         </ul>
   
         <div class="site-header__actions">
-          <form class="site-header__search">
+          <form class="site-header__search" method="get" action="/cautare">
             <span class="icon icon-search"></span>
-            <input type="search" placeholder="Caută">
+            <input type="search" name="keys" placeholder="Caută">
           </form>
           <a href="/programare-online" class="btn btn-danger">Programează-te acum</a>
         </div>
@@ -80,15 +80,16 @@
 
   {# Mobile/Tablet Header #}
   <div class="site-header__mobile">
-    <a href="/" class="site-header__logo">
+  <a  href="/" class="site-header__offcanvas-logo-group">
+    <div class="site-header__logo">
       <img src="/{{ directory }}/images/logo_nord_main.png" alt="{{ site_name }}">
-    </a>
+    </div>
     <span class="site-header__divider"></span>
 
     <span class="site-header__brand-name">
       <img src="/{{ directory }}/images/muntenia.svg" alt="MUNTENIA">
     </span>
-    
+  </a>
     <button class="site-header__menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -117,22 +118,24 @@
         <span class="icon icon-phone"></span>
         <span>0248 948</span>
       </a>
-      <a href="#">
+     <a target="_blank" rel="noopener noreferrer" href="https://muntenia.web-med.ro/">
         <span class="icon icon-lab"></span>
         <span>Rezultate</span>
       </a>
-      <a href="/user">
+      <a target="_blank" rel="noopener noreferrer" href="https://analize.munteniahospital.ro/#toregister">
         <span class="icon icon-profile"></span>
         <span>Cont</span>
       </a>
     </div>
 
-    <form class="site-header__search">
+    <form class="site-header__search" method="get" action="/cautare">
       <span class="icon icon-search"></span>
-      <input type="search" placeholder="Caută">
+      <input type="search" name="keys" placeholder="Caută">
     </form>
 
+
     <nav class="site-header__mobile-nav">
+      
       <div class="site-header__mobile-nav-item site-header__mobile-nav-item--expandable">
         <div class="site-header__mobile-nav-row">
           <a href="/" class="site-header__mobile-nav-link">Spitalul Muntenia</a>
@@ -142,21 +145,32 @@
         </div>
         <div class="site-header__mobile-submenu">
           <a href="/despre-noi">Despre noi</a>
-          <a href="/acreditari">Acreditari</a>
-          <a href="/cariere">Cariere</a>
+         {# <a href="/acreditari">Acreditari</a>
+          <a href="/cariere">Cariere</a>#}
         </div>
       </div>
       
       <div class="site-header__mobile-nav-item">
-        <a href="/specialities" class="site-header__mobile-nav-link">Specialitati</a>
+        <a href="/specialitati" class="site-header__mobile-nav-link">Specialitati</a>
       </div>
       
       <div class="site-header__mobile-nav-item">
-        <a href="/doctors" class="site-header__mobile-nav-link">Medici</a>
+        <a href="/medici" class="site-header__mobile-nav-link">Medici</a>
       </div>
       
-      <div class="site-header__mobile-nav-item">
-        <a href="/centers" class="site-header__mobile-nav-link">Centre medicale</a>
+
+      <div class="site-header__mobile-nav-item site-header__mobile-nav-item--expandable">
+        <div class="site-header__mobile-nav-row">
+          <a href="/centre-medicale" class="site-header__mobile-nav-link">Centre Medicale</a>
+          <button type="button" class="site-header__mobile-nav-toggle" data-submenu-toggle>
+            <span class="icon icon-chevron-down icon--xsm"></span>
+          </button>
+        </div>
+        <div class="site-header__mobile-submenu">
+          <a href="/centre-medicale/centrul-de-san/despre-centru">Centrul de San</a>
+          <a href="/centre-medicale/centrul-de-imagistica/despre-centru">Centrul de Imagistica</a>
+          <a href="/centre-medicale/centrul-de-ortopedietraumatologie/despre-centru">Centrul de Ortopedie-Traumatologie</a>
+        </div>
       </div>
       
       <div class="site-header__mobile-nav-item site-header__mobile-nav-item--expandable">
@@ -167,7 +181,7 @@
           </button>
         </div>
         <div class="site-header__mobile-submenu">
-          <a href="/pachete">Pachete</a>
+         {#  <a href="/pachete">Pachete</a> #}
           <a href="/preturi">Preturi</a>
         </div>
       </div>

@@ -5,6 +5,7 @@
   padding: rem(32) rem(16) rem(24);
   overflow: hidden;
   max-width: 100%;
+  box-sizing: border-box; 
 
   @media (min-width: 768px) {
     padding: rem(64) rem(56) rem(24);
@@ -21,6 +22,7 @@
   color: #2E333C;
   max-width: 100%;
   overflow: hidden;
+  box-sizing: border-box; 
 
   &__top {
     display: flex;

@@ -33,12 +33,27 @@
     gap: rem(24);
     width: 100%;
     overflow-x: auto;
-    padding: 0 rem(24);
+    box-sizing: border-box; // FIX: Include padding in width calculation
+
+    // Dynamic padding to center all cards (first, middle, last)
+    // Uses max() to ensure minimum 24px padding on small screens
+    // but allows more padding on larger screens for proper centering
+    padding-left: max(rem(24), calc(50% - rem(182))); // 182px = half of 364px card
+    padding-right: max(rem(24), calc(50% - rem(182)));
+
+    // Center cards as user scrolls
+    scroll-snap-type: x mandatory;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    // Make cards snap to center
+    .article-card {
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
     }
 
     // --- DESKTOP OVERRIDE: WRAPPING GRID ---
@@ -47,6 +62,11 @@
       overflow-x: visible;
       padding: 0;
       justify-content: center;
+      scroll-snap-type: none; // Disable snap on desktop
+
+      .article-card {
+        scroll-snap-align: none;
+      }
     }
   }
 

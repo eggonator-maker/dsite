@@ -183,6 +183,40 @@ def restructure_lab_by_laboratory(df_lab):
     return output
 
 
+def export_to_csv(unified_structure, output_dir):
+    """
+    Export unified price structure to a flat CSV file for import into Drupal
+    via the price_importer module.
+
+    Columns:
+        main_category, subcategory, service_group, display_name, price, appointment_url
+    """
+    rows = []
+    for entry in unified_structure.get("main_categories", []):
+        main_cat = entry.get("main_category", "")
+        subcategory = entry.get("subcategory", "")
+        for service_group in entry.get("service_groups", []):
+            service_group_name = service_group.get("service_name", "")
+            for item in service_group.get("items", []):
+                rows.append({
+                    "main_category": main_cat,
+                    "subcategory": subcategory,
+                    "service_group": service_group_name,
+                    "display_name": item.get("item_name", ""),
+                    "price": item.get("price", ""),
+                    "appointment_url": "",
+                })
+
+    df = pd.DataFrame(
+        rows,
+        columns=["main_category", "subcategory", "service_group", "display_name", "price", "appointment_url"],
+    )
+    csv_path = output_dir / "drupal_prices_import.csv"
+    df.to_csv(csv_path, index=False, encoding="utf-8")
+    print(f"CSV rows written: {len(df)}")
+    return csv_path
+
+
 def main():
     # Create output directory
     output_dir = Path("medical_data_export")
@@ -299,6 +333,9 @@ def main():
     with open(output_dir / "drupal_prices_structure.json", 'w', encoding='utf-8') as f:
         json.dump(unified_structure, f, ensure_ascii=False, indent=2)
 
+    # Export flat CSV for Drupal price_importer module
+    csv_path = export_to_csv(unified_structure, output_dir)
+
     print(f"\n{'='*50}")
     print(f"Export complete: {output_dir}/")
     print(f"{'='*50}")
@@ -313,6 +350,8 @@ def main():
     print(f"  - doctors_services_structured.json (Drupal-ready)")
     print(f"  - lab_services_structured.json (Drupal-ready)")
     print(f"  - drupal_prices_structure.json (Unified for import)")
+    print(f"\nCSV file (for Drupal price_importer module):")
+    print(f"  - drupal_prices_import.csv")
 
 
 if __name__ == "__main__":

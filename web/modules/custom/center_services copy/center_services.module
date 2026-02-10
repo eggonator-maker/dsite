@@ -26,6 +26,12 @@ function center_services_theme($existing, $type, $theme, $path) {
         'nodes' => [],
       ],
     ],
+    'search_page' => [
+      'variables' => [
+        'keys' => '',
+        'results' => [],
+      ],
+    ],
     'pre_footer_banner' => [
       'variables' => [
         'variant' => 'full-width',

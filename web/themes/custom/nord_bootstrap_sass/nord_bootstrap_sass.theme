@@ -45,7 +45,7 @@ function nord_bootstrap_sass_preprocess_page(array &$vars) {
   $current_path = \Drupal::request()->getPathInfo();
 
   // Handle Centers
-  if (str_starts_with($current_path, '/centers')) {
+  if (str_starts_with($current_path, '/centre-medicale')) {
     $vars['#attached']['library'][] = 'nord_bootstrap_sass/ajax-navigation';
     
     $center_context = \Drupal::service('center_services.context');
@@ -57,7 +57,7 @@ function nord_bootstrap_sass_preprocess_page(array &$vars) {
   }
 
     // Check if we are on a speciality page.
-  if (str_starts_with($current_path, '/specialities')) {
+  if (str_starts_with($current_path, '/specialitati')) {
     // Attach the AJAX navigation library to the page.
     $vars['#attached']['library'][] = 'nord_bootstrap_sass/ajax-navigation';
   }
@@ -107,18 +107,18 @@ function nord_bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateI
  * Implements hook_theme_suggestions_page_alter().
  *
  * Adds a 'page__centers_section' template suggestion for all routes
- * beginning with /centers/.
+ * beginning with /centre-medicale/.
  */
 function nord_bootstrap_sass_theme_suggestions_page_alter(array &$suggestions, array $variables) {
   // Get the current path from the request.
   $current_path = \Drupal::request()->getPathInfo();
 
-  // Check if the path starts with '/centers/'.
-  if (str_starts_with($current_path, '/centers')) {
+  // Check if the path starts with '/centre-medicale/'.
+  if (str_starts_with($current_path, '/centre-medicale')) {
     // This will look for a template named page--centers-section.html.twig.
     $suggestions[] = 'page__node__centers';
   }
-  if (str_starts_with($current_path, '/specialities')) {
+  if (str_starts_with($current_path, '/specialitati')) {
     // This will look for a template named page--centers-section.html.twig.
     $suggestions[] = 'page__specialities_section';
   }

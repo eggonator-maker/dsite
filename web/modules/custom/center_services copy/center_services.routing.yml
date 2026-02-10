@@ -1,0 +1,15 @@
+center_services.search:
+  path: '/cautare'
+  defaults:
+    _controller: '\Drupal\center_services\Controller\SearchController::search'
+    _title: 'Căutare'
+  requirements:
+    _permission: 'access content'
+
+center_services.specialities_overview:
+  path: '/specialitati'
+  defaults:
+    _controller: '\Drupal\center_services\Controller\SpecialitiesController::overview'
+    _title: 'Specialitati'
+  requirements:
+    _permission: 'access content'

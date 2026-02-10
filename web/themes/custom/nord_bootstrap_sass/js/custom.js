@@ -20,13 +20,13 @@
       if (currentPath === '/' || currentPath === '') {
         $('.site-header__nav a[data-nav-item="home"]', context).addClass('active');
       } else if (currentPath.startsWith('/specialities') || currentPath.startsWith('/specialitati')) {
-        $('.site-header__nav a[data-nav-item="specialities"]', context).addClass('active');
+        $('.site-header__nav a[data-nav-item="specialitati"]', context).addClass('active');
       } else if (currentPath.startsWith('/doctors') || currentPath.startsWith('/medici')) {
-        $('.site-header__nav a[data-nav-item="doctors"]', context).addClass('active');
-      } else if (currentPath.startsWith('/centers') || currentPath.startsWith('/centre')) {
-        $('.site-header__nav a[data-nav-item="centers"]', context).addClass('active');
-      } else if (currentPath.startsWith('/packages') || currentPath.startsWith('/pachete')) {
-        $('.site-header__nav a[data-nav-item="packages"]', context).addClass('active');
+        $('.site-header__nav a[data-nav-item="medici"]', context).addClass('active');
+      } else if (currentPath.startsWith('/centers') || currentPath.startsWith('/centre-medicale')) {
+        $('.site-header__nav a[data-nav-item="centre-medicale"]', context).addClass('active');
+      } else if (currentPath.startsWith('/prices') || currentPath.startsWith('/preturi') || currentPath.startsWith("/pachete")) {
+        $('.site-header__nav a[data-nav-item="preturi"]', context).addClass('active');
       }
 
       // Desktop dropdown - double click to navigate

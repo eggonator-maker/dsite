@@ -1,0 +1,6 @@
+price_importer.admin_form:
+  title: 'Import Prices'
+  description: 'Import medical prices from CSV file or API.'
+  route_name: price_importer.admin_form
+  parent: system.admin_content
+  weight: 10

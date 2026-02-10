@@ -1,0 +1,9 @@
+services:
+  price_importer.commands:
+    class: Drupal\price_importer\Commands\PriceImporterCommands
+    arguments:
+      - '@price_importer.csv_parser'
+      - '@price_importer.api_client'
+      - '@price_importer.importer'
+    tags:
+      - { name: drush.command }

@@ -20,6 +20,7 @@ Description: Bootstrap 4 with Sass
 body {
     font-family: $font-open-sans; 
     background: $white;
+    overflow-x: hidden;
 }
 
 .node__content {
@@ -37,6 +38,7 @@ color: #0E296B;
   
 .layout-main-wrapper {
 overflow-x: clip;
+max-width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {

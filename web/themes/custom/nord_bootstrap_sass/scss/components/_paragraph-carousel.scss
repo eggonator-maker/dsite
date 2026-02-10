@@ -664,3 +664,32 @@
     margin: 0 !important;
   }
 }
+
+.carousel__bg-mobile,
+.carousel__bg-desktop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  
+  > * {
+    height: 100%;
+    width: 100%;
+  }
+  
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .field--type-image,
+  .field__item,
+  .field {
+    margin: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+}

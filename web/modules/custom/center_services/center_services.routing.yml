@@ -1,7 +1,0 @@
-center_services.specialities_overview:
-  path: '/specialities'
-  defaults:
-    _controller: '\Drupal\center_services\Controller\SpecialitiesController::overview'
-    _title: 'Specialitati'
-  requirements:
-    _permission: 'access content'

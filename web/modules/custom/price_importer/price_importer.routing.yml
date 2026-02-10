@@ -1,0 +1,7 @@
+price_importer.admin_form:
+  path: '/admin/config/content/price-import'
+  defaults:
+    _form: '\Drupal\price_importer\Form\PriceImportForm'
+    _title: 'Import Prices'
+  requirements:
+    _permission: 'administer price import'

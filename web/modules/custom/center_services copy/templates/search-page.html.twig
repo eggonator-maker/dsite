@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Template for the site search results page.
+ *
+ * Available variables:
+ * - keys: The search query string.
+ * - results: Associative array keyed by content type, each containing
+ *   items with 'title' and 'url'.
+ */
+#}
+{% set type_labels = {
+  'article': 'Articole',
+  'doctor': 'Medici',
+  'centers': 'Centre medicale',
+  'speciality_service': 'Servicii',
+  'specialities': 'Specialități',
+  'centers_service': 'Centre medicale',
+
+} %}
+
+<div class="search-page">
+  <div class="search-page__container">
+
+    <div class="search-page__header">
+      <h1 class="search-page__title">Căutare</h1>
+      <form class="search-page__form" method="get" action="/cautare">
+        <div class="search-page__input-wrapper">
+          <span class="icon icon-search"></span>
+          <input class="search-page__input" type="search" name="keys" value="{{ keys }}" placeholder="Caută...">
+        </div>
+        <button type="submit" class="btn btn-primary search-page__submit">Caută</button>
+      </form>
+    </div>
+
+    {% if keys %}
+      {% set total = 0 %}
+      {% for type, items in results %}
+        {% set total = total + items|length %}
+      {% endfor %}
+
+      {% if total > 0 %}
+        <p class="search-page__count">
+          {{ total }} rezultate pentru „<strong>{{ keys }}</strong>"
+        </p>
+
+        {% for type, items in results %}
+          {% if items %}
+            <section class="search-page__group">
+              <h2 class="search-page__group-title">{{ type_labels[type] ?? type }}</h2>
+              <ul class="search-page__list">
+                {% for item in items %}
+                  <li class="search-page__item">
+                    <a href="{{ item.url }}" class="search-page__link">{{ item.title }}</a>
+                    <span class="search-page__badge search-page__badge--{{ type }}">{{ type_labels[type] ?? type }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+        {% endfor %}
+
+      {% else %}
+        <div class="search-page__empty">
+          <p>Nu au fost găsite rezultate pentru „<strong>{{ keys }}</strong>".</p>
+          <p>Încearcă alte cuvinte cheie sau navighează în meniu.</p>
+        </div>
+      {% endif %}
+
+    {% else %}
+      <p class="search-page__hint">Introduceți un termen de căutare pentru a vedea rezultate.</p>
+    {% endif %}
+
+  </div>
+</div>

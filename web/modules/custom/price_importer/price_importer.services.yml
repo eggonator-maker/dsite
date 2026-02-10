@@ -1,0 +1,18 @@
+services:
+  price_importer.csv_parser:
+    class: Drupal\price_importer\Service\CsvParserService
+
+  price_importer.api_client:
+    class: Drupal\price_importer\Service\ApiClientService
+    arguments:
+      - '@http_client'
+      - '@config.factory'
+      - '@logger.factory'
+
+  price_importer.importer:
+    class: Drupal\price_importer\Service\PriceImporterService
+    arguments:
+      - '@entity_type.manager'
+      - '@logger.factory'
+      - '@database'
+      - '@state'

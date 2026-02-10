@@ -9,6 +9,8 @@
   background-position: center;
   border: 1px solid #DEDEDE;
   overflow: hidden;
+  
+
 
   &--tall {
     height: 480px;
@@ -281,4 +283,41 @@
         display: block;
     }
     }
+
+    &__bg-mobile,
+&__bg-desktop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  
+  // Force all wrapper divs to fill
+  > * {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  
+  // Force field wrappers to fill
+  .field,
+  .field__item,
+  .field--type-image,
+  .field--type-entity-reference {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  // Target img no matter how deep
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 }
