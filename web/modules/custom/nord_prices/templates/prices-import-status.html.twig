@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Template for prices import status page.
+ *
+ * Available variables:
+ * - stats: Array of statistics
+ *   - main_categories: Number of main categories
+ *   - subcategories: Number of subcategories
+ *   - service_groups: Number of service groups
+ *   - price_items: Number of price items
+ *   - blocks: Number of prices blocks
+ *   - last_import: Timestamp of last import
+ */
+#}
+
+<div class="prices-import-status">
+  <h2>{{ 'Price Import Statistics'|t }}</h2>
+  
+  {% if stats.last_import %}
+    <div class="last-import">
+      <strong>{{ 'Last Import:'|t }}</strong>
+      {{ stats.last_import|format_date('medium') }}
+    </div>
+  {% else %}
+    <div class="last-import">
+      <strong>{{ 'Last Import:'|t }}</strong>
+      <em>{{ 'Never'|t }}</em>
+    </div>
+  {% endif %}
+  
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-label">{{ 'Prices Blocks'|t }}</div>
+      <div class="stat-value">{{ stats.blocks }}</div>
+    </div>
+    
+    <div class="stat-item">
+      <div class="stat-label">{{ 'Main Categories'|t }}</div>
+      <div class="stat-value">{{ stats.main_categories }}</div>
+    </div>
+    
+    <div class="stat-item">
+      <div class="stat-label">{{ 'Subcategories'|t }}</div>
+      <div class="stat-value">{{ stats.subcategories }}</div>
+    </div>
+    
+    <div class="stat-item">
+      <div class="stat-label">{{ 'Service Groups'|t }}</div>
+      <div class="stat-value">{{ stats.service_groups }}</div>
+    </div>
+    
+    <div class="stat-item">
+      <div class="stat-label">{{ 'Price Items'|t }}</div>
+      <div class="stat-value">{{ stats.price_items }}</div>
+    </div>
+  </div>
+  
+  <div class="actions">
+    <a href="{{ path('nord_prices.import_form') }}" class="button button--primary">
+      {{ 'Import Prices'|t }}
+    </a>
+  </div>
+</div>

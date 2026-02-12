@@ -1,8 +1,0 @@
-name: 'Price Importer'
-type: module
-description: 'Imports medical price data from CSV or MedAPI into the prices block.'
-core_version_requirement: ^11
-package: 'Custom'
-dependencies:
-  - drupal:paragraphs
-  - drupal:block_content

@@ -1,4 +1,0 @@
-administer price import:
-  title: 'Administer price import'
-  description: 'Import and update medical price data from CSV or API.'
-  restrict access: true

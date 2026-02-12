@@ -1,0 +1,15 @@
+nord_prices.import_form:
+  path: '/admin/content/nord-prices/import'
+  defaults:
+    _form: '\Drupal\nord_prices\Form\PricesImportForm'
+    _title: 'Import Prices'
+  requirements:
+    _permission: 'administer nord prices'
+
+nord_prices.status:
+  path: '/admin/content/nord-prices/status'
+  defaults:
+    _controller: '\Drupal\nord_prices\Controller\PricesImportController::status'
+    _title: 'Import Status'
+  requirements:
+    _permission: 'administer nord prices'

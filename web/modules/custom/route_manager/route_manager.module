@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Route Manager module hooks.
+ */
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_metatags_attachments_alter().
+ *
+ * Injects stored metatag overrides for the current path.
+ */
+function route_manager_metatags_attachments_alter(array &$metatag_attachments): void {
+  $path = \Drupal::request()->getPathInfo();
+
+  $record = Database::getConnection()->select('route_manager_settings', 'rms')
+    ->fields('rms', ['metatag_overrides', 'page_title_override'])
+    ->condition('path', $path)
+    ->range(0, 1)
+    ->execute()
+    ->fetchAssoc();
+
+  if (!$record) {
+    return;
+  }
+
+  // Apply metatag overrides.
+  if (!empty($record['metatag_overrides'])) {
+    $overrides = unserialize($record['metatag_overrides'], ['allowed_classes' => FALSE]);
+    if (!is_array($overrides)) {
+      return;
+    }
+
+    // Map our flat keys to metatag module tag names.
+    $tag_map = [
+      'title' => 'title',
+      'description' => 'description',
+      'canonical' => 'canonical_url',
+      'robots' => 'robots',
+      'og:title' => 'og_title',
+      'og:description' => 'og_description',
+      'og:image' => 'og_image',
+    ];
+
+    foreach ($metatag_attachments['#attached']['html_head'] ?? [] as $key => &$tag) {
+      if (!isset($tag[1])) {
+        continue;
+      }
+      $tag_name = $tag[1];
+      foreach ($tag_map as $our_key => $metatag_name) {
+        if ($tag_name === $metatag_name && isset($overrides[$our_key]) && $overrides[$our_key] !== '') {
+          if (isset($tag[0]['#attributes']['content'])) {
+            $tag[0]['#attributes']['content'] = $overrides[$our_key];
+          }
+          elseif (isset($tag[0]['#attributes']['href'])) {
+            $tag[0]['#attributes']['href'] = $overrides[$our_key];
+          }
+        }
+      }
+    }
+  }
+}

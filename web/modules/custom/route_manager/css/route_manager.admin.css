@@ -1,0 +1,168 @@
+/* Route Manager admin styles */
+
+.route-manager-toolbar {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.route-manager-filter-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.route-manager-filter-form input[type="text"] {
+  min-width: 220px;
+}
+
+/* Groups */
+.route-manager-groups details.route-manager-group {
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.route-manager-groups details.route-manager-group > summary {
+  padding: 0.5rem 0.75rem;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  list-style: none;
+  position: relative;
+  padding-right: 2rem;
+  user-select: none;
+}
+
+/* Hide the default browser disclosure triangle */
+.route-manager-groups details.route-manager-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron on the right side */
+.route-manager-groups details.route-manager-group > summary::after {
+  content: '▶';
+  font-size: 0.7em;
+  color: #888;
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.15s ease;
+}
+
+.route-manager-groups details.route-manager-group[open] > summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.route-manager-groups details.route-manager-group > summary small {
+  font-weight: normal;
+  color: #666;
+  font-size: 0.85em;
+}
+
+/* Sub-group header rows */
+tr.route-manager-subgroup-header td {
+  background: #f9f9f9;
+  padding: 0.3rem 0.75rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.route-manager-subgroup-label {
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* Access badges */
+.rm-access {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.rm-access--public {
+  background: #d4edda;
+  color: #155724;
+}
+
+.rm-access--public-inherited {
+  background: #e8f4e8;
+  color: #2e7d32;
+  font-weight: normal;
+}
+
+.rm-access--hidden {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.rm-access--hidden-inherited {
+  background: #fde8ea;
+  color: #a94442;
+  font-weight: normal;
+}
+
+/* Status codes */
+.rm-status {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-family: monospace;
+}
+
+.rm-status.rm-status-ok      { background: #d4edda; color: #155724; }
+.rm-status.rm-status-error   { background: #f8d7da; color: #721c24; }
+.rm-status.rm-status-unknown { background: #e9ecef; color: #666; }
+
+/* Slow load time */
+.route-manager-table .route-manager--slow {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* Error/issue badges */
+.route-manager--errors,
+.route-manager--issues {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
+.route-manager--errors { background: #e74c3c; color: #fff; }
+.route-manager--issues { background: #e67e22; color: #fff; }
+
+/* SEO presence indicators (T=title, D=description, H1, OG) */
+.rm-seo-tags {
+  margin-top: 3px;
+  line-height: 1;
+}
+
+.rm-seo-tag {
+  display: inline-block;
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-size: 0.7em;
+  font-weight: 700;
+  font-family: monospace;
+  margin-right: 2px;
+}
+
+.rm-seo-tag--present {
+  background: #d4edda;
+  color: #155724;
+}
+
+.rm-seo-tag--missing {
+  background: #e9ecef;
+  color: #aaa;
+  font-weight: normal;
+}

@@ -1,0 +1,9 @@
+name: 'Nord Prices Manager'
+type: module
+description: 'Manages price imports from MedAPI and Excel files'
+core_version_requirement: ^11
+package: 'Nord Custom'
+dependencies:
+  - drupal:paragraphs
+  - drupal:block_content
+  - drupal:file

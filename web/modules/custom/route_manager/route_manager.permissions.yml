@@ -1,0 +1,4 @@
+administer route manager:
+  title: 'Administer Route Manager'
+  description: 'Access route listing, SEO editing, CSV/JSON import/export, and audit data.'
+  restrict access: true

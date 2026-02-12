@@ -1,0 +1,9 @@
+name: 'Route Manager'
+type: module
+description: 'Admin tool for managing routes: access control, SEO overrides, performance audit visualization, CSV/JSON import-export.'
+core_version_requirement: ^11
+package: 'Custom'
+dependencies:
+  - drupal:system
+  - drupal:path_alias
+  - drupal:metatag

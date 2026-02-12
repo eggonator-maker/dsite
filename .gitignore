@@ -5,3 +5,6 @@ content_scraper/.venv/
 content_scraper/scraped_data/images/
 web/core/modules/
 .DS_Store
+
+.venv/
+__pycache__

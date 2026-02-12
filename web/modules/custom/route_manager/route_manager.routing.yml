@@ -1,0 +1,35 @@
+route_manager.admin_listing:
+  path: '/admin/route-manager'
+  defaults:
+    _controller: '\Drupal\route_manager\Controller\RouteManagerController::listing'
+    _title: 'Route Manager'
+  requirements:
+    _permission: 'administer route manager'
+
+route_manager.admin_edit:
+  path: '/admin/route-manager/{id}/edit'
+  defaults:
+    _form: '\Drupal\route_manager\Form\RouteSettingsForm'
+    _title: 'Edit Route Settings'
+  requirements:
+    _permission: 'administer route manager'
+  options:
+    parameters:
+      id:
+        type: integer
+
+route_manager.admin_export:
+  path: '/admin/route-manager/export'
+  defaults:
+    _controller: '\Drupal\route_manager\Controller\RouteManagerController::exportCsv'
+    _title: 'Export Routes CSV'
+  requirements:
+    _permission: 'administer route manager'
+
+route_manager.admin_import:
+  path: '/admin/route-manager/import'
+  defaults:
+    _form: '\Drupal\route_manager\Form\ImportForm'
+    _title: 'Import Routes / Audit Data'
+  requirements:
+    _permission: 'administer route manager'

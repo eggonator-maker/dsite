@@ -1,7 +1,0 @@
-price_importer.settings:
-  type: config_object
-  label: 'Price Importer Settings'
-  mapping:
-    api_token:
-      type: string
-      label: 'MedAPI Bearer Token'

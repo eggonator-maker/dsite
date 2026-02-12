@@ -1,0 +1,12 @@
+route_manager.admin_listing:
+  title: 'Route Manager'
+  description: 'Manage route access, SEO overrides, and audit data.'
+  route_name: route_manager.admin_listing
+  parent: system.admin_config_system
+  weight: 50
+
+route_manager.admin_import:
+  title: 'Import Routes / Audit'
+  route_name: route_manager.admin_import
+  parent: route_manager.admin_listing
+  weight: 10

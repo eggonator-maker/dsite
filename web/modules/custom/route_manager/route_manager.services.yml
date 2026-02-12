@@ -1,0 +1,9 @@
+services:
+  route_manager.route_access_subscriber:
+    class: Drupal\route_manager\EventSubscriber\RouteAccessSubscriber
+    arguments:
+      - '@database'
+      - '@current_user'
+      - '@config.factory'
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,163 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the route_manager module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function route_manager_schema(): array {
+  $schema = [];
+
+  $schema['route_manager_settings'] = [
+    'description' => 'Stores per-route access and SEO override settings.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'route_name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+        'default' => '',
+        'description' => 'Drupal route machine name (may be empty for alias-only routes).',
+      ],
+      'path' => [
+        'type' => 'varchar',
+        'length' => 2048,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'URL path (e.g. /about).',
+      ],
+      'is_public' => [
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => FALSE,
+        'default' => NULL,
+        'description' => '1 = public, 0 = hidden (403), NULL = inherit global default.',
+      ],
+      'page_title_override' => [
+        'type' => 'varchar',
+        'length' => 512,
+        'not null' => FALSE,
+        'default' => NULL,
+      ],
+      'metatag_overrides' => [
+        'type' => 'text',
+        'size' => 'medium',
+        'not null' => FALSE,
+        'description' => 'Serialized array of metatag values.',
+      ],
+      'updated' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => NULL,
+        'description' => 'Unix timestamp of last update.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'path' => [['path', 255]],
+      'route_name' => ['route_name'],
+    ],
+  ];
+
+  $schema['route_manager_audit'] = [
+    'description' => 'Stores imported audit results from the Python auditor script.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'path' => [
+        'type' => 'varchar',
+        'length' => 2048,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'audit_date' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => NULL,
+        'description' => 'Unix timestamp when audit was run.',
+      ],
+      'load_time_ms' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => NULL,
+      ],
+      'ttfb_ms' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => NULL,
+      ],
+      'request_count' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => NULL,
+      ],
+      'total_bytes' => [
+        'type' => 'int',
+        'size' => 'big',
+        'not null' => FALSE,
+        'default' => NULL,
+      ],
+      'seo_data' => [
+        'type' => 'text',
+        'size' => 'medium',
+        'not null' => FALSE,
+        'description' => 'JSON-encoded SEO data from auditor.',
+      ],
+      'errors' => [
+        'type' => 'text',
+        'size' => 'medium',
+        'not null' => FALSE,
+        'description' => 'JSON-encoded errors array from auditor.',
+      ],
+      'responsive_issues' => [
+        'type' => 'text',
+        'size' => 'medium',
+        'not null' => FALSE,
+        'description' => 'JSON-encoded responsive issues array.',
+      ],
+      'comparison_data' => [
+        'type' => 'text',
+        'size' => 'medium',
+        'not null' => FALSE,
+        'description' => 'JSON-encoded live comparison data.',
+      ],
+      'status_code' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => NULL,
+        'description' => 'HTTP status code from audit.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'path' => [['path', 255]],
+      'audit_date' => ['audit_date'],
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Add status_code column to route_manager_audit.
+ */
+function route_manager_update_8001(): void {
+  \Drupal::database()->schema()->addField(
+    'route_manager_audit',
+    'status_code',
+    [
+      'type' => 'int',
+      'not null' => FALSE,
+      'default' => NULL,
+      'description' => 'HTTP status code from audit.',
+    ]
+  );
+}

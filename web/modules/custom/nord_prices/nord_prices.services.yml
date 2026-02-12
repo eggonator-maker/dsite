@@ -1,0 +1,24 @@
+services:
+  Drupal\nord_prices\Service\PricesDataFetcher:
+    arguments: 
+      - '@http_client'
+      - '@file_system'
+      - '@logger.factory'
+      - '@config.factory'
+  
+  Drupal\nord_prices\Service\PricesImporter:
+    arguments: 
+      - '@entity_type.manager'
+      - '@logger.factory'
+      - '@messenger'
+  
+  Drupal\nord_prices\Service\CsvParser:
+    arguments:
+      - '@logger.factory'
+
+  nord_prices.import_api_prices_command:
+    class: Drupal\nord_prices\Drush\Commands\ImportApiPricesCommand
+    autowire: true
+    tags:
+      - { name: drush.command }
+

@@ -1,0 +1,4 @@
+administer nord prices:
+  title: 'Administer Nord Prices'
+  description: 'Import and manage price data'
+  restrict access: true
